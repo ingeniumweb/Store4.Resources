@@ -95,7 +95,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_MaterialCost', N'Cena materijala', N'Material Cost' UNION ALL
 		SELECT N'Data_Materials', N'Materijali', N'Materials' UNION ALL
 		SELECT N'Data_Member', N'Korisnik', N'Member' UNION ALL
-		SELECT N'Data_Notice', N'Obaveštenje', N'Notice' UNION ALL
+		SELECT N'Data_Notice', N'Napomena', N'Notice' UNION ALL
 		SELECT N'Data_OnHand', N'Na skladištu', N'On Hand' UNION ALL
 		SELECT N'Data_Operation', N'Operacija', N'Operation' UNION ALL
 		SELECT N'Data_Operations', N'Operacije', N'Operations' UNION ALL
