@@ -257,8 +257,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_MakeInvoice', N'Napravi račun', N'Make Invoice' UNION ALL
 		SELECT N'Link_MarkAsReceived', N'Označi kao primljeno', N'Mark as Received' UNION ALL
 		SELECT N'Link_MarkAsShipped', N'Označi kao poslato', N'Mark as Shipped' UNION ALL
-		SELECT N'Link_MakeCashSalesOrder',N'Napravi otpremnicu' N'MakeCashSalesOrder' UNION ALL
-		SELECT N'Link_MakeShipment',N'Napravi račun' N'MakeShipment' UNION ALL
+		SELECT N'Link_MakeCashSalesOrder',N'Napravi otpremnicu', N'MakeCashSalesOrder' UNION ALL
+		SELECT N'Link_MakeShipment',N'Napravi račun', N'MakeShipment' UNION ALL
 		SELECT N'Link_PakInvoice', N'Napravi račun', N'Pak Invoice' UNION ALL
 		SELECT N'Link_Pay', N'Plati', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Plati Stripe-om', N'Pay With Stripe' UNION ALL
