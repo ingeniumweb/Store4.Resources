@@ -257,8 +257,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_MakeInvoice', N'Make Invoice' UNION ALL
 		SELECT N'Link_MarkAsReceived', N'Mark as Received' UNION ALL
 		SELECT N'Link_MarkAsShipped', N'Mark as Shipped' UNION ALL
-		SELECT N'Link_MakeCashSalesOrder', N'MakeCashSalesOrder' UNION ALL
-		SELECT N'Link_MakeShipment', N'MakeShipment' UNION ALL
+		SELECT N'Link_MakeCashSalesOrder', N'Make Cash Sales Order' UNION ALL
+		SELECT N'Link_MakeShipment', N'Make Shipment' UNION ALL
 		SELECT N'Link_PakInvoice', N'Pak Invoice' UNION ALL
 		SELECT N'Link_Pay', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Pay With Stripe' UNION ALL

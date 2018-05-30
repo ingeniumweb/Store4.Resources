@@ -234,7 +234,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'HelpBlock_InitialCostPrice', N'Unesite početnu cijenu po jedinici za ovu stavku.', N'Enter the initial cost price per unit for this item.' UNION ALL
 		SELECT N'HelpBlock_InitialStockLevel', N'Unesite početnu količinu zalihe za ovu stavku.', N'Enter the initial stock level for this item.' UNION ALL
 		SELECT N'Inventory_Status_Fulfilled', N'Poslano {0:0.#####} komada robe sa magacina <strong>{4}</strong> na magacin <strong>{3}</strong> <a href=''{1}''>{2}</a>', N'Fulfilled {0} in <a href=''{1}''>{2}</a> for {3} from {4}' UNION ALL
-		SELECT N'Inventory_Status_FulfilledPlain', N'Poslano {0:0.#####} komada robe sa magacina {4} na magacin {3} - {2}', N'Fulfilled {0} in {1} for {2} from {3}' UNION ALL
+		SELECT N'Inventory_Status_FulfilledPlain', N'Poslano {0:0.#####} komada robe sa magacina {3} na magacin {2} - {1}', N'Fulfilled {0} in {1} for {2} from {3}' UNION ALL
 		SELECT N'Inventory_Status_Received', N'Primljeno {0:0.#####} komada robe na skladište <strong>{4}</strong> sa skladišta <strong>{3}</strong> - <a href=''{1}''>{2}</a>', N'Received {0} in <a href=''{1}''>{2}</a> from {3} to {4}' UNION ALL
 		SELECT N'Inventory_Status_ReceivedPlain', N'Primljeno {0:0.#####} komada robe na skladište {3} sa skladišta {2} - {1}', N'Received {0} in {1} from {2} to {3}' UNION ALL
 		SELECT N'Link_Activate', N'Aktiviraj', N'Activate' UNION ALL
@@ -257,8 +257,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_MakeInvoice', N'Napravi račun', N'Make Invoice' UNION ALL
 		SELECT N'Link_MarkAsReceived', N'Označi kao primljeno', N'Mark as Received' UNION ALL
 		SELECT N'Link_MarkAsShipped', N'Označi kao poslato', N'Mark as Shipped' UNION ALL
-		SELECT N'Link_MakeCashSalesOrder',N'Napravi otpremnicu', N'MakeCashSalesOrder' UNION ALL
-		SELECT N'Link_MakeShipment',N'Napravi račun', N'MakeShipment' UNION ALL
+		SELECT N'Link_MakeCashSalesOrder',N'Napravi prodaja za gotovinu', N'MakeCashSalesOrder' UNION ALL
+		SELECT N'Link_MakeShipment',N'Napravi otpremnicu', N'MakeShipment' UNION ALL
 		SELECT N'Link_PakInvoice', N'Napravi račun', N'Pak Invoice' UNION ALL
 		SELECT N'Link_Pay', N'Plati', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Plati Stripe-om', N'Pay With Stripe' UNION ALL
