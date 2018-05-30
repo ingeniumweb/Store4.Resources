@@ -9,7 +9,7 @@ SELECT TOP 1 @ResourceTypeID = ResourceTypeID FROM ResourceTypes WHERE Name = 'C
 SET @ResourceTypeID = ISNULL (@ResourceTypeID, 0)
 
 SET @LanguageID = NULL
-SELECT TOP 1 @LanguageID = LanguageID FROM Languages WHERE CultureName = 'en-GB' --AND IsEnabled = 11
+SELECT TOP 1 @LanguageID = LanguageID FROM Languages WHERE CultureName = 'en-GB' --AND IsEnabled = 1
 SET @LanguageID = ISNULL(@LanguageID, 0)
 
 IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
