@@ -253,7 +253,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_EditOrderNumber', N'Edit order number' UNION ALL
 		SELECT N'Link_EditRoutingNumber', N'Edit Routing number' UNION ALL
 		SELECT N'Link_FinishProduction', N'Finish Production' UNION ALL
-		SELECT N'Link_GenerateOrder',N'Generate Order' UNION ALL
+		SELECT N'Link_GenerateTransferOrder',N'Generate Transfer Order' UNION ALL
 		SELECT N'Link_GenerateMprOrder', N'Generate MPR Order' UNION ALL
 		SELECT N'Link_MakeInvoice', N'Make Invoice' UNION ALL
 		SELECT N'Link_MarkAsReceived', N'Mark as Received' UNION ALL

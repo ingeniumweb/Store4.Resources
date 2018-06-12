@@ -253,7 +253,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_EditOrderNumber', N'Uredi broj narudžbe', N'Edit order number' UNION ALL
 		SELECT N'Link_EditRoutingNumber', N'Uredi broj dostave', N'Edit Routing number' UNION ALL
 		SELECT N'Link_FinishProduction', N'Završi proizvodnju', N'Finish Production' UNION ALL
-		SELECT N'Link_GenerateOrder', N'Nova prenosna dostavnica', N'Generate Order' UNION ALL
+		SELECT N'Link_GenerateTransferOrder', N'Nova prenosna dostavnica', N'Generate Transfer Order' UNION ALL
 		SELECT N'Link_GenerateMprOrder', N'Kreiraj proizvodni nalog', N'Generate MPR Order' UNION ALL
 		SELECT N'Link_MakeInvoice', N'Napravi račun', N'Make Invoice' UNION ALL
 		SELECT N'Link_MarkAsReceived', N'Označi kao primljeno', N'Mark as Received' UNION ALL
