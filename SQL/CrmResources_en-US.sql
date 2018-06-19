@@ -237,6 +237,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Inventory_Status_FulfilledPlain', N'Fulfilled {0:0.#####} in {1} for {2} from {3}' UNION ALL
 		SELECT N'Inventory_Status_Received', N'Received {0:0.#####} in <a href=''{1}''>{2}</a> from {3} to {4}' UNION ALL
 		SELECT N'Inventory_Status_ReceivedPlain', N'Received {0:0.#####} in {1} from {2} to {3}' UNION ALL
+		SELECT N'Label_Discount', N'Discount' UNION ALL
 		SELECT N'Link_Activate', N'Activate' UNION ALL
 		SELECT N'Link_AddNewItem', N'+ Add new item' UNION ALL
 		SELECT N'Link_ApproveAsOrder', N'Approve as Order' UNION ALL

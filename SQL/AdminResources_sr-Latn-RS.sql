@@ -172,6 +172,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Created', N'Kreirano', N'Created' UNION ALL
 		SELECT N'Data_CssClass', N'CSS klasa', N'CSS Class' UNION ALL
 		SELECT N'Data_Description', N'Opis', N'Description' UNION ALL
+		SELECT N'Data_Discount', N'Rabat na dokument', N'Discount' UNION ALL
 		SELECT N'Data_DisplayName', N'Ime', N'Display Name' UNION ALL
 		SELECT N'Data_Domain', N'Domen', N'Domain' UNION ALL
 		SELECT N'Data_Drafts', N'Nacrti', N'Drafts' UNION ALL
@@ -674,6 +675,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Tabs_RestrictedByDomains', N'Zarbranjeno od domena', N'Restricted By Domains' UNION ALL
 		SELECT N'Tabs_RestrictedByRoles', N'Zabranjeno po ulogama', N'Restricted By Roles' UNION ALL
 		SELECT N'Tabs_Rules', N'Uloge', N'Rules' UNION ALL
+		SELECT N'Tabs_Sales', N'Prodaja', N'Sales' UNION ALL
 		SELECT N'Tabs_SocialNetworks', N'Socijalne mreže', N'Social Networks' UNION ALL
 		SELECT N'Tabs_Store', N'Trgovina', N'Store' UNION ALL
 		SELECT N'Tabs_Store_Description', N'Trgovina', N'Store' UNION ALL

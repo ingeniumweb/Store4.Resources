@@ -172,6 +172,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Created', N'Created' UNION ALL
 		SELECT N'Data_CssClass', N'CSS Class' UNION ALL
 		SELECT N'Data_Description', N'Description' UNION ALL
+		SELECT N'Data_Discount', N'Discount' UNION ALL
 		SELECT N'Data_DisplayName', N'Display Name' UNION ALL
 		SELECT N'Data_Domain', N'Domain' UNION ALL
 		SELECT N'Data_Drafts', N'Drafts' UNION ALL
@@ -674,6 +675,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Tabs_RestrictedByDomains', N'Restricted By Domains' UNION ALL
 		SELECT N'Tabs_RestrictedByRoles', N'Restricted By Roles' UNION ALL
 		SELECT N'Tabs_Rules', N'Rules' UNION ALL
+		SELECT N'Tabs_Sales', N'Sales' UNION ALL
 		SELECT N'Tabs_SocialNetworks', N'Social Networks' UNION ALL
 		SELECT N'Tabs_Store', N'Store' UNION ALL
 		SELECT N'Tabs_Store_Description', N'Store' UNION ALL
