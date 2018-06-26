@@ -64,7 +64,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_DateRange', N'Raspon datuma', N'Date Range' UNION ALL
 		SELECT N'Data_Default', N'Standardna {0}', N'Default {0}' UNION ALL
 		SELECT N'Data_Delete', N'Obriši', N'Delete' UNION ALL
-		SELECT N'Data_Discount', N'Popust', N'Discount' UNION ALL
+		SELECT N'Data_Discount', N'Rabat', N'Discount' UNION ALL
 		SELECT N'Data_Document', N'Dokument', N'Document' UNION ALL
 		SELECT N'Data_DocumentHeader', N'Zaglavlje dokumenta', N'Document Header' UNION ALL
 		SELECT N'Data_Documents', N'Dokumenti', N'Documents' UNION ALL
@@ -100,6 +100,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Operation', N'Operacija', N'Operation' UNION ALL
 		SELECT N'Data_Operations', N'Operacije', N'Operations' UNION ALL
 		SELECT N'Data_OrderNumber', N'Broj narudžbe #', N'Order #' UNION ALL
+		SELECT N'Data_PacketSize', N'Veličina paketa', N'Packet Size' UNION ALL
+		SELECT N'Data_PacketSizeLabel', N'Naziv paketa', N'Packet Size Label' UNION ALL
 		SELECT N'Data_PaidOn', N'Plaćeno na', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Podaci o plaćanju', N'Payment info' UNION ALL
 		SELECT N'Data_PaymentMethod', N'Plaćeno metodom', N'Payment Method' UNION ALL
@@ -149,6 +151,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TargetLot', N'Ciljana količina', N'Target Lot' UNION ALL
 		SELECT N'Data_Task', N'Zadatak', N'Task' UNION ALL
 		SELECT N'Data_Tax', N'Porez', N'Tax' UNION ALL
+		SELECT N'Data_Tax', N'Porez', N'Tax' UNION ALL
+		SELECT N'Data_TaxBase', N'Osnovica za porez', N'Data_TaxBase' UNION ALL
 		SELECT N'Data_TaxIncluded', N'Uključen porez', N'Tax Included' UNION ALL
 		SELECT N'Data_TaxNumber', N'Poreski/VAT Broj', N'Tax Number' UNION ALL
 		SELECT N'Data_TaxRate', N'Poreska stopa', N'Tax Rate' UNION ALL
@@ -156,6 +160,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TimeZone', N'Vremenska zona', N'Time Zone' UNION ALL
 		SELECT N'Data_Total', N'Ukupno', N'Total' UNION ALL
 		SELECT N'Data_TotalCost', N'Ukupna cena', N'Total Cost' UNION ALL
+		SELECT N'Data_TotalDiscount', N'Iznos Rabata', N'Total Discount' UNION ALL
 		SELECT N'Data_TotalsAre', N'Oporezivost stavki', N'TotalsAre' UNION ALL
 		SELECT N'Data_TotalTime', N'Ukupno vreme', N'Total Time' UNION ALL
 		SELECT N'Data_TotalUnits', N'Ukupno stavki', N'Total Units' UNION ALL

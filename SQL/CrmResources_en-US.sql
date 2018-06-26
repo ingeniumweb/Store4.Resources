@@ -100,6 +100,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Operation', N'Operation' UNION ALL
 		SELECT N'Data_Operations', N'Operations' UNION ALL
 		SELECT N'Data_OrderNumber', N'Order #' UNION ALL
+		SELECT N'Data_PacketSize', N'Packet Size' UNION ALL
+		SELECT N'Data_PacketSizeLabel', N'Packet Size Label' UNION ALL
 		SELECT N'Data_PaidOn', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Payment info' UNION ALL
 		SELECT N'Data_PaymentMethod', N'Payment Method' UNION ALL
@@ -149,6 +151,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TargetLot', N'Target Lot' UNION ALL
 		SELECT N'Data_Task', N'Task' UNION ALL
 		SELECT N'Data_Tax', N'Tax' UNION ALL
+		SELECT N'Data_TaxBase', N'Data_TaxBase' UNION ALL
 		SELECT N'Data_TaxIncluded', N'Tax Included' UNION ALL
 		SELECT N'Data_TaxNumber', N'Tax Number' UNION ALL
 		SELECT N'Data_TaxRate', N'Tax Rate' UNION ALL
@@ -156,6 +159,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TimeZone', N'Time Zone' UNION ALL
 		SELECT N'Data_Total', N'Total' UNION ALL
 		SELECT N'Data_TotalCost', N'Total Cost' UNION ALL
+		SELECT N'Data_TotalDiscount', N'Total Discount' UNION ALL
 		SELECT N'Data_TotalsAre', N'Totals Are' UNION ALL
 		SELECT N'Data_TotalTime', N'Total Time' UNION ALL
 		SELECT N'Data_TotalUnits', N'Total Units' UNION ALL
