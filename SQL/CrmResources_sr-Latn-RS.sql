@@ -274,6 +274,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_BillOfMaterials', N'Popis potrebnih materijala', N'Bill of Materials' UNION ALL
 		SELECT N'SiteMenu_CashSalesOrders', N'Prodaja za gotovinu', N'Cash Sales Orders' UNION ALL
 		SELECT N'SiteMenu_CompanyLocations', N'Sedišta/lokacije kompanije', N'Company Locations' UNION ALL
+		SELECT N'SiteMenu_CompanyProductsDiscount', N'Rabat za proizvode', N'Company/Products Discount' UNION ALL
 		SELECT N'SiteMenu_Contacts', N'Kontakti', N'Contacts' UNION ALL
 		SELECT N'SiteMenu_Customers', N'Klijenti', N'Customers' UNION ALL
 		SELECT N'SiteMenu_Employees', N'Zaposleni', N'Employees' UNION ALL

@@ -273,6 +273,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_BillOfMaterials', N'Bill of Materials' UNION ALL
 		SELECT N'SiteMenu_CashSalesOrders',  N'Cash Sales Orders' UNION ALL
 		SELECT N'SiteMenu_CompanyLocations', N'Company Locations' UNION ALL
+		SELECT N'SiteMenu_CompanyProductsDiscount', N'Company/Products Discount' UNION ALL
 		SELECT N'SiteMenu_Contacts', N'Contacts' UNION ALL
 		SELECT N'SiteMenu_Customers', N'Customers' UNION ALL
 		SELECT N'SiteMenu_Employees', N'Employees' UNION ALL
