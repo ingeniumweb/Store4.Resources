@@ -19,6 +19,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_AddToInventory', N'Dodaj u inventar', N'Add to Inventory' UNION ALL
 		SELECT N'Button_SaveOrder', N'Snimi narudžbu', N'Save Order' UNION ALL
 		SELECT N'Button_SaveQuote', N'Snimi ponudu', N'Save Quote' UNION ALL
+		SELECT N'Company_Message_AlredySelectedDiscunt', N'Za odabrani proizvod već postoji popust!', N'There is already a discount for the selected product!' UNION ALL
 		SELECT N'ContentType_BOM', N'BOM', N'BOM' UNION ALL
 		SELECT N'ContentType_Company', N'Kompanija', N'Company' UNION ALL
 		SELECT N'ContentType_Customer', N'Kupac', N'Customer' UNION ALL

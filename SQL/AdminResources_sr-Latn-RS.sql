@@ -427,6 +427,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Fields', N'Polja', N'Fields' UNION ALL
 		SELECT N'Link_Gallery', N'Galerija', N'Gallery' UNION ALL
 		SELECT N'Link_GoBack', N'Idi nazad', N'Go Back' UNION ALL
+		SELECT N'Link_Google', N'Google map link', N'Google map link' UNION ALL
 		SELECT N'Link_Link', N'Link', N'Link' UNION ALL
 		SELECT N'Link_LogOut', N'Odjava', N'Logout' UNION ALL
 		SELECT N'Link_Preview', N'Pregled', N'Preview' UNION ALL

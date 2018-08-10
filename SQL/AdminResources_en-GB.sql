@@ -373,6 +373,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Errors_500_Headline', N'An Error Occurred' UNION ALL
 		SELECT N'Errors_500_Title', N'Site Error' UNION ALL
 		SELECT N'Errors_Link_GoBack', N'? Back to Homepage' UNION ALL
+		SELECT N'Link_Google', N'Google map link' UNION ALL
 		SELECT N'Exporting_Headline', N'Export Data with the Data Export Wizard' UNION ALL
 		SELECT N'Exporting_HelpBlock', N'Please choose which columns to export?.' UNION ALL
 		SELECT N'Field_Encrypted_Message', N'The field value will be encrypted in the database.' UNION ALL
