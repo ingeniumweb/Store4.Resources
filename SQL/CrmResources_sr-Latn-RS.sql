@@ -243,6 +243,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Inventory_Status_FulfilledPlain', N'Poslano {0:0.#####} komada robe sa magacina {3} na magacin {2} - {1}', N'Fulfilled {0} in {1} for {2} from {3}' UNION ALL
 		SELECT N'Inventory_Status_Received', N'Primljeno {0:0.#####} komada robe na skladište <strong>{4}</strong> sa skladišta <strong>{3}</strong> - <a href=''{1}''>{2}</a>', N'Received {0} in <a href=''{1}''>{2}</a> from {3} to {4}' UNION ALL
 		SELECT N'Inventory_Status_ReceivedPlain', N'Primljeno {0:0.#####} komada robe na skladište {3} sa skladišta {2} - {1}', N'Received {0} in {1} from {2} to {3}' UNION ALL
+		SELECT N'LabelCompanyInVatSystem', N'Klijent u sistemu PDV-a', N'Company In Vat System' UNION ALL
+		SELECT N'LabelCompanyIsConsumer', N'Fizičko lice', N'Company Is Consumer' UNION ALL
 		SELECT N'Label_Discount', N'Rabat', N'Discount' UNION ALL
 		SELECT N'Link_Activate', N'Aktiviraj', N'Activate' UNION ALL
 		SELECT N'Link_AddNewItem', N'+ Dodaj novu stavku', N'+ Add new item' UNION ALL
