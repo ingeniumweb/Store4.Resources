@@ -19,6 +19,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_AddToInventory', N'Add to Inventory' UNION ALL
 		SELECT N'Button_SaveOrder', N'Save Order' UNION ALL
 		SELECT N'Button_SaveQuote', N'Save Quote' UNION ALL
+		SELECT N'Category_Message_LevelForbidden', N'Can not add child category at this level!' UNION ALL
 		SELECT N'Company_Message_AlredySelectedDiscunt', N'There is already a discount for the selected product!' UNION ALL
 		SELECT N'ContentType_BOM', N'BOM' UNION ALL
 		SELECT N'ContentType_Company', N'Company' UNION ALL
@@ -212,6 +213,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_ManufacturingOrder', N'Manufacturing Order' UNION ALL
 		SELECT N'DocumentType_Order', N'Order' UNION ALL
 		SELECT N'DocumentType_Payment', N'Payment' UNION ALL
+		SELECT N'DocumentType_PreslapOrder', N'PreslapOrder' UNION ALL
 		SELECT N'DocumentType_ProductionEntryOrder',  N'Production Entry Order' UNION ALL
 		SELECT N'DocumentType_ProductionOrder', N'Production Order' UNION ALL
 		SELECT N'DocumentType_PurchaseOrder', N'Purchase Order' UNION ALL

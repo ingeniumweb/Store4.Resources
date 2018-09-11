@@ -19,6 +19,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_AddToInventory', N'Dodaj u inventar', N'Add to Inventory' UNION ALL
 		SELECT N'Button_SaveOrder', N'Snimi narudžbu', N'Save Order' UNION ALL
 		SELECT N'Button_SaveQuote', N'Snimi ponudu', N'Save Quote' UNION ALL
+		SELECT N'Category_Message_LevelForbidden', N'Zabranjeno dodavanje podkategorija na ovom nivou!', N'Can not add child category at this level!' UNION ALL
 		SELECT N'Company_Message_AlredySelectedDiscunt', N'Za odabrani proizvod već postoji popust!', N'There is already a discount for the selected product!' UNION ALL
 		SELECT N'ContentType_BOM', N'BOM', N'BOM' UNION ALL
 		SELECT N'ContentType_Company', N'Kompanija', N'Company' UNION ALL
@@ -213,6 +214,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_ManufacturingOrder', N'Proizvodna narudžba', N'Manufacturing Order' UNION ALL
 		SELECT N'DocumentType_Order', N'Narudžba', N'Order' UNION ALL
 		SELECT N'DocumentType_Payment', N'Plaćanje', N'Payment' UNION ALL
+		SELECT N'DocumentType_PreslapOrder', N'Preslap Dokumenti', N'PreslapOrder' UNION ALL
 		SELECT N'DocumentType_ProductionEntryOrder', N'Ulazi iz Proizvodnje', N'Production Entry Order' UNION ALL
 		SELECT N'DocumentType_ProductionOrder', N'Proizvodna narudžba', N'Production Order' UNION ALL
 		SELECT N'DocumentType_PurchaseOrder', N'Kupovina', N'Purchase Order' UNION ALL
