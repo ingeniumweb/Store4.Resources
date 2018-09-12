@@ -195,6 +195,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Document_RepresentationExpense',  N'Representation Expense' UNION ALL
 		SELECT N'Documents_CashSalesOrders',  N'Cash Sales Orders' UNION ALL
 		SELECT N'Documents_ExpenseOrders', N'Expense Orders' UNION ALL
+		SELECT N'DocumentType_ForDelivery', N'ForDelivery' UNION ALL
 		SELECT N'Documents_Invoices', N'Invoices' UNION ALL
 		SELECT N'Documents_Orders', N'Sales Orders' UNION ALL
 		SELECT N'Documents_Procurement', N'Procurements' UNION ALL
@@ -213,12 +214,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_ManufacturingOrder', N'Manufacturing Order' UNION ALL
 		SELECT N'DocumentType_Order', N'Order' UNION ALL
 		SELECT N'DocumentType_Payment', N'Payment' UNION ALL
-		SELECT N'DocumentType_PreslapOrder', N'PreslapOrder' UNION ALL
 		SELECT N'DocumentType_ProductionEntryOrder', N'Production Entry Order' UNION ALL
 		SELECT N'DocumentType_ProductionOrder', N'Production Order' UNION ALL
 		SELECT N'DocumentType_PurchaseOrder', N'Purchase Order' UNION ALL
 		SELECT N'DocumentType_Quote', N'Quote' UNION ALL
 		SELECT N'DocumentType_RepresentationExpense',  N'Representation Expense' UNION ALL
+		SELECT N'Document_Route', N'Route' UNION ALL
 		SELECT N'DocumentType_SalesOrder', N'Sales Order' UNION ALL
 		SELECT N'DocumentType_Shipment', N'Shipment' UNION ALL
 		SELECT N'DocumentType_Subscription', N'Subscription' UNION ALL

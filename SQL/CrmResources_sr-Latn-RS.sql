@@ -194,8 +194,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Document_Message_UnlinkedDocuments', N'Dokumenti više nisu vezani', N'Documents successfully unlinked' UNION ALL
 		SELECT N'Document_ProductionEntryOrder', N'Ulaz iz Proizvodnje', N'Production Entry Order' UNION ALL
 		SELECT N'Document_RepresentationExpense', N'Reprezentacija', N'Representation Expense' UNION ALL
+		SELECT N'Document_Route', N'Ruta', N'Route' UNION ALL
 		SELECT N'Documents_CashSalesOrders', N'Prodaja za gotovinu', N'Cash Sales Orders' UNION ALL
 		SELECT N'Documents_ExpenseOrders', N'Rashodi', N'Expense Orders' UNION ALL
+		SELECT N'DocumentType_ForDelivery', N'Za Isporuku', N'ForDelivery' UNION ALL
 		SELECT N'Documents_Invoices', N'Računi', N'Invoices' UNION ALL
 		SELECT N'Documents_Orders', N'Narudžbe', N'Sales Orders' UNION ALL
 		SELECT N'Documents_Procurement', N'Nabavke', N'Procurements' UNION ALL
@@ -214,7 +216,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_ManufacturingOrder', N'Proizvodna narudžba', N'Manufacturing Order' UNION ALL
 		SELECT N'DocumentType_Order', N'Narudžba', N'Order' UNION ALL
 		SELECT N'DocumentType_Payment', N'Plaćanje', N'Payment' UNION ALL
-		SELECT N'DocumentType_PreslapOrder', N'Preslap Dokumenti', N'PreslapOrder' UNION ALL
 		SELECT N'DocumentType_ProductionEntryOrder', N'Ulazi iz Proizvodnje', N'Production Entry Order' UNION ALL
 		SELECT N'DocumentType_ProductionOrder', N'Proizvodna narudžba', N'Production Order' UNION ALL
 		SELECT N'DocumentType_PurchaseOrder', N'Kupovina', N'Purchase Order' UNION ALL
