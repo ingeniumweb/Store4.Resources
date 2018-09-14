@@ -184,9 +184,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_CreatingCreditCard', N'Došlo je do greške prilikom kreiranja Kreditne Kartice.', N'There was an error while creating credit card.' UNION ALL
 		SELECT N'Error_CreatingMember', N'Došlo je do greške prilikom kreiranja Korisnika.', N'There was an error while creating Member.' UNION ALL
 		SELECT N'Error_CreatingMemberToken', N'Došlo je do greške prilikom kreiranja Korisničkog Tokena.', N'There was an error while generating Member Token.' UNION ALL
+		SELECT N'PaymentSettings_PaymentCancelURL', N'Povratna adresa nakon odustajana', N'Cancel URL' UNION ALL
+		SELECT N'PaymentSettings_PaymentEnviroment', N'Razvojno okruženje', N'Enviroment' UNION ALL
 		SELECT N'PaymentSettings_PaymentGateway', N'Portal za Plaćanja', N'Payment Gateway' UNION ALL
+		SELECT N'PaymentSettings_PaymentGatewayURL', N'Adresa za plaćanje', N'Payment Gateway URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentPrivateKey', N'Privatni Ključ za Plaćanja', N'Payment Private Key' UNION ALL
 		SELECT N'PaymentSettings_PaymentPublicKey', N'Javni Ključ za Plaćanja', N'Payment Public Key' UNION ALL
+		SELECT N'PaymentSettings_PaymentReturnErrorURL', N'Povratna adresa neuspješne autorizacije', N'Error URL' UNION ALL
+		SELECT N'PaymentSettings_PaymentReturnURL', N'Povratna adresa uspješne autorizacije', N'Return URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentMerchantID', N'Trgovac ID za Plaćanja', N'Payment Merchant ID'
 END
 

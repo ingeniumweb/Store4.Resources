@@ -184,9 +184,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_CreatingCreditCard', N'There was an error while creating credit card.' UNION ALL
 		SELECT N'Error_CreatingMember', N'There was an error while creating Member.' UNION ALL
 		SELECT N'Error_CreatingMemberToken', N'There was an error while generating Member Token.' UNION ALL
+		SELECT N'PaymentSettings_PaymentCancelURL', N'Cancel URL' UNION ALL
+		SELECT N'PaymentSettings_PaymentEnviroment', N'Enviroment' UNION ALL
 		SELECT N'PaymentSettings_PaymentGateway', N'Payment Gateway' UNION ALL
+		SELECT N'PaymentSettings_PaymentGatewayURL', N'Payment Gateway URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentPrivateKey', N'Payment Private Key' UNION ALL
 		SELECT N'PaymentSettings_PaymentPublicKey', N'Payment Public Key' UNION ALL
+		SELECT N'PaymentSettings_PaymentReturnErrorURL', N'Error URL' UNION ALL
+		SELECT N'PaymentSettings_PaymentReturnURL', N'Return URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentMerchantID', N'Payment Merchant ID'
 END
 

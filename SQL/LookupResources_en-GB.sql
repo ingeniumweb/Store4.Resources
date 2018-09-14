@@ -240,6 +240,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'PaymentGateway_Braintree', N'Braintree' UNION ALL
 		SELECT N'PaymentGateway_PayPal', N'PayPal' UNION ALL
 		SELECT N'PaymentGateway_Stripe', N'Stripe' UNION ALL
+		SELECT N'PaymentGateway_WSpayForm', N'WSpayForm' UNION ALL
 		SELECT N'ContactType_Client', N'Client' UNION ALL
 		SELECT N'ContactType_Friend', N'Friend' UNION ALL
 		SELECT N'ContactType_Lead', N'Lead' UNION ALL
