@@ -22,6 +22,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_ChangeAccountPassword_Title', N'Promjenite lozinku računa', N'Change Account Password' UNION ALL
 		SELECT N'Account_Controller_AccountBlocked', N'Vaš račun je blokiran.', N'Your account was blocked.' UNION ALL
 		SELECT N'Account_Controller_AccountDoesntExist', N'Račun ne postoji.', N'The account doesn''t exist.' UNION ALL
+		SELECT N'Account_Controller_AccountLocked', N'Račun je zaključan!', N'The account is locked!' UNION ALL
 		SELECT N'Account_Controller_AccountExists', N'Već postoji račun s tom email adresom.', N'The account already exists with that email address' UNION ALL
 		SELECT N'Account_Controller_Activated', N'Vaš račun {{name}} je uspješno aktiviran.', N'Your account {{name}} has been activated successfully.' UNION ALL
 		SELECT N'Account_Controller_ActivationMailSent', N'Aktivacioni email je poslan. Molimo provjerite vaš inbox ili spam direktorijum.', N'Activation email has been sent. Please check your Inbox or Spam folder.' UNION ALL
@@ -123,6 +124,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Reply', N'Odgovori', N'Reply' UNION ALL
 		SELECT N'Link_Send', N'Pošalji', N'Send' UNION ALL
 		SELECT N'Link_Sent', N'Poslano', N'Sent' UNION ALL
+		SELECT N'Link_Share', N'Podeli objavu ', N'Share' UNION ALL
 		SELECT N'Link_SignIn', N'Prijava', N'Sign In' UNION ALL
 		SELECT N'Link_SignOut', N'Odjava', N'Sign Out' UNION ALL
 		SELECT N'Link_SignUp', N'Registracija', N'Sign Up' UNION ALL
@@ -165,6 +167,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Widget_Archive_Title', N'Arhiva', N'Archive' UNION ALL
 		SELECT N'Widget_Categories_Title', N'Kategorije', N'Categories' UNION ALL
 		SELECT N'Widget_Tags_Title', N'Tagovi', N'Tags' UNION ALL
+		SELECT N'Widget_Related_Title', N'Vezani {0}', N'Related {0}' UNION ALL
 		SELECT N'Field_Date', N'Datum', N'Date'
 END
 

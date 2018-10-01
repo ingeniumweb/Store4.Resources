@@ -14,7 +14,14 @@ SET @LanguageID = ISNULL(@LanguageID, 0)
 
 IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value)
+		SELECT N'Add_To_Cart', N'Add to Cart' UNION ALL
+		SELECT N'Add_To_Wishlist', N'Add to Wishlist' UNION ALL
+		SELECT N'Button_PlaceOrder', N'Place Order' UNION ALL
+		SELECT N'Cart_Title', N'Cart' UNION ALL
+		SELECT N'Checkout_Title', N'Checkout' UNION ALL
+		SELECT N'Cart_Totals_Title', N'Cart Totals' UNION ALL
 		SELECT N'CityTagCloud_Title', N'Cities Tag Cloud' UNION ALL
+		SELECT N'Continue_Shopping', N'Continue Shopping' UNION ALL
 		SELECT N'CreditCard_BillingAddress', N'Billing Address' UNION ALL
 		SELECT N'CreditCard_CardTypeValidation', N'Invalid card type.' UNION ALL
 		SELECT N'CreditCard_CityValidation', N'City is empty. Enter City.' UNION ALL
@@ -120,9 +127,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_NewCreditCard', N'New Credit Card' UNION ALL
 		SELECT N'Payment_PageTitle', N'Order' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}' UNION ALL
+		SELECT N'Product_Image', N'Image' UNION ALL
 		SELECT N'Success_EventDeleted', N'Event Entries successfully deleted!' UNION ALL
 		SELECT N'Success_EventEntrySaved', N'Event entries successfully saved.' UNION ALL
 		SELECT N'TipsForNewlyweds_Title', N'Tips for Newlyweds' UNION ALL
+		SELECT N'Update_Cart', N'Update Cart' UNION ALL
 		SELECT N'Validation_BreakEndTimeInvalid', N'Invalid Break end time!' UNION ALL
 		SELECT N'Validation_BreakStartTimeGreater', N'Start time for Break is greater than end time!' UNION ALL
 		SELECT N'Validation_BreakStartTimeInvalid', N'Invalid Break start time!' UNION ALL
@@ -192,7 +201,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'PaymentSettings_PaymentPublicKey', N'Payment Public Key' UNION ALL
 		SELECT N'PaymentSettings_PaymentReturnErrorURL', N'Error URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentReturnURL', N'Return URL' UNION ALL
-		SELECT N'PaymentSettings_PaymentMerchantID', N'Payment Merchant ID'
+		SELECT N'PaymentSettings_PaymentMerchantID', N'Payment Merchant ID' UNION ALL
+		SELECT N'Product_Availability', N'Availability' UNION ALL
+		SELECT N'Shop_Title', N'Shop' UNION ALL
+		SELECT N'Signin_New_Customer', N'New Customer' UNION ALL
+		SELECT N'Signin_Returning_Customer', N'Returning Customer'
 END
 
 DECLARE currsor CURSOR FOR
