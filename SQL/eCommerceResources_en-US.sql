@@ -17,11 +17,18 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Add_To_Cart', N'Add to Cart' UNION ALL
 		SELECT N'Add_To_Wishlist', N'Add to Wishlist' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Place Order' UNION ALL
+		SELECT N'Button_RemoveAll', N'Remove All' UNION ALL
+		SELECT N'Cart_Message_Successfully', N'Selected items was successfully added to your cart' UNION ALL
+		SELECT N'Cart_Subtotal', N'Subtotal' UNION ALL
 		SELECT N'Cart_Title', N'Cart' UNION ALL
-		SELECT N'Checkout_Title', N'Checkout' UNION ALL
+		SELECT N'Cart_Total', N'Cart Totals' UNION ALL
 		SELECT N'Cart_Totals_Title', N'Cart Totals' UNION ALL
+		SELECT N'Cart_Total_Order_Message', N'It will be calculated during order finalization' UNION ALL
+		SELECT N'Cart_VAT', N'VAT' UNION ALL
+		SELECT N'Checkout_Title', N'Checkout' UNION ALL
 		SELECT N'CityTagCloud_Title', N'Cities Tag Cloud' UNION ALL
 		SELECT N'Continue_Shopping', N'Continue Shopping' UNION ALL
+		SELECT N'Coupon_Discounts', N'Coupon Discounts' UNION ALL
 		SELECT N'CreditCard_BillingAddress', N'Billing Address' UNION ALL
 		SELECT N'CreditCard_CardTypeValidation', N'Invalid card type.' UNION ALL
 		SELECT N'CreditCard_CityValidation', N'City is empty. Enter City.' UNION ALL
@@ -62,6 +69,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_EventType', N'Type' UNION ALL
 		SELECT N'Data_FirstName', N'First Name' UNION ALL
 		SELECT N'Data_Friday', N'Friday' UNION ALL
+		SELECT N'Data_ID', N'ID' UNION ALL
+		SELECT N'Data_Image', N'Image' UNION ALL
 		SELECT N'Data_LastName', N'Last Name' UNION ALL
 		SELECT N'Data_Monday', N'Monday' UNION ALL
 		SELECT N'Data_Month', N'Month' UNION ALL
@@ -127,6 +136,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_NewCreditCard', N'New Credit Card' UNION ALL
 		SELECT N'Payment_PageTitle', N'Order' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}' UNION ALL
+		SELECT N'Proceed_to_Checkout', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_Image', N'Image' UNION ALL
 		SELECT N'Success_EventDeleted', N'Event Entries successfully deleted!' UNION ALL
 		SELECT N'Success_EventEntrySaved', N'Event entries successfully saved.' UNION ALL
@@ -205,7 +215,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Product_Availability', N'Availability' UNION ALL
 		SELECT N'Shop_Title', N'Shop' UNION ALL
 		SELECT N'Signin_New_Customer', N'New Customer' UNION ALL
-		SELECT N'Signin_Returning_Customer', N'Returning Customer'
+		SELECT N'Signin_Returning_Customer', N'Returning Customer' UNION ALL
+		SELECT N'Store', N'Store'
 END
 
 DECLARE currsor CURSOR FOR

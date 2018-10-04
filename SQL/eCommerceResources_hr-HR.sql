@@ -17,11 +17,18 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Add_To_Cart', N'Dodaj u košaricu', N'Add to Cart' UNION ALL
 		SELECT N'Add_To_Wishlist', N'Dodaj u listu želja', N'Add to Wishlist' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Naruči', N'Place Order' UNION ALL
+		SELECT N'Button_RemoveAll', N'Ukloni sve', N'Remove All' UNION ALL
+		SELECT N'Cart_Message_Successfully', N'Označene stavke su dodane u košaricu', N'Selected items was successfully added to your cart' UNION ALL
+		SELECT N'Cart_Subtotal', N'Cijena', N'Subtotal' UNION ALL
 		SELECT N'Cart_Title', N'Košarica', N'Cart' UNION ALL
-		SELECT N'Checkout_Title', N'Blagajna', N'Checkout' UNION ALL
 		SELECT N'Cart_Totals_Title', N'Košarica ukupno', N'Cart Totals' UNION ALL
+		SELECT N'Cart_Total', N'Ukupno', N'Cart Totals' UNION ALL
+		SELECT N'Cart_Total_Order_Message', N'Izračunat će se tijekom finaliziranja narudžbe', N'It will be calculated during order finalization' UNION ALL
+		SELECT N'Cart_VAT', N'Porez', N'VAT' UNION ALL
+		SELECT N'Checkout_Title', N'Blagajna', N'Checkout' UNION ALL
 		SELECT N'CityTagCloud_Title', N'Gradovi u oblaku', N'Cities Tag Cloud' UNION ALL
 		SELECT N'Continue_Shopping', N'Nastavi kupovati', N'Continue Shopping' UNION ALL
+		SELECT N'Coupon_Discounts', N'Kupon', N'Coupon Discounts' UNION ALL
 		SELECT N'CreditCard_BillingAddress', N'Adresa za naplatu', N'Billing Address' UNION ALL
 		SELECT N'CreditCard_CardTypeValidation', N'Nepodržan format kartice.', N'Invalid card type.' UNION ALL
 		SELECT N'CreditCard_CityValidation', N'Grad je prazan. Unesite Grad.', N'City is empty. Enter City.' UNION ALL
@@ -62,6 +69,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_EventType', N'Tip', N'Type' UNION ALL
 		SELECT N'Data_FirstName', N'Ime', N'First Name' UNION ALL
 		SELECT N'Data_Friday', N'Petak', N'Friday' UNION ALL
+		SELECT N'Data_ID', N'ID', N'ID' UNION ALL
+		SELECT N'Data_Image', N'Slika', N'Image' UNION ALL
 		SELECT N'Data_LastName', N'Prezime', N'Last Name' UNION ALL
 		SELECT N'Data_Monday', N'Ponedjeljak', N'Monday' UNION ALL
 		SELECT N'Data_Month', N'Mjesec', N'Month' UNION ALL
@@ -131,6 +140,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_NewCreditCard', N'Nova kreditna kartica', N'New Credit Card' UNION ALL
 		SELECT N'Payment_PageTitle', N'Naružba', N'Order' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}', N'TOTAL: ${0:N2}' UNION ALL
+		SELECT N'Proceed_to_Checkout', N'Dovrši narudžbu', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_Image', N'Slika', N'Image' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za vjenčanje u vašem gradu.', N'Find everything for a wedding in your city.' UNION ALL
 		SELECT N'Success_EventDeleted', N'Stavke događaja uspješno obrisane!', N'Event Entries successfully deleted!' UNION ALL
@@ -204,7 +214,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Product_Availability', N'Stanje na skladištu', N'Availability' UNION ALL
 		SELECT N'Shop_Title', N'Trgovina', N'Shop' UNION ALL
 		SELECT N'Signin_New_Customer', N'Novi korisnik', N'New Customer' UNION ALL
-		SELECT N'Signin_Returning_Customer', N'Postojeći korisnik', N'Returning Customer'
+		SELECT N'Signin_Returning_Customer', N'Postojeći korisnik', N'Returning Customer'UNION ALL
+		SELECT N'Store', N'Trgovina', N'Store'
 END
 
 DECLARE currsor CURSOR FOR
