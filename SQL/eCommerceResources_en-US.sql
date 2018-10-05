@@ -25,6 +25,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Cart_Totals_Title', N'Cart Totals' UNION ALL
 		SELECT N'Cart_Total_Order_Message', N'It will be calculated during order finalization' UNION ALL
 		SELECT N'Cart_VAT', N'VAT' UNION ALL
+		SELECT N'Change_password', N'Change password' UNION ALL
 		SELECT N'Checkout_Title', N'Checkout' UNION ALL
 		SELECT N'CityTagCloud_Title', N'Cities Tag Cloud' UNION ALL
 		SELECT N'Continue_Shopping', N'Continue Shopping' UNION ALL
@@ -126,9 +127,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Event_PageTitle', N'{0} - Event Settings' UNION ALL
 		SELECT N'Info_NoItems', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} results match your serch' UNION ALL
+		SELECT N'Image_IsCover', N'Is Cover' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Default' UNION ALL
 		SELECT N'Membership_SignIn', N'Sign In' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Your settings have been changed!' UNION ALL
+		SELECT N'Orders', N'Orders' UNION ALL
 		SELECT N'Payment_BookingOrderText', N'Payment for Booking order: {0}' UNION ALL
 		SELECT N'Payment_CreditCardsAccepted', N'Credit Cards accepted' UNION ALL
 		SELECT N'Payment_MainHeading', N'New Order' UNION ALL
@@ -137,7 +140,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_PageTitle', N'Order' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}' UNION ALL
 		SELECT N'Proceed_to_Checkout', N'Proceed to Checkout' UNION ALL
+		SELECT N'Product_IsFeatured', N'Is Featured' UNION ALL
 		SELECT N'Product_Image', N'Image' UNION ALL
+		SELECT N'Reward_points', N'Reward points' UNION ALL
 		SELECT N'Success_EventDeleted', N'Event Entries successfully deleted!' UNION ALL
 		SELECT N'Success_EventEntrySaved', N'Event entries successfully saved.' UNION ALL
 		SELECT N'TipsForNewlyweds_Title', N'Tips for Newlyweds' UNION ALL
@@ -216,7 +221,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Shop_Title', N'Shop' UNION ALL
 		SELECT N'Signin_New_Customer', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Returning Customer' UNION ALL
-		SELECT N'Store', N'Store'
+		SELECT N'Store', N'Store' UNION ALL
+		SELECT N'Update_All_to_basket', N'Update All to basket' UNION ALL
+		SELECT N'User_account', N'User account' UNION ALL
+		SELECT N'User_data', N'User data' UNION ALL
+		SELECT N'Wishlist_Title', N'Wishlist'
 END
 
 DECLARE currsor CURSOR FOR

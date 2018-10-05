@@ -25,6 +25,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Cart_Totals_Title', N'Košarica ukupno', N'Cart Totals' UNION ALL
 		SELECT N'Cart_Total_Order_Message', N'Izračunat će se tijekom finaliziranja narudžbe', N'It will be calculated during order finalization' UNION ALL
 		SELECT N'Cart_VAT', N'Porez', N'VAT' UNION ALL
+		SELECT N'Change_password', N'Promjena lozinke', N'Change password' UNION ALL
 		SELECT N'Checkout_Title', N'Blagajna', N'Checkout' UNION ALL
 		SELECT N'CityTagCloud_Title', N'Gradovi u oblaku', N'Cities Tag Cloud' UNION ALL
 		SELECT N'Continue_Shopping', N'Nastavi kupovati', N'Continue Shopping' UNION ALL
@@ -122,6 +123,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Event_PageTitle', N'{0} - Postavke događaja', N'{0} - Event Settings' UNION ALL
 		SELECT N'Info_NoItems', N'Pretraga je neuspešna. Ne postoji takav artikal/proizvod.', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} rezultata odgovara vašoj pretrazi.', N'{0} results match your serch' UNION ALL
+		SELECT N'Image_IsCover', N'Naslovna slika', N'Is Cover' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Standardan', N'Default' UNION ALL
 		SELECT N'Membership_SignIn', N'Prijava', N'Sign In' UNION ALL
 		SELECT N'Message_AddedToBasket', N'Dodano u korpu.', N'Added to basket.' UNION ALL
@@ -133,6 +135,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Message_RemovedFromBasket', N'Uklonjeno iz korpe.', N'Removed from basket.' UNION ALL
 		SELECT N'Message_RemovedFromFavorites', N'Uklonjeno iz favorita.', N'Removed from favorites.' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Vaše postavke su promenjene!', N'Your settings have been changed!' UNION ALL
+		SELECT N'Orders', N'Narudžbe', N'Orders' UNION ALL
 		SELECT N'Payment_BookingOrderText', N'Plaćanje za red rezervacije: {0}', N'Payment for Booking order: {0}' UNION ALL
 		SELECT N'Payment_CreditCardsAccepted', N'Prihvaćene kreditne kartice', N'Credit Cards accepted' UNION ALL
 		SELECT N'Payment_MainHeading', N'Nova narudžba', N'New Order' UNION ALL
@@ -141,7 +144,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_PageTitle', N'Naružba', N'Order' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}', N'TOTAL: ${0:N2}' UNION ALL
 		SELECT N'Proceed_to_Checkout', N'Dovrši narudžbu', N'Proceed to Checkout' UNION ALL
+		SELECT N'Product_IsFeatured', N'Istaknuto', N'Is Featured' UNION ALL
 		SELECT N'Product_Image', N'Slika', N'Image' UNION ALL
+		SELECT N'Reward_points', N'Nagradni bodovi', N'Reward points' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za venčanje u svom gradu.', N'Find everything for a wedding in your city.' UNION ALL
 		SELECT N'Success_EventDeleted', N'Stavke događaja uspešno obrisane!', N'Event Entries successfully deleted!' UNION ALL
 		SELECT N'Success_EventEntrySaved', N'Stavke događaja uspešno sačuvane!', N'Event entries successfully saved.' UNION ALL
@@ -215,7 +220,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Shop_Title', N'Trgovina', N'Shop' UNION ALL
 		SELECT N'Signin_New_Customer', N'Novi korisnik', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Postojeći korisnik', N'Returning Customer' UNION ALL
-		SELECT N'Store', N'Trgovina', N'Store'
+		SELECT N'Store', N'Trgovina', N'Store' UNION ALL
+		SELECT N'Update_All_to_basket', N'Dodaj sve u košaricu', N'Update All to basket' UNION ALL
+		SELECT N'User_account', N'Korisniki račun', N'User account' UNION ALL
+		SELECT N'User_data', N'Korisnički podaci', N'User data' UNION ALL
+		SELECT N'Wishlist_Title', N'Lista želja', N'Wishlist'
 END
 
 DECLARE currsor CURSOR FOR
