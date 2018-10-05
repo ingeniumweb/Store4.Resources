@@ -97,7 +97,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Year', N'Year' UNION ALL
 		SELECT N'Data_ZipPostal', N'Zip/Postal' UNION ALL
 		SELECT N'Message_AddedToFavorites', N'Added to favorites.' UNION ALL
-		SELECT N'Message_Favorites_UnauthorizedAccess', N'Please <a href="/signin2> Sign In</a> or <a href="/signup">Sign Up</a> to add to favorites.' UNION ALL
+		SELECT N'Message_Favorites_UnauthorizedAccess', N'Please <a href="/signin"> Sign In</a> or <a href="/signup">Sign Up</a> to add to favorites.' UNION ALL
 		SELECT N'Message_RemovedFromFavorites', N'Removed from favorites.' UNION ALL
 		SELECT N'SearchResults_Headline', N'Find everything for a wedding in your city.' UNION ALL
 		SELECT N'Error_ChargingAccount', N'There Was an error while charging account!' UNION ALL

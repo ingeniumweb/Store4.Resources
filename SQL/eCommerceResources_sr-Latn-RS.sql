@@ -128,7 +128,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Message_AddedToFavorites', N'Dodato u omiljene proizvode.', N'Added to favorites.' UNION ALL
 		SELECT N'Message_AlredyPosted', N'Već ste objavili.', N'You have already posted.' UNION ALL
 		SELECT N'Message_AlredyRated', N'Već ste ocenili.', N'You have already rated.' UNION ALL
-		SELECT N'Message_Favorites_UnauthorizedAccess', N'Molimo <a href="/signin2> Prijavite se </a> ili <a href="/signup">Odjavite </a> da bi dodali u omiljeno.', N'Please <a href="/signin2> Sign In</a> or <a href="/signup">Sign Up</a> to add to favorites.' UNION ALL
+		SELECT N'Message_Favorites_UnauthorizedAccess', N'Molimo <a href="/signin"> Prijavite se </a> ili <a href="/signup">Odjavite </a> da bi dodali u omiljeno.', N'Please <a href="/signin"> Sign In</a> or <a href="/signup">Sign Up</a> to add to favorites.' UNION ALL
 		SELECT N'Message_Rating', N'Zahvaljujemo na oceni.', N'Thank you for rating!' UNION ALL
 		SELECT N'Message_RemovedFromBasket', N'Uklonjeno iz korpe.', N'Removed from basket.' UNION ALL
 		SELECT N'Message_RemovedFromFavorites', N'Uklonjeno iz favorita.', N'Removed from favorites.' UNION ALL
