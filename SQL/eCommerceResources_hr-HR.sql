@@ -73,6 +73,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ID', N'ID', N'ID' UNION ALL
 		SELECT N'Data_Image', N'Slika', N'Image' UNION ALL
 		SELECT N'Data_LastName', N'Prezime', N'Last Name' UNION ALL
+		SELECT N'Data_Login', N'Prijavite se', N'Login' UNION ALL
 		SELECT N'Data_Monday', N'Ponedjeljak', N'Monday' UNION ALL
 		SELECT N'Data_Month', N'Mjesec', N'Month' UNION ALL
 		SELECT N'Data_NotBooked', N'Nije rezerviran', N'Not booked' UNION ALL
@@ -89,6 +90,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Selected', N'Odabrano', N'Selected' UNION ALL
 		SELECT N'Data_ShiftEndTime', N'Kraj smjene', N'Shift end time' UNION ALL
 		SELECT N'Data_ShiftStartTime', N'Početak smjene', N'Shift start time' UNION ALL
+		SELECT N'Data_Shipping', N'Dostava', N'Shipping' UNION ALL
 		SELECT N'Data_StateProvince', N'Država/Provincija', N'State/Province' UNION ALL
 		SELECT N'Data_Street', N'Ulica', N'Street' UNION ALL
 		SELECT N'Data_Sunday', N'Nedjelja', N'Sunday' UNION ALL
@@ -96,7 +98,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Tuesday', N'Utorak', N'Tuesday' UNION ALL
 		SELECT N'Data_Wednesday', N'Srijeda', N'Wednesday' UNION ALL
 		SELECT N'Data_Year', N'Godina', N'Year' UNION ALL
+		SELECT N'Data_Your_Order', N'Vaša narudžba', N'Your Order' UNION ALL
 		SELECT N'Data_ZipPostal', N'Poštanski broj', N'Zip/Postal' UNION ALL
+		SELECT N'Default_sorting', N'Zadano sortiranje', N'Default sorting' UNION ALL
 		SELECT N'Error_ChargingAccount', N'Došlo je do greške prilikom naplate!', N'There Was an error while charging account!' UNION ALL
 		SELECT N'Error_EmailData', N'Ne postoji email podatak', N'There is no Email data!' UNION ALL
 		SELECT N'Error_EmailFormatInvalid', N'Nepodržani email format!', N'Invalid Email format!' UNION ALL
@@ -121,6 +125,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ErrorMessage_MaxFieldSize', N'Maksimalna veličina ''{0}'' polja je {1}!', N'The maximum field size for a ''{0}'' field is {1}!' UNION ALL
 		SELECT N'Event_Description', N'{0:d} {0:HH:mm} - {1:HH:mm}', N'{0:d} {0:HH:mm} - {1:HH:mm}' UNION ALL
 		SELECT N'Event_PageTitle', N'{0} - Postavke događaja', N'{0} - Event Settings' UNION ALL
+		SELECT N'Existing_user', N'Postojeći korisnik?', N'Existing user?' UNION ALL
+		SELECT N'Featured_Products', N'Izdvojeni proizvodi', N'Featured Products' UNION ALL
+		SELECT N'Filter_by_price', N'Filtriraj po cijeni', N'Filter by price' UNION ALL
 		SELECT N'Info_NoItems', N'Pretraga je neuspješna. Ne postoji takav artikl/proizvod.', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} rezultata odgovara vašoj potrazi.', N'{0} results match your serch' UNION ALL
 		SELECT N'Image_IsCover', N'Naslovna slika', N'Is Cover' UNION ALL
@@ -136,7 +143,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Message_RemovedFromFavorites', N'Uklonjeno iz favorita.', N'Removed from favorites.' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Vaše postavke su promjenjene!', N'Your settings have been changed!' UNION ALL
 		SELECT N'Orders', N'Narudžbe', N'Orders' UNION ALL
+		SELECT N'Order_number', N'Vaš broj narudžbe je', N'Your order number is' UNION ALL
+		SELECT N'Option_Country', N'Odaberite vašu državu', N'Please, select your country' UNION ALL
 		SELECT N'Payment_BookingOrderText', N'Plaćanje za red rezervacije: {0}', N'Payment for Booking order: {0}' UNION ALL
+		SELECT N'Payment_Complete_Message', N'Uspješno plaćanje', N'Your payment has been completed.' UNION ALL
+		SELECT N'Payment_Complete_Title', N'Završetak plaćanja slika', N'Payment Complete' UNION ALL
 		SELECT N'Payment_CreditCardsAccepted', N'Prihvaćene kreditne kartice', N'Credit Cards accepted' UNION ALL
 		SELECT N'Payment_MainHeading', N'Nova narudžba', N'New Order' UNION ALL
 		SELECT N'Payment_MainHeadingText', N'Koristite formu ispod da bi poslali informacije o kreditnoj kartici', N'Use the form below to submit your credit card information.' UNION ALL
@@ -144,7 +155,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_PageTitle', N'Naružba', N'Order' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}', N'TOTAL: ${0:N2}' UNION ALL
 		SELECT N'Proceed_to_Checkout', N'Dovrši narudžbu', N'Proceed to Checkout' UNION ALL
-		SELECT N'Product_IsFeatured', N'Istaknuto', N'Is Featured' UNION ALL
+		SELECT N'Product_IsFeatured', N'Istaknuto', N'Featured' UNION ALL
 		SELECT N'Product_Image', N'Slika', N'Image' UNION ALL
 		SELECT N'Reward_points', N'Nagradni bodovi', N'Reward points' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za vjenčanje u vašem gradu.', N'Find everything for a wedding in your city.' UNION ALL
@@ -207,6 +218,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_CreatingCreditCard', N'Došlo je do greške prilikom kreiranja Kreditne Kartice.', N'There was an error while creating credit card.' UNION ALL
 		SELECT N'Error_CreatingMember', N'Došlo je do greške prilikom kreiranja Korisnika.', N'There was an error while creating Member.' UNION ALL
 		SELECT N'Error_CreatingMemberToken', N'Došlo je do greške prilikom kreiranja Korisničkog Tokena.', N'There was an error while generating Member Token.' UNION ALL
+		SELECT N'Payment_Credit_Card_Warning', N'Plati bankovnom karticom. TEST MOD JE OMOGUĆEN. U test modu možete koristiti broj kartice 0000 0000 0000 0000 sa bilo kojim CVC brojem kao i podacima o isteku kartice.', N'Pay with your credit card. TEST MODE ENABLED. In test mode, you can use the card number 0000 0000 0000 0000 with any CVC and a valid expiration date.' UNION ALL
 		SELECT N'PaymentSettings_PaymentCancelURL', N'Povratna adresa nakon odustajana', N'Cancel URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentEnviroment', N'Razvojno okruženje', N'Enviroment' UNION ALL
 		SELECT N'PaymentSettings_PaymentGateway', N'Portal za Plaćanja', N'Payment Gateway' UNION ALL
@@ -216,14 +228,24 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'PaymentSettings_PaymentReturnErrorURL', N'Povratna adresa neuspješne autorizacije', N'Error URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentReturnURL', N'Povratna adresa uspješne autorizacije', N'Return URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentMerchantID', N'Trgovac ID za Plaćanja', N'Payment Merchant ID' UNION ALL
+		SELECT N'Procesing_Payment', N'U OBRADI...', N'PROCESSING...' UNION ALL
 		SELECT N'Product_Availability', N'Stanje na skladištu', N'Availability' UNION ALL
+		SELECT N'Product_Description', N'Opis proizvoda', N'Product Description' UNION ALL
+		SELECT N'Product_Reviews', N'Recenzije', N'Reviews' UNION ALL
+		SELECT N'Save_Info_Warning', N'Spremi adresu i informacije za sljedeći puta', N'Save my address and info for next time' UNION ALL
 		SELECT N'Shop_Title', N'Trgovina', N'Shop' UNION ALL
+		SELECT N'Sort_by_Average_rating', N'Poredaj po ocjenama', N'Sort by average rating' UNION ALL
+		SELECT N'Sort_by_high_price', N'S višom cijenom', N'Sort by price: high to low' UNION ALL
+		SELECT N'Sort_by_low_price', N'S nižom cijenom', N'Sort by price: low to high' UNION ALL
+		SELECT N'Sort_by_newness', N'Najnovije', N'Sort by newness' UNION ALL
+		SELECT N'Sort_by_popularity', N'Poredaj po popularnosti', N'Sort by popularity' UNION ALL
 		SELECT N'Signin_New_Customer', N'Novi korisnik', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Postojeći korisnik', N'Returning Customer'UNION ALL
 		SELECT N'Store', N'Trgovina', N'Store'UNION ALL
 		SELECT N'Update_All_to_basket', N'Dodaj sve u košaricu', N'Update All to basket' UNION ALL
 		SELECT N'User_account', N'Korisniki račun', N'User account' UNION ALL
 		SELECT N'User_data', N'Korisnički podaci', N'User data' UNION ALL
+		SELECT N'Username_or_email', N'Korisničko ime ili email', N'Username or email' UNION ALL
 		SELECT N'Wishlist_Title', N'Lista želja', N'Wishlist' 
 END
 
