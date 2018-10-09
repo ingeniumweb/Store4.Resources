@@ -145,6 +145,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Orders', N'Narudžbe', N'Orders' UNION ALL
 		SELECT N'Order_number', N'Vaš broj narudžbe je', N'Your order number is' UNION ALL
 		SELECT N'Option_Country', N'Odaberite vašu državu', N'Please, select your country' UNION ALL
+		SELECT N'Pay_Order', N'Plati narudžbu', N'Pay the order' UNION ALL
 		SELECT N'Payment_BookingOrderText', N'Plaćanje za red rezervacije: {0}', N'Payment for Booking order: {0}' UNION ALL
 		SELECT N'Payment_Complete_Message', N'Uspješno plaćanje', N'Your payment has been completed.' UNION ALL
 		SELECT N'Payment_Complete_Title', N'Završetak plaćanja slika', N'Payment Complete' UNION ALL
@@ -219,6 +220,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_CreatingMember', N'Došlo je do greške prilikom kreiranja Korisnika.', N'There was an error while creating Member.' UNION ALL
 		SELECT N'Error_CreatingMemberToken', N'Došlo je do greške prilikom kreiranja Korisničkog Tokena.', N'There was an error while generating Member Token.' UNION ALL
 		SELECT N'Payment_Credit_Card_Warning', N'Plati bankovnom karticom. TEST MOD JE OMOGUĆEN. U test modu možete koristiti broj kartice 0000 0000 0000 0000 sa bilo kojim CVC brojem kao i podacima o isteku kartice.', N'Pay with your credit card. TEST MODE ENABLED. In test mode, you can use the card number 0000 0000 0000 0000 with any CVC and a valid expiration date.' UNION ALL
+		SELECT N'Payment_Info_Warning', N'Plati općom uplatnicom. Molimo vas koristite ID narudžbe kao referencu za plaćanje. Vaša narudžba neće se isporučiti sve dok su sredstva na vašem računu.', N'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.' UNION ALL
 		SELECT N'PaymentSettings_PaymentCancelURL', N'Povratna adresa nakon odustajana', N'Cancel URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentEnviroment', N'Razvojno okruženje', N'Enviroment' UNION ALL
 		SELECT N'PaymentSettings_PaymentGateway', N'Portal za Plaćanja', N'Payment Gateway' UNION ALL
