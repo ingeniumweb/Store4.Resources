@@ -184,6 +184,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_ThisMonth', N'This Month' UNION ALL
 		SELECT N'DateFilter_ThisWeek', N'This Week' UNION ALL
 		SELECT N'DateFilter_ThisYear', N'This Year' UNION ALL
+		SELECT N'DateFilter_NextYear', N'Next Years' UNION ALL
 		SELECT N'DateFilter_Today', N'Today' UNION ALL
 		SELECT N'DateFilter_Yesterday', N'Yesterday' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Cash Sales Order' UNION ALL

@@ -185,6 +185,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_ThisMonth', N'Ovaj mesec', N'This Month' UNION ALL
 		SELECT N'DateFilter_ThisWeek', N'Ove nedelje', N'This Week' UNION ALL
 		SELECT N'DateFilter_ThisYear', N'Ova godina', N'This Year' UNION ALL
+		SELECT N'DateFilter_NextYear', N'Od danas > ∞', N'Next Years' UNION ALL
 		SELECT N'DateFilter_Today', N'Danas', N'Today' UNION ALL
 		SELECT N'DateFilter_Yesterday', N'Juče', N'Yesterday' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Prodaja za gotovinu', N'Cash Sales Order' UNION ALL
