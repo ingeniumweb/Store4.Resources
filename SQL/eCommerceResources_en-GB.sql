@@ -147,12 +147,17 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Event_PageTitle', N'{0} - Event Settings' UNION ALL
 		SELECT N'Existing_user', N'Existing user?' UNION ALL
 		SELECT N'Featured_Products', N'Featured Products' UNION ALL
+		SELECT N'File_Manager', N'File Manager' UNION ALL
+		SELECT N'File_name', N'File name' UNION ALL
+		SELECT N'File_Size', N'Size' UNION ALL
 		SELECT N'Filter_by_price', N'Filter by price' UNION ALL
 		SELECT N'Info_NoItems', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} results match your serch' UNION ALL
 		SELECT N'Invalid_Card_Number', N'Credit Card Number is invalid. Enter valid Credit Card Number.' UNION ALL
 		SELECT N'Image_IsCover', N'Is Cover' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Default' UNION ALL
+		SELECT N'Manufacturer_Title', N'Manufacturer' UNION ALL
+		SELECT N'Member_already_subscribed', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Sign In' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Your settings have been changed!' UNION ALL
 		SELECT N'Orders', N'Orders' UNION ALL
@@ -256,6 +261,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Product_Description', N'Product Description' UNION ALL
 		SELECT N'Product_Reviews', N'Reviews' UNION ALL
 		SELECT N'Save_Info_Warning', N'Save my address and info for next time' UNION ALL
+		SELECT N'Select_Country_Title', N'Please, select your country.' UNION ALL
 		SELECT N'Share_Product_Title', N'Share this product' UNION ALL
 		SELECT N'Shop_Title', N'Shop' UNION ALL
 		SELECT N'Sort_by_Average_rating', N'Sort by average rating' UNION ALL
@@ -271,7 +277,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'User_account', N'User account' UNION ALL
 		SELECT N'User_data', N'User data' UNION ALL
 		SELECT N'Username_or_email', N'Username or email' UNION ALL
-		SELECT N'Wishlist_Title', N'Wishlist'
+		SELECT N'Wishlist_Title', N'Wishlist' UNION ALL
+		SELECT N'Your_Order_Title', N'Your Order'
 END
 
 DECLARE currsor CURSOR FOR

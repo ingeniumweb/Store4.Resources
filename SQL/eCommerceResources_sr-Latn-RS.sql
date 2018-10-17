@@ -143,12 +143,17 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Event_PageTitle', N'{0} - Postavke događaja', N'{0} - Event Settings' UNION ALL
 		SELECT N'Existing_user', N'Postojeći korisnik?', N'Existing user?' UNION ALL
 		SELECT N'Featured_Products', N'Izdvojeni proizvodi', N'Featured Products' UNION ALL
+		SELECT N'File_Manager', N'Upravitelj datoteka', N'File Manager' UNION ALL
+		SELECT N'File_name', N'Naziv datoteke', N'File name' UNION ALL
+		SELECT N'File_Size', N'Veličina', N'Size' UNION ALL
 		SELECT N'Filter_by_price', N'Filtriraj po cijeni', N'Filter by price' UNION ALL
 		SELECT N'Info_NoItems', N'Pretraga je neuspešna. Ne postoji takav artikal/proizvod.', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} rezultata odgovara vašoj pretrazi.', N'{0} results match your serch' UNION ALL
 		SELECT N'Invalid_Card_Number', N'Pogrešan broj kartice. Molimo unesite ispravan broj', N'Credit Card Number is invalid. Enter valid Credit Card Number.' UNION ALL
 		SELECT N'Image_IsCover', N'Naslovna slika', N'Is Cover' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Standardan', N'Default' UNION ALL
+		SELECT N'Manufacturer_Title', N'Proizvođač', N'Manufacturer' UNION ALL
+		SELECT N'Member_already_subscribed', N'Već ste preplaćeni na {0}. Ako želite obnoviti preplatu ili imate više pitanja molimo kontaktirajte našu podršku.', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Prijava', N'Sign In' UNION ALL
 		SELECT N'Message_AddedToBasket', N'Dodano u korpu.', N'Added to basket.' UNION ALL
 		SELECT N'Message_AddedToFavorites', N'Dodato u omiljene proizvode.', N'Added to favorites.' UNION ALL
@@ -255,6 +260,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Product_Description', N'Opis proizvoda', N'Product Description' UNION ALL
 		SELECT N'Product_Reviews', N'Recenzije', N'Reviews' UNION ALL
 		SELECT N'Save_Info_Warning', N'Spremi adresu i informacije za sljedeći puta', N'Save my address and info for next time' UNION ALL
+		SELECT N'Select_Country_Title', N'Izaberite državu.', N'Please, select your country.' UNION ALL
 		SELECT N'Share_Product_Title', N'Podeli proizvod', N'Share this product' UNION ALL
 		SELECT N'Shop_Title', N'Trgovina', N'Shop' UNION ALL
 		SELECT N'Sort_by_Average_rating', N'Poredaj po ocjenama', N'Sort by average rating' UNION ALL
@@ -270,7 +276,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'User_account', N'Korisniki račun', N'User account' UNION ALL
 		SELECT N'User_data', N'Korisnički podaci', N'User data' UNION ALL
 		SELECT N'Username_or_email', N'Korisničko ime ili email', N'Username or email' UNION ALL
-		SELECT N'Wishlist_Title', N'Lista želja', N'Wishlist'
+		SELECT N'Wishlist_Title', N'Lista želja', N'Wishlist' UNION ALL
+		SELECT N'Your_Order_Title', N'Vaša narudžba', N'Your Order'
 END
 
 DECLARE currsor CURSOR FOR
