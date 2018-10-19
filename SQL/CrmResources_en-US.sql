@@ -33,7 +33,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Supplier', N'Supplier' UNION ALL
 		SELECT N'ContentType_TimeEntry', N'Time Entry' UNION ALL
 		SELECT N'Data_Active', N'Active' UNION ALL
-		SELECT N'Data_Available', N'Data Available' UNION ALL
 		SELECT N'Data_ActualFinish', N'Actual Finish' UNION ALL
 		SELECT N'Data_ActualStart', N'Actual Start' UNION ALL
 		SELECT N'Data_Add', N'Add' UNION ALL
@@ -120,6 +119,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Products_Placeholder', N'Start typing SKU or name' UNION ALL
 		SELECT N'Data_ProductType', N'Product Type' UNION ALL
 		SELECT N'Data_PurchaseOrderNumber', N'Purchase Order #' UNION ALL
+		SELECT N'Data_Unavailable', N'Data Unavailable' UNION ALL
 		SELECT N'Data_Quantity', N'Quantity' UNION ALL
 		SELECT N'Data_QuoteDetails', N'Quote Details' UNION ALL
 		SELECT N'Data_QuoteNumber', N'Quote #' UNION ALL
