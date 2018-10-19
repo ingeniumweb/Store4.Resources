@@ -33,6 +33,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Supplier', N'Supplier' UNION ALL
 		SELECT N'ContentType_TimeEntry', N'Time Entry' UNION ALL
 		SELECT N'Data_Active', N'Active' UNION ALL
+		SELECT N'Data_Available', N'Data Available' UNION ALL
 		SELECT N'Data_ActualFinish', N'Actual Finish' UNION ALL
 		SELECT N'Data_ActualStart', N'Actual Start' UNION ALL
 		SELECT N'Data_Add', N'Add' UNION ALL
@@ -277,6 +278,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_PayWithStripe', N'Pay With Stripe' UNION ALL
 		SELECT N'Link_Renewal', N'Renewal' UNION ALL
 		SELECT N'MPR_Title', N'Generate Manufacturing Order' UNION ALL
+		SELECT N'Products_Refferalprogram', N'Refferal Program Enabled' UNION ALL
+		SELECT N'Products_Measurementunit', N'Show Measurement Unit' UNION ALL
+		SELECT N'Resetting_document_numbers', N'Resetting Document Numbers at a new Fiscal Year' UNION ALL
 		SELECT N'SiteMenu_BillOfMaterials', N'Bill of Materials' UNION ALL
 		SELECT N'SiteMenu_CashSalesOrders',  N'Cash Sales Orders' UNION ALL
 		SELECT N'SiteMenu_CompanyLocations', N'Company Locations' UNION ALL
@@ -337,7 +341,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SystemNotification_Message_Views', N'{0} has <strong>{1}</strong> views.' UNION ALL
 		SELECT N'SystemNotification_Message_ChangeStatus', N'{0} changed status to "{1}" on {2} <strong>{3}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_SendEmail', N'{0} sent Email <strong>{1}</strong>.' UNION ALL
-		SELECT N'SystemNotification_Message_MakePayment', N'{0} created payment <strong>{1}</strong> for {2} <strong>{3}</strong>.' 	
+		SELECT N'SystemNotification_Message_MakePayment', N'{0} created payment <strong>{1}</strong> for {2} <strong>{3}</strong>.' UNION ALL
+		SELECT N'Transfer_Order_Number', N'Transfer Order Number'
 END
 
 DECLARE currsor CURSOR FOR

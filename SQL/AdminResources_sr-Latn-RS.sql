@@ -566,9 +566,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Settings_HelpBlock_RedirectAfterSignUp', N'Preusmeri na url nakon registracije ukoliko nema povratne veze.', N'Redirect to the url after sign up if there is no back link.' UNION ALL
 		SELECT N'Settings_HelpBlock_ResetPassword', N'Uključi mogućnost resetiranja lozinke.', N'Enables reset password functionality,' UNION ALL
 		SELECT N'Settings_HelpBlock_SecretAdminURL', N'Administracijski tajni URL.', N'The administration secret URL.' UNION ALL
-		SELECT N'Settings_HelpBlock_SelfActivation', N'Uključi mogućnost samo-aktivacije', N'Enables self-activation functionality' UNION ALL
+		SELECT N'Settings_HelpBlock_SelfActivation', N'Uključi mogućnost aktivacije', N'Enables self-activation functionality' UNION ALL
 		SELECT N'Settings_HelpBlock_SelfActivationRoles', N'Pridruži korisniku ova pravila nakon samo-aktivacije.', N'Assign member to these roles after self-activation.' UNION ALL
-		SELECT N'Settings_HelpBlock_SelfRegistration', N'Uključi mogućnost samo-registracije.', N'Enables self-registration functionality.' UNION ALL
+		SELECT N'Settings_HelpBlock_SelfRegistration', N'Uključi mogućnost registracije.', N'Enables self-registration functionality.' UNION ALL
 		SELECT N'Settings_HelpBlock_SelfRegistrationRoles', N'Dodjeli korisniku ove uloge nakon samo-registracije', N'Assign member to these roles after self-registration' UNION ALL
 		SELECT N'Settings_HelpBlock_SendEmailsViaMandrilAPI', N'Uključi Madrill za slanje email-a.', N'Enable Madrill for sending emails.' UNION ALL
 		SELECT N'Settings_HelpBlock_SendEmailsViaSendGridAPI', N'Uključi SendGrid za slanje email-a.', N'Enable SendGrid for sending emails.' UNION ALL

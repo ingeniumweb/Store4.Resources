@@ -14,6 +14,7 @@ SET @LanguageID = ISNULL(@LanguageID, 0)
 
 IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value)
+		SELECT N'AccountLocked_message', N'Your account is locked because your license has been expired. To continue using this App, please renew your license.' UNION ALL
 		SELECT N'Add_To_Cart', N'Add to Cart' UNION ALL
 		SELECT N'Add_to_Wishlist_Text', N'Add to Wishlist' UNION ALL
 		SELECT N'Already_bought_Warning', N'You have already bought an Application' UNION ALL
@@ -271,6 +272,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Sort_by_popularity', N'Sort by popularity' UNION ALL
 		SELECT N'Signin_New_Customer', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Returning Customer' UNION ALL
+		SELECT N'Signin_Returning_Customer_message', N'I am a returning customer' UNION ALL
 		SELECT N'Store', N'Store' UNION ALL
 		SELECT N'Subscription_cancelled', N'Your subscription {0} has been cancelled' UNION ALL
 		SELECT N'Update_All_to_basket', N'Update All to basket' UNION ALL
