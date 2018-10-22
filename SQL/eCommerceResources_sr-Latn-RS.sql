@@ -36,6 +36,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Continue_Shopping', N'Nastavi kupovati', N'Continue Shopping' UNION ALL
 		SELECT N'Country_Warning', N'Država je pogrešna. Molim odaberite valjanu državu', N'Country is invalid. Select valid Country.' UNION ALL
 		SELECT N'Coupon_Discounts', N'Kupon', N'Coupon Discounts' UNION ALL
+		SELECT N'CreateAccount', N'Izradite novi online račun:', N'Create new online account' UNION ALL
 		SELECT N'CreateAccount_Benefits_Checkout', N'Brži i lakši checkout', N'A quick and easy checkout' UNION ALL
 		SELECT N'CreateAccount_Benefits_Newslettera', N'Jednostavna prijava i odjava od newslettera', N'Easy sign-up and sign-off from the newsletter' UNION ALL
 		SELECT N'CreateAccount_Benefits_Orders', N'Pregled svih narudžbi i rezervacija', N'View all orders and reservations' UNION ALL

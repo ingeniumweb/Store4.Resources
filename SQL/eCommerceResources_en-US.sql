@@ -36,6 +36,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Continue_Shopping', N'Continue Shopping' UNION ALL
 		SELECT N'Country_Warning', N'Country is invalid. Select valid Country.' UNION ALL
 		SELECT N'Coupon_Discounts', N'Coupon Discounts' UNION ALL
+		SELECT N'CreateAccount', N'Create new online account' UNION ALL
 		SELECT N'CreateAccount_Benefits_Checkout', N'A quick and easy checkout' UNION ALL
 		SELECT N'CreateAccount_Benefits_Newslettera', N'Easy sign-up and sign-off from the newsletter' UNION ALL
 		SELECT N'CreateAccount_Benefits_Orders', N'View all orders and reservations' UNION ALL
