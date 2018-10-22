@@ -36,6 +36,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Continue_Shopping', N'Nastavi kupovati', N'Continue Shopping' UNION ALL
 		SELECT N'Country_Warning', N'Država je pogrešna. Molim odaberite valjanu državu', N'Country is invalid. Select valid Country.' UNION ALL
 		SELECT N'Coupon_Discounts', N'Kupon', N'Coupon Discounts' UNION ALL
+		SELECT N'CreateAccount_Benefits_Checkout', N'Brži i lakši checkout', N'A quick and easy checkout' UNION ALL
+		SELECT N'CreateAccount_Benefits_Newslettera', N'Jednostavna prijava i odjava od newslettera', N'Easy sign-up and sign-off from the newsletter' UNION ALL
+		SELECT N'CreateAccount_Benefits_Orders', N'Pregled svih narudžbi i rezervacija', N'View all orders and reservations' UNION ALL
+		SELECT N'CreateAccount_Benefits_Profile', N'Jednostavna promjena podataka u profilu', N'Simple change of profile data' UNION ALL
 		SELECT N'CreditCard_BillingAddress', N'Adresa za naplatu', N'Billing Address' UNION ALL
 		SELECT N'CreditCard_CardTypeValidation', N'Nepodržan format kartice.', N'Invalid card type.' UNION ALL
 		SELECT N'CreditCard_CityValidation', N'Grad je prazan. Unesite Grad.', N'City is empty. Enter City.' UNION ALL
@@ -165,6 +169,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Message_RemovedFromBasket', N'Uklonjeno iz košarice.', N'Removed from basket.' UNION ALL
 		SELECT N'Message_RemovedFromFavorites', N'Uklonjeno iz favorita.', N'Removed from favorites.' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Vaše postavke su promjenjene!', N'Your settings have been changed!' UNION ALL
+		SELECT N'New_Customer_message', N'Ja sam novi kupac', N'I am a new customer' UNION ALL
 		SELECT N'Orders', N'Narudžbe', N'Orders' UNION ALL
 		SELECT N'Order_number', N'Vaš broj narudžbe je', N'Your order number is' UNION ALL
 		SELECT N'Option_Country', N'Odaberite vašu državu', N'Please, select your country' UNION ALL

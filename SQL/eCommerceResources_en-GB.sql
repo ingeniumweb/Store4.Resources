@@ -36,6 +36,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Continue_Shopping', N'Continue Shopping' UNION ALL
 		SELECT N'Country_Warning', N'Country is invalid. Select valid Country.' UNION ALL
 		SELECT N'Coupon_Discounts', N'Coupon Discounts' UNION ALL
+		SELECT N'CreateAccount_Benefits_Checkout', N'A quick and easy checkout' UNION ALL
+		SELECT N'CreateAccount_Benefits_Newslettera', N'Easy sign-up and sign-off from the newsletter' UNION ALL
+		SELECT N'CreateAccount_Benefits_Orders', N'View all orders and reservations' UNION ALL
+		SELECT N'CreateAccount_Benefits_Profile', N'Simple change of profile data' UNION ALL
 		SELECT N'CreditCard_BillingAddress', N'Billing Address' UNION ALL
 		SELECT N'CreditCard_CardTypeValidation', N'Invalid card type.' UNION ALL
 		SELECT N'CreditCard_CityValidation', N'City is empty. Enter City.' UNION ALL
@@ -161,6 +165,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Member_already_subscribed', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Sign In' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Your settings have been changed!' UNION ALL
+		SELECT N'New_Customer_message', N'I am a new customer' UNION ALL
 		SELECT N'Orders', N'Orders' UNION ALL
 		SELECT N'Order_number', N'Your order number is' UNION ALL
 		SELECT N'Option_Country', N'Please, select your country' UNION ALL
