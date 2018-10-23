@@ -19,6 +19,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Add_to_Wishlist_Text', N'Dodaj u listu želja', N'Add to Wishlist' UNION ALL
 		SELECT N'Already_bought_Warning', N'Aplikacija je već kupljena', N'You have already bought an Application' UNION ALL
 		SELECT N'Amount_StatementTitle', N'Ukupno', N'Amount' UNION ALL
+		SELECT N'Available_points', N'Raspoloživi iznos', N'Available points' UNION ALL
 		SELECT N'Best_Sales_Title', N'Najprodavaniji proizvodi', N'Best Sales' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Naruči', N'Place Order' UNION ALL
 		SELECT N'Button_RemoveAll', N'Ukloni sve', N'Remove All' UNION ALL
@@ -165,7 +166,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Invalid_Card_Number', N'Pogrešan broj kartice. Molimo unesite ispravan broj', N'Credit Card Number is invalid. Enter valid Credit Card Number.' UNION ALL
 		SELECT N'Image_IsCover', N'Naslovna slika', N'Is Cover' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Standardan', N'Default' UNION ALL
-		SELECT N'Manufacturer_Title', N'Proizvođač', N'Manufacturer' UNION ALL
+		SELECT N'Manufacturer_Title', N'Proizvođači', N'Manufacturer' UNION ALL
 		SELECT N'Member_already_subscribed', N'Već ste preplaćeni na {0}. Ako želite obnoviti preplatu ili imate više pitanja molimo kontaktirajte našu podršku.', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Prijava', N'Sign In' UNION ALL
 		SELECT N'Message_AddedToBasket', N'Dodano u korpu.', N'Added to basket.' UNION ALL
@@ -186,10 +187,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_Complete_Message', N'Uspješno plaćanje', N'Your payment has been completed.' UNION ALL
 		SELECT N'Payment_Complete_Title', N'Završetak plaćanja slika', N'Payment Complete' UNION ALL
 		SELECT N'Payment_CreditCardsAccepted', N'Prihvaćene kreditne kartice', N'Credit Cards accepted' UNION ALL
+		SELECT N'Payment_Error_Title', N'Pogreška u procesu plaćanja', N'Payment Error' UNION ALL
 		SELECT N'Payment_MainHeading', N'Nova narudžba', N'New Order' UNION ALL
 		SELECT N'Payment_MainHeadingText', N'Koristite formu ispod da bi poslali informacije o kreditnoj kartici', N'Use the form below to submit your credit card information.' UNION ALL
 		SELECT N'Payment_NewCreditCard', N'Nova kreditna kartica', N'New Credit Card' UNION ALL
 		SELECT N'Payment_PageTitle', N'Naružba', N'Order' UNION ALL
+		SELECT N'Payment_Cancel_Title', N'Plaćanje prekinuto', N'Payment Cancel' UNION ALL
 		SELECT N'Payment_Complete_Message', N'Vaša narudžba je završena', N'Your payment has been completed' UNION ALL
 		SELECT N'Payment_Order_Number', N'Vaš broj narudžbe je', N'Your order number is' UNION ALL
 		SELECT N'Payment_Process_Problem', N'Došlo je do problema tijekom postupka plaćanja. Molimo pokušajte ponovno. Ako se ta pogreška nastavi, kontaktirajte podršku.', N'A problem has occurred during the payment process. Please try again. If this error continues, please contact support.' UNION ALL

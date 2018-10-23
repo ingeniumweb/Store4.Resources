@@ -19,6 +19,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Add_to_Wishlist_Text', N'Add to Wishlist' UNION ALL
 		SELECT N'Already_bought_Warning', N'You have already bought an Application' UNION ALL
 		SELECT N'Amount_StatementTitle', N'Amount' UNION ALL
+		SELECT N'Available_points', N'Available points' UNION ALL
 		SELECT N'Best_Sales_Title', N'Best Sales' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Place Order' UNION ALL
 		SELECT N'Button_RemoveAll', N'Remove All' UNION ALL
@@ -180,8 +181,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Pay_Order', N'Pay the order' UNION ALL
 		SELECT N'Payment_BookingOrderText', N'Payment for Booking order: {0}' UNION ALL
 		SELECT N'Payment_Complete_Message', N'Your payment has been completed.' UNION ALL
+		SELECT N'Payment_Cancel_Title', N'Payment Cancel' UNION ALL
 		SELECT N'Payment_Complete_Title', N'Payment Complete' UNION ALL
 		SELECT N'Payment_CreditCardsAccepted', N'Credit Cards accepted' UNION ALL
+		SELECT N'Payment_Error_Title', N'Payment Error' UNION ALL
 		SELECT N'Payment_MainHeading', N'New Order' UNION ALL
 		SELECT N'Payment_MainHeadingText', N'Use the form below to submit your credit card information.' UNION ALL
 		SELECT N'Payment_NewCreditCard', N'New Credit Card' UNION ALL
