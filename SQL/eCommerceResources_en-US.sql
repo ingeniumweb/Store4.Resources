@@ -22,6 +22,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Best_Sales_Title', N'Best Sales' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Place Order' UNION ALL
 		SELECT N'Button_RemoveAll', N'Remove All' UNION ALL
+		SELECT N'Cancel_Payment_Message', N'Are you sure you want to cancel this payment?' UNION ALL
+		SELECT N'Cancel_Payment_Message_Confirm', N'Yes, cancel it' UNION ALL
 		SELECT N'Cart_Message_Successfully', N'Selected items was successfully added to your cart' UNION ALL
 		SELECT N'Cart_Subtotal', N'Subtotal' UNION ALL
 		SELECT N'Cart_Title', N'Cart' UNION ALL
@@ -118,7 +120,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Year', N'Year' UNION ALL
 		SELECT N'Data_Your_Order', N'Your Order' UNION ALL
 		SELECT N'Data_ZipPostal', N'Zip/Postal' UNION ALL
-		SELECT N'Default_sorting', N'Default sorting' UNION ALL
+		SELECT N'Default_Sorting', N'Default sorting' UNION ALL
 		SELECT N'Details_StatementTitle', N'Details' UNION ALL
 		SELECT N'Email_has_been_sent_Warning', N'Purchase notification e-mail has been successfully sent for member: {0}' UNION ALL
 		SELECT N'Email_has_not_sent_Warning', N'Creating an account notification e-mail has not been sent' UNION ALL
@@ -156,6 +158,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'File_Manager', N'File Manager' UNION ALL
 		SELECT N'File_name', N'File name' UNION ALL
 		SELECT N'File_Size', N'Size' UNION ALL
+		SELECT N'Filter_Latest', N'Sort by newness' UNION ALL
+		SELECT N'Filter_MaxPrice', N'Sort by price: high to low' UNION ALL
+		SELECT N'Filter_MinPrice', N'Sort by price: low to high' UNION ALL
+		SELECT N'Filter_MostPopular', N'Sort by popularity' UNION ALL
+		SELECT N'Filter_Top', N'Sort by average rating' UNION ALL
 		SELECT N'Filter_by_price', N'Filter by price' UNION ALL
 		SELECT N'Info_NoItems', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} results match your serch' UNION ALL
@@ -179,6 +186,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_MainHeadingText', N'Use the form below to submit your credit card information.' UNION ALL
 		SELECT N'Payment_NewCreditCard', N'New Credit Card' UNION ALL
 		SELECT N'Payment_PageTitle', N'Order' UNION ALL
+		SELECT N'Payment_Complete_Message', N'Your payment has been completed' UNION ALL
+		SELECT N'Payment_Order_Number', N'Your order number is' UNION ALL
+		SELECT N'Payment_Process_Problem', N'A problem has occurred during the payment process. Please try again. If this error continues, please contact support.' UNION ALL
+		SELECT N'Payment_Reques_Cancel', N'Cancel Payment Reques' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}' UNION ALL
 		SELECT N'Proceed_to_Checkout', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Featured' UNION ALL
@@ -271,11 +282,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Select_Country_Title', N'Please, select your country.' UNION ALL
 		SELECT N'Share_Product_Title', N'Share this product' UNION ALL
 		SELECT N'Shop_Title', N'Shop' UNION ALL
-		SELECT N'Sort_by_Average_rating', N'Sort by average rating' UNION ALL
-		SELECT N'Sort_by_high_price', N'Sort by price: high to low' UNION ALL
-		SELECT N'Sort_by_low_price', N'Sort by price: low to high' UNION ALL
-		SELECT N'Sort_by_newness', N'Sort by newness' UNION ALL
-		SELECT N'Sort_by_popularity', N'Sort by popularity' UNION ALL
 		SELECT N'Signin_New_Customer', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Returning Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer_message', N'I am a returning customer' UNION ALL
@@ -285,6 +291,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'User_account', N'User account' UNION ALL
 		SELECT N'User_data', N'User data' UNION ALL
 		SELECT N'Username_or_email', N'Username or email' UNION ALL
+		SELECT N'Webhooks_Error', N'Error' UNION ALL
 		SELECT N'Wishlist_Title', N'Wishlist' UNION ALL
 		SELECT N'Your_Order_Title', N'Your Order'
 END

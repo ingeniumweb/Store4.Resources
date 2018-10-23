@@ -22,6 +22,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Best_Sales_Title', N'Najprodavaniji proizvodi', N'Best Sales' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Naruči', N'Place Order' UNION ALL
 		SELECT N'Button_RemoveAll', N'Ukloni sve', N'Remove All' UNION ALL
+		SELECT N'Cancel_Payment_Message', N'Jeste li sigurni da želite otkazati plaćanje?', N'Are you sure you want to cancel this payment?' UNION ALL
+		SELECT N'Cancel_Payment_Message_Confirm', N'Da, otkaži plaćanje', N'Yes, cancel it' UNION ALL
 		SELECT N'Cart_Message_Successfully', N'Označene stavke su dodane u košaricu', N'Selected items was successfully added to your cart' UNION ALL
 		SELECT N'Cart_Subtotal', N'Cijena', N'Subtotal' UNION ALL
 		SELECT N'Cart_Title', N'Košarica', N'Cart' UNION ALL
@@ -118,7 +120,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Year', N'Godina', N'Year' UNION ALL
 		SELECT N'Data_Your_Order', N'Vaša narudžba', N'Your Order' UNION ALL
 		SELECT N'Data_ZipPostal', N'Poštanski broj', N'Zip/Postal' UNION ALL
-		SELECT N'Default_sorting', N'Zadano sortiranje', N'Default sorting' UNION ALL
+		SELECT N'Default_Sorting', N'Zadano sortiranje', N'Default sorting' UNION ALL
 		SELECT N'Details_StatementTitle', N'Detalji', N'Details' UNION ALL
 		SELECT N'Email_has_been_sent_Warning', N'E-mail obavijesti o kupnji uspješno je poslana korisniku: {0}', N'Purchase notification e-mail has been successfully sent for member: {0}' UNION ALL
 		SELECT N'Email_has_not_sent_Warning', N'Notifikacijski mail o izradi računa nije poslan', N'Creating an account notification e-mail has not been sent' UNION ALL
@@ -152,6 +154,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'File_Manager', N'Upravitelj datoteka', N'File Manager' UNION ALL
 		SELECT N'File_name', N'Naziv datoteke', N'File name' UNION ALL
 		SELECT N'File_Size', N'Veličina', N'Size' UNION ALL
+		SELECT N'Filter_Top', N'Poredaj po ocjenama', N'Sort by average rating' UNION ALL
+		SELECT N'Filter_MaxPrice', N'S višom cijenom', N'Sort by price: high to low' UNION ALL
+		SELECT N'Filter_MinPrice', N'S nižom cijenom', N'Sort by price: low to high' UNION ALL
+		SELECT N'Filter_Latest', N'Najnovije', N'Sort by newness' UNION ALL
+		SELECT N'Filter_MostPopular', N'Poredaj po popularnosti', N'Sort by popularity' UNION ALL
 		SELECT N'Filter_by_price', N'Filtriraj po cijeni', N'Filter by price' UNION ALL
 		SELECT N'Info_NoItems', N'Pretraga je neuspješna. Ne postoji takav artikl/proizvod.', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} rezultata odgovara vašoj potrazi.', N'{0} results match your serch' UNION ALL
@@ -183,6 +190,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_MainHeadingText', N'Koristite formu ispod da bi poslali informacije o kreditnoj kartici', N'Use the form below to submit your credit card information.' UNION ALL
 		SELECT N'Payment_NewCreditCard', N'Nova kreditna kartica', N'New Credit Card' UNION ALL
 		SELECT N'Payment_PageTitle', N'Naružba', N'Order' UNION ALL
+		SELECT N'Payment_Complete_Message', N'Vaša narudžba je završena', N'Your payment has been completed' UNION ALL
+		SELECT N'Payment_Order_Number', N'Vaš broj narudžbe je', N'Your order number is' UNION ALL
+		SELECT N'Payment_Process_Problem', N'Došlo je do problema tijekom postupka plaćanja. Molimo pokušajte ponovno. Ako se ta pogreška nastavi, kontaktirajte podršku.', N'A problem has occurred during the payment process. Please try again. If this error continues, please contact support.' UNION ALL
+		SELECT N'Payment_Reques_Cancel', N'Otkaži zahtjev za plaćanjem', N'Cancel Payment Reques' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}', N'TOTAL: ${0:N2}' UNION ALL
 		SELECT N'Proceed_to_Checkout', N'Dovrši narudžbu', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Istaknuto', N'Featured' UNION ALL
@@ -270,11 +281,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Select_Country_Title', N'Izaberite državu.', N'Please, select your country.' UNION ALL
 		SELECT N'Share_Product_Title', N'Podijeli proizvod', N'Share this product' UNION ALL
 		SELECT N'Shop_Title', N'Trgovina', N'Shop' UNION ALL
-		SELECT N'Sort_by_Average_rating', N'Poredaj po ocjenama', N'Sort by average rating' UNION ALL
-		SELECT N'Sort_by_high_price', N'S višom cijenom', N'Sort by price: high to low' UNION ALL
-		SELECT N'Sort_by_low_price', N'S nižom cijenom', N'Sort by price: low to high' UNION ALL
-		SELECT N'Sort_by_newness', N'Najnovije', N'Sort by newness' UNION ALL
-		SELECT N'Sort_by_popularity', N'Poredaj po popularnosti', N'Sort by popularity' UNION ALL
 		SELECT N'Signin_New_Customer', N'Novi korisnik', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Postojeći korisnik', N'Returning Customer'UNION ALL
 		SELECT N'Signin_Returning_Customer_message', N'Ja sam postojeći korisnik', N'I am a returning customer' UNION ALL
@@ -284,6 +290,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'User_account', N'Korisniki račun', N'User account' UNION ALL
 		SELECT N'User_data', N'Korisnički podaci', N'User data' UNION ALL
 		SELECT N'Username_or_email', N'Korisničko ime ili email', N'Username or email' UNION ALL
+		SELECT N'Webhooks_Error', N'Pogreška', N'Error' UNION ALL
 		SELECT N'Wishlist_Title', N'Lista želja', N'Wishlist' UNION ALL
 		SELECT N'Your_Order_Title', N'Vaša narudžba', N'Your Order'
 END
