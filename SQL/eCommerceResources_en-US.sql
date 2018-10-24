@@ -174,8 +174,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Member_already_subscribed', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Sign In' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Your settings have been changed!' UNION ALL
+		SELECT N'Message_Store_UnauthorizedAccess', N'An account with this email already exists. Please <a href="/signin">Sign In</a> to proceed to checkout.' UNION ALL
 		SELECT N'New_Customer_message', N'I am a new customer' UNION ALL
 		SELECT N'Orders', N'Orders' UNION ALL
+		SELECT N'Order_Details_Message', N'See your order details below' UNION ALL
 		SELECT N'Order_number', N'Your order number is' UNION ALL
 		SELECT N'Option_Country', N'Please, select your country' UNION ALL
 		SELECT N'Pay_Order', N'Pay the order' UNION ALL

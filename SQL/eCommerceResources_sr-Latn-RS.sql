@@ -173,19 +173,21 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Message_AddedToFavorites', N'Dodato u omiljene proizvode.', N'Added to favorites.' UNION ALL
 		SELECT N'Message_AlredyPosted', N'Već ste objavili.', N'You have already posted.' UNION ALL
 		SELECT N'Message_AlredyRated', N'Već ste ocenili.', N'You have already rated.' UNION ALL
-		SELECT N'Message_Favorites_UnauthorizedAccess', N'Molimo <a href="/signin"> Prijavite se </a> ili <a href="/signup">Odjavite </a> da bi dodali u omiljeno.', N'Please <a href="/signin"> Sign In</a> or <a href="/signup">Sign Up</a> to add to favorites.' UNION ALL
+		SELECT N'Message_Favorites_UnauthorizedAccess', N'Molimo <a href="/signin"> Prijavite se </a> ili <a href="/signup">Registrajte se </a> da bi dodali u omiljeno.', N'Please <a href="/signin"> Sign In</a> or <a href="/signup">Sign Up</a> to add to favorites.' UNION ALL
 		SELECT N'Message_Rating', N'Zahvaljujemo na oceni.', N'Thank you for rating!' UNION ALL
 		SELECT N'Message_RemovedFromBasket', N'Uklonjeno iz korpe.', N'Removed from basket.' UNION ALL
 		SELECT N'Message_RemovedFromFavorites', N'Uklonjeno iz favorita.', N'Removed from favorites.' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Vaše postavke su promenjene!', N'Your settings have been changed!' UNION ALL
+		SELECT N'Message_Store_UnauthorizedAccess', N'Već postoji račun s tom email adresom. Molimo <a href="/signin">prijavite se </a> ili <a href="/signup"> </a> da bi nastavili s narudžbom.', N'An account with this email already exists. Please <a href="/signin">Sign In</a> to proceed to checkout.' UNION ALL
 		SELECT N'New_Customer_message', N'Ja sam novi kupac', N'I am a new customer' UNION ALL
 		SELECT N'Orders', N'Narudžbe', N'Orders' UNION ALL
+		SELECT N'Order_Details_Message', N'Detelje vaše narudžbe možete pogledati u nastavku', N'See your order details below' UNION ALL
 		SELECT N'Order_number', N'Vaš broj narudžbe je', N'Your order number is' UNION ALL
 		SELECT N'Option_Country', N'Odaberite vašu državu', N'Please, select your country' UNION ALL
 		SELECT N'Pay_Order', N'Plati narudžbu', N'Pay the order' UNION ALL
 		SELECT N'Payment_BookingOrderText', N'Plaćanje za red rezervacije: {0}', N'Payment for Booking order: {0}' UNION ALL
 		SELECT N'Payment_Complete_Message', N'Uspješno plaćanje', N'Your payment has been completed.' UNION ALL
-		SELECT N'Payment_Complete_Title', N'Završetak plaćanja slika', N'Payment Complete' UNION ALL
+		SELECT N'Payment_Complete_Title', N'Završetak plaćanja', N'Payment Complete' UNION ALL
 		SELECT N'Payment_CreditCardsAccepted', N'Prihvaćene kreditne kartice', N'Credit Cards accepted' UNION ALL
 		SELECT N'Payment_Error_Title', N'Pogreška u procesu plaćanja', N'Payment Error' UNION ALL
 		SELECT N'Payment_MainHeading', N'Nova narudžba', N'New Order' UNION ALL
