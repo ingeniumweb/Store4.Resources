@@ -16,6 +16,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value, [Description])
 		SELECT N'Add_To_Cart', N'Dodaj u košaricu', N'Add to Cart' UNION ALL
 		SELECT N'Add_to_Wishlist_Text', N'Dodaj u listu želja', N'Add to Wishlist' UNION ALL
+		SELECT N'Already_bought_Warning', N'Aplikacija je već kupljena', N'You have already bought an Application' UNION ALL
 		SELECT N'Amount_StatementTitle', N'Ukupno', N'Amount' UNION ALL
 		SELECT N'Best_Sales_Title', N'Najprodavaniji proizvodi', N'Best Sales' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Naruči', N'Place Order' UNION ALL
@@ -32,6 +33,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'CityTagCloud_Title', N'Gradovi u oblaku', N'Cities Tag Cloud' UNION ALL
 		SELECT N'Clear_Wishlist_Text', N'Ukloni sve', N'Clear Wishlist' UNION ALL
 		SELECT N'Continue_Shopping', N'Nastavi kupovati', N'Continue Shopping' UNION ALL
+		SELECT N'Country_Warning', N'Država je pogrešna. Molim odaberite valjanu državu', N'Country is invalid. Select valid Country.' UNION ALL
 		SELECT N'Coupon_Discounts', N'Kupon', N'Coupon Discounts' UNION ALL
 		SELECT N'CreditCard_BillingAddress', N'Adresa za naplatu', N'Billing Address' UNION ALL
 		SELECT N'CreditCard_CardTypeValidation', N'Nepodržan format kartice.', N'Invalid card type.' UNION ALL
@@ -112,6 +114,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ZipPostal', N'Poštanski broj', N'Zip/Postal' UNION ALL
 		SELECT N'Default_sorting', N'Zadano sortiranje', N'Default sorting' UNION ALL
 		SELECT N'Details_StatementTitle', N'Detalji', N'Details' UNION ALL
+		SELECT N'Email_has_been_sent_Warning', N'E-mail obavijesti o kupnji uspješno je poslana korisniku: {0}', N'Purchase notification e-mail has been successfully sent for member: {0}' UNION ALL
+		SELECT N'Email_has_not_sent_Warning', N'Notifikacijski mail o izradi računa nije poslan', N'Creating an account notification e-mail has not been sent' UNION ALL
 		SELECT N'Error_ChargingAccount', N'Došlo je do greške prilikom naplate!', N'There Was an error while charging account!' UNION ALL
 		SELECT N'Error_EmailData', N'Ne postoji email podatak', N'There is no Email data!' UNION ALL
 		SELECT N'Error_EmailFormatInvalid', N'Nepodržani email format!', N'Invalid Email format!' UNION ALL
@@ -134,6 +138,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_SendingEmail', N'Došlo je do pogreške prilikom slanja email-a!', N'There was an error while sending email!' UNION ALL
 		SELECT N'Error_TokenDataInvalid', N'Neispravan token!', N'Invalid Token data!' UNION ALL
 		SELECT N'ErrorMessage_MaxFieldSize', N'Maksimalna veličina ''{0}'' polja je {1}!', N'The maximum field size for a ''{0}'' field is {1}!' UNION ALL
+		SELECT N'Error_while_saving_Warning', N'Došlo je do pogreške prilikom spremanja podataka', N'There was an error while saving Company data.' UNION ALL
 		SELECT N'Event_Description', N'{0:d} {0:HH:mm} - {1:HH:mm}', N'{0:d} {0:HH:mm} - {1:HH:mm}' UNION ALL
 		SELECT N'Event_PageTitle', N'{0} - Postavke događaja', N'{0} - Event Settings' UNION ALL
 		SELECT N'Existing_user', N'Postojeći korisnik?', N'Existing user?' UNION ALL
@@ -141,6 +146,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Filter_by_price', N'Filtriraj po cijeni', N'Filter by price' UNION ALL
 		SELECT N'Info_NoItems', N'Pretraga je neuspješna. Ne postoji takav artikl/proizvod.', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} rezultata odgovara vašoj potrazi.', N'{0} results match your serch' UNION ALL
+		SELECT N'Invalid_Card_Number', N'Pogrešan broj kartice. Molimo unesite ispravan broj', N'Credit Card Number is invalid. Enter valid Credit Card Number.' UNION ALL
 		SELECT N'Image_IsCover', N'Naslovna slika', N'Is Cover' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Standardan', N'Default' UNION ALL
 		SELECT N'Membership_SignIn', N'Prijava', N'Sign In' UNION ALL
@@ -169,6 +175,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Proceed_to_Checkout', N'Dovrši narudžbu', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Istaknuto', N'Featured' UNION ALL
 		SELECT N'Product_Image', N'Slika', N'Image' UNION ALL
+		SELECT N'Purchase_app_Warning', N'Za kupovinu ove stavke potrebno je prvo kupiti aplikaciju', N'You must first purchase an Application before you can buy this item.' UNION ALL
+		SELECT N'Purchase_Notification_Warning', N'Došlo je do pogreške tijekom slanja e-pošte obavijesti o kupnji. Obratite se administratoru.', N'There was an error while sending Purchase notification e-mail. Please contact your Administrator.' UNION ALL
 		SELECT N'Remove_From_Wishlist_Text', N'Ukloni iz liste želja', N'Remove from wishlist' UNION ALL
 		SELECT N'Reward_points', N'Nagradni bodovi', N'Reward points' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za vjenčanje u vašem gradu.', N'Find everything for a wedding in your city.' UNION ALL
@@ -257,6 +265,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Signin_New_Customer', N'Novi korisnik', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Postojeći korisnik', N'Returning Customer'UNION ALL
 		SELECT N'Store', N'Trgovina', N'Store'UNION ALL
+		SELECT N'Subscription_cancelled', N'Vaša preplata je otkazana', N'Your subscription {0} has been cancelled' UNION ALL
 		SELECT N'Update_All_to_basket', N'Dodaj sve u košaricu', N'Update All to basket' UNION ALL
 		SELECT N'User_account', N'Korisniki račun', N'User account' UNION ALL
 		SELECT N'User_data', N'Korisnički podaci', N'User data' UNION ALL

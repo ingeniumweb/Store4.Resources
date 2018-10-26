@@ -16,6 +16,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value)
 		SELECT N'Add_To_Cart', N'Add to Cart' UNION ALL
 		SELECT N'Add_to_Wishlist_Text', N'Add to Wishlist' UNION ALL
+		SELECT N'Already_bought_Warning', N'You have already bought an Application' UNION ALL
 		SELECT N'Amount_StatementTitle', N'Amount' UNION ALL
 		SELECT N'Best_Sales_Title', N'Best Sales' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Place Order' UNION ALL
@@ -32,6 +33,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'CityTagCloud_Title', N'Cities Tag Cloud' UNION ALL
 		SELECT N'Clear_Wishlist_Text', N'Clear Wishlist' UNION ALL
 		SELECT N'Continue_Shopping', N'Continue Shopping' UNION ALL
+		SELECT N'Country_Warning', N'Country is invalid. Select valid Country.' UNION ALL
 		SELECT N'Coupon_Discounts', N'Coupon Discounts' UNION ALL
 		SELECT N'CreditCard_BillingAddress', N'Billing Address' UNION ALL
 		SELECT N'CreditCard_CardTypeValidation', N'Invalid card type.' UNION ALL
@@ -112,6 +114,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ZipPostal', N'Zip/Postal' UNION ALL
 		SELECT N'Default_sorting', N'Default sorting' UNION ALL
 		SELECT N'Details_StatementTitle', N'Details' UNION ALL
+		SELECT N'Email_has_been_sent_Warning', N'Purchase notification e-mail has been successfully sent for member: {0}' UNION ALL
+		SELECT N'Email_has_not_sent_Warning', N'Creating an account notification e-mail has not been sent' UNION ALL
 		SELECT N'Message_AddedToFavorites', N'Added to favorites.' UNION ALL
 		SELECT N'Message_Favorites_UnauthorizedAccess', N'Please <a href="/signin"> Sign In</a> or <a href="/signup">Sign Up</a> to add to favorites.' UNION ALL
 		SELECT N'Message_RemovedFromFavorites', N'Removed from favorites.' UNION ALL
@@ -138,6 +142,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_SendingEmail', N'There was an error while sending email!' UNION ALL
 		SELECT N'Error_TokenDataInvalid', N'Invalid Token data!' UNION ALL
 		SELECT N'ErrorMessage_MaxFieldSize', N'The maximum field size for a ''{0}'' field is {1}!' UNION ALL
+		SELECT N'Error_while_saving_Warning', N'There was an error while saving Company data.' UNION ALL
 		SELECT N'Event_Description', N'{0:d} {0:HH:mm} - {1:HH:mm}' UNION ALL
 		SELECT N'Event_PageTitle', N'{0} - Event Settings' UNION ALL
 		SELECT N'Existing_user', N'Existing user?' UNION ALL
@@ -145,6 +150,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Filter_by_price', N'Filter by price' UNION ALL
 		SELECT N'Info_NoItems', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} results match your serch' UNION ALL
+		SELECT N'Invalid_Card_Number', N'Credit Card Number is invalid. Enter valid Credit Card Number.' UNION ALL
 		SELECT N'Image_IsCover', N'Is Cover' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Default' UNION ALL
 		SELECT N'Membership_SignIn', N'Sign In' UNION ALL
@@ -165,6 +171,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Proceed_to_Checkout', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Featured' UNION ALL
 		SELECT N'Product_Image', N'Image' UNION ALL
+		SELECT N'Purchase_app_Warning', N'You must first purchase an Application before you can buy this item.' UNION ALL
+		SELECT N'Purchase_Notification_Warning', N'There was an error while sending Purchase notification e-mail. Please contact your Administrator.' UNION ALL
 		SELECT N'Remove_From_Wishlist_Text', N'Remove from wishlist' UNION ALL
 		SELECT N'Reward_points', N'Reward points' UNION ALL
 		SELECT N'Success_EventDeleted', N'Event Entries successfully deleted!' UNION ALL
@@ -258,6 +266,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Signin_New_Customer', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Returning Customer' UNION ALL
 		SELECT N'Store', N'Store' UNION ALL
+		SELECT N'Subscription_cancelled', N'Your subscription {0} has been cancelled' UNION ALL
 		SELECT N'Update_All_to_basket', N'Update All to basket' UNION ALL
 		SELECT N'User_account', N'User account' UNION ALL
 		SELECT N'User_data', N'User data' UNION ALL
