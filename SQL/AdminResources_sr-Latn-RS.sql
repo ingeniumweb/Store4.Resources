@@ -127,6 +127,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_NavigationItem', N'Navigaciona stavka', N'Navigation Item' UNION ALL
 		SELECT N'ContentType_News', N'Vesti', N'News' UNION ALL
 		SELECT N'ContentType_Note', N'Poruka', N'Note' UNION ALL
+		SELECT N'ContentType_Note_Additional_Info', N'Bileške o narudžbi, posebne napomene za dostavu', N'Notes above your order, e.g. special notes for delivery' UNION ALL
 		SELECT N'ContentType_Organization', N'Organizacija', N'Organization' UNION ALL
 		SELECT N'ContentType_Portfolio', N'Referenca', N'Portfolio' UNION ALL
 		SELECT N'ContentType_Portfolios', N'Reference', N'Portfolios' UNION ALL

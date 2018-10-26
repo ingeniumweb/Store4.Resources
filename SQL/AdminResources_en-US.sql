@@ -127,6 +127,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_NavigationItem', N'Navigation Item' UNION ALL
 		SELECT N'ContentType_News', N'News' UNION ALL
 		SELECT N'ContentType_Note', N'Note' UNION ALL
+		SELECT N'ContentType_Note_Additional_Info', N'Notes above your order, e.g. special notes for delivery' UNION ALL
 		SELECT N'ContentType_Organization', N'Organization' UNION ALL
 		SELECT N'ContentType_Portfolio', N'Portfolio' UNION ALL
 		SELECT N'ContentType_Portfolios', N'Portfolios' UNION ALL

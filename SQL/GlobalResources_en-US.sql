@@ -86,7 +86,11 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Contact_Button_SendMessage', N'Send Message' UNION ALL
 		SELECT N'Contact_Message_Content', N'We''ve received your inquiry. We appreciate your interest in {0}. <a href="/">Return Home</a>' UNION ALL
 		SELECT N'Contact_Message_Title', N'THANK YOU' UNION ALL
+		SELECT N'Contact_SendMessage', N'Send a Message' UNION ALL
 		SELECT N'Data_Email_Invalid', N'Email format is invalid.' UNION ALL
+		SELECT N'Data_NewCustomer', N'New Customer' UNION ALL
+		SELECT N'Data_NewPosts', N'New Posts' UNION ALL
+		SELECT N'Data_PopularPosts', N'Popular Posts' UNION ALL
 		SELECT N'Default_Address', N'Address' UNION ALL
 		SELECT N'Default_All', N'All' UNION ALL
 		SELECT N'Default_PostedBy', N'Posted by' UNION ALL
@@ -119,7 +123,9 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Delete', N'Delete' UNION ALL
 		SELECT N'Link_ForgotPassword', N'Forgot your password?' UNION ALL
 		SELECT N'Link_More', N'More' UNION ALL
+		SELECT N'Link_NextPost', N'Next Post' UNION ALL
 		SELECT N'Link_PasswordRecovery', N'Password Recovery' UNION ALL
+		SELECT N'Link_PreviousPost', N'Previous Post' UNION ALL
 		SELECT N'Link_Register', N'Register' UNION ALL
 		SELECT N'Link_Reply', N'Reply' UNION ALL
 		SELECT N'Link_Send', N'Send' UNION ALL

@@ -86,7 +86,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Contact_Button_SendMessage', N'Pošalji poruku', N'Send Message' UNION ALL
 		SELECT N'Contact_Message_Content', N'Primili smo vaš upit. Zahvaljujemo na interesu na saradnji s portalom {0} <a href="/">Početna</a>', N'We''ve received your inquiry. We appreciate your interest in {0}. <a href="/">Return Home</a>' UNION ALL
 		SELECT N'Contact_Message_Title', N'HVALA', N'THANK YOU' UNION ALL
+		SELECT N'Contact_SendMessage', N'Pošaljite poruku', N'Send a Message' UNION ALL
 		SELECT N'Data_Email_Invalid', N'Neispravan email format', N'Email format is invalid.' UNION ALL
+		SELECT N'Data_NewCustomer', N'Novi korisnik', N'New Customer' UNION ALL
+		SELECT N'Data_NewPosts', N'Nove objave', N'New Posts' UNION ALL
+		SELECT N'Data_PopularPosts', N'Popularne objave', N'Popular Posts' UNION ALL
 		SELECT N'Default_Address', N'Adresa', N'Address' UNION ALL
 		SELECT N'Default_All', N'Svi', N'All' UNION ALL
 		SELECT N'Default_PostedBy', N'Objavio', N'Posted by' UNION ALL
@@ -119,7 +123,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Delete', N'Obriši', N'Delete' UNION ALL
 		SELECT N'Link_ForgotPassword', N'Zaboravljena lozinka?', N'Forgot your password?' UNION ALL
 		SELECT N'Link_More', N'Više', N'More' UNION ALL
+		SELECT N'Link_NextPost', N'Sljedeća objava', N'Next Post' UNION ALL
 		SELECT N'Link_PasswordRecovery', N'Zaboravljena lozinka', N'Password Recovery' UNION ALL
+		SELECT N'Link_PreviousPost', N'Prethodna objava', N'Previous Post' UNION ALL
 		SELECT N'Link_Register', N'Registracija', N'Register' UNION ALL
 		SELECT N'Link_Reply', N'Odgovori', N'Reply' UNION ALL
 		SELECT N'Link_Send', N'Pošalji', N'Send' UNION ALL

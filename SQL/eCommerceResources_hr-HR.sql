@@ -15,7 +15,9 @@ SET @LanguageID = ISNULL(@LanguageID, 0)
 IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value, [Description])
 		SELECT N'Add_To_Cart', N'Dodaj u košaricu', N'Add to Cart' UNION ALL
-		SELECT N'Add_To_Wishlist', N'Dodaj u listu želja', N'Add to Wishlist' UNION ALL
+		SELECT N'Add_to_Wishlist_Text', N'Dodaj u listu želja', N'Add to Wishlist' UNION ALL
+		SELECT N'Amount_StatementTitle', N'Ukupno', N'Amount' UNION ALL
+		SELECT N'Best_Sales_Title', N'Najprodavaniji proizvodi', N'Best Sales' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Naruči', N'Place Order' UNION ALL
 		SELECT N'Button_RemoveAll', N'Ukloni sve', N'Remove All' UNION ALL
 		SELECT N'Cart_Message_Successfully', N'Označene stavke su dodane u košaricu', N'Selected items was successfully added to your cart' UNION ALL
@@ -28,6 +30,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Change_password', N'Promjena lozinke', N'Change password' UNION ALL
 		SELECT N'Checkout_Title', N'Blagajna', N'Checkout' UNION ALL
 		SELECT N'CityTagCloud_Title', N'Gradovi u oblaku', N'Cities Tag Cloud' UNION ALL
+		SELECT N'Clear_Wishlist_Text', N'Ukloni sve', N'Clear Wishlist' UNION ALL
 		SELECT N'Continue_Shopping', N'Nastavi kupovati', N'Continue Shopping' UNION ALL
 		SELECT N'Coupon_Discounts', N'Kupon', N'Coupon Discounts' UNION ALL
 		SELECT N'CreditCard_BillingAddress', N'Adresa za naplatu', N'Billing Address' UNION ALL
@@ -51,15 +54,20 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'CreditCard_StreetValidation', N'Adresa ulice je prazna. Unesite adresu ulice.', N'Street is empty. Enter Street.' UNION ALL
 		SELECT N'CreditCard_YearValidation', N'Godina isteka kartice je prazna. Unesite godinu isteka kartice.', N'Expiration Year is empty. Enter Expiration Year.' UNION ALL
 		SELECT N'CreditCard_ZipValidation', N'Poštanski broj je prazan. Unesite poštanski broj.', N'Zip is empty. Enter Zip.' UNION ALL
+		SELECT N'Data_Address_Additional_Info', N'Stan, zgrada, kat itd.', N'Apartment, Suit, Unit etc. (optional)' UNION ALL
 		SELECT N'Data_All', N'Sve', N'All' UNION ALL
+		SELECT N'Data_AllCategories', N'Sve kategorije', N'All Categories' UNION ALL
 		SELECT N'Data_Booked', N'Rezervirano', N'Booked' UNION ALL
 		SELECT N'Data_Bookings', N'Rezervacije', N'Bookings' UNION ALL
 		SELECT N'Data_BreakEndTIme', N'Kraj pauze', N'Break end time' UNION ALL
 		SELECT N'Data_BreakStartTime', N'Početak pauze', N'Break start time' UNION ALL
 		SELECT N'Data_BreakTimeByMinutes', N'Pauza po minutama', N'Break By Minutes' UNION ALL
 		SELECT N'Data_City', N'Grad', N'City' UNION ALL
+		SELECT N'Data_CompletedOrders', N'Završene narudžbe', N'Completed Orders' UNION ALL
 		SELECT N'Data_Country', N'Zemlja', N'Country' UNION ALL
+		SELECT N'Data_CurrentBalance', N'Trenutno stanje', N'Current Balance' UNION ALL
 		SELECT N'Data_DaysOfWeek', N'Dani u tjednu', N'Days of Week' UNION ALL
+		SELECT N'Data_Deposits', N'Polog', N'Deposits' UNION ALL
 		SELECT N'Data_Description', N'Opis', N'Description' UNION ALL
 		SELECT N'Data_EventDate', N'Datum događaja', N'Event Date' UNION ALL
 		SELECT N'Data_EventEndTime', N'Završno vrijeme', N'End Time' UNION ALL
@@ -74,9 +82,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Image', N'Slika', N'Image' UNION ALL
 		SELECT N'Data_LastName', N'Prezime', N'Last Name' UNION ALL
 		SELECT N'Data_Login', N'Prijavite se', N'Login' UNION ALL
+		SELECT N'Data_MyAccount', N'Moj račun ', N'My Account' UNION ALL
 		SELECT N'Data_Monday', N'Ponedjeljak', N'Monday' UNION ALL
 		SELECT N'Data_Month', N'Mjesec', N'Month' UNION ALL
 		SELECT N'Data_NotBooked', N'Nije rezerviran', N'Not booked' UNION ALL
+		SELECT N'Data_Orders', N'Narudžbe', N'Orders' UNION ALL
 		SELECT N'Data_Payment', N'Plaćanje', N'Payment' UNION ALL
 		SELECT N'Data_PeriodEndDate', N'Kraj razdoblja', N'Period end date' UNION ALL
 		SELECT N'Data_PeriodStartDate', N'Početak razdoblja', N'Period start date' UNION ALL
@@ -101,6 +111,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Your_Order', N'Vaša narudžba', N'Your Order' UNION ALL
 		SELECT N'Data_ZipPostal', N'Poštanski broj', N'Zip/Postal' UNION ALL
 		SELECT N'Default_sorting', N'Zadano sortiranje', N'Default sorting' UNION ALL
+		SELECT N'Details_StatementTitle', N'Detalji', N'Details' UNION ALL
 		SELECT N'Error_ChargingAccount', N'Došlo je do greške prilikom naplate!', N'There Was an error while charging account!' UNION ALL
 		SELECT N'Error_EmailData', N'Ne postoji email podatak', N'There is no Email data!' UNION ALL
 		SELECT N'Error_EmailFormatInvalid', N'Nepodržani email format!', N'Invalid Email format!' UNION ALL
@@ -158,6 +169,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Proceed_to_Checkout', N'Dovrši narudžbu', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Istaknuto', N'Featured' UNION ALL
 		SELECT N'Product_Image', N'Slika', N'Image' UNION ALL
+		SELECT N'Remove_From_Wishlist_Text', N'Ukloni iz liste želja', N'Remove from wishlist' UNION ALL
 		SELECT N'Reward_points', N'Nagradni bodovi', N'Reward points' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za vjenčanje u vašem gradu.', N'Find everything for a wedding in your city.' UNION ALL
 		SELECT N'Success_EventDeleted', N'Stavke događaja uspješno obrisane!', N'Event Entries successfully deleted!' UNION ALL
@@ -235,6 +247,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Product_Description', N'Opis proizvoda', N'Product Description' UNION ALL
 		SELECT N'Product_Reviews', N'Recenzije', N'Reviews' UNION ALL
 		SELECT N'Save_Info_Warning', N'Spremi adresu i informacije za sljedeći puta', N'Save my address and info for next time' UNION ALL
+		SELECT N'Share_Product_Title', N'Podijeli proizvod', N'Share this product' UNION ALL
 		SELECT N'Shop_Title', N'Trgovina', N'Shop' UNION ALL
 		SELECT N'Sort_by_Average_rating', N'Poredaj po ocjenama', N'Sort by average rating' UNION ALL
 		SELECT N'Sort_by_high_price', N'S višom cijenom', N'Sort by price: high to low' UNION ALL

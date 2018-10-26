@@ -15,7 +15,9 @@ SET @LanguageID = ISNULL(@LanguageID, 0)
 IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value)
 		SELECT N'Add_To_Cart', N'Add to Cart' UNION ALL
-		SELECT N'Add_To_Wishlist', N'Add to Wishlist' UNION ALL
+		SELECT N'Add_to_Wishlist_Text', N'Add to Wishlist' UNION ALL
+		SELECT N'Amount_StatementTitle', N'Amount' UNION ALL
+		SELECT N'Best_Sales_Title', N'Best Sales' UNION ALL
 		SELECT N'Button_PlaceOrder', N'Place Order' UNION ALL
 		SELECT N'Button_RemoveAll', N'Remove All' UNION ALL
 		SELECT N'Cart_Message_Successfully', N'Selected items was successfully added to your cart' UNION ALL
@@ -28,6 +30,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Change_password', N'Change password' UNION ALL
 		SELECT N'Checkout_Title', N'Checkout' UNION ALL
 		SELECT N'CityTagCloud_Title', N'Cities Tag Cloud' UNION ALL
+		SELECT N'Clear_Wishlist_Text', N'Clear Wishlist' UNION ALL
 		SELECT N'Continue_Shopping', N'Continue Shopping' UNION ALL
 		SELECT N'Coupon_Discounts', N'Coupon Discounts' UNION ALL
 		SELECT N'CreditCard_BillingAddress', N'Billing Address' UNION ALL
@@ -51,15 +54,20 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'CreditCard_StreetValidation', N'Street is empty. Enter Street.' UNION ALL
 		SELECT N'CreditCard_YearValidation', N'Expiration Year is empty. Enter Expiration Year.' UNION ALL
 		SELECT N'CreditCard_ZipValidation', N'Zip is empty. Enter Zip.' UNION ALL
+		SELECT N'Data_Address_Additional_Info', N'Apartment, Suit, Unit etc. (optional)' UNION ALL
 		SELECT N'Data_All', N'All' UNION ALL
+		SELECT N'Data_AllCategories', N'All Categories' UNION ALL
 		SELECT N'Data_Booked', N'Booked' UNION ALL
 		SELECT N'Data_Bookings', N'Bookings' UNION ALL
 		SELECT N'Data_BreakEndTIme', N'Break end time' UNION ALL
 		SELECT N'Data_BreakStartTime', N'Break start time' UNION ALL
 		SELECT N'Data_BreakTimeByMinutes', N'Break By Minutes' UNION ALL
 		SELECT N'Data_City', N'City' UNION ALL
+		SELECT N'Data_CompletedOrders', N'Completed Orders' UNION ALL
 		SELECT N'Data_Country', N'Country' UNION ALL
+		SELECT N'Data_CurrentBalance', N'Current Balance' UNION ALL
 		SELECT N'Data_DaysOfWeek', N'Days of Week' UNION ALL
+		SELECT N'Data_Deposits', N'Deposits' UNION ALL
 		SELECT N'Data_Description', N'Description' UNION ALL
 		SELECT N'Data_EventDate', N'Event Date' UNION ALL
 		SELECT N'Data_EventEndTime', N'End Time' UNION ALL
@@ -74,9 +82,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Image', N'Image' UNION ALL
 		SELECT N'Data_LastName', N'Last Name' UNION ALL
 		SELECT N'Data_Login', N'Login' UNION ALL
+		SELECT N'Data_MyAccount', N'My Account' UNION ALL
 		SELECT N'Data_Monday', N'Monday' UNION ALL
 		SELECT N'Data_Month', N'Month' UNION ALL
 		SELECT N'Data_NotBooked', N'Not booked' UNION ALL
+		SELECT N'Data_Orders', N'Orders' UNION ALL
 		SELECT N'Data_Payment', N'Payment' UNION ALL
 		SELECT N'Data_PeriodEndDate', N'Period end date' UNION ALL
 		SELECT N'Data_PeriodStartDate', N'Period start date' UNION ALL
@@ -101,6 +111,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Your_Order', N'Your Order' UNION ALL
 		SELECT N'Data_ZipPostal', N'Zip/Postal' UNION ALL
 		SELECT N'Default_sorting', N'Default sorting' UNION ALL
+		SELECT N'Details_StatementTitle', N'Details' UNION ALL
 		SELECT N'Message_AddedToFavorites', N'Added to favorites.' UNION ALL
 		SELECT N'Message_Favorites_UnauthorizedAccess', N'Please <a href="/signin"> Sign In</a> or <a href="/signup">Sign Up</a> to add to favorites.' UNION ALL
 		SELECT N'Message_RemovedFromFavorites', N'Removed from favorites.' UNION ALL
@@ -154,6 +165,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Proceed_to_Checkout', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Featured' UNION ALL
 		SELECT N'Product_Image', N'Image' UNION ALL
+		SELECT N'Remove_From_Wishlist_Text', N'Remove from wishlist' UNION ALL
 		SELECT N'Reward_points', N'Reward points' UNION ALL
 		SELECT N'Success_EventDeleted', N'Event Entries successfully deleted!' UNION ALL
 		SELECT N'Success_EventEntrySaved', N'Event entries successfully saved.' UNION ALL
@@ -236,6 +248,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Product_Description', N'Product Description' UNION ALL
 		SELECT N'Product_Reviews', N'Reviews' UNION ALL
 		SELECT N'Save_Info_Warning', N'Save my address and info for next time' UNION ALL
+		SELECT N'Share_Product_Title', N'Share this product' UNION ALL
 		SELECT N'Shop_Title', N'Shop' UNION ALL
 		SELECT N'Sort_by_Average_rating', N'Sort by average rating' UNION ALL
 		SELECT N'Sort_by_high_price', N'Sort by price: high to low' UNION ALL
