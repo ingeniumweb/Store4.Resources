@@ -419,6 +419,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Importing_HelpBlock', N'Mapirajte svaku kolonu izvorne CSV datoteke u jednu od odredišnih stupaca.', N'Please map each coulmn of your source CSV file to one of destination columns.' UNION ALL
 		SELECT N'Importing_Members_Headline', N'Unos korisnika izveštaj.', N'Importing Members Report' UNION ALL
 		SELECT N'Importing_Roles_Headline', N'Unos korisničkih uloga izveštaj.', N'Importing Roles Report' UNION ALL
+		SELECT N'Inventory_Only_Summary', N'Prikaži samo zalihe', N'Show Only Summary' UNION ALL
 		SELECT N'Link_AddField', N'Dodaj polje', N'Add Field' UNION ALL
 		SELECT N'Link_AddGroup', N'Dodaj grupu', N'Add Group' UNION ALL
 		SELECT N'Link_Details', N'Detalji', N'Details' UNION ALL

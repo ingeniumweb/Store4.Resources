@@ -420,6 +420,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Importing_HelpBlock', N'Please map each coulmn of your source CSV file to one of destination columns.' UNION ALL
 		SELECT N'Importing_Members_Headline', N'Importing Members Report' UNION ALL
 		SELECT N'Importing_Roles_Headline', N'Importing Roles Report' UNION ALL
+		SELECT N'Inventory_Only_Summary', N'Show Only Summary' UNION ALL
 		SELECT N'Link_AddField', N'Add Field' UNION ALL
 		SELECT N'Link_AddGroup', N'Add Group' UNION ALL
 		SELECT N'Link_Details', N'Details' UNION ALL
