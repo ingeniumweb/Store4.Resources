@@ -364,6 +364,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Email_Compse_Title', N'Compose Message' UNION ALL
 		SELECT N'EmailStatus_Read', N'Read' UNION ALL
 		SELECT N'EmailStatus_Unread', N'Unread' UNION ALL
+		SELECT N'Enable_ShippingCheckout', N'Enable shipping on checkout' UNION ALL
 		SELECT N'Errors_403_Description', N'You are not authorized to access this page.' UNION ALL
 		SELECT N'Errors_403_Headline', N'Access denied' UNION ALL
 		SELECT N'Errors_403_Title', N'Unauthorized access' UNION ALL
@@ -489,6 +490,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Settings_Data_DefaultPagingSize', N'Default Paging Size' UNION ALL
 		SELECT N'Settings_Data_DefaultUILanguage', N'Default UI Language' UNION ALL
 		SELECT N'Settings_Data_DomainName', N'Domain Name' UNION ALL
+		SELECT N'Settings_Data_EnablePrivacyAndPolicyConfirmation', N'Enable Privacy and policy confirmation' UNION ALL
 		SELECT N'Settings_Data_Fluid', N'Fluid' UNION ALL
 		SELECT N'Settings_Data_GoogleAnalyticsID', N'Google Analytics Tracking ID' UNION ALL
 		SELECT N'Settings_Data_GooglePublisherId', N'Google Publisher Id' UNION ALL

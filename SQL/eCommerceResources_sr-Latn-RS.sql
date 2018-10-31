@@ -36,7 +36,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Checkout_Title', N'Blagajna', N'Checkout' UNION ALL
 		SELECT N'CityTagCloud_Title', N'Gradovi u oblaku', N'Cities Tag Cloud' UNION ALL
 		SELECT N'Clear_Wishlist_Text', N'Ukloni sve', N'Clear Wishlist' UNION ALL
-		SELECT N'Continue_Shopping', N'Nastavi kupovati', N'Continue Shopping' UNION ALL
+		SELECT N'Continue_Shopping', N'Nastavi kupovinu', N'Continue Shopping' UNION ALL
 		SELECT N'Country_Warning', N'Država je pogrešna. Molim odaberite valjanu državu', N'Country is invalid. Select valid Country.' UNION ALL
 		SELECT N'Coupon_Discounts', N'Kupon', N'Coupon Discounts' UNION ALL
 		SELECT N'CreateAccount', N'Izradite novi online račun:', N'Create new online account' UNION ALL
@@ -111,7 +111,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Selected', N'Odabrano', N'Selected' UNION ALL
 		SELECT N'Data_ShiftEndTime', N'Kraj smjene', N'Shift end time' UNION ALL
 		SELECT N'Data_ShiftStartTime', N'Početak smjene', N'Shift start time' UNION ALL
-		SELECT N'Data_Shipping', N'Dostava', N'Shipping' UNION ALL
+		SELECT N'Data_Shipping', N'Troškovi dostave', N'Shipping' UNION ALL
 		SELECT N'Data_StateProvince', N'Država/Provincija', N'State/Province' UNION ALL
 		SELECT N'Data_Street', N'Ulica', N'Street' UNION ALL
 		SELECT N'Data_Sunday', N'Nedjelja', N'Sunday' UNION ALL
@@ -203,6 +203,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Proceed_to_Checkout', N'Dovrši narudžbu', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Istaknuto', N'Featured' UNION ALL
 		SELECT N'Product_Image', N'Slika', N'Image' UNION ALL
+		SELECT N'Product_Height', N'Visina', N'Height' UNION ALL
+		SELECT N'Product_Length', N'Dužina', N'Length' UNION ALL
+		SELECT N'Product_Width', N'Širina', N'Width' UNION ALL
 		SELECT N'Purchase_app_Warning', N'Za kupovinu ove stavke potrebno je prvo kupiti aplikaciju', N'You must first purchase an Application before you can buy this item.' UNION ALL
 		SELECT N'Purchase_Notification_Warning', N'Došlo je do pogreške tijekom slanja e-pošte obavijesti o kupnji. Obratite se administratoru.', N'There was an error while sending Purchase notification e-mail. Please contact your Administrator.' UNION ALL
 		SELECT N'Remove_From_Wishlist_Text', N'Ukloni iz liste želja', N'Remove from wishlist' UNION ALL

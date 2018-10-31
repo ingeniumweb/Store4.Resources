@@ -113,6 +113,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Price', N'Price' UNION ALL
 		SELECT N'Data_Product', N'Product' UNION ALL
 		SELECT N'Data_ProductCost', N'Product Cost' UNION ALL
+		SELECT N'Data_ProductDimensions', N'Product Dimensions' UNION ALL
 		SELECT N'Data_ProductInfo', N'Product info' UNION ALL
 		SELECT N'Data_ProductionCost', N'Operation Cost' UNION ALL
 		SELECT N'Data_ProductionOrderNumber', N'Production Order #' UNION ALL
@@ -137,6 +138,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ShipmentNumber', N'Shipment #' UNION ALL
 		SELECT N'Data_ShipTo', N'Ship To' UNION ALL
 		SELECT N'Data_ShowOnStore', N'Show On Store' UNION ALL
+		SELECT N'Data_ShowShipping', N'Show Shippment Costs' UNION ALL
 		SELECT N'Data_SIC', N'SIC' UNION ALL
 		SELECT N'Data_Sku', N'Sku' UNION ALL
 		SELECT N'Data_StartDate', N'Start Date' UNION ALL

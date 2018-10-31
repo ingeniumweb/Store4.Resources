@@ -113,6 +113,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Price', N'Cena', N'Price' UNION ALL
 		SELECT N'Data_Product', N'Proizvod', N'Product' UNION ALL
 		SELECT N'Data_ProductCost', N'Cena proizvoda', N'Product Cost' UNION ALL
+		SELECT N'Data_ProductDimensions', N'Dimenzije proizvoda', N'Product Dimensions' UNION ALL
 		SELECT N'Data_ProductInfo', N'Podaci o proizvodu', N'Product info' UNION ALL
 		SELECT N'Data_ProductionCost', N'Cena rada', N'Operation Cost' UNION ALL
 		SELECT N'Data_ProductionOrderNumber', N'Broj Narudžbe #', N'Production Order #' UNION ALL
@@ -137,6 +138,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ShipmentNumber', N'Pošiljka #', N'Shipment #' UNION ALL
 		SELECT N'Data_ShipTo', N'Poslati prema', N'Ship To' UNION ALL		
 		SELECT N'Data_ShowOnStore', N'Prikaži u trgovini', N'Show On Store' UNION ALL
+		SELECT N'Data_ShowShipping', N'Prikaži trošak dostave', N'Show Shippment Costs' UNION ALL
 		SELECT N'Data_SIC', N'SIC', N'SIC' UNION ALL
 		SELECT N'Data_Sku', N'Sku', N'Sku' UNION ALL
 		SELECT N'Data_StartDate', N'Početni datum', N'Start Date' UNION ALL

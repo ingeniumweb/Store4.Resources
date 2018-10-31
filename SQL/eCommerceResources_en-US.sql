@@ -199,6 +199,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Proceed_to_Checkout', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Featured' UNION ALL
 		SELECT N'Product_Image', N'Image' UNION ALL
+		SELECT N'Product_Height', N'Height' UNION ALL
+		SELECT N'Product_Length', N'Length' UNION ALL
+		SELECT N'Product_Width', N'Width' UNION ALL
 		SELECT N'Purchase_app_Warning', N'You must first purchase an Application before you can buy this item.' UNION ALL
 		SELECT N'Purchase_Notification_Warning', N'There was an error while sending Purchase notification e-mail. Please contact your Administrator.' UNION ALL
 		SELECT N'Remove_From_Wishlist_Text', N'Remove from wishlist' UNION ALL

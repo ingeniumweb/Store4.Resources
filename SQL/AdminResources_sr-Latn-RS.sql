@@ -364,6 +364,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Email_Compse_Title', N'Uredi poruku', N'Compose Message' UNION ALL
 		SELECT N'EmailStatus_Read', N'Pročitano', N'Read' UNION ALL
 		SELECT N'EmailStatus_Unread', N'Nepročitano', N'Unread' UNION ALL
+		SELECT N'Enable_ShippingCheckout', N'Omogući izračun troškava dostave', N'Enable shipping on checkout' UNION ALL
 		SELECT N'Errors_403_Description', N'Nemate ovlaštenja da bi pristupili stranici.', N'You are not authorized to access this page.' UNION ALL
 		SELECT N'Errors_403_Headline', N'Zabranjen pristup.', N'Access denied' UNION ALL
 		SELECT N'Errors_403_Title', N'Neovlašten pristup.', N'Unauthorized access' UNION ALL
@@ -489,6 +490,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Settings_Data_DefaultPagingSize', N'Standardna veličina obilježavanja', N'Default Paging Size' UNION ALL
 		SELECT N'Settings_Data_DefaultUILanguage', N'Standardni UI jezik', N'Default UI Language' UNION ALL
 		SELECT N'Settings_Data_DomainName', N'Naziv domena', N'Domain Name' UNION ALL
+		SELECT N'Settings_Data_EnablePrivacyAndPolicyConfirmation', N'Omogući potvrdu uvjeta korištenja tijekom registracije', N'Enable Privacy and policy confirmation' UNION ALL
 		SELECT N'Settings_Data_Fluid', N'Fluid', N'Fluid' UNION ALL
 		SELECT N'Settings_Data_GoogleAnalyticsID', N'Google Analytics ID za Praćenje', N'Google Analytics Tracking ID' UNION ALL
 		SELECT N'Settings_Data_GooglePublisherId', N'Id vlasnika Google+ stranice', N'Google Publisher Id' UNION ALL
