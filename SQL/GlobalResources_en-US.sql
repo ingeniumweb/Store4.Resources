@@ -36,6 +36,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_Controller_WrongEmail', N'Wrong e-mail address format.' UNION ALL
 		SELECT N'Account_Controller_WrongResetPassLink', N'Wrong reset password link or the link has been expired.' UNION ALL
 		SELECT N'Account_Controller_WrongUser', N'Wrong user name or password.' UNION ALL
+		SELECT N'Account_CreateAccount_AcceptTermsAndConditions', N'You must accept terms and conditions.' UNION ALL
 		SELECT N'Account_CreateAccount_CreateAccount', N'Create your account' UNION ALL
 		SELECT N'Account_CreateAccount_Description', N'Enter your account details below' UNION ALL
 		SELECT N'Account_CreateAccount_Label_PrivacyTermsConditions', N'By registering, you agree to our <a href="{0}">Terms of Service</a> and <a href="{1}">Privacy Policy</a>.' UNION ALL

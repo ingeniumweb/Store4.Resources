@@ -36,6 +36,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_Controller_WrongEmail', N'Nevažeća email adresa.', N'Wrong e-mail address format.' UNION ALL
 		SELECT N'Account_Controller_WrongResetPassLink', N'Pogrešan aktivacijski link ili je aktivacija istekla.', N'Wrong reset password link or the link has been expired.' UNION ALL
 		SELECT N'Account_Controller_WrongUser', N'Pogrešno korisničko ime ili lozinka.', N'Wrong user name or password.' UNION ALL
+		SELECT N'Account_CreateAccount_AcceptTermsAndConditions', N'Molim vas da prihvatite uvjete korištenja.', N'You must accept terms and conditions.' UNION ALL
 		SELECT N'Account_CreateAccount_CreateAccount', N'Kreiraj račun', N'Create your account' UNION ALL
 		SELECT N'Account_CreateAccount_Description', N'Unesite detalje računa ispod', N'Enter your account details below' UNION ALL
 		SELECT N'Account_CreateAccount_Label_PrivacyTermsConditions', N'Pri registraciji, slažete se s <a href="{0}">Uslovima usluge </a> i <a href="{1}"> polisom privatnosti.</a>.', N'By registering, you agree to our <a href="{0}">Terms of Service</a> and <a href="{1}">Privacy Policy</a>.' UNION ALL
