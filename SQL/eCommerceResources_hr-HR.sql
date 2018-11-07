@@ -162,10 +162,24 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Filter_Latest', N'Najnovije', N'Sort by newness' UNION ALL
 		SELECT N'Filter_MostPopular', N'Poredaj po popularnosti', N'Sort by popularity' UNION ALL
 		SELECT N'Filter_by_price', N'Filtriraj po cijeni', N'Filter by price' UNION ALL
+		SELECT N'Footer_About_Us', N'O nama', N'About us' UNION ALL
+		SELECT N'Footer_Complaints', N'Reklamacije', N'Complaints' UNION ALL
+		SELECT N'Footer_Delivery_Terms', N'Uvjeti dostave', N'Terms of delivery' UNION ALL
+		SELECT N'Footer_Instructions', N'Uputstva', N'Instructions' UNION ALL
+		SELECT N'Footer_Legal_Entity', N'Pravne osobe', N'Legal entity' UNION ALL
+		SELECT N'Footer_My_Account', N'Moj račun', N'My account' UNION ALL
+		SELECT N'Footer_Order_History', N'Povijest narudžbi', N'Order History' UNION ALL
+		SELECT N'Footer_Payment_Method', N'Način plaćanja', N'Method of payment' UNION ALL
+		SELECT N'Footer_Payment_Security', N'Sigurnost plaćanja', N'Security of payments' UNION ALL
+		SELECT N'Footer_Privacy_Statement', N'Izjava o privatnosti', N'Privacy Statement' UNION ALL
+		SELECT N'Footer_Terms_of_Use', N'Uvjeti korištenja', N'Terms of use' UNION ALL
+		SELECT N'Footer_Useful', N'Korisno', N'Useful' UNION ALL
+		SELECT N'Footer_Useful_Questions', N'Korisna pitanja', N'Useful questions' UNION ALL
 		SELECT N'Info_NoItems', N'Pretraga je neuspješna. Ne postoji takav artikl/proizvod.', N'No items match your search!' UNION ALL
 		SELECT N'Info_SearchResult', N'{0} rezultata odgovara vašoj potrazi.', N'{0} results match your serch' UNION ALL
 		SELECT N'Invalid_Card_Number', N'Pogrešan broj kartice. Molimo unesite ispravan broj', N'Credit Card Number is invalid. Enter valid Credit Card Number.' UNION ALL
 		SELECT N'Image_IsCover', N'Naslovna slika', N'Is Cover' UNION ALL
+		SELECT N'Link_Copy_Text', N'Kopiraj link', N'Copy link' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Standardan', N'Default' UNION ALL
 		SELECT N'Manufacturer_Title', N'Proizvođači', N'Manufacturer' UNION ALL
 		SELECT N'Member_already_subscribed', N'Već ste preplaćeni na {0}. Ako želite obnoviti preplatu ili imate više pitanja molimo kontaktirajte našu podršku.', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
@@ -205,10 +219,26 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Product_Image', N'Slika', N'Image' UNION ALL
 		SELECT N'Product_Height', N'Visina', N'Height' UNION ALL
 		SELECT N'Product_Length', N'Dužina', N'Length' UNION ALL
+		SELECT N'Product_Weight', N'Težina', N'Weight' UNION ALL
 		SELECT N'Product_Width', N'Širina', N'Width' UNION ALL
+		SELECT N'Privacy_Policy_Agree', N'Pročitao sam i suglasan sam s', N'I read and agree with' UNION ALL
+		SELECT N'Privacy_Policy_Message', N'Izjavom o privatnosti', N'Statement of Privacy' UNION ALL
 		SELECT N'Purchase_app_Warning', N'Za kupovinu ove stavke potrebno je prvo kupiti aplikaciju', N'You must first purchase an Application before you can buy this item.' UNION ALL
 		SELECT N'Purchase_Notification_Warning', N'Došlo je do pogreške tijekom slanja e-pošte obavijesti o kupnji. Obratite se administratoru.', N'There was an error while sending Purchase notification e-mail. Please contact your Administrator.' UNION ALL
+		SELECT N'Registered_Users', N'Registriranih korisnika', N'Registered users' UNION ALL
 		SELECT N'Remove_From_Wishlist_Text', N'Ukloni iz liste želja', N'Remove from wishlist' UNION ALL
+		SELECT N'Referral_Bonus', N'Bonus', N'Bonus' UNION ALL
+		SELECT N'Referral_Level', N'Razina', N'Level' UNION ALL
+		SELECT N'Referral_Level_0', N'Razina 0', N'Level 0' UNION ALL
+		SELECT N'Referral_Level_1', N'Razina 1', N'Level 1' UNION ALL
+		SELECT N'Referral_Level_2', N'Razina 2', N'Level 2' UNION ALL
+		SELECT N'Referral_Level_3', N'Razina 3', N'Level 3' UNION ALL
+		SELECT N'Referral_Level_4', N'Razina 4', N'Level 4' UNION ALL
+		SELECT N'Referral_Level_5', N'Razina 5', N'Level 5' UNION ALL
+		SELECT N'Referrals_Member', N'Broj članova', N'Number of referrals' UNION ALL
+		SELECT N'Referral_Members_Rule_Message', N'Nedostaje ti još {0} član/ova u teamu da bi mogao koristiti Superbonus.<br />Minimalan broj članova = 12', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 12' UNION ALL
+		SELECT N'Referral_Purchases_Rule_Message', N'Da bi mogao koristiti Superbonus moraš ostvariti bar jednu kupnju zadnju godina dana.', N'To be able to use Superbonus you have to make at least one purchase in the last year of the day.' UNION ALL
+		SELECT N'Referrals_Realized_Sales', N'Ostvarenih prodaja', N'Realized sales' UNION ALL
 		SELECT N'Reward_points', N'Nagradni bodovi', N'Reward points' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za vjenčanje u vašem gradu.', N'Find everything for a wedding in your city.' UNION ALL
 		SELECT N'Success_EventDeleted', N'Stavke događaja uspješno obrisane!', N'Event Entries successfully deleted!' UNION ALL
@@ -270,6 +300,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_CreatingCreditCard', N'Došlo je do greške prilikom kreiranja Kreditne Kartice.', N'There was an error while creating credit card.' UNION ALL
 		SELECT N'Error_CreatingMember', N'Došlo je do greške prilikom kreiranja Korisnika.', N'There was an error while creating Member.' UNION ALL
 		SELECT N'Error_CreatingMemberToken', N'Došlo je do greške prilikom kreiranja Korisničkog Tokena.', N'There was an error while generating Member Token.' UNION ALL
+		SELECT N'Partner_Companies', N'Tvrtke partnera', N'Partner companies' UNION ALL
 		SELECT N'Payment_Credit_Card_Warning', N'Plati bankovnom karticom. TEST MOD JE OMOGUĆEN. U test modu možete koristiti broj kartice 0000 0000 0000 0000 sa bilo kojim CVC brojem kao i podacima o isteku kartice.', N'Pay with your credit card. TEST MODE ENABLED. In test mode, you can use the card number 0000 0000 0000 0000 with any CVC and a valid expiration date.' UNION ALL
 		SELECT N'Payment_Info_Warning', N'Plati općom uplatnicom. Molimo vas koristite ID narudžbe kao referencu za plaćanje. Vaša narudžba neće se isporučiti sve dok su sredstva na vašem računu.', N'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.' UNION ALL
 		SELECT N'PaymentSettings_PaymentCancelURL', N'Povratna adresa nakon odustajana', N'Cancel URL' UNION ALL
@@ -288,12 +319,16 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Save_Info_Warning', N'Spremi adresu i informacije za sljedeći puta', N'Save my address and info for next time' UNION ALL
 		SELECT N'Select_Country_Title', N'Izaberite državu.', N'Please, select your country.' UNION ALL
 		SELECT N'Share_Product_Title', N'Podijeli proizvod', N'Share this product' UNION ALL
+		SELECT N'Share_ReferralLink_Title', N'Podijeli svoj jedinstevni referral link', N'Share your uniqoue referral link' UNION ALL
 		SELECT N'Shop_Title', N'Trgovina', N'Shop' UNION ALL
 		SELECT N'Signin_New_Customer', N'Novi korisnik', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Postojeći korisnik', N'Returning Customer'UNION ALL
 		SELECT N'Signin_Returning_Customer_message', N'Ja sam postojeći korisnik', N'I am a returning customer' UNION ALL
 		SELECT N'Store', N'Trgovina', N'Store'UNION ALL
 		SELECT N'Subscription_cancelled', N'Vaša preplata je otkazana', N'Your subscription {0} has been cancelled' UNION ALL
+		SELECT N'Table_Purchases_Number', N'Broj kupovina', N'Number of purchases' UNION ALL
+		SELECT N'Table_Sum', N'Iznos', N'Sum' UNION ALL
+		SELECT N'Total_Fund', N'Ukupni fond', N'Total fund' UNION ALL
 		SELECT N'Update_All_to_basket', N'Dodaj sve u košaricu', N'Update All to basket' UNION ALL
 		SELECT N'User_account', N'Korisniki račun', N'User account' UNION ALL
 		SELECT N'User_data', N'Korisnički podaci', N'User data' UNION ALL
