@@ -327,7 +327,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Store', N'Trgovina', N'Store' UNION ALL
 		SELECT N'Subscription_cancelled', N'Vaša preplata je otkazana', N'Your subscription {0} has been cancelled' UNION ALL
 		SELECT N'Table_Purchases_Number', N'Broj kupovina', N'Number of purchases' UNION ALL
-		SELECT N'Table_Sum', N'Iznos', N'Sum' UNION ALL
+		SELECT N'Table_Sum', N'Ukupno', N'Sum' UNION ALL
 		SELECT N'Total_Fund', N'Ukupni fond', N'Total fund' UNION ALL
 		SELECT N'Update_All_to_basket', N'Dodaj sve u košaricu', N'Update All to basket' UNION ALL
 		SELECT N'User_account', N'Korisniki račun', N'User account' UNION ALL
