@@ -196,7 +196,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Option_Country', N'Please, select your country' UNION ALL
 		SELECT N'Pay_Order', N'Pay the order' UNION ALL
 		SELECT N'Payment_BookingOrderText', N'Payment for Booking order: {0}' UNION ALL
+		SELECT N'Payment_ChooseCreditCard', N'Choose your credit card' UNION ALL
 		SELECT N'Payment_Complete_Message', N'Your payment has been completed.' UNION ALL
+		SELECT N'Payment_InstalmentNumber', N'Instalment Number' UNION ALL
 		SELECT N'Payment_Cancel_Title', N'Payment Cancel' UNION ALL
 		SELECT N'Payment_Complete_Title', N'Payment Complete' UNION ALL
 		SELECT N'Payment_CreditCardsAccepted', N'Credit Cards accepted' UNION ALL
@@ -292,6 +294,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Message_AlredyRated', N'You have already rated.' UNION ALL
 		SELECT N'Message_AlredyPosted', N'You have already posted.' UNION ALL
 		SELECT N'Validation_Rating', N'Rating is required. Please rate.' UNION ALL
+		SELECT N'Validation_RefferalBonus', N'Please enter a valid referral bonus amount' UNION ALL
 		SELECT N'Validation_Post_Unauthorized', N'You are not authorized to post this message!' UNION ALL
 		SELECT N'Message_AddedToBasket', N'Added to basket.' UNION ALL
 		SELECT N'Message_RemovedFromBasket', N'Removed from basket.' UNION ALL

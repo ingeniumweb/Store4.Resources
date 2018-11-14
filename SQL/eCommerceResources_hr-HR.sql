@@ -200,8 +200,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Option_Country', N'Odaberite vašu državu', N'Please, select your country' UNION ALL
 		SELECT N'Pay_Order', N'Plati narudžbu', N'Pay the order' UNION ALL
 		SELECT N'Payment_BookingOrderText', N'Plaćanje za red rezervacije: {0}', N'Payment for Booking order: {0}' UNION ALL
+		SELECT N'Payment_ChooseCreditCard', N'Odaberi kreditnu karticu', N'Choose your credit card' UNION ALL
 		SELECT N'Payment_Cancel_Title', N'Plaćanje prekinuto', N'Payment Cancel' UNION ALL
 		SELECT N'Payment_Complete_Message', N'Uspješno plaćanje', N'Your payment has been completed.' UNION ALL
+		SELECT N'Payment_InstalmentNumber', N'Broj rata', N'Instalment Number' UNION ALL
 		SELECT N'Payment_Complete_Title', N'Završetak plaćanja', N'Payment Complete' UNION ALL
 		SELECT N'Payment_CreditCardsAccepted', N'Prihvaćene kreditne kartice', N'Credit Cards accepted' UNION ALL
 		SELECT N'Payment_Error_Title', N'Pogreška u procesu plaćanja', N'Payment Error' UNION ALL
@@ -263,6 +265,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Validation_PriceNotEntered', N'Cijena nije unesena!', N'Prise is not entered!' UNION ALL
 		SELECT N'Validation_ProductSelect', N'Molimo odaberite proizvod.', N'Please select Product.' UNION ALL
 		SELECT N'Validation_Rating', N'Ocjena je obavezna. Molimo ocjenite.', N'Rating is required. Please rate.' UNION ALL
+		SELECT N'Validation_RefferalBonus', N'Molimo vas da unesete odgovarajući bonus', N'Please enter a valid referral bonus amount' UNION ALL
 		SELECT N'Validation_SelectedPeriodOverlapping', N'Odabrano razdoblje se preklapa s već postojećim!', N'Selected Period is overlapping existing!' UNION ALL
 		SELECT N'Validation_ShiftStartTimeGreater', N'Početno vrijeme smjene je veće nego završno vrijeme!', N'Start time for Shift is greater than end time!' UNION ALL
 		SELECT N'Validation_ShiftTimePeriodInvalid', N'Neispravno razdoblje vremena smjene!', N'Invalid Shift time period!' UNION ALL
