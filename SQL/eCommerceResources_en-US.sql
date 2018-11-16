@@ -211,6 +211,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_Order_Number', N'Your order number is' UNION ALL
 		SELECT N'Payment_Process_Problem', N'A problem has occurred during the payment process. Please try again. If this error continues, please contact support.' UNION ALL
 		SELECT N'Payment_Reques_Cancel', N'Cancel Payment Reques' UNION ALL
+		SELECT N'Payment_Rules_Message', N'Selecting a card and installment number is informative, payment will be made at the next step where you select a card to pay as well as the desired number of installments.' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}' UNION ALL
 		SELECT N'Proceed_to_Checkout', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Featured' UNION ALL
