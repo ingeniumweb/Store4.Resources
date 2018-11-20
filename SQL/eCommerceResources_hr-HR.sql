@@ -98,7 +98,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Month', N'Mjesec', N'Month' UNION ALL
 		SELECT N'Data_NotBooked', N'Nije rezerviran', N'Not booked' UNION ALL
 		SELECT N'Data_Orders', N'Narudžbe', N'Orders' UNION ALL
-		SELECT N'Order_Details_Message', N'Detelje vaše narudžbe možete pogledati u nastavku', N'See your order details below' UNION ALL
+		SELECT N'Order_Details_Message', N'Detalje vaše narudžbe možete pogledati u nastavku', N'See your order details below' UNION ALL
 		SELECT N'Data_Payment', N'Plaćanje', N'Payment' UNION ALL
 		SELECT N'Data_PeriodEndDate', N'Kraj razdoblja', N'Period end date' UNION ALL
 		SELECT N'Data_PeriodStartDate', N'Početak razdoblja', N'Period start date' UNION ALL

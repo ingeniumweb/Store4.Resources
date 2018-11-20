@@ -195,7 +195,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Message_Store_UnauthorizedAccess', N'Već postoji račun s tom email adresom. Molimo <a href="/signin">prijavite se </a> ili <a href="/signup"> </a> da bi nastavili s narudžbom.', N'An account with this email already exists. Please <a href="/signin">Sign In</a> to proceed to checkout.' UNION ALL
 		SELECT N'New_Customer_message', N'Ja sam novi kupac', N'I am a new customer' UNION ALL
 		SELECT N'Orders', N'Narudžbe', N'Orders' UNION ALL
-		SELECT N'Order_Details_Message', N'Detelje vaše narudžbe možete pogledati u nastavku', N'See your order details below' UNION ALL
+		SELECT N'Order_Details_Message', N'Detalje vaše narudžbe možete pogledati u nastavku', N'See your order details below' UNION ALL
 		SELECT N'Order_number', N'Vaš broj narudžbe je', N'Your order number is' UNION ALL
 		SELECT N'Option_Country', N'Odaberite vašu državu', N'Please, select your country' UNION ALL
 		SELECT N'Pay_Order', N'Plati narudžbu', N'Pay the order' UNION ALL
