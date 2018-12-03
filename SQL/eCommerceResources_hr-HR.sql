@@ -242,7 +242,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Referral_Members_Rule_Message', N'Nedostaje ti još {0} član/ova u teamu da bi mogao koristiti Superbonus.<br />Minimalan broj članova = 12', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 12' UNION ALL
 		SELECT N'Referral_Purchases_Rule_Message', N'Da bi mogao koristiti Superbonus moraš ostvariti bar jednu kupnju zadnju godina dana.', N'To be able to use Superbonus you have to make at least one purchase in the last year of the day.' UNION ALL
 		SELECT N'Referrals_Realized_Sales', N'Ostvarenih prodaja', N'Realized sales' UNION ALL
-		SELECT N'Reward_points', N'Bonusi/Team', N'Reward points' UNION ALL
+		SELECT N'Reward_points', N'Bonus / Team', N'Reward points' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za vjenčanje u vašem gradu.', N'Find everything for a wedding in your city.' UNION ALL
 		SELECT N'Success_EventDeleted', N'Stavke događaja uspješno obrisane!', N'Event Entries successfully deleted!' UNION ALL
 		SELECT N'Success_EventEntrySaved', N'Stavke događaja uspješno snimljene!', N'Event entries successfully saved.' UNION ALL
