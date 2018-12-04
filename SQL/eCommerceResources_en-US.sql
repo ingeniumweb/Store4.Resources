@@ -167,6 +167,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Filter_by_price', N'Filter by price' UNION ALL
 		SELECT N'Footer_About_Us', N'About us' UNION ALL
 		SELECT N'Footer_Complaints', N'Complaints' UNION ALL
+		SELECT N'Footer_Cookie_Statement',N'Cookie Statement' UNION ALL
 		SELECT N'Footer_Delivery_Terms', N'Terms of delivery' UNION ALL
 		SELECT N'Footer_Instructions', N'Instructions' UNION ALL
 		SELECT N'Footer_Legal_Entity', N'Legal entity' UNION ALL

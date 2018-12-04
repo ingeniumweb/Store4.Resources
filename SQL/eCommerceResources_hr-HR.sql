@@ -164,6 +164,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Filter_by_price', N'Filtriraj po cijeni', N'Filter by price' UNION ALL
 		SELECT N'Footer_About_Us', N'O nama', N'About us' UNION ALL
 		SELECT N'Footer_Complaints', N'Reklamacije', N'Complaints' UNION ALL
+		SELECT N'Footer_Cookie_Statement', N'Izjava o kolačićima', N'Cookie Statement' UNION ALL
 		SELECT N'Footer_Delivery_Terms', N'Uvjeti dostave', N'Terms of delivery' UNION ALL
 		SELECT N'Footer_Instructions', N'Uputstva', N'Instructions' UNION ALL
 		SELECT N'Footer_Legal_Entity', N'Pravne osobe', N'Legal entity' UNION ALL

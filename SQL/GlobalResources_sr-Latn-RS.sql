@@ -39,7 +39,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_CreateAccount_AcceptTermsAndConditions', N'Molim vas da prihvatite uvjete korištenja.', N'You must accept terms and conditions.' UNION ALL
 		SELECT N'Account_CreateAccount_CreateAccount', N'Kreiraj račun', N'Create your account' UNION ALL
 		SELECT N'Account_CreateAccount_Description', N'Unesite detalje računa ispod', N'Enter your account details below' UNION ALL
-		SELECT N'Account_CreateAccount_Label_PrivacyTermsConditions', N'Pri registraciji, slažete se s <a href="{0}">Uslovima usluge </a> i <a href="{1}"> polisom privatnosti.</a>.', N'By registering, you agree to our <a href="{0}">Terms of Service</a> and <a href="{1}">Privacy Policy</a>.' UNION ALL
+		SELECT N'Account_CreateAccount_Label_PrivacyTermsConditions', N'Pri registraciji, slažete se s <a href="{0}">Uslovima usluge </a> i <a href="{1}"> politikom privatnosti.</a>.', N'By registering, you agree to our <a href="{0}">Terms of Service</a> and <a href="{1}">Privacy Policy</a>.' UNION ALL
 		SELECT N'Account_CreateAccount_Mandatory', N'{0} polje je obavezno, molimo ispunite ga.', N'{0} field is mandatory, please fill it.' UNION ALL
 		SELECT N'Account_CreateAccount_NameLooksLikeEmail', N'Vaše korisničko ime previše liči na Vaš email. Molimo promjenite ga.', N'The member''s username looks like an e-mail address. Please change it.' UNION ALL
 		SELECT N'Account_CreateAccount_NameNonAlfaNum', N'Korisničko ime sadrži nedozvoljene znakove (#@!$ itd...). Molimo promjenite ga.', N'The username contains non-alpha numeric characters (#@!$ etc...). Please change it.' UNION ALL
