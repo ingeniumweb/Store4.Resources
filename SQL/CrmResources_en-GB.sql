@@ -191,6 +191,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_Today', N'Today' UNION ALL
 		SELECT N'DateFilter_Yesterday', N'Yesterday' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Cash Sales Order' UNION ALL
+		SELECT N'DocumentType_Contracts', N'Contracts' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Expense Order' UNION ALL
 		SELECT N'Document_Message_NotEnoughStock', N'There is not enough stock on the warehouse!' UNION ALL
 		SELECT N'Document_Message_SelectWarehouse', N'Please select your warehouse!' UNION ALL

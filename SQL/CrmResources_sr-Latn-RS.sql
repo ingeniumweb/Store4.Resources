@@ -192,6 +192,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_Today', N'Danas', N'Today' UNION ALL
 		SELECT N'DateFilter_Yesterday', N'Juče', N'Yesterday' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Prodaja za gotovinu', N'Cash Sales Order' UNION ALL
+		SELECT N'DocumentType_Contracts', N'Ugovori', N'Contracts' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Rashod', N'Expense Order' UNION ALL
 		SELECT N'Document_Message_NotEnoughStock', N'Nema dovoljno zaliha u magacinu!', N'There is not enough stock on the warehouse!' UNION ALL
 		SELECT N'Document_Message_SelectWarehouse', N'Molim vas da odaberete svoj magacin!', N'Please select your warehouse!' UNION ALL

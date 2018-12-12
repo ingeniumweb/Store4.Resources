@@ -35,6 +35,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Content', N'Content' UNION ALL
 		SELECT N'SiteMenu_Contents', N'Contents' UNION ALL
 		SELECT N'SiteMenu_Countries', N'Countries' UNION ALL
+		SELECT N'SiteMenu_Contracts_Title', N'Contracts' UNION ALL
 		SELECT N'SiteMenu_CountyStateProvinces', N'County/State/Provinces' UNION ALL
 		SELECT N'SiteMenu_CRM', N'CRM' UNION ALL
 		SELECT N'SiteMenu_Customers', N'Customers' UNION ALL
