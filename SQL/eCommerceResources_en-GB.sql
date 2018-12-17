@@ -195,14 +195,22 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Order_Details_Message', N'See your order details below' UNION ALL
 		SELECT N'Order_number', N'Your order number is' UNION ALL
 		SELECT N'Option_Country', N'Please, select your country' UNION ALL
+		SELECT N'Package_Delivery_Message', N'In the case of purchasing several products with different delivery deadlines, delivery deadline for the complete order is the same as the longer term.' UNION ALL
+		SELECT N'Package_Discount_Price', N'Discount Price:' UNION ALL
+		SELECT N'Package_FreeDeliveryCRO', N'Shipping is free within Croatia!' UNION ALL
+		SELECT N'Package_Lowest_Price', N'Lowest price:' UNION ALL
+		SELECT N'Package_Regular_Price', N'Regular Price:' UNION ALL
 		SELECT N'Pay_Order', N'Pay the order' UNION ALL
 		SELECT N'Payment_BookingOrderText', N'Payment for Booking order: {0}' UNION ALL
 		SELECT N'Payment_ChooseCreditCard', N'Choose your credit card' UNION ALL
 		SELECT N'Payment_Complete_Message', N'Your payment has been completed.' UNION ALL
 		SELECT N'Payment_InstalmentNumber', N'Instalment Number' UNION ALL
+		SELECT N'Payment_InstalmentPayment', N'Instalment Payment' UNION ALL
+		SELECT N'Payment_OneTima_Pay', N'One-Time Pay' UNION ALL
 		SELECT N'Payment_Cancel_Title', N'Payment Cancel' UNION ALL
 		SELECT N'Payment_Complete_Title', N'Payment Complete' UNION ALL
 		SELECT N'Payment_CreditCardsAccepted', N'Credit Cards accepted' UNION ALL
+		SELECT N'Payment_Delivery', N'Delivery' UNION ALL
 		SELECT N'Payment_Error_Title', N'Payment Error' UNION ALL
 		SELECT N'Payment_MainHeading', N'New Order' UNION ALL
 		SELECT N'Payment_MainHeadingText', N'Use the form below to submit your credit card information.' UNION ALL
@@ -214,6 +222,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_Reques_Cancel', N'Cancel Payment Reques' UNION ALL
 		SELECT N'Payment_Rules_Message', N'Selecting a card and installment number is informative, payment will be made at the next step where you select a card to pay as well as the desired number of installments.' UNION ALL
 		SELECT N'Payment_Total', N'TOTAL: ${0:N2}' UNION ALL
+		SELECT N'Payment_Wire_Transfer', N'Wire Transfer ' UNION ALL
 		SELECT N'Proceed_to_Checkout', N'Proceed to Checkout' UNION ALL
 		SELECT N'Product_IsFeatured', N'Featured' UNION ALL
 		SELECT N'Product_Image', N'Image' UNION ALL
