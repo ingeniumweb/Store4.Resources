@@ -98,6 +98,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Materials', N'Materials' UNION ALL
 		SELECT N'Data_Member', N'Member' UNION ALL
 		SELECT N'Data_Notice', N'Notice' UNION ALL
+		SELECT N'Data_NotProcured', N'Not Procured' UNION ALL
 		SELECT N'Data_OnHand', N'On Hand' UNION ALL
 		SELECT N'Data_Operation', N'Operation' UNION ALL
 		SELECT N'Data_Operations', N'Operations' UNION ALL
