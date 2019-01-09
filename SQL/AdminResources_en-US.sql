@@ -135,6 +135,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Task', N'Task' UNION ALL
 		SELECT N'ContentType_Template', N'Template' UNION ALL
 		SELECT N'ContentType_Testimonial', N'Testimonial' UNION ALL
+		SELECT N'Contract_Compliance_Percentage', N'Contract Compliance Percentage' UNION ALL
+		SELECT N'Contract_Delay', N'Delay (in days)' UNION ALL
 		SELECT N'Data_About', N'About' UNION ALL
 		SELECT N'Data_Abbreviation', N'Abbreviation' UNION ALL
 		SELECT N'Data_AccountType', N'Account Type' UNION ALL
@@ -346,8 +348,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Default_Statuses', N'Statuses' UNION ALL
 		SELECT N'Default_StatusPublished', N'Published' UNION ALL
 		SELECT N'Default_StatusUnpublished', N'Unpublished' UNION ALL
+		SELECT N'Delivery', N'Delivery' UNION ALL
+		SELECT N'Delivery_Day', N'Delivery day' UNION ALL
 		SELECT N'Dialog_Title_Success', N'Success' UNION ALL
 		SELECT N'Dialog_Title_Warning', N'Warning' UNION ALL
+		SELECT N'Distance_Of_Two_Deliveries', N'Distance between the last 2 deliveries' UNION ALL
 		SELECT N'Drfault_And', N'And' UNION ALL
 		SELECT N'Drfault_OR', N'Or' UNION ALL
 		SELECT N'DropDown_Default', N'Please Select' UNION ALL
@@ -375,6 +380,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Errors_500_Headline', N'An Error Occurred' UNION ALL
 		SELECT N'Errors_500_Title', N'Site Error' UNION ALL
 		SELECT N'Errors_Link_GoBack', N'Back to Homepage' UNION ALL
+		SELECT N'Expected_Contract_Compliance_Percentage', N'Expected Contract Compliance Percentage' UNION ALL
 		SELECT N'Link_Google', N'Google map link' UNION ALL
 		SELECT N'Exporting_Headline', N'Export Data with the Data Export Wizard' UNION ALL
 		SELECT N'Exporting_HelpBlock', N'Please choose which columns to export?.' UNION ALL
@@ -455,8 +461,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ModalTitle_AssignRoles', N'Assign roles to {0}' UNION ALL
 		SELECT N'ModalTitle_Edit', N'Edit' UNION ALL
 		SELECT N'ModalTitle_New', N'New {0}' UNION ALL
+		SELECT N'No_Delivery_Packages', N'Number of delivery packages' UNION ALL
+		SELECT N'Package_Delivered', N'Package Delivered' UNION ALL
+		SELECT N'Packet_Lag', N'The packet lag' UNION ALL
 		SELECT N'Pager_ShowingEntries', N'Showing <b>{0}</b> to <b>{1}</b> of <b>{2}</b> entries' UNION ALL
 		SELECT N'Placaholder_Default', N'Enter {0}' UNION ALL
+		SELECT N'Planned_Delivery', N'Planned for delivery' UNION ALL
 		SELECT N'Profile_Message_HideEncrypted', N'This field contains confidential information. Please, click here to edit' UNION ALL
 		SELECT N'Profile_Message_PhotoNotReset', N'Photo has not been reset: ' UNION ALL
 		SELECT N'Profile_Message_PhotoNotSaved', N'Your new photo has not been saved successfully: ' UNION ALL
@@ -687,7 +697,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Tabs_Themes', N'Themes' UNION ALL
 		SELECT N'Tabs_Title', N'General' UNION ALL
 		SELECT N'Tabs_Tweets', N'Tweets' UNION ALL
-		SELECT N'Tabs_UserInterface', N'User Interface' 
+		SELECT N'Tabs_UserInterface', N'User Interface' UNION ALL
+		SELECT N'Total_Delay', N'Total delay'
 END
 
 DECLARE currsor CURSOR FOR

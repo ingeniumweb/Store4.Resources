@@ -108,6 +108,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PaidOn', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Payment info' UNION ALL
 		SELECT N'Data_PaymentMethod', N'Payment Method' UNION ALL
+		SELECT N'Data_PeriodEnd', N'Peroid End' UNION ALL
+		SELECT N'Data_PeriodStart', N'Period Start' UNION ALL
 		SELECT N'Data_PIN', N'PIN' UNION ALL
 		SELECT N'Data_PlannedFinish', N'Planned Finish' UNION ALL
 		SELECT N'Data_PlannedStart', N'Planned Start' UNION ALL
@@ -127,6 +129,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_QuoteNumber', N'Quote #' UNION ALL
 		SELECT N'Data_RegistrationNumber', N'RegistrationNumber' UNION ALL
 		SELECT N'Data_Reference', N'Reference' UNION ALL
+		SELECT N'Data_RenewalPeriod', N'Renewal Period' UNION ALL
 		SELECT N'Data_RetailPrice', N'Retail Price' UNION ALL
 		SELECT N'Data_Report', N'Report' UNION ALL
 		SELECT N'Data_Routing', N'Routing' UNION ALL
@@ -192,7 +195,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_Today', N'Today' UNION ALL
 		SELECT N'DateFilter_Yesterday', N'Yesterday' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Cash Sales Order' UNION ALL
-		SELECT N'DocumentType_Contracts', N'Contracts' UNION ALL
+		SELECT N'DocumentType_Contract', N'Contract' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Expense Order' UNION ALL
 		SELECT N'Document_Message_NotEnoughStock', N'There is not enough stock on the warehouse!' UNION ALL
 		SELECT N'Document_Message_SelectWarehouse', N'Please select your warehouse!' UNION ALL
@@ -255,6 +258,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'LabelCompanyIsConsumer',N'Company Is Consumer' UNION ALL
 		SELECT N'Label_Discount', N'Discount' UNION ALL
 		SELECT N'Link_Activate', N'Activate' UNION ALL
+		SELECT N'Link_ApproveAsOrder', N'Approve As Order' UNION ALL
 		SELECT N'Link_AddNewItem', N'+ Add new item' UNION ALL
 		SELECT N'Link_ApproveAsOrder', N'Approve as Order' UNION ALL
 		SELECT N'Link_CancelOrder', N'Cancel Order' UNION ALL

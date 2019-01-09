@@ -108,6 +108,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PaidOn', N'Plaćeno na', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Podaci o plaćanju', N'Payment info' UNION ALL
 		SELECT N'Data_PaymentMethod', N'Plaćeno metodom', N'Payment Method' UNION ALL
+		SELECT N'Data_PeriodEnd', N'Razdoblje trajanja do', N'Peroid End' UNION ALL
+		SELECT N'Data_PeriodStart', N'Razdoblje trajanja od', N'Period Start' UNION ALL
 		SELECT N'Data_PIN', N'PIB', N'PIN' UNION ALL
 		SELECT N'Data_PlannedFinish', N'Planirani završetak', N'Planned Finish' UNION ALL
 		SELECT N'Data_PlannedStart', N'Planirani početak', N'Planned Start' UNION ALL
@@ -127,6 +129,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_QuoteNumber', N'Broj ponude #', N'Quote #' UNION ALL
 		SELECT N'Data_RegistrationNumber', N'Matični broj', N'RegistrationNumber' UNION ALL
 		SELECT N'Data_Reference', N'Referenca', N'Reference' UNION ALL
+		SELECT N'Data_RenewalPeriod', N'Trajanje ugovora', N'Renewal Period' UNION ALL
 		SELECT N'Data_RetailPrice', N'Maloprodajna cena', N'Retail Price' UNION ALL
 		SELECT N'Data_Report', N'Izveštaj', N'Report' UNION ALL
 		SELECT N'Data_Routing', N'Rute', N'Routing' UNION ALL
@@ -193,7 +196,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_Today', N'Danas', N'Today' UNION ALL
 		SELECT N'DateFilter_Yesterday', N'Juče', N'Yesterday' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Prodaja za gotovinu', N'Cash Sales Order' UNION ALL
-		SELECT N'DocumentType_Contracts', N'Ugovori', N'Contracts' UNION ALL
+		SELECT N'DocumentType_Contract', N'Ugovor', N'Contracts' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Rashod', N'Expense Order' UNION ALL
 		SELECT N'Document_Message_NotEnoughStock', N'Nema dovoljno zaliha u magacinu!', N'There is not enough stock on the warehouse!' UNION ALL
 		SELECT N'Document_Message_SelectWarehouse', N'Molim vas da odaberete svoj magacin!', N'Please select your warehouse!' UNION ALL
@@ -256,6 +259,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'LabelCompanyIsConsumer', N'Fizičko lice', N'Company Is Consumer' UNION ALL
 		SELECT N'Label_Discount', N'Rabat', N'Discount' UNION ALL
 		SELECT N'Link_Activate', N'Aktiviraj', N'Activate' UNION ALL
+		SELECT N'Link_ApproveAsOrder', N'Odobri kao narudžbenicu', N'Approve As Order' UNION ALL
 		SELECT N'Link_AddNewItem', N'+ Dodaj novu stavku', N'+ Add new item' UNION ALL
 		SELECT N'Link_ApproveAsOrder', N'Odobri kao narudžbu', N'Approve as Order' UNION ALL
 		SELECT N'Link_CancelOrder', N'Otkaži narudžbu', N'Cancel Order' UNION ALL

@@ -135,6 +135,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Task', N'Zadatak', N'Task' UNION ALL
 		SELECT N'ContentType_Template', N'Šablon', N'Template' UNION ALL
 		SELECT N'ContentType_Testimonial', N'Preporuka', N'Testimonial' UNION ALL
+		SELECT N'Contract_Compliance_Percentage', N'Procenat Ispunjenosti ugovora', N'Contract Compliance Percentage' UNION ALL
+		SELECT N'Contract_Delay', N'Kašnjenje (u danima)', N'Delay (in days)' UNION ALL
 		SELECT N'Data_About', N'O meni', N'About' UNION ALL
 		SELECT N'Data_Abbreviation', N'Skraćenica', N'Abbreviation' UNION ALL
 		SELECT N'Data_AccountType', N'Tip računa', N'Account Type' UNION ALL
@@ -346,8 +348,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Default_Statuses', N'Statusi', N'Statuses' UNION ALL
 		SELECT N'Default_StatusPublished', N'Objavljeno', N'Published' UNION ALL
 		SELECT N'Default_StatusUnpublished', N'Neobjavljeno', N'Unpublished' UNION ALL
+		SELECT N'Delivery', N'Isporuka', N'Delivery' UNION ALL
+		SELECT N'Delivery_Day', N'Dan isporuke', N'Delivery day' UNION ALL
 		SELECT N'Dialog_Title_Success', N'Uspešno', N'Success' UNION ALL
 		SELECT N'Dialog_Title_Warning', N'Upozorenje', N'Warning' UNION ALL
+		SELECT N'Distance_Of_Two_Deliveries', N'Razmak između 2 poslednje isporuke', N'Distance between the last 2 deliveries' UNION ALL
 		SELECT N'Drfault_And', N'I', N'And' UNION ALL
 		SELECT N'Drfault_OR', N'Ili', N'Or' UNION ALL
 		SELECT N'DropDown_Default', N'Molimo odaberite', N'Please Select' UNION ALL
@@ -375,6 +380,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Errors_500_Headline', N'Došlo je do greške.', N'An Error Occurred' UNION ALL
 		SELECT N'Errors_500_Title', N'Greška u stranici', N'Site Error' UNION ALL
 		SELECT N'Errors_Link_GoBack', N'Povratak na glavnu stranicu', N'Back to Homepage' UNION ALL
+		SELECT N'Expected_Contract_Compliance_Percentage', N'Očekivani procenat ispunjenosti ugovora', N'Expected Contract Compliance Percentage' UNION ALL
 		SELECT N'Exporting_Headline', N'Izvoz podataka pomoću čarabnjaka', N'Export Data with the Data Export Wizard' UNION ALL
 		SELECT N'Exporting_HelpBlock', N'Odaberite kolone za izvoz.', N'Please choose which columns to export?.' UNION ALL
 		SELECT N'Field_Encrypted_Message', N'Vrednost polja će biti enkriptovana u bazi podataka.', N'The field value will be encrypted in the database.' UNION ALL
@@ -455,8 +461,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ModalTitle_AssignRoles', N'Dodaj uloge {0}', N'Assign roles to {0}' UNION ALL
 		SELECT N'ModalTitle_Edit', N'Uredi', N'Edit' UNION ALL
 		SELECT N'ModalTitle_New', N'Nova {0}', N'New {0}' UNION ALL
+		SELECT N'No_Delivery_Packages', N'Broj paketa za isporuku', N'Number of delivery packages' UNION ALL
+		SELECT N'Package_Delivered', N'Isporučeno paketa', N'Package Delivered' UNION ALL
+		SELECT N'Packet_Lag', N'Zaostatak u paketima', N'The packet lag' UNION ALL
 		SELECT N'Pager_ShowingEntries', N'Prikaz <b>{0}</b> do <b>{1}</b> od <b>{2}</b> unosa', N'Showing <b>{0}</b> to <b>{1}</b> of <b>{2}</b> entries' UNION ALL
 		SELECT N'Placaholder_Default', N'Unesi {0}', N'Enter {0}' UNION ALL
+		SELECT N'Planned_Delivery', N'Planirano za isporuku', N'Planned for delivery' UNION ALL
 		SELECT N'Profile_Message_HideEncrypted', N'Ovo polje sadrži poverljive informacije. Molimo, kliknite ovde da bi uredili.', N'This field contains confidential information. Please, click here to edit' UNION ALL
 		SELECT N'Profile_Message_PhotoNotReset', N'Slika nije resetovana:', N'Photo has not been reset:' UNION ALL
 		SELECT N'Profile_Message_PhotoNotSaved', N'Vaša nova slika nije uspešno sačuvana:', N'Your new photo has not been saved successfully:' UNION ALL
@@ -687,7 +697,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Tabs_Themes', N'Teme', N'Themes' UNION ALL
 		SELECT N'Tabs_Title', N'Generalno', N'General' UNION ALL
 		SELECT N'Tabs_Tweets', N'Tweet-ovi', N'Tweets' UNION ALL
-		SELECT N'Tabs_UserInterface', N'Korisnički interfejs', N'User Interface' 
+		SELECT N'Tabs_UserInterface', N'Korisnički interfejs', N'User Interface' UNION ALL
+		SELECT N'Total_Delay', N'Ukupno kašnjenje', N'Total delay'  
 END
 
 DECLARE currsor CURSOR FOR
