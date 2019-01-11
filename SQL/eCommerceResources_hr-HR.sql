@@ -249,7 +249,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Referral_Level_4', N'Razina 4', N'Level 4' UNION ALL
 		SELECT N'Referral_Level_5', N'Razina 5', N'Level 5' UNION ALL
 		SELECT N'Referrals_Member', N'Broj članova', N'Number of referrals' UNION ALL
-		SELECT N'Referral_Members_Rule_Message', N'Nedostaje ti još {0} član/ova u teamu da bi mogao koristiti Superbonus.<br />Minimalan broj članova = 12', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 12' UNION ALL
+		SELECT N'Referral_Members_Rule_Message', N'Nedostaje ti još {0} član/ova u teamu da bi mogao koristiti Superbonus.<br />Minimalan broj članova = 1', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 1' UNION ALL
 		SELECT N'Referral_Purchases_Rule_Message', N'Da bi mogao koristiti Superbonus moraš ostvariti bar jednu kupnju zadnju godina dana.', N'To be able to use Superbonus you have to make at least one purchase in the last year of the day.' UNION ALL
 		SELECT N'Referrals_Realized_Sales', N'Ostvarenih prodaja', N'Realized sales' UNION ALL
 		SELECT N'Reward_points', N'Bonus / Team', N'Reward points' UNION ALL
