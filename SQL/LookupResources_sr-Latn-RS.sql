@@ -218,7 +218,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Tasks_Once', N'Jednom', N'Once' UNION ALL
 		SELECT N'Tasks_Weekly', N'Nedeljno', N'Weekly' UNION ALL
 		SELECT N'Tasks_Yearly', N'Godišnje', N'Yearly' UNION ALL
-		SELECT N'PaymentType_BankTransfer', N'Bankovni prenos', N'Bank Transfer' UNION ALL
+		SELECT N'PaymentType_BankTransfer', N'Virmansko plaćanje', N'Bank Transfer' UNION ALL
 		SELECT N'PaymentType_Cheque', N'Ček', N'Cheque' UNION ALL
 		SELECT N'PaymentType_CreditCard', N'Kreditna kartica', N'Credit Card' UNION ALL
 		SELECT N'PaymentType_PayPal', N'PayPal', N'PayPal' UNION ALL

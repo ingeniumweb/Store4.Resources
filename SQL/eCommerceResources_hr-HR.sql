@@ -343,6 +343,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Table_Purchases_Number', N'Broj kupovina', N'Number of purchases' UNION ALL
 		SELECT N'Table_Sum', N'Ukupno', N'Sum' UNION ALL
 		SELECT N'Total_Fund', N'Ukupni fond', N'Total fund' UNION ALL
+		SELECT N'Trade_Margin', N'Marža', N'Trade Margin' UNION ALL
 		SELECT N'Update_All_to_basket', N'Dodaj sve u košaricu', N'Update All to basket' UNION ALL
 		SELECT N'User_account', N'Korisniki račun', N'User account' UNION ALL
 		SELECT N'User_data', N'Korisnički podaci', N'User data' UNION ALL

@@ -344,6 +344,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Table_Purchases_Number', N'Number of purchases' UNION ALL
 		SELECT N'Table_Sum', N'Sum' UNION ALL
 		SELECT N'Total_Fund', N'Total fund' UNION ALL
+		SELECT N'Trade_Margin', N'Trade Margin' UNION ALL
 		SELECT N'Update_All_to_basket', N'Update All to basket' UNION ALL
 		SELECT N'User_account', N'User account' UNION ALL
 		SELECT N'User_data', N'User data' UNION ALL
