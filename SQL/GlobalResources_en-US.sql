@@ -23,7 +23,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_Controller_AccountBlocked', N'Your account was blocked.' UNION ALL
 		SELECT N'Account_Controller_AccountDoesntExist', N'The account doesn''t exist.' UNION ALL
 		SELECT N'Account_Controller_AccountLocked', N'The account is locked!' UNION ALL
-		SELECT N'Account_Controller_AccountExists', N'The account already exists with that email address' UNION ALL
+		SELECT N'Account_Controller_AccountExists', N'The account already exists with that email address or username' UNION ALL
 		SELECT N'Account_Controller_Activated', N'Your account {{name}} has been activated successfully.' UNION ALL
 		SELECT N'Account_Controller_ActivationMailSent', N'Activation email has been sent. Please check your Inbox or Spam folder.' UNION ALL
 		SELECT N'Account_Controller_CantSendNotification', N'Something went wrong with sending email notification. Site administration has been notified.' UNION ALL
