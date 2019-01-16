@@ -333,7 +333,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Save_Info_Warning', N'Spremi adresu i informacije za sljedeći puta', N'Save my address and info for next time' UNION ALL
 		SELECT N'Select_Country_Title', N'Izaberite državu.', N'Please, select your country.' UNION ALL
 		SELECT N'Share_Product_Title', N'Podijeli proizvod', N'Share this product' UNION ALL
-		SELECT N'Share_ReferralLink_Title', N'Podijeli svoj jedinstevni referral link', N'Share your uniqoue referral link' UNION ALL
+		SELECT N'Share_ReferralLink_Title', N'Podijeli svoj jedinstveni referal link', N'Share your uniqoue referral link' UNION ALL
 		SELECT N'Shop_Title', N'Trgovina', N'Shop' UNION ALL
 		SELECT N'Signin_New_Customer', N'Novi korisnik', N'New Customer' UNION ALL
 		SELECT N'Signin_Returning_Customer', N'Postojeći korisnik', N'Returning Customer'UNION ALL
@@ -345,7 +345,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Total_Fund', N'Ukupni fond', N'Total fund' UNION ALL
 		SELECT N'Trade_Margin', N'Marža', N'Trade Margin' UNION ALL
 		SELECT N'Update_All_to_basket', N'Dodaj sve u košaricu', N'Update All to basket' UNION ALL
-		SELECT N'User_account', N'Korisniki račun', N'User account' UNION ALL
+		SELECT N'User_account', N'Korisnički račun', N'User account' UNION ALL
 		SELECT N'User_data', N'Korisnički podaci', N'User data' UNION ALL
 		SELECT N'Username_or_email', N'Korisničko ime ili email', N'Username or email' UNION ALL
 		SELECT N'Webhooks_Error', N'Pogreška', N'Error' UNION ALL
