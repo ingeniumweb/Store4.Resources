@@ -252,6 +252,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SubscriptionTypePeriod_Yearly', N'Yearly' UNION ALL
 		SELECT N'ContentType_Product', N'Product' UNION ALL
 		SELECT N'ContentType_Company', N'Company' UNION ALL
+		SELECT N'DocumentStatus_Contract_OnHold', N'OnHold' UNION ALL
+		SELECT N'DocumentStatus_Contract_Fulfilled', N'Fulfilled' UNION ALL
+		SELECT N'DocumentStatus_Contract_Finalized', N'Finalized' UNION ALL
+		SELECT N'DocumentStatus_Contract_Cancelled', N'Cancelled' UNION ALL
+		SELECT N'DocumentStatus_Contract_Void', N'Void' UNION ALL
+		SELECT N'DocumentStatus_Contract_Active', N'Active' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Draft', N'Draft' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Void', N'Void' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Active', N'Active' UNION ALL
