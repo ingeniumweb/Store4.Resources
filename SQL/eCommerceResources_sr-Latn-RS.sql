@@ -75,6 +75,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BreakTimeByMinutes', N'Pauza po minutama', N'Break By Minutes' UNION ALL
 		SELECT N'Data_City', N'Grad', N'City' UNION ALL
 		SELECT N'Data_CompletedOrders', N'Završene narudžbe', N'Completed Orders' UNION ALL
+		SELECT N'Data_ContractDate', N'Datum po ugovoru', N'Date by contract' UNION ALL
 		SELECT N'Data_Country', N'Zemlja', N'Country' UNION ALL
 		SELECT N'Data_CurrentBalance', N'Trenutno stanje', N'Current Balance' UNION ALL
 		SELECT N'Data_DaysOfWeek', N'Dani u nedelji', N'Days of Week' UNION ALL
@@ -249,8 +250,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Referral_Level_4', N'Razina 4', N'Level 4' UNION ALL
 		SELECT N'Referral_Level_5', N'Razina 5', N'Level 5' UNION ALL
 		SELECT N'Referrals_Member', N'Broj članova', N'Number of referrals' UNION ALL
-		SELECT N'Referral_Members_Rule_Message', N'Nedostaje ti još {0} član/ova u teamu da bi mogao koristiti Superbonus.<br />Minimalan broj članova = 1', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 1' UNION ALL
-		SELECT N'Referral_Purchases_Rule_Message', N'Da bi mogao koristiti Superbonus moraš ostvariti bar jednu kupnju zadnju godina dana.', N'To be able to use Superbonus you have to make at least one purchase in the last year of the day.' UNION ALL
+		SELECT N'Referral_Members_Rule_Message', N'Bonus od kupovine korisnika koje ste pozvali (Superbonus). Virtualni novčanik vam je još neaktivan jer se još nitko nije registrirao s vašim referal linkom', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 1' UNION ALL
+		SELECT N'Referral_Purchases_Rule_Message', N'Bonus ostvarujete od kupovine. Do sada niste obavili kupovinu.', N'You get a bonus from buying. So far, you did not make a purchase.' UNION ALL
 		SELECT N'Referrals_Realized_Sales', N'Ostvarenih prodaja', N'Realized sales' UNION ALL
 		SELECT N'Reward_points', N'Bonus / Team', N'Reward points' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za venčanje u svom gradu.', N'Find everything for a wedding in your city.' UNION ALL

@@ -75,6 +75,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BreakTimeByMinutes', N'Break By Minutes' UNION ALL
 		SELECT N'Data_City', N'City' UNION ALL
 		SELECT N'Data_CompletedOrders', N'Completed Orders' UNION ALL
+		SELECT N'Data_ContractDate', N'Date by contract' UNION ALL
 		SELECT N'Data_Country', N'Country' UNION ALL
 		SELECT N'Data_CurrentBalance', N'Current Balance' UNION ALL
 		SELECT N'Data_DaysOfWeek', N'Days of Week' UNION ALL
@@ -245,7 +246,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Referral_Level_5', N'Level 5' UNION ALL
 		SELECT N'Referrals_Member', N'Number of referrals' UNION ALL
 		SELECT N'Referral_Members_Rule_Message', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 1' UNION ALL
-		SELECT N'Referral_Purchases_Rule_Message', N'To be able to use Superbonus you have to make at least one purchase in the last year of the day.' UNION ALL
+		SELECT N'Referral_Purchases_Rule_Message', N'You get a bonus from buying. So far, you did not make a purchase.' UNION ALL
 		SELECT N'Registered_Users', N'Registered users' UNION ALL
 		SELECT N'Referrals_Realized_Sales', N'Realized sales' UNION ALL
 		SELECT N'Reward_points', N'Reward points' UNION ALL
