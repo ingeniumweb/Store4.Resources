@@ -105,6 +105,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_OrderNumber', N'Broj narudžbe #', N'Order #' UNION ALL
 		SELECT N'Data_PacketSize', N'Veličina paketa', N'Packet Size' UNION ALL
 		SELECT N'Data_PacketSizeLabel', N'Naziv paketa', N'Packet Size Label' UNION ALL
+		SELECT N'Data_PaidDate', N'Datum računa', N'Invoice date' UNION ALL
 		SELECT N'Data_PaidOn', N'Plaćeno na', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Podaci o plaćanju', N'Payment info' UNION ALL
 		SELECT N'Data_PaymentMethod', N'Plaćeno metodom', N'Payment Method' UNION ALL

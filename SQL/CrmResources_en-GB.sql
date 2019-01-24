@@ -105,6 +105,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_OrderNumber', N'Order #' UNION ALL
 		SELECT N'Data_PacketSize', N'Packet Size' UNION ALL
 		SELECT N'Data_PacketSizeLabel', N'Packet Size Label' UNION ALL
+		SELECT N'Data_PaidDate', N'Invoice date' UNION ALL
 		SELECT N'Data_PaidOn', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Payment info' UNION ALL
 		SELECT N'Data_PaymentMethod', N'Payment Method' UNION ALL
