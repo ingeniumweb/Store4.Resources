@@ -74,12 +74,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BreakStartTime', N'Početak pauze', N'Break start time' UNION ALL
 		SELECT N'Data_BreakTimeByMinutes', N'Pauza po minutama', N'Break By Minutes' UNION ALL
 		SELECT N'Data_City', N'Grad', N'City' UNION ALL
-		SELECT N'Data_CompletedOrders', N'Završene narudžbe', N'Completed Orders' UNION ALL
+		SELECT N'Data_CompletedOrders', N'Ukupno naručeno iznos', N'Completed Orders' UNION ALL
 		SELECT N'Data_ContractDate', N'Datum po ugovoru', N'Date by contract' UNION ALL
 		SELECT N'Data_Country', N'Zemlja', N'Country' UNION ALL
 		SELECT N'Data_CurrentBalance', N'Trenutno stanje', N'Current Balance' UNION ALL
 		SELECT N'Data_DaysOfWeek', N'Dani u nedelji', N'Days of Week' UNION ALL
-		SELECT N'Data_Deposits', N'Polog', N'Deposits' UNION ALL
+		SELECT N'Data_Deposits', N'Ukupno plaćeno', N'Deposits' UNION ALL
 		SELECT N'Data_Description', N'Opis', N'Description' UNION ALL
 		SELECT N'Data_EventDate', N'Datum događaja', N'Event Date' UNION ALL
 		SELECT N'Data_EventEndTime', N'Završno vreme', N'End Time' UNION ALL
