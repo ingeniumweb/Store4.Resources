@@ -288,8 +288,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_PayWithStripe', N'Plati Stripe-om', N'Pay With Stripe' UNION ALL
 		SELECT N'Link_Renewal', N'Obnovi', N'Renewal' UNION ALL
 		SELECT N'MPR_Title', N'Kreiraj proizvodni nalog', N'Generate Manufacturing Order' UNION ALL
+		SELECT N'Order_EmailCreditCard', N'Email-info narudžbenica - plaćeno karticom', N'Send Order Confirmation Email CreditCard' UNION ALL
+		SELECT N'Order_EmailWireTransfer', N'Email-info narudžbenica - plaćeno virmanski', N'Send Order Confirmation Email WireTransfer' UNION ALL
 		SELECT N'Products_Refferalprogram', N'Referal program', N'Refferal Program Enabled' UNION ALL
 		SELECT N'Products_Measurementunit', N'Prikaži mjernu jedinica', N'Show Measurement Unit' UNION ALL
+		SELECT N'Purchase_ConfirmationEmail', N'Email-info potvrda kupovine', N'Send Purchase Confirmation Email' UNION ALL
 		SELECT N'Resetting_document_numbers', N'Resetiraj brojeve dokumenata za novu fiskalnu godinu', N'Resetting Document Numbers at a new Fiscal Year' UNION ALL
 		SELECT N'SiteMenu_BillOfMaterials', N'Popis potrebnih materijala', N'Bill of Materials' UNION ALL
 		SELECT N'SiteMenu_CashSalesOrders', N'Prodaja za gotovinu', N'Cash Sales Orders' UNION ALL
