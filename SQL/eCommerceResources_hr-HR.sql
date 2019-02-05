@@ -250,10 +250,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Referral_Level_4', N'Razina 4', N'Level 4' UNION ALL
 		SELECT N'Referral_Level_5', N'Razina 5', N'Level 5' UNION ALL
 		SELECT N'Referrals_Member', N'Broj članova', N'Number of referrals' UNION ALL
-		SELECT N'Referral_Members_Rule_Message', N'Bonus od kupovine korisnika koje ste pozvali (Superbonus). Virtualni novčanik vam je još neaktivan jer se još nitko nije registrirao s vašim referal linkom', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 1' UNION ALL
+		SELECT N'Referral_Members_Rule_Message', N'Bonus od kupovine korisnika koje ste pozvali u Superklub (Superbonus). Može se koristiti nakon što aktivirate virtualni novčanik, svojom kupovinom unutar 365 dana. Niste još obavili kupovinu.', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 1' UNION ALL
 		SELECT N'Referral_Purchases_Rule_Message', N'Bonus ostvarujete od kupovine. Do sada niste obavili kupovinu.', N'You get a bonus from buying. So far, you did not make a purchase.' UNION ALL
 		SELECT N'Referrals_Realized_Sales', N'Ostvarenih prodaja', N'Realized sales' UNION ALL
-		SELECT N'Reward_points', N'Bonus / Team', N'Reward points' UNION ALL
+		SELECT N'Reward_points', N'Virtualni novčanik', N'Virtual Wallet' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za vjenčanje u vašem gradu.', N'Find everything for a wedding in your city.' UNION ALL
 		SELECT N'Success_EventDeleted', N'Stavke događaja uspješno obrisane!', N'Event Entries successfully deleted!' UNION ALL
 		SELECT N'Success_EventEntrySaved', N'Stavke događaja uspješno snimljene!', N'Event entries successfully saved.' UNION ALL

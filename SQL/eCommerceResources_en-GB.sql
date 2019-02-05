@@ -249,7 +249,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Referral_Purchases_Rule_Message', N'You get a bonus from buying. So far, you did not make a purchase.' UNION ALL
 		SELECT N'Registered_Users', N'Registered users' UNION ALL
 		SELECT N'Referrals_Realized_Sales', N'Realized sales' UNION ALL
-		SELECT N'Reward_points', N'Reward points' UNION ALL
+		SELECT N'Reward_points', N'Virtual Wallet' UNION ALL
 		SELECT N'Success_EventDeleted', N'Event Entries successfully deleted!' UNION ALL
 		SELECT N'Success_EventEntrySaved', N'Event entries successfully saved.' UNION ALL
 		SELECT N'TipsForNewlyweds_Title', N'Tips for Newlyweds' UNION ALL
