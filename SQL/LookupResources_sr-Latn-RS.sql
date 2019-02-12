@@ -257,6 +257,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentStatus_Contract_Finalized', N'Završen', N'Finalized' UNION ALL
 		SELECT N'DocumentStatus_Contract_Cancelled', N'Raskinut', N'Cancelled' UNION ALL
 		SELECT N'DocumentStatus_Contract_Void', N'Storniran', N'Void' UNION ALL
+		SELECT N'DocumentStatus_Contract_Sue', N'Tužba', N'Sue' UNION ALL
 		SELECT N'DocumentStatus_Contract_Active', N'Aktivan', N'Active' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Draft', N'Skica', N'Draft' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Void', N'Stornirano', N'Void' UNION ALL

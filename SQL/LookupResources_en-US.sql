@@ -257,6 +257,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentStatus_Contract_Finalized', N'Finalized' UNION ALL
 		SELECT N'DocumentStatus_Contract_Cancelled', N'Cancelled' UNION ALL
 		SELECT N'DocumentStatus_Contract_Void', N'Void' UNION ALL
+		SELECT N'DocumentStatus_Contract_Sue', N'Sue' UNION ALL
 		SELECT N'DocumentStatus_Contract_Active', N'Active' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Draft', N'Draft' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Void', N'Void' UNION ALL
