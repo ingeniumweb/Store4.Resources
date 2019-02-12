@@ -111,6 +111,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PaymentMethod', N'Plaćeno metodom', N'Payment Method' UNION ALL
 		SELECT N'Data_PeriodEnd', N'Razdoblje trajanja do', N'Peroid End' UNION ALL
 		SELECT N'Data_PeriodStart', N'Razdoblje trajanja od', N'Period Start' UNION ALL
+		SELECT N'Data_PreferentialPrice', N'Povlaštena cena', N'Preferential Price' UNION ALL
 		SELECT N'Data_PIN', N'PIB', N'PIN' UNION ALL
 		SELECT N'Data_PlannedFinish', N'Planirani završetak', N'Planned Finish' UNION ALL
 		SELECT N'Data_PlannedStart', N'Planirani početak', N'Planned Start' UNION ALL

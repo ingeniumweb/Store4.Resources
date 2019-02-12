@@ -111,6 +111,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PaymentMethod', N'Payment Method' UNION ALL
 		SELECT N'Data_PeriodEnd', N'Peroid End' UNION ALL
 		SELECT N'Data_PeriodStart', N'Period Start' UNION ALL
+		SELECT N'Data_PreferentialPrice', N'Preferential Price' UNION ALL
 		SELECT N'Data_PIN', N'PIN' UNION ALL
 		SELECT N'Data_PlannedFinish', N'Planned Finish' UNION ALL
 		SELECT N'Data_PlannedStart', N'Planned Start' UNION ALL

@@ -254,10 +254,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Company', N'Kompanija', N'Company' UNION ALL
 		SELECT N'DocumentStatus_Contract_OnHold', N'Na čekanju', N'OnHold' UNION ALL
 		SELECT N'DocumentStatus_Contract_Fulfilled', N'Ispunjen', N'Fulfilled' UNION ALL
-		SELECT N'DocumentStatus_Contract_Finalized', N'Završeno', N'Finalized' UNION ALL
+		SELECT N'DocumentStatus_Contract_Finalized', N'Završen', N'Finalized' UNION ALL
 		SELECT N'DocumentStatus_Contract_Cancelled', N'Raskinut', N'Cancelled' UNION ALL
-		SELECT N'DocumentStatus_Contract_Void', N'Stornirano', N'Void' UNION ALL
-		SELECT N'DocumentStatus_Contract_Active', N'Aktivno', N'Active' UNION ALL
+		SELECT N'DocumentStatus_Contract_Void', N'Storniran', N'Void' UNION ALL
+		SELECT N'DocumentStatus_Contract_Active', N'Aktivan', N'Active' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Draft', N'Skica', N'Draft' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Void', N'Stornirano', N'Void' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Active', N'Aktivno', N'Active' UNION ALL
