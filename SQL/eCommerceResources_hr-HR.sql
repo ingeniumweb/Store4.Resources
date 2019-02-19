@@ -104,6 +104,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PeriodEndDate', N'Kraj razdoblja', N'Period end date' UNION ALL
 		SELECT N'Data_PeriodStartDate', N'Početak razdoblja', N'Period start date' UNION ALL
 		SELECT N'Data_Price', N'Cijena', N'Price' UNION ALL
+		SELECT N'Data_PriceAfterDiscount', N'Cijena nakon rabata', N'Price after discount' UNION ALL
 		SELECT N'Data_Repeat', N'Ponovi', N'Repeat' UNION ALL
 		SELECT N'Data_RepeatCustom', N'Custom', N'Custom' UNION ALL
 		SELECT N'Data_RepeatDaily', N'Dnevni', N'Daily' UNION ALL

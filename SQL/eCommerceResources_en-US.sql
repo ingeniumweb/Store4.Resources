@@ -103,6 +103,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PeriodEndDate', N'Period end date' UNION ALL
 		SELECT N'Data_PeriodStartDate', N'Period start date' UNION ALL
 		SELECT N'Data_Price', N'Price' UNION ALL
+		SELECT N'Data_PriceAfterDiscount', N'Price after discount' UNION ALL
 		SELECT N'Data_Repeat', N'Repeat' UNION ALL
 		SELECT N'Data_RepeatCustom', N'Custom' UNION ALL
 		SELECT N'Data_RepeatDaily', N'Daily' UNION ALL
