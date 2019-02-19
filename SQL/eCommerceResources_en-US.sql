@@ -118,6 +118,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Street', N'Street' UNION ALL
 		SELECT N'Data_Sunday', N'Sunday' UNION ALL
 		SELECT N'Data_Thursday', N'Thursday' UNION ALL
+		SELECT N'Data_TotalAfterDiscount', N'Total after discount' UNION ALL
 		SELECT N'Data_Tuesday', N'Tuesday' UNION ALL
 		SELECT N'Data_Wednesday', N'Wednesday' UNION ALL
 		SELECT N'Data_Year', N'Year' UNION ALL

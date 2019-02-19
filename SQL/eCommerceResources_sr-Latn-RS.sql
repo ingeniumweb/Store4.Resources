@@ -118,6 +118,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Street', N'Ulica', N'Street' UNION ALL
 		SELECT N'Data_Sunday', N'Nedjelja', N'Sunday' UNION ALL
 		SELECT N'Data_Thursday', N'Četvrtak', N'Thursday' UNION ALL
+		SELECT N'Data_TotalAfterDiscount', N'Ukupno nakon rabata', N'Total after discount' UNION ALL
 		SELECT N'Data_Tuesday', N'Utorak', N'Tuesday' UNION ALL
 		SELECT N'Data_Wednesday', N'Sreda', N'Wednesday' UNION ALL
 		SELECT N'Data_Year', N'Godina', N'Year' UNION ALL
