@@ -79,6 +79,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_SignUp_Link_CreateAccount', N'Create Account' UNION ALL
 		SELECT N'Account_SignUp_Link_SignIn', N'Already have an account? <a href=''{0}''>SignIn</a>' UNION ALL
 		SELECT N'Account_SignUp_Title', N'Register' UNION ALL
+		SELECT N'Button_Renew_license', N'Renew license/Contact support' UNION ALL
 		SELECT N'Button_Send', N'Send' UNION ALL
 		SELECT N'Button_Submit', N'Submit' UNION ALL
 		SELECT N'ComboBox_DefaultValue', N'- Please select -' UNION ALL
