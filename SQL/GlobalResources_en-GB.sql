@@ -79,6 +79,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_SignUp_Link_CreateAccount', N'Create Account' UNION ALL
 		SELECT N'Account_SignUp_Link_SignIn', N'Already have an account? <a href=''{0}''>SignIn</a>' UNION ALL
 		SELECT N'Account_SignUp_Title', N'Register' UNION ALL
+		SELECT N'Already_Registered', N'Already have an account?' UNION ALL
 		SELECT N'Button_Renew_license', N'Renew license/Contact support' UNION ALL
 		SELECT N'Button_Send', N'Send' UNION ALL
 		SELECT N'Button_Submit', N'Submit' UNION ALL
@@ -155,6 +156,9 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Portfolio_ProjectUrl', N'Project Url' UNION ALL
 		SELECT N'Portfolio_RelatedProjects', N'Related Projects' UNION ALL
 		SELECT N'Portfolio_WorkList', N'What we did' UNION ALL
+		SELECT N'Registration_Process_Message_PartOne', N'Please check to see if you have received any e-mails from our Account Approval Department requesting any further information.' UNION ALL
+		SELECT N'Registration_Process_Message_PartTwo', N'If not, please wait a few business days for the account to be reviewed. ' UNION ALL
+		SELECT N'Registration_Process_Message_PartThree', N'If you do not receive any e-mail from us within 7 business days from the day you have applied, please <a href="{0}">Contact Us</a> for further assistance.' UNION ALL
 		SELECT N'SiteMenu_Articles', N'Articles' UNION ALL
 		SELECT N'SiteMenu_Blog', N'Blog' UNION ALL
 		SELECT N'SiteMenu_BlogPost', N'Blog Post' UNION ALL
@@ -171,7 +175,9 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SocialNetwork_Google', N'Google' UNION ALL
 		SELECT N'SocialNetwork_Twitter', N'Twitter' UNION ALL
 		SELECT N'SocialNetwork_Yahoo', N'Yahoo' UNION ALL
+		SELECT N'Store4_Vendor_Sign_Up', N'Store4 - Vendor Sign Up' UNION ALL
 		SELECT N'Wall_Message_RegisterdUsersOnly', N'Only registered users can add a new comment. Please <a href=''{0}''> Sign In</a> or <a href=''{1}''>Sign Up</a>.' UNION ALL
+		SELECT N'Welcome', N'Welcome to' UNION ALL
 		SELECT N'Widget_Archive_Title', N'Archive' UNION ALL
 		SELECT N'Widget_Categories_Title', N'Categories' UNION ALL
 		SELECT N'Widget_Tags_Title', N'Tags' UNION ALL

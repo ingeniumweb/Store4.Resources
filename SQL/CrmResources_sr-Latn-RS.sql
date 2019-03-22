@@ -260,6 +260,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'LabelCompanyInVatSystem', N'Klijent u sistemu PDV-a', N'Company In Vat System' UNION ALL
 		SELECT N'LabelCompanyIsConsumer', N'Fizičko lice', N'Company Is Consumer' UNION ALL
 		SELECT N'Label_Discount', N'Rabat', N'Discount' UNION ALL
+		SELECT N'License_Changed', N'Korisnikova licenca je promijenjena', N'Member license info has been changed' UNION ALL
 		SELECT N'Link_Activate', N'Aktiviraj', N'Activate' UNION ALL
 		SELECT N'Link_ApproveAsOrder', N'Odobri kao narudžbenicu', N'Approve As Order' UNION ALL
 		SELECT N'Link_AddNewItem', N'+ Dodaj novu stavku', N'+ Add new item' UNION ALL

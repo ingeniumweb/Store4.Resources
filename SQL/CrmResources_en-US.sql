@@ -259,6 +259,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'LabelCompanyInVatSystem', N'Company In Vat System' UNION ALL
 		SELECT N'LabelCompanyIsConsumer',N'Company Is Consumer' UNION ALL
 		SELECT N'Label_Discount', N'Discount' UNION ALL
+		SELECT N'License_Changed', N'Member license info has been changed' UNION ALL
 		SELECT N'Link_Activate', N'Activate' UNION ALL
 		SELECT N'Link_ApproveAsOrder', N'Approve As Order' UNION ALL
 		SELECT N'Link_AddNewItem', N'+ Add new item' UNION ALL

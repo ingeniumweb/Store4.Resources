@@ -79,6 +79,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_SignUp_Link_CreateAccount', N'Kreiraj račun', N'Create Account' UNION ALL
 		SELECT N'Account_SignUp_Link_SignIn', N'Već imaš račun? <a href=''{0}''>Prijava</a>', N'Already have an account? <a href=''{0}''>SignIn</a>' UNION ALL
 		SELECT N'Account_SignUp_Title', N'Registracija', N'Register' UNION ALL
+		SELECT N'Already_Registered', N'Već imate račun?', N'Already have an account?' UNION ALL
 		SELECT N'Button_Renew_license', N'Obnovi licencu/Kontaktiraj podršku', N'Renew license/Contact support' UNION ALL
 		SELECT N'Button_Send', N'Pošalji', N'Send' UNION ALL
 		SELECT N'Button_Submit', N'Submit', N'Submit' UNION ALL
@@ -155,6 +156,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Portfolio_ProjectUrl', N'Url projekta', N'Project Url' UNION ALL
 		SELECT N'Portfolio_RelatedProjects', N'Slični projekti', N'Related Projects' UNION ALL
 		SELECT N'Portfolio_WorkList', N'Što smo uradili', N'What we did' UNION ALL
+		SELECT N'Registration_Process_Message_PartOne', N'Molimo vas provjerite jeste li dobili e-mail sa ostalim informacijama.', N'Please check to see if you have received any e-mails from our Account Approval Department requesting any further information.' UNION ALL
+		SELECT N'Registration_Process_Message_PartTwo', N'Ako niste molimo vas pričekajte nekoliko radnih dana da zahtjev bude pregledan.', N'If not, please wait a few business days for the account to be reviewed. ' UNION ALL
+		SELECT N'Registration_Process_Message_PartThree', N'Ako niste primili nikakav povratni e-mail 7 dana od prijave, molimo <a href="{0}">Kontaktirajte nas</a> za pomoć.', N'If you do not receive any e-mail from us within 7 business days from the day you have applied, please <a href="/contact/">Contact Us</a> for further assistance.' UNION ALL
 		SELECT N'SiteMenu_Articles', N'Članci', N'Articles' UNION ALL
 		SELECT N'SiteMenu_Blog', N'Blog', N'Blog' UNION ALL
 		SELECT N'SiteMenu_BlogPost', N'Blog post', N'Blog Post' UNION ALL
@@ -171,7 +175,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SocialNetwork_Google', N'Google', N'Google' UNION ALL
 		SELECT N'SocialNetwork_Twitter', N'Twitter', N'Twitter' UNION ALL
 		SELECT N'SocialNetwork_Yahoo', N'Yahoo', N'Yahoo' UNION ALL
+		SELECT N'Store4_Vendor_Sign_Up', N'Store4 - Vendor Prijavite se', N'Store4 - Vendor Sign Up' UNION ALL
 		SELECT N'Wall_Message_RegisterdUsersOnly', N'Samo registrovani korisnici mogu dodati komentar.<br/>Molimo vas da se<a href=''{0}''> prijavite </a> ili <a href=''{1}''> registrujete</a>.', N'Only registered users can add a new comment. Please <a href=''{0}''> Sign In</a> or <a href=''{1}''>Sign Up</a>.' UNION ALL
+		SELECT N'Welcome', N'Dobrodošli u', N'Welcome to' UNION ALL
 		SELECT N'Widget_Archive_Title', N'Arhiva', N'Archive' UNION ALL
 		SELECT N'Widget_Categories_Title', N'Kategorije', N'Categories' UNION ALL
 		SELECT N'Widget_Tags_Title', N'Tagovi', N'Tags' UNION ALL
