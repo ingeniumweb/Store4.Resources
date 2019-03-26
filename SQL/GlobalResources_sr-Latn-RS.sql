@@ -87,6 +87,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Comments_Placeholder_WriteComment', N'Napiši komentar...', N'Write a comment...' UNION ALL
 		SELECT N'Comments_Title', N'Komentari', N'Comments' UNION ALL
 		SELECT N'Contact_Button_SendMessage', N'Pošalji poruku', N'Send Message' UNION ALL
+		SELECT N'Contact_Form_Info', N'Idemo poslovati', N'Lets do business' UNION ALL
+		SELECT N'Contact_Form_Tittle', N'Kontaktirajte nas', N'Get in Touch' UNION ALL
 		SELECT N'Contact_Message_Content', N'Primili smo vaš upit. Zahvaljujemo na interesu na saradnji s portalom {0} <a href="/">Početna</a>', N'We''ve received your inquiry. We appreciate your interest in {0}. <a href="/">Return Home</a>' UNION ALL
 		SELECT N'Contact_Message_Title', N'HVALA', N'THANK YOU' UNION ALL
 		SELECT N'Contact_SendMessage', N'Pošaljite poruku', N'Send a Message' UNION ALL
@@ -130,6 +132,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_PasswordRecovery', N'Zaboravljena lozinka', N'Password Recovery' UNION ALL
 		SELECT N'Link_PreviousPost', N'Prethodna objava', N'Previous Post' UNION ALL
 		SELECT N'Link_Register', N'Registracija', N'Register' UNION ALL
+		SELECT N'Link_Return_Home', N'Povratak na naslovnicu', N'Return to homepage' UNION ALL
 		SELECT N'Link_Reply', N'Odgovori', N'Reply' UNION ALL
 		SELECT N'Link_Send', N'Pošalji', N'Send' UNION ALL
 		SELECT N'Link_Sent', N'Poslano', N'Sent' UNION ALL
@@ -140,6 +143,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Subscribe', N'Prijavi se', N'Subscribe' UNION ALL
 		SELECT N'Link_Unsubscribe', N'Odjavi se', N'Unsubscribe' UNION ALL
 		SELECT N'LinkEditProfile', N'Uredi profil', N'Edit Profile' UNION ALL
+		SELECT N'Message_Contact', N'Javite nam se. Napišite kako vam možemo pomoći. Ispunite obrazac i mi ćemo Vas kontaktirati što je prije moguće.', N'Get in touch and let us know how we can help. Fill out the form and we’ll be in touch as soon as possible.' UNION ALL
 		SELECT N'Newsletter_Subscribe_Description', N'Vaša email adresa je sigurna i nikada je nećemo nikome proslijediti.', N'We''ll never share your email address and you can opt out at any time, we promise.' UNION ALL
 		SELECT N'Newsletter_Subscribe_Headline', N'Ostanimo u dodiru...', N'Let''s stay in touch' UNION ALL
 		SELECT N'Newsletter_Subscribe_Message_Content', N'Uspješno ste se prijavili na naš newsletter! <a href="/">Nazad</a>', N'You have successfully subscribed to our newsletter! <a href="/">Return Home</a>' UNION ALL
@@ -152,6 +156,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Newsletter_Unsubscribe_Message_Content', N'Uspješno ste se odjavili s našeg newslettera! <a href="/">Nazad</a>', N'You have successfully unsubscribed from our newsletter! <a href="/">Return Home</a>' UNION ALL
 		SELECT N'Newsletter_Unsubscribe_Message_Title', N'Otkazana pretplata', N'Unsubscribed' UNION ALL
 		SELECT N'Newsletter_Unsubscribe_Title', N'Odjavi se s našeg newsletter-a', N'Unsubscribe from Our Newsletter' UNION ALL
+		SELECT N'NewsletterSignup_Tittle', N'Ostanite u toku', N'Stay updated' UNION ALL
+		SELECT N'NewsletterSignup_Message', N'Pretplatite se da bi ostali u toku za najnovije akcije, vijesti, novosti i ostalo..!', N'Subscribe to our free update deals, announcements, freebies offer and More..!' UNION ALL
+		SELECT N'Navigation_Pricing', N'Cjenik', N'Pricing' UNION ALL
 		SELECT N'Porfolio_ProjectDescription_Title', N'Opis projekta', N'Project Description' UNION ALL
 		SELECT N'Portfolio_ProjectUrl', N'Url projekta', N'Project Url' UNION ALL
 		SELECT N'Portfolio_RelatedProjects', N'Slični projekti', N'Related Projects' UNION ALL
@@ -159,6 +166,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Registration_Process_Message_PartOne', N'Molimo vas provjerite jeste li dobili e-mail sa ostalim informacijama.', N'Please check to see if you have received any e-mails from our Account Approval Department requesting any further information.' UNION ALL
 		SELECT N'Registration_Process_Message_PartTwo', N'Ako niste molimo vas pričekajte nekoliko radnih dana da zahtjev bude pregledan.', N'If not, please wait a few business days for the account to be reviewed. ' UNION ALL
 		SELECT N'Registration_Process_Message_PartThree', N'Ako niste primili nikakav povratni e-mail 7 dana od prijave, molimo <a href="{0}">Kontaktirajte nas</a> za pomoć.', N'If you do not receive any e-mail from us within 7 business days from the day you have applied, please <a href="/contact/">Contact Us</a> for further assistance.' UNION ALL
+		SELECT N'Registration_Process_Tittle', N'Postupak registracije', N'Registration Process' UNION ALL
 		SELECT N'SiteMenu_Articles', N'Članci', N'Articles' UNION ALL
 		SELECT N'SiteMenu_Blog', N'Blog', N'Blog' UNION ALL
 		SELECT N'SiteMenu_BlogPost', N'Blog post', N'Blog Post' UNION ALL

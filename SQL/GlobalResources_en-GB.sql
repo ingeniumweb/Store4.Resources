@@ -87,6 +87,8 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Comments_Placeholder_WriteComment', N'Write a comment...' UNION ALL
 		SELECT N'Comments_Title', N'Comments' UNION ALL
 		SELECT N'Contact_Button_SendMessage', N'Send Message' UNION ALL
+		SELECT N'Contact_Form_Info', N'Lets do business' UNION ALL
+		SELECT N'Contact_Form_Tittle', N'Get in Touch' UNION ALL
 		SELECT N'Contact_Message_Content', N'We''ve received your inquiry. We appreciate your interest in {0}. <a href="/">Return Home</a>' UNION ALL
 		SELECT N'Contact_Message_Title', N'THANK YOU' UNION ALL
 		SELECT N'Contact_SendMessage', N'Send a Message' UNION ALL
@@ -130,6 +132,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_PasswordRecovery', N'Password Recovery' UNION ALL
 		SELECT N'Link_PreviousPost', N'Previous Post' UNION ALL
 		SELECT N'Link_Register', N'Register' UNION ALL
+		SELECT N'Link_Return_Home', N'Return to homepage' UNION ALL
 		SELECT N'Link_Reply', N'Reply' UNION ALL
 		SELECT N'Link_Send', N'Send' UNION ALL
 		SELECT N'Link_Sent', N'Sent' UNION ALL
@@ -140,6 +143,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Subscribe', N'Subscribe' UNION ALL
 		SELECT N'Link_Unsubscribe', N'Unsubscribe' UNION ALL
 		SELECT N'LinkEditProfile', N'Edit Profile' UNION ALL
+		SELECT N'Message_Contact', N'Get in touch and let us know how we can help. Fill out the form and we’ll be in touch as soon as possible.' UNION ALL
 		SELECT N'Newsletter_Subscribe_Description', N'We''ll never share your email address and you can opt out at any time, we promise.' UNION ALL
 		SELECT N'Newsletter_Subscribe_Headline', N'Let’s stay in touch' UNION ALL
 		SELECT N'Newsletter_Subscribe_Message_Content', N'You have successfully subscribed to our newsletter! <a href="/">Return Home</a>' UNION ALL
@@ -152,6 +156,9 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Newsletter_Unsubscribe_Message_Content', N'You have successfully unsubscribed from our newsletter! <a href="/">Return Home</a>' UNION ALL
 		SELECT N'Newsletter_Unsubscribe_Message_Title', N'Unsubscribed' UNION ALL
 		SELECT N'Newsletter_Unsubscribe_Title', N'Unsubscribe from Our Newsletter' UNION ALL
+		SELECT N'NewsletterSignup_Tittle', N'Stay updated' UNION ALL
+		SELECT N'NewsletterSignup_Message', N'Subscribe to our free update deals, announcements, freebies offer and More..!' UNION ALL
+		SELECT N'Navigation_Pricing', N'Pricing' UNION ALL
 		SELECT N'Porfolio_ProjectDescription_Title', N'Project Description' UNION ALL
 		SELECT N'Portfolio_ProjectUrl', N'Project Url' UNION ALL
 		SELECT N'Portfolio_RelatedProjects', N'Related Projects' UNION ALL
@@ -159,6 +166,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Registration_Process_Message_PartOne', N'Please check to see if you have received any e-mails from our Account Approval Department requesting any further information.' UNION ALL
 		SELECT N'Registration_Process_Message_PartTwo', N'If not, please wait a few business days for the account to be reviewed. ' UNION ALL
 		SELECT N'Registration_Process_Message_PartThree', N'If you do not receive any e-mail from us within 7 business days from the day you have applied, please <a href="{0}">Contact Us</a> for further assistance.' UNION ALL
+		SELECT N'Registration_Process_Tittle', N'Registration Process' UNION ALL
 		SELECT N'SiteMenu_Articles', N'Articles' UNION ALL
 		SELECT N'SiteMenu_Blog', N'Blog' UNION ALL
 		SELECT N'SiteMenu_BlogPost', N'Blog Post' UNION ALL
