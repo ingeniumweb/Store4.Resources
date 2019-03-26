@@ -56,6 +56,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_ForgotPassword_Title', N'Zaboravili ste lozinku?', N'Forgot your password?' UNION ALL
 		SELECT N'Account_PasswordRecovery__Description', N'Molimo unesite email da biste obnovili Vašu lozinku. Poslat ćemo Vam email s daljim uputstvima.', N'Please enter your e-mail to reset e your password. You''ll receive an e-mail with instructions.' UNION ALL
 		SELECT N'Account_PasswordRecovery_Title', N'Oporavak lozinke', N'Password Recovery' UNION ALL
+		SELECT N'Account_Retrieve_Text', N'U nastavku unesite adresu e-pošte da biste preuzeli svoj račun ili', N'Enter your email bellow to retrieve your account or' UNION ALL
 		SELECT N'Account_SignIn', N'Prijava', N'Sign In' UNION ALL
 		SELECT N'Account_SignIn_CanceledProvider', N'Račun je otkazan od strane provajdera.', N'Cancelled at provider.' UNION ALL
 		SELECT N'Account_SignIn_Description', N'Prijavite se u svoj račun', N'Sign in into your account' UNION ALL
@@ -78,6 +79,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_SignUp_Headline_SetupAccount', N'Korisnička podešavanja', N'Set up your account' UNION ALL
 		SELECT N'Account_SignUp_Link_CreateAccount', N'Kreiraj račun', N'Create Account' UNION ALL
 		SELECT N'Account_SignUp_Link_SignIn', N'Već imaš račun? <a href=''{0}''>Prijava</a>', N'Already have an account? <a href=''{0}''>SignIn</a>' UNION ALL
+		SELECT N'Account_SignUp_Text', N'Još nemate račun?', N'Dont have an account yet?' UNION ALL
 		SELECT N'Account_SignUp_Title', N'Registracija', N'Register' UNION ALL
 		SELECT N'Already_Registered', N'Već imate račun?', N'Already have an account?' UNION ALL
 		SELECT N'Button_Renew_license', N'Obnovi licencu/Kontaktiraj podršku', N'Renew license/Contact support' UNION ALL
@@ -184,6 +186,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SocialNetwork_Twitter', N'Twitter', N'Twitter' UNION ALL
 		SELECT N'SocialNetwork_Yahoo', N'Yahoo', N'Yahoo' UNION ALL
 		SELECT N'Store4_Vendor_Sign_Up', N'Store4 - Vendor Prijavite se', N'Store4 - Vendor Sign Up' UNION ALL
+		SELECT N'Text_Covered', N'Mislimo na vas', N'We ve got you covered' UNION ALL
 		SELECT N'Wall_Message_RegisterdUsersOnly', N'Samo registrovani korisnici mogu dodati komentar.<br/>Molimo vas da se<a href=''{0}''> prijavite </a> ili <a href=''{1}''> registrujete</a>.', N'Only registered users can add a new comment. Please <a href=''{0}''> Sign In</a> or <a href=''{1}''>Sign Up</a>.' UNION ALL
 		SELECT N'Welcome', N'Dobrodošli u', N'Welcome to' UNION ALL
 		SELECT N'Widget_Archive_Title', N'Arhiva', N'Archive' UNION ALL

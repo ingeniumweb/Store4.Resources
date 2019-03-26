@@ -56,6 +56,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_ForgotPassword_Title', N' Forgot your password?' UNION ALL
 		SELECT N'Account_PasswordRecovery__Description', N'Please enter your e-mail to reset e your password. You''ll receive an e-mail with instructions.' UNION ALL
 		SELECT N'Account_PasswordRecovery_Title', N'Password Recovery' UNION ALL
+		SELECT N'Account_Retrieve_Text', N'Enter your email bellow to retrieve your account or' UNION ALL
 		SELECT N'Account_SignIn', N'Sign In' UNION ALL
 		SELECT N'Account_SignIn_CanceledProvider', N'Cancelled at provider.' UNION ALL
 		SELECT N'Account_SignIn_Description', N'Sign in into your account' UNION ALL
@@ -68,6 +69,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_SignIn_Link_SignUp', N'Don''t have an account? <a href=''{0}''>Sign Up</a>' UNION ALL
 		SELECT N'Account_SignIn_Message_Redirecting', N'Redirecting to the' UNION ALL
 		SELECT N'Account_SignIn_Social_Ttile', N'or sign in via your social network account' UNION ALL
+		SELECT N'Account_SignUp_Text', N'Dont have an account yet?' UNION ALL
 		SELECT N'Account_SignIn_SocialNetMember', N'Already have a social network account? Sign in with' UNION ALL
 		SELECT N'Account_SignIn_Title', N'Sign In' UNION ALL
 		SELECT N'Account_SignUp', N'Sign Up' UNION ALL
@@ -184,6 +186,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SocialNetwork_Twitter', N'Twitter' UNION ALL
 		SELECT N'SocialNetwork_Yahoo', N'Yahoo' UNION ALL
 		SELECT N'Store4_Vendor_Sign_Up', N'Store4 - Vendor Sign Up' UNION ALL
+		SELECT N'Text_Covered', N'We ve got you covered' UNION ALL
 		SELECT N'Wall_Message_RegisterdUsersOnly', N'Only registered users can add a new comment. Please <a href=''{0}''> Sign In</a> or <a href=''{1}''>Sign Up</a>.' UNION ALL
 		SELECT N'Welcome', N'Welcome to' UNION ALL
 		SELECT N'Widget_Archive_Title', N'Archive' UNION ALL
