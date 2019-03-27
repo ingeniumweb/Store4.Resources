@@ -262,6 +262,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'License_Changed', N'Member license info has been changed' UNION ALL
 		SELECT N'Link_Activate', N'Activate' UNION ALL
 		SELECT N'Link_ApproveAsOrder', N'Approve As Order' UNION ALL
+		SELECT N'Link_ApproveAsQuote', N'Approve As Quote' UNION ALL
 		SELECT N'Link_AddNewItem', N'+ Add new item' UNION ALL
 		SELECT N'Link_ApproveAsOrder', N'Approve as Order' UNION ALL
 		SELECT N'Link_CancelOrder', N'Cancel Order' UNION ALL

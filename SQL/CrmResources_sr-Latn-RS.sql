@@ -263,6 +263,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'License_Changed', N'Korisnikova licenca je promijenjena', N'Member license info has been changed' UNION ALL
 		SELECT N'Link_Activate', N'Aktiviraj', N'Activate' UNION ALL
 		SELECT N'Link_ApproveAsOrder', N'Odobri kao narudžbenicu', N'Approve As Order' UNION ALL
+		SELECT N'Link_ApproveAsQuote', N'Odobri kao ponudu', N'Approve As Quote' UNION ALL
 		SELECT N'Link_AddNewItem', N'+ Dodaj novu stavku', N'+ Add new item' UNION ALL
 		SELECT N'Link_ApproveAsOrder', N'Odobri kao narudžbu', N'Approve as Order' UNION ALL
 		SELECT N'Link_CancelOrder', N'Otkaži narudžbu', N'Cancel Order' UNION ALL
