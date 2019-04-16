@@ -476,6 +476,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Profile_Setting_Headline_FieldSettings', N'{0} Settings' UNION ALL
 		SELECT N'Profile_Setting_Headline_General', N'General Settings' UNION ALL
 		SELECT N'Profile_Setting_Message_DomainSwitched', N'The profile for current domain ''{0}'' is switched off. Please contact site administrator.' UNION ALL
+		SELECT N'Public_Captcha_Requierd', N'Is captcha requierd' UNION ALL
 		SELECT N'RemoveDialog_Description', N'Are you sure to remove selected item(s)?' UNION ALL
 		SELECT N'RemoveDialog_Title', N'Remove item(s)' UNION ALL
 		SELECT N'ResizeAvatar_Description', N'To make adjustments, you can drag around and resize the square below.<br/> When you are happy with your photo click the “Save Photo” button.' UNION ALL

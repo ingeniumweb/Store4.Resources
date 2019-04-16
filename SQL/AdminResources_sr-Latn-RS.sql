@@ -476,6 +476,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Profile_Setting_Headline_FieldSettings', N'{0} Postavke', N'{0} Settings' UNION ALL
 		SELECT N'Profile_Setting_Headline_General', N'Generalne Postavke', N'General Settings' UNION ALL
 		SELECT N'Profile_Setting_Message_DomainSwitched', N'Profil za trenutni domen ''{0}'' je isključen. Molimo kontaktirajte administratora.', N'The profile for current domain ''{0}'' is switched off. Please contact site administrator.' UNION ALL
+		SELECT N'Public_Captcha_Requierd', N'Je li potrebna captcha', N'Is captcha requierd' UNION ALL
 		SELECT N'RemoveDialog_Description', N'Da li ste sigurni da želite ukloniti sledeću stavku(e)?', N'Are you sure to remove selected item(s)?' UNION ALL
 		SELECT N'RemoveDialog_Title', N'Ukloni stavku(e)', N'Remove item(s)' UNION ALL
 		SELECT N'ResizeAvatar_Description', N'Da bi napravili promene, možete pomeriti i promeniti veličinu kvadrata ispod.<br/> Kada ste zadovoljni svojom slikom kliknite na dugme "Snimi sliku".', N'To make adjustments, you can drag around and resize the square below.<br/> When you are happy with your photo click the “Save Photo” button.' UNION ALL
