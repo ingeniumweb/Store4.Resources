@@ -92,6 +92,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ItemCost', N'Trošak stavke', N'Item Cost' UNION ALL
 		SELECT N'Data_ItemName', N'Stavka', N'Item Name' UNION ALL
 		SELECT N'Data_LabourCost', N'Trošak radne snage', N'Labour Cost' UNION ALL
+		SELECT N'Data_Lead', N'Potencijalni klijent', N'Lead' UNION ALL
 		SELECT N'Data_ManufacturingCost', N'Troškovi proizvodnje', N'Manufacturing Cost' UNION ALL
 		SELECT N'Data_ManufacturingNumber', N'Broj Narudžbe #', N'Manufacturing Order#' UNION ALL
 		SELECT N'Data_MaterialCost', N'Cena materijala', N'Material Cost' UNION ALL
@@ -222,6 +223,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Documents_TransferOrders', N'Prenosna dostavnica', N'Transfer Orders' UNION ALL
 		SELECT N'DocumentType_BOM', N'Potrošni materijal', N'Bill of Material' UNION ALL
 		SELECT N'DocumentType_CashSalesOrder', N'Prodaja za gotovinu', N'Cash Sales Order' UNION ALL
+		SELECT N'DocumentType_Deal', N'Deal', N'Deal' UNION ALL
+		SELECT N'DocumentType_Deals', N'Deals', N'Deals' UNION ALL
 		SELECT N'DocumentType_ExpenseOrder', N'Rashodi', N'Expense Order' UNION ALL
 		SELECT N'DocumentType_Invoice', N'Račun', N'Invoice' UNION ALL
 		SELECT N'DocumentType_ManufacturingOrder', N'Proizvodna narudžba', N'Manufacturing Order' UNION ALL
@@ -270,6 +273,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Create', N'Kreiraj {0}', N'Create {0}' UNION ALL
 		SELECT N'Link_CreateNewBOM', N'Stvori novi BOM', N'Create a new BOM' UNION ALL
 		SELECT N'Link_CreateNewCustomer', N'Kreiraj novog kupca', N'Create a new customer' UNION ALL
+		SELECT N'Link_CreateNewLead', N'Kreiraj novog Potencijalnog klijenta', N'Create a new lead' UNION ALL
 		SELECT N'Link_CreateNewSupplier', N'Kreiraj novog dobavljača', N'Create a new supplier' UNION ALL
 		SELECT N'Link_CreateShipment', N'Kreiraj pošiljku', N'Create Shipment' UNION ALL
 		SELECT N'Link_Deactivate', N'Deaktiviraj', N'Deactivate' UNION ALL

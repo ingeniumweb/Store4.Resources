@@ -92,6 +92,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ItemCost', N'Item Cost' UNION ALL
 		SELECT N'Data_ItemName', N'Item Name' UNION ALL
 		SELECT N'Data_LabourCost', N'Labour Cost' UNION ALL
+		SELECT N'Data_Lead', N'Lead' UNION ALL
+		SELECT N'DocumentType_Deals', N'Deals' UNION ALL
 		SELECT N'Data_ManufacturingCost', N'Manufacturing Cost' UNION ALL
 		SELECT N'Data_ManufacturingNumber', N'Manufacturing Order#' UNION ALL
 		SELECT N'Data_MaterialCost', N'Material Cost' UNION ALL
@@ -220,6 +222,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Documents_TransferOrders',  N'Transfer Orders' UNION ALL
 		SELECT N'DocumentType_BOM', N'Bill of Material' UNION ALL
 		SELECT N'DocumentType_CashSalesOrder', N'Cash Sales Order' UNION ALL
+		SELECT N'DocumentType_Deal', N'Deal' UNION ALL
 		SELECT N'DocumentType_ExpenseOrder', N'Expense Order' UNION ALL
 		SELECT N'DocumentType_Invoice', N'Invoice' UNION ALL
 		SELECT N'DocumentType_ManufacturingOrder', N'Manufacturing Order' UNION ALL
@@ -269,6 +272,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Create', N'Create {0}' UNION ALL
 		SELECT N'Link_CreateNewBOM', N'Create a new BOM' UNION ALL
 		SELECT N'Link_CreateNewCustomer', N'Create a new customer' UNION ALL
+		SELECT N'Link_CreateNewLead', N'Create a new lead' UNION ALL
 		SELECT N'Link_CreateNewSupplier', N'Create a new supplier' UNION ALL
 		SELECT N'Link_CreateShipment', N'Create Shipment' UNION ALL
 		SELECT N'Link_Deactivate', N'Deactivate' UNION ALL

@@ -43,6 +43,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Description_Lists', N'Lists Editor (FAQs)' UNION ALL
 		SELECT N'SiteMenu_Description_Settings', N'Global Settings' UNION ALL
 		SELECT N'SiteMenu_Description_Support', N'Help & Support' UNION ALL
+		SELECT N'SiteMenu_Deals_Title', N'Deals' UNION ALL
 		SELECT N'SiteMenu_Domains', N'Domains' UNION ALL
 		SELECT N'SiteMenu_EmailCampaigns', N'Email Campaigns' UNION ALL
 		SELECT N'SiteMenu_Employees', N'Employees' UNION ALL
@@ -64,6 +65,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_IPBlockList', N'IP Block List' UNION ALL
 		SELECT N'SiteMenu_IPRestrictions', N'IPRestrictions' UNION ALL
 		SELECT N'SiteMenu_Labels', N'Labels' UNION ALL
+		SELECT N'SiteMenu_Leads_Title', N'Leads' UNION ALL
 		SELECT N'SiteMenu_Lists', N'Lists' UNION ALL
 		SELECT N'SiteMenu_Locations', N'Locations' UNION ALL
 		SELECT N'SiteMenu_Lookups', N'Lookups' UNION ALL
@@ -94,6 +96,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_RepresentationExpenses', N'RepresentationExpenses' UNION ALL
 		SELECT N'SiteMenu_Routings', N'Routings' UNION ALL
 		SELECT N'SiteMenu_SalesOrders', N'Sales Orders' UNION ALL
+		SELECT N'SiteMenu_SalesPipeline_Title', N'Sales Pipeline' UNION ALL
 		SELECT N'SiteMenu_ScheduledTasks', N'Scheduled Tasks' UNION ALL
 		SELECT N'SiteMenu_Security', N'Security' UNION ALL
 		SELECT N'SiteMenu_Settings', N'Settings' UNION ALL
