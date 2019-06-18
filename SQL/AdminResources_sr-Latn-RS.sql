@@ -71,6 +71,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_GenerateStore_LoadingText', N'Kreiranje nove trgovine...', N'Generating Store...' UNION ALL
 		SELECT N'Button_Grid', N'Lista', N'Grid' UNION ALL
 		SELECT N'Button_Import', N'Uvezi', N'Import' UNION ALL
+		SELECT N'Button_LoadMore', N'Učitaj više', N'Load more' UNION ALL
 		SELECT N'Button_MappData', N'Mapiraj', N'Mapp Data' UNION ALL
 		SELECT N'Button_MarkAsRead', N'Označi kao Pročitano', N'Mark as Read' UNION ALL
 		SELECT N'Button_MoveToInbox', N'Premjesti u Inbox', N'Move to Inbox' UNION ALL
@@ -670,6 +671,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Tasks', N'Zadaci', N'Tasks' UNION ALL
 		SELECT N'SiteMenu_Testimonials', N'Testimonijali', N'Testimonials' UNION ALL
 		SELECT N'Store_Name_Placeholder', N'Unesite valjano ime za trgovinu', N'Enter valid Store Name' UNION ALL
+		SELECT N'Switch_Grid', N'Promijeni na grid', N'Switch to grid' UNION ALL
+		SELECT N'Switch_List', N'Promijeni na listu', N'Switch to list' UNION ALL
 		SELECT N'Tabs_Address', N'Adresa', N'Address' UNION ALL
 		SELECT N'Tabs_API', N'API', N'API' UNION ALL
 		SELECT N'Tabs_API_Description', N'Da biste pristupili API-u, potrebne su dvije informacije. Prva je korisnički email koji je jedinstven, te koji koristimo da identifikujemo korisnički nalog. Drugi je API token koji se koristi kao lozinka za spajanje na API. Na ovom ekranu možete dobiti obje. U slučaju kreiranja novog API tokena, trebate kliknuti na "Generiši novi API oznake" kako bi ga generisali. Obje informacije su vam potrebne kod preuzimanja podataka preko API-a.', N'In order to access the API, you need two pieces of information. The first is a member email which is a unique code that we use to identify your account. The other is an API Token which acts as a password when you connect to the API. You can get both of those here. You should click on the "Generate a new API Token" to display it. You''ll need to remember both of those later when you start writing code.' UNION ALL

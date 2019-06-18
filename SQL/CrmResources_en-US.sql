@@ -14,6 +14,7 @@ SET @LanguageID = ISNULL(@LanguageID, 0)
 
 IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value)
+		SELECT N'Aprove_as_Customer', N'Lead to Customer' UNION ALL
 		SELECT N'AvatarPanel_Button_Reset', N'Reset' UNION ALL
 		SELECT N'AvatarPanel_Button_UploadLogo', N'Upload Logo' UNION ALL
 		SELECT N'Button_AddToInventory', N'Add to Inventory' UNION ALL
@@ -77,6 +78,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_EndDate', N'End Date' UNION ALL
 		SELECT N'Data_FixedCost', N'Fixed Cost' UNION ALL
 		SELECT N'Data_FixedTime', N'Fixed Time' UNION ALL
+		SELECT N'Data_Generate', N'Generate' UNION ALL
 		SELECT N'Data_HoldsStock', N'Holds Stock' UNION ALL
 		SELECT N'Data_Incoming', N'Incoming' UNION ALL
 		SELECT N'Data_IdentityID', N'IdentityID' UNION ALL
@@ -289,10 +291,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_MarkAsShipped', N'Mark as Shipped' UNION ALL
 		SELECT N'Link_MakeCashSalesOrder', N'Make Cash Sales Order' UNION ALL
 		SELECT N'Link_MakeShipment', N'Make Shipment' UNION ALL
+		SELECT N'Link_NewSalesDoc', N'New Sales Doc' UNION ALL
 		SELECT N'Link_PakInvoice', N'Pak Invoice' UNION ALL
 		SELECT N'Link_Pay', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Pay With Stripe' UNION ALL
 		SELECT N'Link_Renewal', N'Renewal' UNION ALL
+		SELECT N'Message_Changed_to_Customer_Succes', N'Lead has been successfully changed to a customer' UNION ALL
 		SELECT N'Message_Vendor_UnauthorizedAccess', N'An account with this email or username already exists. Please select another e-mail/username and try again.' UNION ALL
 		SELECT N'MPR_Title', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Send Order Confirmation Email CreditCard' UNION ALL

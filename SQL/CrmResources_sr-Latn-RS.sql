@@ -14,6 +14,7 @@ SET @LanguageID = ISNULL(@LanguageID, 0)
 
 IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value, [Description])
+		SELECT N'Aprove_as_Customer', N'Potvrdi kao klijenta', N'Lead to Customer' UNION ALL
 		SELECT N'AvatarPanel_Button_Reset', N'Poništi', N'Reset' UNION ALL
 		SELECT N'AvatarPanel_Button_UploadLogo', N'Upload logotipa', N'Upload Logo' UNION ALL
 		SELECT N'Button_AddToInventory', N'Dodaj u inventar', N'Add to Inventory' UNION ALL
@@ -77,6 +78,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_EndDate', N'Datum završetka', N'End Date' UNION ALL
 		SELECT N'Data_FixedCost', N'Fiksni trošak', N'Fixed Cost' UNION ALL
 		SELECT N'Data_FixedTime', N'Fiksno vreme', N'Fixed Time' UNION ALL
+		SELECT N'Data_Generate', N'Generiraj', N'Generate' UNION ALL
 		SELECT N'Data_HoldsStock', N'Skladište', N'Holds Stock' UNION ALL
 		SELECT N'Data_Incoming', N'Dolazno', N'Incoming' UNION ALL
 		SELECT N'Data_IdentityID', N'ID', N'IdentityID' UNION ALL
@@ -290,10 +292,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_MarkAsShipped', N'Označi kao poslato', N'Mark as Shipped' UNION ALL
 		SELECT N'Link_MakeCashSalesOrder',N'Napravi prodaja za gotovinu', N'MakeCashSalesOrder' UNION ALL
 		SELECT N'Link_MakeShipment',N'Napravi otpremnicu', N'MakeShipment' UNION ALL
+		SELECT N'Link_NewSalesDoc', N'Novi prodajni dokument', N'New Sales Doc' UNION ALL
 		SELECT N'Link_PakInvoice', N'Napravi račun', N'Pak Invoice' UNION ALL
 		SELECT N'Link_Pay', N'Plati', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Plati Stripe-om', N'Pay With Stripe' UNION ALL
 		SELECT N'Link_Renewal', N'Obnovi', N'Renewal' UNION ALL
+		SELECT N'Message_Changed_to_Customer_Succes', N'Lead has been successfully changed to a customer', N'Lead has been successfully changed to a customer' UNION ALL
 		SELECT N'Message_Vendor_UnauthorizedAccess', N'Račun sa ovim e-mailom ili korisničkim imenom već postoji. Molimo vas odaberite drugi e-mail/korisničko ime i pokušajte ponovno.', N'An account with this email or username already exists. Please select another e-mail/username and try again.' UNION ALL
 		SELECT N'MPR_Title', N'Kreiraj proizvodni nalog', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Email-info narudžbenica - plaćeno karticom', N'Send Order Confirmation Email CreditCard' UNION ALL

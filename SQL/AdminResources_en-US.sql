@@ -71,6 +71,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_GenerateStore_LoadingText', N'Generating Store...' UNION ALL
 		SELECT N'Button_Grid', N'Grid' UNION ALL
 		SELECT N'Button_Import', N'Import' UNION ALL
+		SELECT N'Button_LoadMore', N'Load more' UNION ALL
 		SELECT N'Button_MappData', N'Mapp Data' UNION ALL
 		SELECT N'Button_MarkAsRead', N'Mark as Read' UNION ALL
 		SELECT N'Button_MoveToInbox', N'Move to Inbox' UNION ALL
@@ -670,6 +671,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Tasks', N'Tasks' UNION ALL
 		SELECT N'SiteMenu_Testimonials', N'Testimonials' UNION ALL
 		SELECT N'Store_Name_Placeholder', N'Enter valid Store Name' UNION ALL	
+		SELECT N'Switch_Grid', N'Switch to grid' UNION ALL
+		SELECT N'Switch_List', N'Switch to list' UNION ALL
 		SELECT N'Tabs_Address', N'Address' UNION ALL
 		SELECT N'Tabs_API', N'API' UNION ALL
 		SELECT N'Tabs_API_Description', N'In order to access the API, you need two pieces of information. The first is a member email which is a unique code that we use to identify your account. The other is an API Token which acts as a password when you connect to the API. You can get both of those here. You should click on the "Generate a new API Token" to display it. You''ll need to remember both of those later when you start writing code.' UNION ALL
