@@ -43,6 +43,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Description_Lists', N'Lists Editor (FAQs)' UNION ALL
 		SELECT N'SiteMenu_Description_Settings', N'Global Settings' UNION ALL
 		SELECT N'SiteMenu_Description_Support', N'Help & Support' UNION ALL
+		SELECT N'SiteMenu_Devices', N'Devices' UNION ALL
+		SELECT N'SiteMenu_Distributors', N'Distributors' UNION ALL
 		SELECT N'SiteMenu_Deals_Title', N'Deals' UNION ALL
 		SELECT N'SiteMenu_Domains', N'Domains' UNION ALL
 		SELECT N'SiteMenu_EmailCampaigns', N'Email Campaigns' UNION ALL
@@ -79,9 +81,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Orders', N'Orders' UNION ALL
 		SELECT N'SiteMenu_Organizations', N'Organizations' UNION ALL
 		SELECT N'SiteMenu_Pages', N'Pages' UNION ALL
+		SELECT N'SiteMenu_Patients', N'Patients' UNION ALL
 		SELECT N'SiteMenu_Payment', N'Payment' UNION ALL
 		SELECT N'SiteMenu_Payments', N'Payments' UNION ALL
 		SELECT N'SiteMenu_PaymentSettings', N'Payment Settings' UNION ALL
+		SELECT N'SiteMenu_Physicans', N'Physicans' UNION ALL
 		SELECT N'SiteMenu_Plugins', N'Plugins' UNION ALL
 		SELECT N'SiteMenu_Portfolio', N'Portfolio' UNION ALL
 		SELECT N'SiteMenu_Portfolios', N'Portfolios' UNION ALL
