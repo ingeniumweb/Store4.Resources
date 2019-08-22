@@ -16,6 +16,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value)
 		SELECT N'SiteMenu_AccountSettings', N'Account Settings' UNION ALL
 		SELECT N'SiteMenu_Ads', N'Ads/Banners' UNION ALL
+		SELECT N'SiteMenu_Applications', N'Applications' UNION ALL
+		SELECT N'SiteMenu_Apps', N'Apps' UNION ALL
 		SELECT N'SiteMenu_Articles', N'Articles' UNION ALL
 		SELECT N'SiteMenu_Audit', N'Audit' UNION ALL
 		SELECT N'SiteMenu_BillOfMaterials', N'Bill of Materials' UNION ALL
@@ -73,7 +75,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Lookups', N'Lookups' UNION ALL
 		SELECT N'SiteMenu_Manufacturers', N'Manufacturers' UNION ALL
 		SELECT N'SiteMenu_ManufacturingOrders', N'Manufacturing Orders' UNION ALL
+		SELECT N'SiteMenu_Marketing', N'Marketing' UNION ALL
 		SELECT N'SiteMenu_Members', N'Members' UNION ALL
+		SELECT N'SiteMenu_MemberApps', N'Member Apps' UNION ALL
 		SELECT N'SiteMenu_Membership', N'Membership' UNION ALL
 		SELECT N'SiteMenu_Menus', N'Menus' UNION ALL
 		SELECT N'SiteMenu_News', N'News' UNION ALL
@@ -119,7 +123,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Tasks', N'Tasks' UNION ALL
 		SELECT N'SiteMenu_Testimonials', N'Testimonials' UNION ALL
 		SELECT N'SiteMenu_TimeEntries', N'Time Entries' UNION ALL
-		SELECT N'SiteMenu_TransferOrders', N'Transfer Orders'
+		SELECT N'SiteMenu_TransferOrders', N'Transfer Orders' UNION ALL
+		SELECT N'SiteMenu_WorkCenterTypes', N'Work Center Types' 
 END
 
 DECLARE currsor CURSOR FOR

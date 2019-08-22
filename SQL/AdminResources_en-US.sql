@@ -648,7 +648,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Lists', N'Lists' UNION ALL
 		SELECT N'SiteMenu_Locations', N'Locations' UNION ALL
 		SELECT N'SiteMenu_Lookups', N'Lookups' UNION ALL
-		SELECT N'SiteMenu_Marketing', N'Marketing' UNION ALL
 		SELECT N'SiteMenu_Members', N'Members' UNION ALL
 		SELECT N'SiteMenu_Messages', N'Messages' UNION ALL
 		SELECT N'SiteMenu_News', N'News' UNION ALL

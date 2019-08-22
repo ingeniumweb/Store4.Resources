@@ -648,7 +648,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Lists', N'Liste', N'Lists' UNION ALL
 		SELECT N'SiteMenu_Locations', N'Lokacije', N'Locations' UNION ALL
 		SELECT N'SiteMenu_Lookups', N'Šifrarnici', N'Lookups' UNION ALL
-		SELECT N'SiteMenu_Marketing', N'Marketing', N'Marketing' UNION ALL
 		SELECT N'SiteMenu_Members', N'Korisnici', N'Members' UNION ALL
 		SELECT N'SiteMenu_Messages', N'Poruke', N'Messages' UNION ALL
 		SELECT N'SiteMenu_News', N'Vesti', N'News' UNION ALL

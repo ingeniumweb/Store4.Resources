@@ -335,7 +335,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_TaxTypes', N'Poreske grupe', N'Tax Types' UNION ALL
 		SELECT N'SiteMenu_TimeEntries', N'Vremenski unosi', N'Time Entries' UNION ALL
 		SELECT N'SiteMenu_TransferOrders', N'Prenosne dostavnice', N'Transfer Orders' UNION ALL
-		SELECT N'SiteMenu_WorkCenterTypes', N'Tipovi radnog centra', N'Work Center Types' UNION ALL
 		SELECT N'Status_MarkAs', N'Označi kao {0}', N'Mark As {0}' UNION ALL
 		SELECT N'Store_BOMNumberFormat', N'BOM-{DocNo}', N'BOM-{DocNo}' UNION ALL
 		SELECT N'Store_InvoiceNumberFormat', N'IN-{DocNo}', N'IN-{DocNo}' UNION ALL

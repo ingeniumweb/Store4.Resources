@@ -334,7 +334,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_TaxTypes', N'Tax Types' UNION ALL
 		SELECT N'SiteMenu_TimeEntries', N'Time Entries' UNION ALL
 		SELECT N'SiteMenu_TransferOrders', N'Transfer Orders' UNION ALL
-		SELECT N'SiteMenu_WorkCenterTypes', N'Work Center Types' UNION ALL
 		SELECT N'Status_MarkAs', N'Mark As {0}' UNION ALL
 		SELECT N'Store_BOMNumberFormat', N'BOM-{DocNo}' UNION ALL
 		SELECT N'Store_InvoiceNumberFormat', N'IN-{DocNo}' UNION ALL
