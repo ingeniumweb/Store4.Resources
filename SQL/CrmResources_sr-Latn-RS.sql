@@ -71,7 +71,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Document', N'Dokument', N'Document' UNION ALL
 		SELECT N'Data_DocumentHeader', N'Zaglavlje dokumenta', N'Document Header' UNION ALL
 		SELECT N'Data_Documents', N'Dokumenti', N'Documents' UNION ALL
-		SELECT N'Data_DueDate', N'Datum dolaska', N'Due Date' UNION ALL  
+		SELECT N'Data_DueDate', N'Rok plaćanja', N'Due Date' UNION ALL  
 		SELECT N'Data_Edit', N'Izmeni', N'Edit' UNION ALL
 		SELECT N'Data_EditAll', N'Izmeni sve', N'Edit All' UNION ALL
 		SELECT N'Data_Email', N'Email', N'Email' UNION ALL
@@ -297,6 +297,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Pay', N'Plati', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Plati Stripe-om', N'Pay With Stripe' UNION ALL
 		SELECT N'Link_Renewal', N'Obnovi', N'Renewal' UNION ALL
+		SELECT N'Linked_Documents_Invalid_Data_Message', N'Nevažeći podaci narudžbe.', N'Invalid Order Data.' UNION ALL
+		SELECT N'Linked_Documents', N'Povezani dokumenti', N'Linked Documents' UNION ALL
+		SELECT N'Linked_Documents_Linking_Error', N'Došlo je do pogreške prilikom povezivanja dokumenata.', N'There was an error while linking documents.' UNION ALL
+		SELECT N'Linked_Documents_No_DocSelected_Message', N'Nije odabran nijedan dokument. Molim Odaberite dokumente.', N'There are no documents selected. Please select documents.' UNION ALL
 		SELECT N'Message_Changed_to_Customer_Succes', N'Lead has been successfully changed to a customer', N'Lead has been successfully changed to a customer' UNION ALL
 		SELECT N'Message_Vendor_UnauthorizedAccess', N'Račun sa ovim e-mailom ili korisničkim imenom već postoji. Molimo vas odaberite drugi e-mail/korisničko ime i pokušajte ponovno.', N'An account with this email or username already exists. Please select another e-mail/username and try again.' UNION ALL
 		SELECT N'MPR_Title', N'Kreiraj proizvodni nalog', N'Generate Manufacturing Order' UNION ALL

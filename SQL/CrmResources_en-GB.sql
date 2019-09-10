@@ -296,6 +296,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Pay', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Pay With Stripe' UNION ALL
 		SELECT N'Link_Renewal', N'Renewal' UNION ALL
+		SELECT N'Linked_Documents_Invalid_Data_Message', N'Invalid Order Data.' UNION ALL
+		SELECT N'Linked_Documents', N'Linked Documents' UNION ALL
+		SELECT N'Linked_Documents_Linking_Error', N'There was an error while linking documents.' UNION ALL
+		SELECT N'Linked_Documents_No_DocSelected_Message', N'There are no documents selected. Please select documents.' UNION ALL
 		SELECT N'MPR_Title', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Message_Changed_to_Customer_Succes', N'Lead has been successfully changed to a customer' UNION ALL
 		SELECT N'Message_Vendor_UnauthorizedAccess', N'An account with this email or username already exists. Please select another e-mail/username and try again.' UNION ALL
