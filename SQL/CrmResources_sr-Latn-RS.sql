@@ -51,7 +51,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BuyPrice', N'Nabavna vrednost proizvoda', N'Buy Price' UNION ALL
 		SELECT N'Data_CloneDocument', N'Napravi kopiju', N'Clone Document' UNION ALL
 		SELECT N'Data_Code', N'Kod', N'Code' UNION ALL
-		SELECT N'Data_Committed', N'Zaduženo', N'Committed' UNION ALL
+		SELECT N'Data_Committed', N'Rezervirano', N'Committed' UNION ALL
 		SELECT N'Data_CompanyCode', N'Šifra', N'Company Code' UNION ALL
 		SELECT N'Data_CompanyLogo', N'Logo kompanije', N'Company Logo' UNION ALL
 		SELECT N'Data_CompanyName', N'Naziv kompanije', N'Company Name' UNION ALL
@@ -128,6 +128,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Products_Placeholder', N'Unesite SKU ili ime proizvoda', N'Start typing SKU or name' UNION ALL
 		SELECT N'Data_ProductType', N'Vrsta proizvoda', N'Product Type' UNION ALL
 		SELECT N'Data_PurchaseOrderNumber', N'Broj kupovine #', N'Purchase Order #' UNION ALL
+		SELECT N'Data_Released', N'Razduženo', N'Released' UNION ALL
 		SELECT N'Data_Unavailable', N'Nedostupno', N'Data Unavailable' UNION ALL
 		SELECT N'Data_Quantity', N'Količina', N'Quantity' UNION ALL
 		SELECT N'Data_QuoteDetails', N'Detalji ponude', N'Quote Details' UNION ALL

@@ -129,6 +129,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Products_Placeholder', N'Start typing SKU or name' UNION ALL
 		SELECT N'Data_ProductType', N'Product Type' UNION ALL
 		SELECT N'Data_PurchaseOrderNumber', N'Purchase Order #' UNION ALL
+		SELECT N'Data_Released', N'Released' UNION ALL
 		SELECT N'Data_Unavailable', N'Data Unavailable' UNION ALL
 		SELECT N'Data_Quantity', N'Quantity' UNION ALL
 		SELECT N'Data_QuoteDetails', N'Quote Details' UNION ALL
