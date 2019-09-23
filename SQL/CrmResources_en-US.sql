@@ -67,7 +67,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_DateRange', N'Date Range' UNION ALL
 		SELECT N'Data_Default', N'Default {0}' UNION ALL
 		SELECT N'Data_Delete', N'Delete' UNION ALL
+		SELECT N'Data_Device', N'Device' UNION ALL
 		SELECT N'Data_Discount', N'Discount' UNION ALL
+		SELECT N'Data_Distributor', N'Distributor' UNION ALL
 		SELECT N'Data_Document', N'Document' UNION ALL
 		SELECT N'Data_DocumentHeader', N'Document Header' UNION ALL
 		SELECT N'Data_Documents', N'Documents' UNION ALL
@@ -108,6 +110,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_OrderNumber', N'Order #' UNION ALL
 		SELECT N'Data_PacketSize', N'Packet Size' UNION ALL
 		SELECT N'Data_PacketSizeLabel', N'Packet Size Label' UNION ALL
+		SELECT N'Data_Patient', N'Patient' UNION ALL
+		SELECT N'Data_Physican', N'Physican' UNION ALL
 		SELECT N'Data_PaidDate', N'Invoice date' UNION ALL
 		SELECT N'Data_PaidOn', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Payment info' UNION ALL

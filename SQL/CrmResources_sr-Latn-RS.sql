@@ -67,7 +67,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_DateRange', N'Raspon datuma', N'Date Range' UNION ALL
 		SELECT N'Data_Default', N'Standardna {0}', N'Default {0}' UNION ALL
 		SELECT N'Data_Delete', N'Obriši', N'Delete' UNION ALL
+		SELECT N'Data_Device', N'Urejđaj', N'Device' UNION ALL
 		SELECT N'Data_Discount', N'Rabat', N'Discount' UNION ALL
+		SELECT N'Data_Distributor', N'Distributor', N'Distributor' UNION ALL
 		SELECT N'Data_Document', N'Dokument', N'Document' UNION ALL
 		SELECT N'Data_DocumentHeader', N'Zaglavlje dokumenta', N'Document Header' UNION ALL
 		SELECT N'Data_Documents', N'Dokumenti', N'Documents' UNION ALL
@@ -108,6 +110,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_OrderNumber', N'Broj narudžbe #', N'Order #' UNION ALL
 		SELECT N'Data_PacketSize', N'Veličina paketa', N'Packet Size' UNION ALL
 		SELECT N'Data_PacketSizeLabel', N'Naziv paketa', N'Packet Size Label' UNION ALL
+		SELECT N'Data_Patient', N'Pacijent', N'Patient' UNION ALL
+		SELECT N'Data_Physican', N'Liječnik', N'Physican' UNION ALL
 		SELECT N'Data_PaidDate', N'Datum računa', N'Invoice date' UNION ALL
 		SELECT N'Data_PaidOn', N'Plaćeno na', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Podaci o plaćanju', N'Payment info' UNION ALL
