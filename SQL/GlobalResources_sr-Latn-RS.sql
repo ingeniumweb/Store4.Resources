@@ -145,7 +145,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Subscribe', N'Prijavi se', N'Subscribe' UNION ALL
 		SELECT N'Link_Unsubscribe', N'Odjavi se', N'Unsubscribe' UNION ALL
 		SELECT N'LinkEditProfile', N'Uredi profil', N'Edit Profile' UNION ALL
+		SELECT N'Link_Authentication', N'Ovo nije tvoj račun?', N'This is not your account?' UNION ALL
+		SELECT N'Message_Received_Inquiry', N'Vaš upit je zaprimljen', N'Message Received Inquiry' UNION ALL
 		SELECT N'Message_Contact', N'Javite nam se. Napišite kako vam možemo pomoći. Ispunite obrazac i mi ćemo Vas kontaktirati što je prije moguće.', N'Get in touch and let us know how we can help. Fill out the form and we’ll be in touch as soon as possible.' UNION ALL
+		SELECT N'Message_Received_Inquiry', N'Vaš upit je zaprimljen', N'Message Received Inquiry' UNION ALL
 		SELECT N'Newsletter_Subscribe_Description', N'Vaša email adresa je sigurna i nikada je nećemo nikome proslijediti.', N'We''ll never share your email address and you can opt out at any time, we promise.' UNION ALL
 		SELECT N'Newsletter_Subscribe_Headline', N'Ostanimo u dodiru...', N'Let''s stay in touch' UNION ALL
 		SELECT N'Newsletter_Subscribe_Message_Content', N'Uspješno ste se prijavili na naš newsletter! <a href="/">Nazad</a>', N'You have successfully subscribed to our newsletter! <a href="/">Return Home</a>' UNION ALL
@@ -187,6 +190,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SocialNetwork_Yahoo', N'Yahoo', N'Yahoo' UNION ALL
 		SELECT N'Store4_Vendor_Sign_Up', N'Store4 - Vendor Prijavite se', N'Store4 - Vendor Sign Up' UNION ALL
 		SELECT N'Text_Covered', N'Mislimo na vas', N'We ve got you covered' UNION ALL
+		SELECT N'Title_Sales_Automation_Solution', N'Rješenje za automatizaciju prodaje', N'Sales Automation Solution' UNION ALL
 		SELECT N'Wall_Message_RegisterdUsersOnly', N'Samo registrovani korisnici mogu dodati komentar.<br/>Molimo vas da se<a href=''{0}''> prijavite </a> ili <a href=''{1}''> registrujete</a>.', N'Only registered users can add a new comment. Please <a href=''{0}''> Sign In</a> or <a href=''{1}''>Sign Up</a>.' UNION ALL
 		SELECT N'Welcome', N'Dobrodošli u', N'Welcome to' UNION ALL
 		SELECT N'Widget_Archive_Title', N'Arhiva', N'Archive' UNION ALL

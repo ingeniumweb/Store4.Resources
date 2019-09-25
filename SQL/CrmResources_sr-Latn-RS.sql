@@ -22,6 +22,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_SaveQuote', N'Snimi ponudu', N'Save Quote' UNION ALL
 		SELECT N'Category_Message_LevelForbidden', N'Zabranjeno dodavanje podkategorija na ovom nivou!', N'Can not add child category at this level!' UNION ALL
 		SELECT N'Company_Message_AlredySelectedDiscunt', N'Za odabrani proizvod već postoji popust!', N'There is already a discount for the selected product!' UNION ALL
+		SELECT N'Title_Contact_Info', N'Kontakt Informacije', N'Contact Info' UNION ALL
 		SELECT N'ContentType_BOM', N'BOM', N'BOM' UNION ALL
 		SELECT N'ContentType_Company', N'Kompanija', N'Company' UNION ALL
 		SELECT N'ContentType_Customer', N'Kupac', N'Customer' UNION ALL
@@ -58,6 +59,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Component', N'Komponenta', N'Component' UNION ALL
 		SELECT N'Data_Consumed', N'Konzumirano', N'Consumed' UNION ALL
 		SELECT N'Data_CostOfMaterials', N'Troškovi materijala', N'Cost of Materials' UNION ALL
+		SELECT N'Data_Contract_Number', N'Broj ugovora', N'Contract Number' UNION ALL
 		SELECT N'Data_Currency', N'Valuta', N'Currency' UNION ALL
 		SELECT N'Data_Customer', N'Kupac', N'Customer' UNION ALL
 		SELECT N'Data_CustomerDetails', N'Detalji', N'Details' UNION ALL
@@ -65,12 +67,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Customers', N'Kupci', N'Customers' UNION ALL
 		SELECT N'Data_DatePlaceProduction', N'Podaci o mestu i datumu proizvodnje', N'Date, Place Production info' UNION ALL
 		SELECT N'Data_DateRange', N'Raspon datuma', N'Date Range' UNION ALL
+		SELECT N'Data_Deal_Number', N'Broj potencijalne ponude', N'Deal Number' UNION ALL
 		SELECT N'Data_Default', N'Standardna {0}', N'Default {0}' UNION ALL
 		SELECT N'Data_Delete', N'Obriši', N'Delete' UNION ALL
 		SELECT N'Data_Device', N'Urejđaj', N'Device' UNION ALL
 		SELECT N'Data_Discount', N'Rabat', N'Discount' UNION ALL
 		SELECT N'Data_Distributor', N'Distributor', N'Distributor' UNION ALL
 		SELECT N'Data_Document', N'Dokument', N'Document' UNION ALL
+		SELECT N'Data_Document_Log_Enabled', N'Omogućen povijest dokumenata', N'Is Is Document Log Enabled' UNION ALL
 		SELECT N'Data_DocumentHeader', N'Zaglavlje dokumenta', N'Document Header' UNION ALL
 		SELECT N'Data_Documents', N'Dokumenti', N'Documents' UNION ALL
 		SELECT N'Data_DueDate', N'Rok plaćanja', N'Due Date' UNION ALL  
@@ -78,6 +82,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_EditAll', N'Izmeni sve', N'Edit All' UNION ALL
 		SELECT N'Data_Email', N'Email', N'Email' UNION ALL
 		SELECT N'Data_EndDate', N'Datum završetka', N'End Date' UNION ALL
+		SELECT N'Data_File_Manager_Enabled', N'Omogućen upravitelj datoteka ', N'Is File Manager Enabled' UNION ALL
 		SELECT N'Data_FixedCost', N'Fiksni trošak', N'Fixed Cost' UNION ALL
 		SELECT N'Data_FixedTime', N'Fiksno vreme', N'Fixed Time' UNION ALL
 		SELECT N'Data_Generate', N'Generiraj', N'Generate' UNION ALL
@@ -142,6 +147,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_RenewalPeriod', N'Trajanje ugovora', N'Renewal Period' UNION ALL
 		SELECT N'Data_RetailPrice', N'Maloprodajna cena', N'Retail Price' UNION ALL
 		SELECT N'Data_Report', N'Izveštaj', N'Report' UNION ALL
+		SELECT N'Data_Reset_DocNo_NewYear', N'Resetiraj brojeve dokumenata u novoj fiskalnoj godini', N'Resetting Document Numbers at a new Fiscal Year' UNION ALL
 		SELECT N'Data_Routing', N'Rute', N'Routing' UNION ALL
 		SELECT N'Data_RoutingNumber', N'Broj rute #', N'Routing #' UNION ALL
 		SELECT N'Data_RoutingNumbers', N'Broj rute #', N'Routing #' UNION ALL
@@ -205,6 +211,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_NextYear', N'Od danas > ∞', N'Next Years' UNION ALL
 		SELECT N'DateFilter_Today', N'Danas', N'Today' UNION ALL
 		SELECT N'DateFilter_Yesterday', N'Juče', N'Yesterday' UNION ALL
+		SELECT N'Deal_Button_LOST', N'Izgubljena', N'Lost' UNION ALL
+		SELECT N'Deal_Button_WIN', N'Dobivena', N'Win' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Prodaja za gotovinu', N'Cash Sales Order' UNION ALL
 		SELECT N'DocumentType_Contract', N'Ugovor', N'Contracts' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Rashod', N'Expense Order' UNION ALL
@@ -230,8 +238,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Documents_TransferOrders', N'Prenosna dostavnica', N'Transfer Orders' UNION ALL
 		SELECT N'DocumentType_BOM', N'Potrošni materijal', N'Bill of Material' UNION ALL
 		SELECT N'DocumentType_CashSalesOrder', N'Prodaja za gotovinu', N'Cash Sales Order' UNION ALL
-		SELECT N'DocumentType_Deal', N'Deal', N'Deal' UNION ALL
-		SELECT N'DocumentType_Deals', N'Deals', N'Deals' UNION ALL
+		SELECT N'DocumentType_Deal', N'Potencijalna Ponuda', N'Deal' UNION ALL
+		SELECT N'DocumentType_Deals', N'Potencijalne Ponude', N'Deals' UNION ALL
 		SELECT N'DocumentType_ExpenseOrder', N'Rashodi', N'Expense Order' UNION ALL
 		SELECT N'DocumentType_Invoice', N'Račun', N'Invoice' UNION ALL
 		SELECT N'DocumentType_ManufacturingOrder', N'Proizvodna narudžba', N'Manufacturing Order' UNION ALL
@@ -249,7 +257,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentReport_LatestDocuments', N'Najnoviji dokumenti', N'Latest Documents' UNION ALL
 		SELECT N'DocumentReport_LatestCustomers', N'Najnoviji klijenti', N'Latest Customers' UNION ALL
 		SELECT N'DocumentReport_LatestProducts', N'Najnoviji proizvodi', N'Latest Products' UNION ALL
-		SELECT N'DocumentReport_NewOrders', N'Ponude', N'Orders and Quotes' UNION ALL
+		SELECT N'DocumentReport_NewOrders', N'Nove narudžbenice', N'New Orders' UNION ALL
+		SELECT N'DocumentReport_NewPurchaseOrders', N'Nove primke', N'New PurchaseOrders' UNION ALL
 		SELECT N'DocumentReport_PendingShipments', N'Nove pošiljke', N'Pending Shipments' UNION ALL
 		SELECT N'DocumentReport_Revenue', N'Prihod', N'Revenue' UNION ALL
 		SELECT N'DocumentReport_TotalUnpaid', N'Ukupno neplaćeno', N'Total Unpaid' UNION ALL
@@ -375,6 +384,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SystemNotification_Message_ChangeStatus', N'{0} je promenio status "{1}" na {2} <strong>{3}</strong>.', N'{0} changed status to "{1}" on {2} <strong>{3}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_SendEmail', N'{0} poslao E-mail <strong>{1}</strong>.', N'{0} sent Email <strong>{1}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_MakePayment', N'{0} je dodao uplatu <strong>{1}</strong> za {2} <strong>{3}</strong>.' , N'{0} created payment <strong>{1}</strong> for {2} <strong>{3}</strong>.' UNION ALL
+		SELECT N'Title_Contact_Info', N'Kontakt Informacije', N'Contact Info' UNION ALL
 		SELECT N'Transfer_Order_Number', N'Broj Međuskladišnice', N'Transfer Order Number'
 END
 

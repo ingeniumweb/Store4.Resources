@@ -58,6 +58,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Component', N'Component' UNION ALL
 		SELECT N'Data_Consumed', N'Consumed' UNION ALL
 		SELECT N'Data_CostOfMaterials', N'Cost of Materials' UNION ALL
+		SELECT N'Data_Contract_Number', N'Contract Number' UNION ALL
 		SELECT N'Data_Currency', N'Currency' UNION ALL
 		SELECT N'Data_Customer', N'Customer' UNION ALL
 		SELECT N'Data_CustomerDetails', N'Details' UNION ALL
@@ -65,6 +66,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Customers', N'Customers' UNION ALL
 		SELECT N'Data_DatePlaceProduction', N'Date, Place Production info' UNION ALL
 		SELECT N'Data_DateRange', N'Date Range' UNION ALL
+		SELECT N'Data_Deal_Number', N'Deal Number' UNION ALL
 		SELECT N'Data_Default', N'Default {0}' UNION ALL
 		SELECT N'Data_Delete', N'Delete' UNION ALL
 		SELECT N'Data_Device', N'Device' UNION ALL
@@ -73,11 +75,13 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Document', N'Document' UNION ALL
 		SELECT N'Data_DocumentHeader', N'Document Header' UNION ALL
 		SELECT N'Data_Documents', N'Documents' UNION ALL
+		SELECT N'Data_Document_Log_Enabled', N'Is Is Document Log Enabled' UNION ALL
 		SELECT N'Data_DueDate', N'Due Date' UNION ALL
 		SELECT N'Data_Edit', N'Edit' UNION ALL
 		SELECT N'Data_EditAll', N'Edit All' UNION ALL
 		SELECT N'Data_Email', N'Email' UNION ALL
 		SELECT N'Data_EndDate', N'End Date' UNION ALL
+		SELECT N'Data_File_Manager_Enabled', N'Is File Manager Enabled' UNION ALL
 		SELECT N'Data_FixedCost', N'Fixed Cost' UNION ALL
 		SELECT N'Data_FixedTime', N'Fixed Time' UNION ALL
 		SELECT N'Data_Generate', N'Generate' UNION ALL
@@ -142,6 +146,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_RenewalPeriod', N'Renewal Period' UNION ALL
 		SELECT N'Data_RetailPrice', N'Retail Price' UNION ALL
 		SELECT N'Data_Report', N'Report' UNION ALL
+		SELECT N'Data_Reset_DocNo_NewYear', N'Resetting Document Numbers at a new Fiscal Year' UNION ALL
 		SELECT N'Data_Routing', N'Routing' UNION ALL
 		SELECT N'Data_RoutingNumber', N'Routing #' UNION ALL
 		SELECT N'Data_RoutingNumbers', N'Routing #' UNION ALL
@@ -204,6 +209,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_NextYear', N'Next Years' UNION ALL
 		SELECT N'DateFilter_Today', N'Today' UNION ALL
 		SELECT N'DateFilter_Yesterday', N'Yesterday' UNION ALL
+		SELECT N'Deal_Button_LOST', N'Lost' UNION ALL
+		SELECT N'Deal_Button_WIN', N'Win' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Cash Sales Order' UNION ALL
 		SELECT N'DocumentType_Contract', N'Contracts' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Expense Order' UNION ALL
@@ -248,7 +255,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentReport_LatestDocuments', N'Latest Documents' UNION ALL
 		SELECT N'DocumentReport_LatestCustomers', N'Latest Customers' UNION ALL
 		SELECT N'DocumentReport_LatestProducts', N'Latest Products' UNION ALL
-		SELECT N'DocumentReport_NewOrders', N'Orders and Quotes' UNION ALL
+		SELECT N'DocumentReport_NewOrders', N'New Orders' UNION ALL
+		SELECT N'DocumentReport_NewPurchaseOrders', N'New PurchaseOrders' UNION ALL
 		SELECT N'DocumentReport_PendingShipments', N'Pending Shipments' UNION ALL
 		SELECT N'DocumentReport_Revenue', N'Revenue' UNION ALL
 		SELECT N'DocumentReport_TotalUnpaid', N'Total Unpaid' UNION ALL
@@ -374,6 +382,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SystemNotification_Message_ChangeStatus', N'{0} changed status to "{1}" on {2} <strong>{3}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_SendEmail', N'{0} sent Email <strong>{1}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_MakePayment', N'{0} created payment <strong>{1}</strong> for {2} <strong>{3}</strong>.' UNION ALL
+		SELECT N'Title_Contact_Info', N'Contact Info' UNION ALL
 		SELECT N'Transfer_Order_Number', N'Transfer Order Number'	
 END
 

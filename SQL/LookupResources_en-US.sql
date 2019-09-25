@@ -258,6 +258,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentStatus_Contract_Finalized', N'Finalized' UNION ALL
 		SELECT N'DocumentStatus_Contract_Cancelled', N'Cancelled' UNION ALL
 		SELECT N'DocumentStatus_Contract_Void', N'Void' UNION ALL
+		SELECT N'DocumentStatus_Deals_Contact_Made', N'Contact Made' UNION ALL
+		SELECT N'DocumentStatus_Deals_Lead_In', N'Lead In' UNION ALL
+		SELECT N'DocumentStatus_Deals_Negotiation', N'Negotiation' UNION ALL
+		SELECT N'DocumentStatus_Deals_Prospect', N'Prospect' UNION ALL
+		SELECT N'DocumentStatus_Deals_Proposal', N'Proposal' UNION ALL
 		SELECT N'DocumentStatus_Contract_Sue', N'Sue' UNION ALL
 		SELECT N'DocumentStatus_Contract_Active', N'Active' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Draft', N'Draft' UNION ALL
