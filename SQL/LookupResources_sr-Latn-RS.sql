@@ -283,7 +283,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentStatus_PurchaseOrder_Received', N'Potvrđeno', N'Received' UNION ALL
 		SELECT N'DocumentStatus_Shipment_Shipped', N'Isporučeno', N'Shipped' UNION ALL
 		SELECT N'DocumentStatus_Shipment_Unshipped', N'Nije isporučeno', N'Unshipped' UNION ALL
-		SELECT N'DocumentStatus_Shipment_Partial', N'Delmično plaćeno', N'Partial' UNION ALL
+		SELECT N'DocumentStatus_Shipment_Partial', N'Delmično isporučeno', N'Partial' UNION ALL
 		SELECT N'DocumentStatus_Invoice_Sent', N'Poslato', N'Sent' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_Cancelled', N'Otkazano', N'Cancelled' UNION ALL
 		SELECT N'DocumentStatus_SalesOrder_OnHold', N'U pripremi', N'On Hold' UNION ALL

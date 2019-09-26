@@ -301,14 +301,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_FinishProduction', N'Završi proizvodnju', N'Finish Production' UNION ALL
 		SELECT N'Link_GenerateTransferOrder', N'Nova prenosna dostavnica', N'Generate Transfer Order' UNION ALL
 		SELECT N'Link_GenerateMprOrder', N'Kreiraj proizvodni nalog', N'Generate MPR Order' UNION ALL
-		SELECT N'Link_MakeInvoice', N'Napravi račun', N'Make Invoice' UNION ALL
+		SELECT N'Link_MakeInvoice', N'Kreiraj račun', N'Make Invoice' UNION ALL
 		SELECT N'Link_MarkAsReceived', N'Označi kao primljeno', N'Mark as Received' UNION ALL
 		SELECT N'Link_MarkAsShipped', N'Označi kao poslato', N'Mark as Shipped' UNION ALL
 		SELECT N'Link_MakeCashSalesOrder',N'Napravi prodaja za gotovinu', N'MakeCashSalesOrder' UNION ALL
 		SELECT N'Link_MakeShipment',N'Napravi otpremnicu', N'MakeShipment' UNION ALL
 		SELECT N'Link_NewSalesDoc', N'prodajni dokument', N'Sales Doc' UNION ALL
 		SELECT N'Link_PakInvoice', N'Napravi račun', N'Pak Invoice' UNION ALL
-		SELECT N'Link_Pay', N'Plati', N'Pay' UNION ALL
+		SELECT N'Link_Pay', N'Zabilježi uplatu', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Plati Stripe-om', N'Pay With Stripe' UNION ALL
 		SELECT N'Link_Renewal', N'Obnovi', N'Renewal' UNION ALL
 		SELECT N'Linked_Documents_Invalid_Data_Message', N'Nevažeći podaci narudžbe.', N'Invalid Order Data.' UNION ALL
