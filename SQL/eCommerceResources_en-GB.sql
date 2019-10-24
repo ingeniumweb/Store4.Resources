@@ -233,6 +233,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Product_Length', N'Length' UNION ALL
 		SELECT N'Product_Weight', N'Weight' UNION ALL
 		SELECT N'Product_Width', N'Width' UNION ALL
+		SELECT N'Product_IsAddedToInventory', N'Show on Inventory' UNION ALL
 		SELECT N'Privacy_Policy_Agree', N'I read and agree with' UNION ALL
 		SELECT N'Privacy_Policy_Message', N'Statement of Privacy' UNION ALL
 		SELECT N'Purchase_app_Warning', N'You must first purchase an Application before you can buy this item.' UNION ALL

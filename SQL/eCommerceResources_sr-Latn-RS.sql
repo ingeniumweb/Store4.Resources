@@ -237,6 +237,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Product_Length', N'Dužina', N'Length' UNION ALL
 		SELECT N'Product_Weight', N'Težina', N'Weight' UNION ALL
 		SELECT N'Product_Width', N'Širina', N'Width' UNION ALL
+		SELECT N'Product_IsAddedToInventory', N'Prikaži na skladištu', N'Show on Inventory' UNION ALL
 		SELECT N'Privacy_Policy_Agree', N'Pročitao sam i suglasan sam s', N'I read and agree with' UNION ALL
 		SELECT N'Privacy_Policy_Message', N'Izjavom o privatnosti', N'Statement of Privacy' UNION ALL
 		SELECT N'Purchase_app_Warning', N'Za kupovinu ove stavke potrebno je prvo kupiti aplikaciju', N'You must first purchase an Application before you can buy this item.' UNION ALL
