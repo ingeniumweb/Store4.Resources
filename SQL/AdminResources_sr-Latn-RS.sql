@@ -260,6 +260,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Permalink', N'Permalink', N'Permalink' UNION ALL
 		SELECT N'Data_Permissions', N'Dozvole', N'Permissions' UNION ALL
 		SELECT N'Data_Phone', N'Telefon', N'Phone' UNION ALL
+		SELECT N'Data_Phone_Invalid', N'Format telefonskog broja je netočan', N'Phone number format is invalid.' UNION ALL
 		SELECT N'Data_Placeholder', N'Rezervisano mesto', N'Placeholder' UNION ALL
 		SELECT N'Data_PlainBody', N'Neformatirano Zaglavlje', N'Plain Body' UNION ALL
 		SELECT N'Data_Population', N'Populacija', N'Population' UNION ALL

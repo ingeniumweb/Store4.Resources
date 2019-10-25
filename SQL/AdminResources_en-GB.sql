@@ -260,6 +260,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Permalink', N'Permalink' UNION ALL
 		SELECT N'Data_Permissions', N'Permissions' UNION ALL
 		SELECT N'Data_Phone', N'Phone' UNION ALL
+		SELECT N'Data_Phone_Invalid', N'Phone number format is invalid.' UNION ALL
 		SELECT N'Data_Placeholder', N'Placeholder' UNION ALL
 		SELECT N'Data_PlainBody', N'Plain Body' UNION ALL
 		SELECT N'Data_Population', N'Population' UNION ALL
