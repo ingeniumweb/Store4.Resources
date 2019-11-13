@@ -175,6 +175,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_CountyStateProvince', N'Opština', N'County/State/Province' UNION ALL
 		SELECT N'Data_Created', N'Kreirano', N'Created' UNION ALL
 		SELECT N'Data_CssClass', N'CSS klasa', N'CSS Class' UNION ALL
+		SELECT N'Data_DailyEmailLimit', N'Dnevno ograničenje email-ova', N'Daily Email Limit' UNION ALL
 		SELECT N'Data_Description', N'Opis', N'Description' UNION ALL
 		SELECT N'Data_Discount', N'Rabat na dokument', N'Discount' UNION ALL
 		SELECT N'Data_DisplayName', N'Ime', N'Display Name' UNION ALL
@@ -206,6 +207,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ID', N'ID', N'ID' UNION ALL
 		SELECT N'Data_ImageOwner', N'Vlasnik slike', N'Image Owner' UNION ALL
 		SELECT N'Data_Important', N'Važna Pošta', N'Important' UNION ALL
+		SELECT N'Data_IsImportDataEnabled', N'Omogućen uvoz podataka', N'Is Import Data Enabled' UNION ALL
 		SELECT N'Data_IncomingMailServer', N'Dolazni Mail Server', N'Incoming Mail Server' UNION ALL
 		SELECT N'Data_Industry', N'Industrija', N'Industry' UNION ALL
 		SELECT N'Data_Interval', N'Interval', N'Interval' UNION ALL
@@ -216,6 +218,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_IsActive', N'Aktivan', N'Is Active' UNION ALL
 		SELECT N'Data_IsDefaultSmptClient', N'Zadani Email klijent', N'Is Default Email Client' UNION ALL
 		SELECT N'Data_IsFilterColumn', N'Kolona za pretraživanje', N'Is Filter Column' UNION ALL
+		SELECT N'Data_IsImportDataEnabled', N'Omogućen uvoz podataka', N'Is Import Data Enabled' UNION ALL
 		SELECT N'Data_IsMandatory', N'Obavezno polje', N'Is Mandatory' UNION ALL
 		SELECT N'Data_IsPrivate', N'Privatna grupa', N'Is Private Group' UNION ALL
 		SELECT N'Data_ISO', N'ISO', N'ISO' UNION ALL
@@ -243,12 +246,18 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Mobile', N'Mobilni', N'Mobile' UNION ALL
 		SELECT N'Data_MobileGrid', N'Mobilna lista', N'Mobile Grid' UNION ALL
 		SELECT N'Data_Modified', N'Promenjeno', N'Modified' UNION ALL
+		SELECT N'Data_MonthlyEmailLimit', N'Mjesečno ograničenje email-ova', N'Monthly Email Limit' UNION ALL
+		SELECT N'Data_MonthlyLimitDocuments', N'Mjesečno ograničenje dokumenata', N'Monthly Limit Documents' UNION ALL
+		SELECT N'Data_MonthlyLimitFiles', N'Mjesečno ograničenje datoteka', N'Monthly Limit Files' UNION ALL
 		SELECT N'Data_Name', N'Naziv', N'Name' UNION ALL
 		SELECT N'Data_NewsletterSubscriber', N'Pretplatnik newsletter-a', N'Newsletter Subscriber' UNION ALL
 		SELECT N'Data_No', N'Ne', N'No' UNION ALL
 		SELECT N'Data_None', N'Nijedan', N'None' UNION ALL
 		SELECT N'Data_NotActive', N'Nije aktivan', N'Not Active' UNION ALL
 		SELECT N'Data_NumberOfAttempts', N'Broj pokušaja', N'Number of Attempts' UNION ALL
+		SELECT N'Data_NumberOfContacts', N'Broj kontakata', N'Number of contacts' UNION ALL
+		SELECT N'Data_NumberOfCustomers', N'Broj korisnika', N'Number of Customers' UNION ALL
+		SELECT N'Data_NumberOfFiles', N'Broj datoteka', N'Number Of Files' UNION ALL
 		SELECT N'Data_NumCode', N'Num. Kod', N'Num Code' UNION ALL
 		SELECT N'Data_OperatingStatus', N'Radni status', N'Operating Status' UNION ALL
 		SELECT N'Data_OrdersNumber', N'Unesite broj narudžbi', N'Enter Number of Orders' UNION ALL
@@ -256,6 +265,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Parent', N'Roditelj', N'Parent' UNION ALL
 		SELECT N'Data_Password', N'Lozinka', N'Password' UNION ALL
 		SELECT N'Data_Password_Incorrect', N'Unešena lozinka je neispravna, molimo vas da unesite tačnu lozinku.', N'The password you entered is incorrect, please retype your current password.' UNION ALL
+		SELECT N'Data_PageSize', N'Broj stranica', N'Page Size' UNION ALL
 		SELECT N'Data_Percentage', N'Procenat', N'Percentage' UNION ALL
 		SELECT N'Data_Permalink', N'Permalink', N'Permalink' UNION ALL
 		SELECT N'Data_Permissions', N'Dozvole', N'Permissions' UNION ALL
@@ -332,6 +342,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_VerticalLayout', N'Vertikalni raspored', N'Vertical Layout' UNION ALL
 		SELECT N'Data_WebGrid', N'Web lista', N'Web Grid' UNION ALL
 		SELECT N'Data_Website', N'Web stranica', N'Website' UNION ALL
+		SELECT N'Data_WeeklyEmailLimit', N'Tjedno ograničenje email-ova', N'Weekly Email Limit'UNION ALL
 		SELECT N'Data_Yes', N'Da', N'Yes' UNION ALL
 		SELECT N'Data_Zip', N'Zip', N'Zip' UNION ALL
 		SELECT N'Date_PublishDate', N'Datum objave', N'Publish Date' UNION ALL

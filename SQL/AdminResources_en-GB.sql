@@ -175,6 +175,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_CountyStateProvince', N'County/State/Province' UNION ALL
 		SELECT N'Data_Created', N'Created' UNION ALL
 		SELECT N'Data_CssClass', N'CSS Class' UNION ALL
+		SELECT N'Data_DailyEmailLimit', N'Daily Email Limit' UNION ALL
 		SELECT N'Data_Description', N'Description' UNION ALL
 		SELECT N'Data_Discount', N'Discount' UNION ALL
 		SELECT N'Data_DisplayName', N'Display Name' UNION ALL
@@ -206,6 +207,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ID', N'ID' UNION ALL
 		SELECT N'Data_ImageOwner', N'Image Owner' UNION ALL
 		SELECT N'Data_Important', N'Important' UNION ALL
+		SELECT N'Data_IsImportDataEnabled', N'Is Import Data Enabled' UNION ALL
 		SELECT N'Data_IncomingMailServer', N'Incoming Mail Server' UNION ALL
 		SELECT N'Data_Industry', N'Industry' UNION ALL
 		SELECT N'Data_Interval', N'Interval' UNION ALL
@@ -216,6 +218,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_IsActive', N'Is Active' UNION ALL
 		SELECT N'Data_IsDefaultSmptClient', N'Is Default Email Client' UNION ALL
 		SELECT N'Data_IsFilterColumn', N'Is Filter Column' UNION ALL
+		SELECT N'Data_IsImportDataEnabled', N'Is Import Data Enabled' UNION ALL
 		SELECT N'Data_IsMandatory', N'Is Mandatory' UNION ALL
 		SELECT N'Data_IsPrivate', N'Is Private Group' UNION ALL
 		SELECT N'Data_ISO', N'ISO' UNION ALL
@@ -243,12 +246,18 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Mobile', N'Mobile' UNION ALL
 		SELECT N'Data_MobileGrid', N'Mobile Grid' UNION ALL
 		SELECT N'Data_Modified', N'Modified' UNION ALL
+		SELECT N'Data_MonthlyEmailLimit', N'Monthly Email Limit' UNION ALL
+		SELECT N'Data_MonthlyLimitDocuments', N'Monthly Limit Documents' UNION ALL
+		SELECT N'Data_MonthlyLimitFiles', N'Monthly Limit Files' UNION ALL
 		SELECT N'Data_Name', N'Name' UNION ALL
 		SELECT N'Data_NewsletterSubscriber', N'Newsletter Subscriber' UNION ALL
 		SELECT N'Data_No', N'No' UNION ALL
 		SELECT N'Data_None', N'None' UNION ALL
 		SELECT N'Data_NotActive', N'Not Active' UNION ALL
 		SELECT N'Data_NumberOfAttempts', N'Number of Attempts' UNION ALL
+		SELECT N'Data_NumberOfContacts', N'Number of contacts' UNION ALL
+		SELECT N'Data_NumberOfCustomers', N'Number of Customers' UNION ALL
+		SELECT N'Data_NumberOfFiles', N'Number Of Files' UNION ALL
 		SELECT N'Data_NumCode', N'Num Code' UNION ALL
 		SELECT N'Data_OperatingStatus', N'Operating Status' UNION ALL
 		SELECT N'Data_OrdersNumber', N'Enter Number of Orders' UNION ALL
@@ -256,6 +265,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Parent', N'Parent' UNION ALL
 		SELECT N'Data_Password', N'Password' UNION ALL
 		SELECT N'Data_Password_Incorrect', N'The password you entered is incorrect, please retype your current password.' UNION ALL
+		SELECT N'Data_PageSize', N'Page Size' UNION ALL
 		SELECT N'Data_Percentage', N'Percentage' UNION ALL
 		SELECT N'Data_Permalink', N'Permalink' UNION ALL
 		SELECT N'Data_Permissions', N'Permissions' UNION ALL
@@ -332,6 +342,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_VerticalLayout', N'Vertical Layout' UNION ALL
 		SELECT N'Data_WebGrid', N'Web Grid' UNION ALL
 		SELECT N'Data_Website', N'Website' UNION ALL
+		SELECT N'Data_WeeklyEmailLimit', N'Weekly Email Limit' UNION ALL
 		SELECT N'Data_Yes', N'Yes' UNION ALL
 		SELECT N'Data_Zip', N'Zip' UNION ALL
 		SELECT N'Date_PublishDate', N'Publish Date' UNION ALL
@@ -702,7 +713,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Tabs_Title', N'General' UNION ALL
 		SELECT N'Tabs_Tweets', N'Tweets' UNION ALL
 		SELECT N'Tabs_UserInterface', N'User Interface' UNION ALL
-		SELECT N'Total_Delay', N'Total delay'
+		SELECT N'Total_Delay', N'Total delay' 
 END
 
 DECLARE currsor CURSOR FOR
