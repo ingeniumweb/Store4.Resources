@@ -94,6 +94,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Portfolio', N'Portfolio' UNION ALL
 		SELECT N'SiteMenu_Portfolios', N'Portfolios' UNION ALL
 		SELECT N'SiteMenu_Posts', N'Posts' UNION ALL
+		SELECT N'SiteMenu_PreslapOrders', N'For delivery' UNION ALL
 		SELECT N'SiteMenu_Production', N'Production' UNION ALL
 		SELECT N'SiteMenu_ProductionEntryOrders', N'Production Entry Orders' UNION ALL
 		SELECT N'SiteMenu_Products', N'Products' UNION ALL
