@@ -269,6 +269,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_ImportProcess', N'Došlo je do greške tokom procesa uvoza podataka', N'An error has occurred during the data import process' UNION ALL
 		SELECT N'Error_ExistingStore', N'Prodavnica s imenom: \"{0}\" već postoji.', N'Store with Name: \"{0}\" already exists.' UNION ALL
 		SELECT N'Error_GeneratingStore', N'Došlo je do greške prilikom kreiranja prodavnice : \"{0}".', N'There was an error while creating Store: \"{0}\".' UNION ALL
+		SELECT N'Global_Link_Generated', N'Javni link je generiran', N'Public link for {0} has been generated.' UNION ALL
+		SELECT N'Global_Link_Invoice', N'Kopirajte i dijelite link računa putem e-pošte, teksta ili chata. (Ne objavite link na javnom forumu.)', N'Copy and share the invoice link through email, text, or chat. (Be sure not to post the link in a public forum.)' UNION ALL
+		SELECT N'Global_Link_Message', N'Odaberite dokument za generiranje javnog linka', N'Please select document to generate public link.' UNION ALL
+		SELECT N'Global_Link_Removed', N'Javni link je izbrisan', N'Public link for {0} has been removed.' UNION ALL
 		SELECT N'HelpBlock_HoldsStock', N'Samo lokacije koje drže zalihe će biti na raspolaganju za izbor u prodaji narudžbe i nadzor zaliha.', N'Only locations that hold stock will be available for selection in Sales Orders & Stock Control.' UNION ALL
 		SELECT N'HelpBlock_InitialCostPrice', N'Unesite početnu cijenu po jedinici za ovu stavku.', N'Enter the initial cost price per unit for this item.' UNION ALL
 		SELECT N'HelpBlock_InitialStockLevel', N'Unesite početnu količinu zalihe za ovu stavku.', N'Enter the initial stock level for this item.' UNION ALL
@@ -293,6 +297,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_CreateNewSupplier', N'Kreiraj novog dobavljača', N'Create a new supplier' UNION ALL
 		SELECT N'Link_CreateShipment', N'Kreiraj pošiljku', N'Create Shipment' UNION ALL
 		SELECT N'Link_Deactivate', N'Deaktiviraj', N'Deactivate' UNION ALL
+		SELECT N'Link_Document', N'Kreiraj link dokumenta', N'Link Document' UNION ALL
 		SELECT N'Link_Edit', N'Uredi {0}', N'Edit {0}' UNION ALL
 		SELECT N'Link_EditBomNumber', N'Uredi BOM broj', N'Edit BOM number' UNION ALL
 		SELECT N'Link_EditDocNumber', N'Uredi broj dokumenta', N'Edit document number' UNION ALL
@@ -311,6 +316,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Pay', N'Zabilježi uplatu', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Plati Stripe-om', N'Pay With Stripe' UNION ALL
 		SELECT N'Link_Renewal', N'Obnovi', N'Renewal' UNION ALL
+		SELECT N'Link_Share', N'Podijeli link', N'Share Link' UNION ALL
 		SELECT N'Linked_Documents_Invalid_Data_Message', N'Nevažeći podaci narudžbe.', N'Invalid Order Data.' UNION ALL
 		SELECT N'Linked_Documents', N'Povezani dokumenti', N'Linked Documents' UNION ALL
 		SELECT N'Linked_Documents_Linking_Error', N'Došlo je do pogreške prilikom povezivanja dokumenata.', N'There was an error while linking documents.' UNION ALL

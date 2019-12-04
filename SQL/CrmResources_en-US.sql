@@ -267,6 +267,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_ImportProcess', N'An error has occurred during the data import process' UNION ALL		
 		SELECT N'Error_ExistingStore', N'Store with Name: \"{0}\" already exists.' UNION ALL
 		SELECT N'Error_GeneratingStore', N'There was an error while creating Store: \"{0}\".' UNION ALL
+		SELECT N'Global_Link_Generated', N'Public link for {0} has been generated.' UNION ALL
+		SELECT N'Global_Link_Invoice', N'Copy and share the invoice link through email, text, or chat. (Be sure not to post the link in a public forum.)' UNION ALL
+		SELECT N'Global_Link_Message', N'Please select document to generate public link.' UNION ALL
+		SELECT N'Global_Link_Removed', N'Public link for {0} has been removed.' UNION ALL
 		SELECT N'HelpBlock_HoldsStock', N'Only locations that hold stock will be available for selection in Sales Orders & Stock Control.' UNION ALL
 		SELECT N'HelpBlock_InitialCostPrice', N'Enter the initial cost price per unit for this item.' UNION ALL
 		SELECT N'HelpBlock_InitialStockLevel', N'Enter the initial stock level for this item.' UNION ALL
@@ -291,6 +295,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_CreateNewSupplier', N'Create a new supplier' UNION ALL
 		SELECT N'Link_CreateShipment', N'Create Shipment' UNION ALL
 		SELECT N'Link_Deactivate', N'Deactivate' UNION ALL
+		SELECT N'Link_Document', N'Link Document' UNION ALL
 		SELECT N'Link_Edit', N'Edit {0}' UNION ALL
 		SELECT N'Link_EditBomNumber', N'Edit BOM number' UNION ALL
 		SELECT N'Link_EditDocNumber', N'Edit document number' UNION ALL
@@ -309,6 +314,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Pay', N'Pay' UNION ALL
 		SELECT N'Link_PayWithStripe', N'Pay With Stripe' UNION ALL
 		SELECT N'Link_Renewal', N'Renewal' UNION ALL
+		SELECT N'Link_Share', N'Share Link' UNION ALL
 		SELECT N'Linked_Documents_Invalid_Data_Message', N'Invalid Order Data.' UNION ALL
 		SELECT N'Linked_Documents', N'Linked Documents' UNION ALL
 		SELECT N'Linked_Documents_Linking_Error', N'There was an error while linking documents.' UNION ALL
