@@ -21,6 +21,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Articles', N'Articles' UNION ALL
 		SELECT N'SiteMenu_Audit', N'Audit' UNION ALL
 		SELECT N'SiteMenu_BillOfMaterials', N'Bill of Materials' UNION ALL
+		SELECT N'SiteMenu_Billings', N'Billings' UNION ALL
 		SELECT N'SiteMenu_Blog', N'Blog' UNION ALL
 		SELECT N'SiteMenu_BlogPost', N'Blog Post' UNION ALL
 		SELECT N'SiteMenu_BlogPosts', N'Blog Posts' UNION ALL
