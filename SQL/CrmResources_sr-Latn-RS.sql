@@ -52,6 +52,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BuyPrice', N'Nabavna vrednost proizvoda', N'Buy Price' UNION ALL
 		SELECT N'Data_CloneDocument', N'Napravi kopiju', N'Clone Document' UNION ALL
 		SELECT N'Data_Code', N'Kod', N'Code' UNION ALL
+		SELECT N'Data_Code_URL', N'Kod / Url', N'Code / Url' UNION ALL
 		SELECT N'Data_Committed', N'Rezervirano', N'Committed' UNION ALL
 		SELECT N'Data_CompanyCode', N'Šifra', N'Company Code' UNION ALL
 		SELECT N'Data_CompanyLogo', N'Logo kompanije', N'Company Logo' UNION ALL
