@@ -109,6 +109,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Materials', N'Materijali', N'Materials' UNION ALL
 		SELECT N'Data_Member', N'Korisnik', N'Member' UNION ALL
 		SELECT N'Data_Notice', N'Napomena', N'Notice' UNION ALL
+		SELECT N'Data_NumberOfUsers', N'Broj korisnika', N'Number of users' UNION ALL
 		SELECT N'Data_NotProcured', N'Nije nabavljeno', N'Not Procured' UNION ALL
 		SELECT N'Data_OnHand', N'Na skladištu', N'On Hand' UNION ALL
 		SELECT N'Data_Operation', N'Operacija', N'Operation' UNION ALL
@@ -122,6 +123,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PaidOn', N'Plaćeno na', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Podaci o plaćanju', N'Payment info' UNION ALL
 		SELECT N'Data_PaymentMethod', N'Plaćeno metodom', N'Payment Method' UNION ALL
+		SELECT N'Data_Period', N'Razdoblje trajanja', N'Period' UNION ALL
 		SELECT N'Data_PeriodEnd', N'Razdoblje trajanja do', N'Peroid End' UNION ALL
 		SELECT N'Data_PeriodStart', N'Razdoblje trajanja od', N'Period Start' UNION ALL
 		SELECT N'Data_PreferentialPrice', N'Povlaštena cena', N'Preferential Price' UNION ALL
@@ -327,6 +329,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'MPR_Title', N'Kreiraj proizvodni nalog', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Email-info narudžbenica - plaćeno karticom', N'Send Order Confirmation Email CreditCard' UNION ALL
 		SELECT N'Order_EmailWireTransfer', N'Email-info narudžbenica - plaćeno virmanski', N'Send Order Confirmation Email WireTransfer' UNION ALL
+		SELECT N'Product_IsSubscriptions', N'Pretplata', N'Is Subscription' UNION ALL
+		SELECT N'Product_Subscriptions', N'Pretplate za proizvod', N'Product Subscriptions' UNION ALL
 		SELECT N'Products_Refferalprogram', N'Referal program', N'Refferal Program Enabled' UNION ALL
 		SELECT N'Products_Measurementunit', N'Prikaži mjernu jedinica', N'Show Measurement Unit' UNION ALL
 		SELECT N'Purchase_ConfirmationEmail', N'Email-info potvrda kupovine', N'Send Purchase Confirmation Email' UNION ALL

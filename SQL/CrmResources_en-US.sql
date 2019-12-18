@@ -108,6 +108,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Materials', N'Materials' UNION ALL
 		SELECT N'Data_Member', N'Member' UNION ALL
 		SELECT N'Data_Notice', N'Notice' UNION ALL
+		SELECT N'Data_NumberOfUsers', N'Number of users' UNION ALL
 		SELECT N'Data_NotProcured', N'Not Procured' UNION ALL
 		SELECT N'Data_OnHand', N'On Hand' UNION ALL
 		SELECT N'Data_Operation', N'Operation' UNION ALL
@@ -121,6 +122,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PaidOn', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Payment info' UNION ALL
 		SELECT N'Data_PaymentMethod', N'Payment Method' UNION ALL
+		SELECT N'Data_Period', N'Period' UNION ALL
 		SELECT N'Data_PeriodEnd', N'Peroid End' UNION ALL
 		SELECT N'Data_PeriodStart', N'Period Start' UNION ALL
 		SELECT N'Data_PreferentialPrice', N'Preferential Price' UNION ALL
@@ -325,6 +327,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'MPR_Title', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Send Order Confirmation Email CreditCard' UNION ALL
 		SELECT N'Order_EmailWireTransfer', N'Send Order Confirmation Email WireTransfer' UNION ALL
+		SELECT N'Product_IsSubscriptions', N'Is Subscription' UNION ALL
+		SELECT N'Product_Subscriptions', N'Product Subscriptions' UNION ALL
 		SELECT N'Products_Refferalprogram', N'Refferal Program Enabled' UNION ALL
 		SELECT N'Products_Measurementunit', N'Show Measurement Unit' UNION ALL
 		SELECT N'Purchase_ConfirmationEmail', N'Send Purchase Confirmation Email' UNION ALL
