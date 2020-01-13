@@ -223,6 +223,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Document_Message_UnlinkedDocuments',N'Documents successfully unlinked' UNION ALL
 		SELECT N'Document_Message_DocumentPlanLimit',N'Your document plan limit has been reached!' UNION ALL
 		SELECT N'Document_Message_CustomerPlanLimit',N'Your customer plan limit has been reached!' UNION ALL
+		SELECT N'Document_Message_ProductPlanLimit',N'Your product plan limit has been reached!' UNION ALL
 		SELECT N'Document_ProductionEntryOrder', N'Production Entry Order' UNION ALL
 		SELECT N'Document_RepresentationExpense',  N'Representation Expense' UNION ALL
 		SELECT N'Documents_CashSalesOrders',  N'Cash Sales Orders' UNION ALL

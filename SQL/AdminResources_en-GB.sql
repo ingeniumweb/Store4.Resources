@@ -255,8 +255,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_None', N'None' UNION ALL
 		SELECT N'Data_NotActive', N'Not Active' UNION ALL
 		SELECT N'Data_NumberOfAttempts', N'Number of Attempts' UNION ALL
-		SELECT N'Data_NumberOfContacts', N'Number of contacts' UNION ALL
+		SELECT N'Data_NumberOfContacts', N'Number of Contacts' UNION ALL
 		SELECT N'Data_NumberOfCustomers', N'Number of Customers' UNION ALL
+		SELECT N'Data_NumberOfProducts', N'Number of Products' UNION ALL	
 		SELECT N'Data_NumberOfFiles', N'Number Of Files' UNION ALL
 		SELECT N'Data_NumCode', N'Num Code' UNION ALL
 		SELECT N'Data_OperatingStatus', N'Operating Status' UNION ALL

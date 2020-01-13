@@ -257,6 +257,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_NumberOfAttempts', N'Broj pokušaja', N'Number of Attempts' UNION ALL
 		SELECT N'Data_NumberOfContacts', N'Broj kontakata', N'Number of contacts' UNION ALL
 		SELECT N'Data_NumberOfCustomers', N'Broj korisnika', N'Number of Customers' UNION ALL
+		SELECT N'Data_NumberOfProducts', N'Broj proizvoda', N'Number of Products' UNION ALL
 		SELECT N'Data_NumberOfFiles', N'Broj datoteka', N'Number Of Files' UNION ALL
 		SELECT N'Data_NumCode', N'Num. Kod', N'Num Code' UNION ALL
 		SELECT N'Data_OperatingStatus', N'Radni status', N'Operating Status' UNION ALL

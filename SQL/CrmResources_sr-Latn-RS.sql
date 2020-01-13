@@ -222,6 +222,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Document_Message_NotEnoughStock', N'Nema dovoljno zaliha u magacinu!', N'There is not enough stock on the warehouse!' UNION ALL
 		SELECT N'Document_Message_SelectWarehouse', N'Molim vas da odaberete svoj magacin!', N'Please select your warehouse!' UNION ALL
 		SELECT N'Document_Message_UnlinkedDocuments', N'Dokumenti više nisu vezani', N'Documents successfully unlinked' UNION ALL
+		SELECT N'Document_Message_DocumentPlanLimit', N'Ne možete kreirati novi dokument za ovaj mjesec, zbog vašeg trenutnog plana!', N'Your document plan limit has been reached!' UNION ALL
+		SELECT N'Document_Message_CustomerPlanLimit', N'Ne možete kreirati novog klijenta, zbog vašeg trenutnog plana!', N'Your customer plan limit has been reached!' UNION ALL
+		SELECT N'Document_Message_ProductPlanLimit', N'Ne možete kreirati novi proizvod, zbog vašeg trenutnog plana!', N'Your product plan limit has been reached!' UNION ALL
 		SELECT N'Document_ProductionEntryOrder', N'Ulaz iz Proizvodnje', N'Production Entry Order' UNION ALL
 		SELECT N'Document_RepresentationExpense', N'Reprezentacija', N'Representation Expense' UNION ALL
 		SELECT N'Document_Route', N'Ruta', N'Route' UNION ALL
