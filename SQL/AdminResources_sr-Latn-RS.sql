@@ -208,6 +208,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ImageOwner', N'Vlasnik slike', N'Image Owner' UNION ALL
 		SELECT N'Data_Important', N'Važna Pošta', N'Important' UNION ALL
 		SELECT N'Data_IsImportDataEnabled', N'Omogućen uvoz podataka', N'Is Import Data Enabled' UNION ALL
+		SELECT N'Data_IsFileManagerEnabled', N'Omogućen upload datoteka', N'Is File Manager Enabled' UNION ALL
 		SELECT N'Data_IncomingMailServer', N'Dolazni Mail Server', N'Incoming Mail Server' UNION ALL
 		SELECT N'Data_Industry', N'Industrija', N'Industry' UNION ALL
 		SELECT N'Data_Interval', N'Interval', N'Interval' UNION ALL

@@ -218,7 +218,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_IsActive', N'Is Active' UNION ALL
 		SELECT N'Data_IsDefaultSmptClient', N'Is Default Email Client' UNION ALL
 		SELECT N'Data_IsFilterColumn', N'Is Filter Column' UNION ALL
-		SELECT N'Data_IsImportDataEnabled', N'Is Import Data Enabled' UNION ALL
+		SELECT N'Data_IsFileManagerEnabled', N'Is File Manager Enabled' UNION ALL
 		SELECT N'Data_IsMandatory', N'Is Mandatory' UNION ALL
 		SELECT N'Data_IsPrivate', N'Is Private Group' UNION ALL
 		SELECT N'Data_ISO', N'ISO' UNION ALL

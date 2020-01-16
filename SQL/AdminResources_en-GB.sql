@@ -207,7 +207,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ID', N'ID' UNION ALL
 		SELECT N'Data_ImageOwner', N'Image Owner' UNION ALL
 		SELECT N'Data_Important', N'Important' UNION ALL
-		SELECT N'Data_IsImportDataEnabled', N'Is Import Data Enabled' UNION ALL
 		SELECT N'Data_IncomingMailServer', N'Incoming Mail Server' UNION ALL
 		SELECT N'Data_Industry', N'Industry' UNION ALL
 		SELECT N'Data_Interval', N'Interval' UNION ALL
@@ -219,6 +218,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_IsDefaultSmptClient', N'Is Default Email Client' UNION ALL
 		SELECT N'Data_IsFilterColumn', N'Is Filter Column' UNION ALL
 		SELECT N'Data_IsImportDataEnabled', N'Is Import Data Enabled' UNION ALL
+		SELECT N'Data_IsFileManagerEnabled', N'Is File Manager Enabled' UNION ALL
 		SELECT N'Data_IsMandatory', N'Is Mandatory' UNION ALL
 		SELECT N'Data_IsPrivate', N'Is Private Group' UNION ALL
 		SELECT N'Data_ISO', N'ISO' UNION ALL
