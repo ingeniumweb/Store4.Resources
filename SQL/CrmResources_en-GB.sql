@@ -18,8 +18,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'AvatarPanel_Button_Reset', N'Reset' UNION ALL
 		SELECT N'AvatarPanel_Button_UploadLogo', N'Upload Logo' UNION ALL
 		SELECT N'Button_AddToInventory', N'Add to Inventory' UNION ALL
+		SELECT N'Button_BuySubscription', N'Buy Subscription' UNION ALL
 		SELECT N'Button_SaveOrder', N'Save Order' UNION ALL
 		SELECT N'Button_SaveQuote', N'Save Quote' UNION ALL
+		SELECT N'Button_SelectOption', N'Select Option' UNION ALL
 		SELECT N'Category_Message_LevelForbidden', N'Can not add child category at this level!' UNION ALL
 		SELECT N'Company_Message_AlredySelectedDiscunt', N'There is already a discount for the selected product!' UNION ALL
 		SELECT N'ContentType_BOM', N'BOM' UNION ALL
@@ -39,9 +41,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Add', N'Add' UNION ALL
 		SELECT N'Data_Admin', N'Admin' UNION ALL
 		SELECT N'Data_After', N'After' UNION ALL
+		SELECT N'Data_AnnualPlanSave', N'You save {0}{1} with annual plan' UNION ALL
 		SELECT N'Data_Available', N'Available' UNION ALL
 		SELECT N'Data_AssignedTo', N'Assigned To' UNION ALL
 		SELECT N'Data_Barcode', N'Barcode' UNION ALL
+		SELECT N'Data_BilledAnnually', N'Billed Annually' UNION ALL
+		SELECT N'Data_BilledMonthly', N'Billed Monthly' UNION ALL
 		SELECT N'Data_BillingShippingInfo', N'Billing/Shipping info' UNION ALL
 		SELECT N'Data_BillOfMaterial', N'Bill of Material' UNION ALL
 		SELECT N'Data_BillTo', N'Bill To' UNION ALL
@@ -49,6 +54,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BOMNumber', N'BOM #' UNION ALL
 		SELECT N'Data_Booked', N'Booked' UNION ALL
 		SELECT N'Data_BuyPrice', N'Buy Price' UNION ALL
+		SELECT N'Data_ChangeSubscriptionPlanTitle', N'Change your subscription plan' UNION ALL
 		SELECT N'Data_CloneDocument', N'Clone Document' UNION ALL
 		SELECT N'Data_Code', N'Code' UNION ALL
 		SELECT N'Data_Code_URL', N'Code / Url' UNION ALL
@@ -108,6 +114,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_MaterialCost', N'Material Cost' UNION ALL
 		SELECT N'Data_Materials', N'Materials' UNION ALL
 		SELECT N'Data_Member', N'Member' UNION ALL
+		SELECT N'Data_MonthMember', N'month per team member' UNION ALL
 		SELECT N'Data_Notice', N'Notice' UNION ALL
 		SELECT N'Data_NumberOfUsers', N'Number of users' UNION ALL
 		SELECT N'Data_NotProcured', N'Not Procured' UNION ALL
@@ -172,6 +179,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_StreetAddress', N'Street Address' UNION ALL
 		SELECT N'Data_SubscriptionEndDate', N'Subscription End Date' UNION ALL
 		SELECT N'Data_SubscriptionNumber', N'Subscription #' UNION ALL
+		SELECT N'Data_SubscriptionNumberTitle', N'Number of subscriptions' UNION ALL
 		SELECT N'Data_SubscriptionStartDate', N'Subscription Start Date' UNION ALL
 		SELECT N'Data_Subtotal', N'Subtotal' UNION ALL
 		SELECT N'Data_Supplier', N'Supplier' UNION ALL
@@ -188,6 +196,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Total', N'Total' UNION ALL
 		SELECT N'Data_TotalCost', N'Total Cost' UNION ALL
 		SELECT N'Data_TotalDiscount', N'Total Discount' UNION ALL
+		SELECT N'Data_TotalPrice', N'Total Price' UNION ALL
 		SELECT N'Data_TotalsAre', N'Totals Are' UNION ALL
 		SELECT N'Data_TotalTime', N'Total Time' UNION ALL
 		SELECT N'Data_TotalUnits', N'Total Units' UNION ALL
@@ -327,6 +336,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Linked_Documents_No_DocSelected_Message', N'There are no documents selected. Please select documents.' UNION ALL
 		SELECT N'MPR_Title', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Message_Changed_to_Customer_Succes', N'Lead has been successfully changed to a customer' UNION ALL
+		SELECT N'Message_CreditCardCharge', N'Your credit card will be charged {0}{1} every year starting from {2}' UNION ALL
+		SELECT N'Message_SubscribingPlan', N'You are subscribing to the {0} for {1} agent' UNION ALL
 		SELECT N'Message_Vendor_UnauthorizedAccess', N'An account with this email or username already exists. Please select another e-mail/username and try again.' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Send Order Confirmation Email CreditCard' UNION ALL
 		SELECT N'Order_EmailWireTransfer', N'Send Order Confirmation Email WireTransfer' UNION ALL

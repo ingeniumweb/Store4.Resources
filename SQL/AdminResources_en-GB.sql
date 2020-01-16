@@ -233,6 +233,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_LastSuccess', N'Last Success' UNION ALL
 		SELECT N'Data_LastSuccessfulLogin', N'Last Successful Login' UNION ALL
 		SELECT N'Data_Latitude', N'Latitude' UNION ALL
+		SELECT N'Data_LicenceExpire', N'Your Licence is about to expire' UNION ALL
 		SELECT N'Data_LinkUrl', N'Link Url' UNION ALL
 		SELECT N'Data_Longitude', N'Longitude' UNION ALL
 		SELECT N'Data_Lookup', N'Lookup' UNION ALL
@@ -274,6 +275,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Phone_Invalid', N'Phone number format is invalid.' UNION ALL
 		SELECT N'Data_Placeholder', N'Placeholder' UNION ALL
 		SELECT N'Data_PlainBody', N'Plain Body' UNION ALL
+		SELECT N'Data_Plan', N'Plan' UNION ALL
 		SELECT N'Data_Population', N'Population' UNION ALL
 		SELECT N'Data_Position', N'Position' UNION ALL
 		SELECT N'Data_PossibleValues', N'Possible Values' UNION ALL
@@ -328,6 +330,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Tags', N'Tags' UNION ALL
 		SELECT N'Data_Task', N'Task' UNION ALL
 		SELECT N'Data_TaskType', N'Task Type' UNION ALL
+		SELECT N'Data_TeamMemberLimit', N'Team members limit' UNION ALL
 		SELECT N'Data_ThreeLetterISO', N'Three Letter ISO' UNION ALL
 		SELECT N'Data_TimeSpan', N'Time Span' UNION ALL
 		SELECT N'Data_TimeZone', N'Time Zone' UNION ALL
@@ -467,6 +470,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Members_Message_RandomPassDidNotSend', N'Something went wrong. Random password has been generated but didn''t send to the member.' UNION ALL
 		SELECT N'Members_Message_RandomPassSent', N'Random password has been generated and sent to the member.' UNION ALL
 		SELECT N'Members_Message_UserNameIsSameAsEmail', N'The member''s name looks like an e-mail address. Please change it.' UNION ALL
+		SELECT N'Message_AppLimitation', N'You are using limited version of our app' UNION ALL
+		SELECT N'Message_ContactSupport', N'Please contact our support for more details or visit the {0} area to upgrade your plan.' UNION ALL
+		SELECT N'Message_LicenceExpire', N'Please contact our support or account owner for more details.' UNION ALL
 		SELECT N'Message_Members_Desc', N'In progress, please wait ...' UNION ALL
 		SELECT N'Message_Members_Title', N'Importing Roles' UNION ALL
 		SELECT N'Message_Roles_Desc', N'In progress, please wait ...' UNION ALL

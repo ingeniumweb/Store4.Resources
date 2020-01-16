@@ -234,6 +234,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_LastSuccess', N'Poslednje uspešno vreme izvršavanja', N'Last Success' UNION ALL
 		SELECT N'Data_LastSuccessfulLogin', N'Poslednja uspešna prijava', N'Last Successful Login' UNION ALL
 		SELECT N'Data_Latitude', N'Širina', N'Latitude' UNION ALL
+		SELECT N'Data_LicenceExpire', N'Vaša licenca će uskoro isteći', N'Your Licence is about to expire' UNION ALL
 		SELECT N'Data_LinkUrl', N'URL link', N'Link Url' UNION ALL
 		SELECT N'Data_Longitude', N'Dužina', N'Longitude' UNION ALL
 		SELECT N'Data_Lookup', N'Šifrarnik', N'Lookup' UNION ALL
@@ -275,6 +276,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Phone_Invalid', N'Format telefonskog broja je netočan', N'Phone number format is invalid.' UNION ALL
 		SELECT N'Data_Placeholder', N'Rezervisano mesto', N'Placeholder' UNION ALL
 		SELECT N'Data_PlainBody', N'Neformatirano Zaglavlje', N'Plain Body' UNION ALL
+		SELECT N'Data_Plan', N'Plan' , N'Plan' UNION ALL
 		SELECT N'Data_Population', N'Populacija', N'Population' UNION ALL
 		SELECT N'Data_Position', N'Pozicija', N'Position' UNION ALL
 		SELECT N'Data_PossibleValues', N'Moguće vrednosti', N'Possible Values' UNION ALL
@@ -329,6 +331,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Tags', N'Tagovi', N'Tags' UNION ALL
 		SELECT N'Data_Task', N'Zadatak', N'Task' UNION ALL
 		SELECT N'Data_TaskType', N'Vrsta zadatka', N'Task Type' UNION ALL
+		SELECT N'Data_TeamMemberLimit', N'Broj korisnika', N'Team members limit' UNION ALL
 		SELECT N'Data_ThreeLetterISO', N'Tri slova ISO', N'Three Letter ISO' UNION ALL
 		SELECT N'Data_TimeSpan', N'Vremenski raspon', N'Time Span' UNION ALL
 		SELECT N'Data_TimeZone', N'Vremenska zona', N'Time Zone' UNION ALL
@@ -468,6 +471,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Members_Message_RandomPassDidNotSend', N'Došlo je do greške, slučajna lozinka je generisana ali nije poslata korisniku.', N'Something went wrong. Random password has been generated but didn''t send to the member.' UNION ALL
 		SELECT N'Members_Message_RandomPassSent', N'Generisana lozinka je kreirana i poslata korisniku.', N'Random password has been generated and sent to the member.' UNION ALL
 		SELECT N'Members_Message_UserNameIsSameAsEmail', N'Korisničko ime i e-mail adresa se moraju razlikovati.', N'The member''s name looks like an e-mail address. Please change it.' UNION ALL
+		SELECT N'Message_AppLimitation', N'Koristite ograničenu verziju naše aplikacije', N'You are using limited version of our app' UNION ALL
+		SELECT N'Message_ContactSupport', N'Molimo kontaktirajte našu podršku za više detalja ili posetite {0} za nadogradnju plana', N'Please contact our support for more details or visit the {0} area to upgrade your plan.' UNION ALL
+		SELECT N'Message_LicenceExpire', N'Molimo kontaktirajte našu podršku ili vlasnika računa za više detalja', N'Please contact our support or account owner for more details.' UNION ALL
 		SELECT N'Message_Members_Desc', N'Obrađujem, molim pričekajte...', N'In progress, please wait ...' UNION ALL
 		SELECT N'Message_Members_Title', N'Unos uloga', N'Importing Roles' UNION ALL
 		SELECT N'Message_Roles_Desc', N'Obrađujem, molim pričekajte...', N'In progress, please wait ...' UNION ALL
