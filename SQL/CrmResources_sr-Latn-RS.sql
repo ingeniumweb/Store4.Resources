@@ -22,6 +22,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_SaveOrder', N'Snimi narudžbu', N'Save Order' UNION ALL
 		SELECT N'Button_SaveQuote', N'Snimi ponudu', N'Save Quote' UNION ALL
 		SELECT N'Button_SelectOption', N'Izaberi paket', N'Select Option' UNION ALL
+		SELECT N'Cancel_Title', N'Otkazano', N'Canceled' UNION ALL
 		SELECT N'Category_Message_LevelForbidden', N'Zabranjeno dodavanje podkategorija na ovom nivou!', N'Can not add child category at this level!' UNION ALL
 		SELECT N'Company_Message_AlredySelectedDiscunt', N'Za odabrani proizvod već postoji popust!', N'There is already a discount for the selected product!' UNION ALL
 		SELECT N'Title_Contact_Info', N'Kontakt Informacije', N'Contact Info' UNION ALL
@@ -121,6 +122,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_OnHand', N'Na skladištu', N'On Hand' UNION ALL
 		SELECT N'Data_Operation', N'Operacija', N'Operation' UNION ALL
 		SELECT N'Data_Operations', N'Operacije', N'Operations' UNION ALL
+		SELECT N'Data_Operator', N'Operater', N'Operator' UNION ALL
 		SELECT N'Data_OrderNumber', N'Broj narudžbe #', N'Order #' UNION ALL
 		SELECT N'Data_PacketSize', N'Veličina paketa', N'Packet Size' UNION ALL
 		SELECT N'Data_PacketSizeLabel', N'Naziv paketa', N'Packet Size Label' UNION ALL
@@ -193,6 +195,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TaxNumber', N'Poreski/VAT Broj', N'Tax Number' UNION ALL
 		SELECT N'Data_TaxRate', N'Poreska stopa', N'Tax Rate' UNION ALL
 		SELECT N'Data_TaxType', N'Poreska grupa', N'Tax Type' UNION ALL
+		SELECT N'Data_Time', N'Vreme', N'Time' UNION ALL
 		SELECT N'Data_TimeZone', N'Vremenska zona', N'Time Zone' UNION ALL
 		SELECT N'Data_Total', N'Ukupno', N'Total' UNION ALL
 		SELECT N'Data_TotalCost', N'Ukupna cena', N'Total Cost' UNION ALL
@@ -281,8 +284,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DropDown_Default_CustomerAddress', N'Standardna adresa klijenta', N'Default Customer Address' UNION ALL
 		SELECT N'DropDown_TaxExclusive', N'Porez isključen', N'Tax Exclusive' UNION ALL
 		SELECT N'DropDown_TaxInclusive', N'Porez uključen', N'Tax Inclusive' UNION ALL
+		SELECT N'Error_ErrorDescription', N'Došlo je do greške prilikom procesa plaćanja. Molimo pokušajte ponovo.<br>Ukoliko se greška ponovi kontaktujte podršku.', N'A problem has occurred during the payment process. Please try again.<br />If this error continues, please contact support.' UNION ALL
 		SELECT N'Error_ImportProcess', N'Došlo je do greške tokom procesa uvoza podataka', N'An error has occurred during the data import process' UNION ALL
 		SELECT N'Error_ExistingStore', N'Prodavnica s imenom: \"{0}\" već postoji.', N'Store with Name: \"{0}\" already exists.' UNION ALL
+		SELECT N'Error_ErrorTitle', N'Ouch!', N'Ouch!' UNION ALL
 		SELECT N'Error_GeneratingStore', N'Došlo je do greške prilikom kreiranja prodavnice : \"{0}".', N'There was an error while creating Store: \"{0}\".' UNION ALL
 		SELECT N'Global_Link_Generated', N'Javni link je generiran', N'Public link for {0} has been generated.' UNION ALL
 		SELECT N'Global_Link_Invoice', N'Kopirajte i dijelite link računa putem e-pošte, teksta ili chata. (Ne objavite link na javnom forumu.)', N'Copy and share the invoice link through email, text, or chat. (Be sure not to post the link in a public forum.)' UNION ALL
@@ -343,6 +348,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'MPR_Title', N'Kreiraj proizvodni nalog', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Email-info narudžbenica - plaćeno karticom', N'Send Order Confirmation Email CreditCard' UNION ALL
 		SELECT N'Order_EmailWireTransfer', N'Email-info narudžbenica - plaćeno virmanski', N'Send Order Confirmation Email WireTransfer' UNION ALL
+		SELECT N'PaymentCancelled_Title', N'Plaćanje otkazano', N'Payment Cancelled' UNION ALL
+		SELECT N'PaymentCancelled_Description', N'Prekinuli ste plaćanje.', N'You have cancelled your payment.' UNION ALL
 		SELECT N'Product_IsSubscriptions', N'Pretplata', N'Is Subscription' UNION ALL
 		SELECT N'Product_Subscriptions', N'Pretplate za proizvod', N'Product Subscriptions' UNION ALL
 		SELECT N'Products_Refferalprogram', N'Referal program', N'Refferal Program Enabled' UNION ALL

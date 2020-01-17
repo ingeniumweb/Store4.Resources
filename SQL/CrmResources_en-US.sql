@@ -22,6 +22,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_SaveOrder', N'Save Order' UNION ALL
 		SELECT N'Button_SaveQuote', N'Save Quote' UNION ALL
 		SELECT N'Button_SelectOption', N'Select Option' UNION ALL
+		SELECT N'Cancel_Title', N'Canceled' UNION ALL
 		SELECT N'Category_Message_LevelForbidden', N'Can not add child category at this level!' UNION ALL
 		SELECT N'Company_Message_AlredySelectedDiscunt', N'There is already a discount for the selected product!' UNION ALL
 		SELECT N'ContentType_BOM', N'BOM' UNION ALL
@@ -120,6 +121,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_OnHand', N'On Hand' UNION ALL
 		SELECT N'Data_Operation', N'Operation' UNION ALL
 		SELECT N'Data_Operations', N'Operations' UNION ALL
+		SELECT N'Data_Operator', N'Operator' UNION ALL
 		SELECT N'Data_OrderNumber', N'Order #' UNION ALL
 		SELECT N'Data_PacketSize', N'Packet Size' UNION ALL
 		SELECT N'Data_PacketSizeLabel', N'Packet Size Label' UNION ALL
@@ -191,6 +193,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TaxNumber', N'Tax Number' UNION ALL
 		SELECT N'Data_TaxRate', N'Tax Rate' UNION ALL
 		SELECT N'Data_TaxType', N'Tax Type' UNION ALL
+		SELECT N'Data_Time', N'Time' UNION ALL
 		SELECT N'Data_TimeZone', N'Time Zone' UNION ALL
 		SELECT N'Data_Total', N'Total' UNION ALL
 		SELECT N'Data_TotalCost', N'Total Cost' UNION ALL
@@ -279,8 +282,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DropDown_Default_CustomerAddress', N'Default Customer Address' UNION ALL
 		SELECT N'DropDown_TaxExclusive', N'Tax Exclusive' UNION ALL
 		SELECT N'DropDown_TaxInclusive', N'Tax Inclusive' UNION ALL
+		SELECT N'Error_ErrorDescription', N'A problem has occurred during the payment process. Please try again.<br />If this error continues, please contact support.' UNION ALL
 		SELECT N'Error_ImportProcess', N'An error has occurred during the data import process' UNION ALL		
 		SELECT N'Error_ExistingStore', N'Store with Name: \"{0}\" already exists.' UNION ALL
+		SELECT N'Error_ErrorTitle', N'Ouch!' UNION ALL
 		SELECT N'Error_GeneratingStore', N'There was an error while creating Store: \"{0}\".' UNION ALL
 		SELECT N'Global_Link_Generated', N'Public link for {0} has been generated.' UNION ALL
 		SELECT N'Global_Link_Invoice', N'Copy and share the invoice link through email, text, or chat. (Be sure not to post the link in a public forum.)' UNION ALL
@@ -341,6 +346,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'MPR_Title', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Send Order Confirmation Email CreditCard' UNION ALL
 		SELECT N'Order_EmailWireTransfer', N'Send Order Confirmation Email WireTransfer' UNION ALL
+		SELECT N'PaymentCancelled_Description', N'You have cancelled your payment.' UNION ALL
+		SELECT N'PaymentCancelled_Title', N'Payment Cancelled' UNION ALL
 		SELECT N'Product_IsSubscriptions', N'Is Subscription' UNION ALL
 		SELECT N'Product_Subscriptions', N'Product Subscriptions' UNION ALL
 		SELECT N'Products_Refferalprogram', N'Refferal Program Enabled' UNION ALL
