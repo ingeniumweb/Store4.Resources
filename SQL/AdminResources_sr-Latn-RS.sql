@@ -472,7 +472,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Members_Message_RandomPassSent', N'Generisana lozinka je kreirana i poslata korisniku.', N'Random password has been generated and sent to the member.' UNION ALL
 		SELECT N'Members_Message_UserNameIsSameAsEmail', N'Korisničko ime i e-mail adresa se moraju razlikovati.', N'The member''s name looks like an e-mail address. Please change it.' UNION ALL
 		SELECT N'Message_AppLimitation', N'Koristite ograničenu verziju naše aplikacije', N'You are using limited version of our app' UNION ALL
-		SELECT N'Message_ContactSupport', N'Molimo kontaktirajte našu podršku za više detalja ili posetite {0} za nadogradnju plana', N'Please contact our support for more details or visit the {0} area to upgrade your plan.' UNION ALL
+		SELECT N'Message_ContactSupport', N'Za više detalja kontaktirajte podršku ili posetite <a href="http://app.store4.com.hr/Admin/Billings">{0}</a> za nadogradnju plana', N'Please contact our support for more details or visit the <a href="http://app.store4.com/Admin/Billings">{0}</a> area to upgrade your plan.' UNION ALL
 		SELECT N'Message_LicenceExpire', N'Molimo kontaktirajte našu podršku ili vlasnika računa za više detalja', N'Please contact our support or account owner for more details.' UNION ALL
 		SELECT N'Message_Members_Desc', N'Obrađujem, molim pričekajte...', N'In progress, please wait ...' UNION ALL
 		SELECT N'Message_Members_Title', N'Unos uloga', N'Importing Roles' UNION ALL

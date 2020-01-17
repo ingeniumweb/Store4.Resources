@@ -82,6 +82,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_SignUp_Link_SignIn', N'Already have an account? <a href=''{0}''>SignIn</a>' UNION ALL
 		SELECT N'Account_SignUp_Title', N'Register' UNION ALL
 		SELECT N'Already_Registered', N'Already have an account?' UNION ALL
+		SELECT N'Button_HomeLink', N'href="https://store4.com/" title="{0}"' UNION ALL
 		SELECT N'Button_Renew_license', N'Renew license/Contact support' UNION ALL
 		SELECT N'Button_Send', N'Send' UNION ALL
 		SELECT N'Button_Submit', N'Submit' UNION ALL
@@ -124,8 +125,10 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Field_Placeholder', N'Plese enter ''{0}''.' UNION ALL
 		SELECT N'Field_RememberMe', N'Remember me' UNION ALL
 		SELECT N'Field_RetypePassword', N'Re-type Password' UNION ALL
+		SELECT N'Field_Store', N'Store / Company Name' UNION ALL
 		SELECT N'Field_Subject', N'Subject' UNION ALL
 		SELECT N'Field_Username', N'Username' UNION ALL
+		SELECT N'Link_AdditionalVendorFields', N'Fill out company additional fields (optional) +' UNION ALL
 		SELECT N'Link_ContinueReading', N'Continue Reading' UNION ALL
 		SELECT N'Link_Delete', N'Delete' UNION ALL
 		SELECT N'Link_ForgotPassword', N'Forgot your password?' UNION ALL
@@ -187,6 +190,7 @@ IF (@ResourceTypeID > = 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SocialNetwork_Google', N'Google' UNION ALL
 		SELECT N'SocialNetwork_Twitter', N'Twitter' UNION ALL
 		SELECT N'SocialNetwork_Yahoo', N'Yahoo' UNION ALL
+		SELECT N'Store4Title', N'Store4 - Sales Automation Software Solution' UNION ALL
 		SELECT N'Store4_Vendor_Sign_Up', N'Store4 - Vendor Sign Up' UNION ALL
 		SELECT N'Text_Covered', N'We ve got you covered' UNION ALL
 		SELECT N'Title_Sales_Automation_Solution', N'Sales Automation Solution' UNION ALL

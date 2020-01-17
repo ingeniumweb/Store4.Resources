@@ -82,6 +82,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Account_SignUp_Text', N'Još nemate račun?', N'Dont have an account yet?' UNION ALL
 		SELECT N'Account_SignUp_Title', N'Registracija', N'Register' UNION ALL
 		SELECT N'Already_Registered', N'Već imate račun?', N'Already have an account?' UNION ALL
+		SELECT N'Button_HomeLink', N'href="https://store4.com.hr/" title="{0}"', N'href="https://store4.com/" title="{0}"' UNION ALL
 		SELECT N'Button_Renew_license', N'Obnovi licencu/Kontaktiraj podršku', N'Renew license/Contact support' UNION ALL
 		SELECT N'Button_Send', N'Pošalji', N'Send' UNION ALL
 		SELECT N'Button_Submit', N'Submit', N'Submit' UNION ALL
@@ -124,8 +125,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Field_Placeholder', N'Molimo Vas da unesete ''{0}''.', N'Plese enter ''{0}''.' UNION ALL
 		SELECT N'Field_RememberMe', N'Zapamti me', N'Remember me' UNION ALL
 		SELECT N'Field_RetypePassword', N'Ponovno unesi lozinku', N'Re-type Password' UNION ALL
+		SELECT N'Field_Store', N'Naziv tvrtke', N'Store / Company Name' UNION ALL
 		SELECT N'Field_Subject', N'Naslov', N'Subject' UNION ALL
 		SELECT N'Field_Username', N'Korisničko ime', N'Username' UNION ALL
+		SELECT N'Link_AdditionalVendorFields', N'Popunite dodatna polja (neobavezno) +', N'Fill out company additional fields (optional) +' UNION ALL
 		SELECT N'Link_ContinueReading', N'Nastavi sa čitanjem', N'Continue Reading' UNION ALL
 		SELECT N'Link_Delete', N'Obriši', N'Delete' UNION ALL
 		SELECT N'Link_ForgotPassword', N'Zaboravljena lozinka?', N'Forgot your password?' UNION ALL
@@ -188,6 +191,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SocialNetwork_Google', N'Google', N'Google' UNION ALL
 		SELECT N'SocialNetwork_Twitter', N'Twitter', N'Twitter' UNION ALL
 		SELECT N'SocialNetwork_Yahoo', N'Yahoo', N'Yahoo' UNION ALL
+		SELECT N'Store4Title', N'Store4 - Cloud poslovna aplikacija', N'Store4 - Sales Automation Software Solution' UNION ALL
 		SELECT N'Store4_Vendor_Sign_Up', N'Store4 - Vendor Prijavite se', N'Store4 - Vendor Sign Up' UNION ALL
 		SELECT N'Text_Covered', N'Mislimo na vas', N'We ve got you covered' UNION ALL
 		SELECT N'Title_Sales_Automation_Solution', N'Rješenje za automatizaciju prodaje', N'Sales Automation Solution' UNION ALL
