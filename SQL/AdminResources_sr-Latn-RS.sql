@@ -296,6 +296,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Result', N'Rezultat', N'Result' UNION ALL
 		SELECT N'Data_Role', N'Uloga', N'Role' UNION ALL
 		SELECT N'Data_RowNumber', N'Redni broj', N'Row Number' UNION ALL
+		SELECT N'Data_Save', N'Uštedi', N'Save' UNION ALL
 		SELECT N'Data_Schedule', N'Zakaži', N'Schedule' UNION ALL
 		SELECT N'Data_Scheduler', N'', N'' UNION ALL
 		SELECT N'Data_SecondaryPhone', N'Drugi telefon', N'Secondary Phone' UNION ALL

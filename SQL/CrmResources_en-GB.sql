@@ -227,6 +227,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_Yesterday', N'Yesterday' UNION ALL
 		SELECT N'Deal_Button_LOST', N'Lost' UNION ALL
 		SELECT N'Deal_Button_WIN', N'Win' UNION ALL
+		SELECT N'Description_CurrentSubscription', N'Your account is up and running. Your credit card will be charged {0} every year until you cancel your subscription. You can switch your current plan to any other plan at any time by making a few simple steps.' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Cash Sales Order' UNION ALL
 		SELECT N'DocumentType_Contract', N'Contract' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Expense Order' UNION ALL
@@ -414,7 +415,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SystemNotification_Message_ChangeStatus', N'{0} changed status to "{1}" on {2} <strong>{3}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_SendEmail', N'{0} sent Email <strong>{1}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_MakePayment', N'{0} created payment <strong>{1}</strong> for {2} <strong>{3}</strong>.' UNION ALL
+		SELECT N'Title_Contact_Info', N'Your Billing Information' UNION ALL
 		SELECT N'Title_Contact_Info', N'Contact Info' UNION ALL
+		SELECT N'Title_CurrentSubscription', N'Current Subscription' UNION ALL
 		SELECT N'Transfer_Order_Number', N'Transfer Order Number'
 END
 

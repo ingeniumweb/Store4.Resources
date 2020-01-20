@@ -356,6 +356,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Default_Friends', N'Friends' UNION ALL
 		SELECT N'Default_Import', N'Import' UNION ALL
 		SELECT N'Default_Invitations', N'Invitations' UNION ALL
+		SELECT N'Data_Save', N'Save' UNION ALL
 		SELECT N'Default_Search', N'Search...' UNION ALL
 		SELECT N'Default_SearchTerm', N'Search term' UNION ALL
 		SELECT N'Default_ShowAllRoles', N'Show All Roles' UNION ALL
