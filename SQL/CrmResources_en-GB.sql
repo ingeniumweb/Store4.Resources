@@ -349,6 +349,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Order_EmailWireTransfer', N'Send Order Confirmation Email WireTransfer' UNION ALL
 		SELECT N'PaymentCancelled_Description', N'You have cancelled your payment.' UNION ALL
 		SELECT N'PaymentCancelled_Title', N'Payment Cancelled' UNION ALL
+		SELECT N'PaymentSuccess_Title', N'Payment Successful' UNION ALL
 		SELECT N'Product_IsSubscriptions', N'Is Subscription' UNION ALL
 		SELECT N'Product_Subscriptions', N'Product Subscriptions' UNION ALL
 		SELECT N'Products_Refferalprogram', N'Refferal Program Enabled' UNION ALL
@@ -401,6 +402,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'StoreSettings_Tabs_StoreSettings', N'Store Settings' UNION ALL
 		SELECT N'Success_ImportFinished', N'Data import has been finished successfully.' UNION ALL	
 		SELECT N'Success_StoreGenerated', N'Store: \"{0}\" successfully created.' UNION ALL
+		SELECT N'Success_SuccessDescription', N'Your payment was successful! You can now continue using Store4' UNION ALL
+		SELECT N'Success_SuccessTitle', N'Great!' UNION ALL
 		SELECT N'SystemNotification_Message_Add', N'{0} added a new <strong>{1}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_AddContent', N'{0} added a new {1} <strong>{2}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_Comment', N'{0} commented on <strong>{1}</strong>.' UNION ALL
