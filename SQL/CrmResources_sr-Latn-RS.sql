@@ -420,7 +420,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SystemNotification_Message_ChangeStatus', N'{0} je promenio status "{1}" na {2} <strong>{3}</strong>.', N'{0} changed status to "{1}" on {2} <strong>{3}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_SendEmail', N'{0} poslao E-mail <strong>{1}</strong>.', N'{0} sent Email <strong>{1}</strong>.' UNION ALL
 		SELECT N'SystemNotification_Message_MakePayment', N'{0} je dodao uplatu <strong>{1}</strong> za {2} <strong>{3}</strong>.' , N'{0} created payment <strong>{1}</strong> for {2} <strong>{3}</strong>.' UNION ALL
-		SELECT N'Title_Contact_Info', N'Podaci za plaćanje', N'Your Billing Information' UNION ALL
+		SELECT N'Title_BillingInformation', N'Kontakt Informacije', N'Contact Info' UNION ALL
 		SELECT N'Title_Contact_Info', N'Kontakt Informacije', N'Contact Info' UNION ALL
 		SELECT N'Title_CurrentSubscription', N'Aktivna pretplata', N'Current Subscription' UNION ALL
 		SELECT N'Transfer_Order_Number', N'Broj Međuskladišnice', N'Transfer Order Number'
