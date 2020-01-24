@@ -333,6 +333,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Task', N'Zadatak', N'Task' UNION ALL
 		SELECT N'Data_TaskType', N'Vrsta zadatka', N'Task Type' UNION ALL
 		SELECT N'Data_TeamMemberLimit', N'Broj korisnika', N'Team members limit' UNION ALL
+		SELECT N'Data_PlanLimitDesc', N'{0} ({1} iskorišteno, {2} ostalo)', N'{0} ({1} used, {2} left)' UNION ALL
 		SELECT N'Data_ThreeLetterISO', N'Tri slova ISO', N'Three Letter ISO' UNION ALL
 		SELECT N'Data_TimeSpan', N'Vremenski raspon', N'Time Span' UNION ALL
 		SELECT N'Data_TimeZone', N'Vremenska zona', N'Time Zone' UNION ALL

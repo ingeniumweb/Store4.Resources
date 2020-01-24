@@ -331,6 +331,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Task', N'Task' UNION ALL
 		SELECT N'Data_TaskType', N'Task Type' UNION ALL
 		SELECT N'Data_TeamMemberLimit', N'Team members limit' UNION ALL
+		SELECT N'Data_PlanLimitDesc', N'{0} ({1} used, {2} left)' UNION ALL
 		SELECT N'Data_ThreeLetterISO', N'Three Letter ISO' UNION ALL
 		SELECT N'Data_TimeSpan', N'Time Span' UNION ALL
 		SELECT N'Data_TimeZone', N'Time Zone' UNION ALL

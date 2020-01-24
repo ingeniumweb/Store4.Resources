@@ -135,6 +135,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Period', N'Period' UNION ALL
 		SELECT N'Data_PeriodEnd', N'Peroid End' UNION ALL
 		SELECT N'Data_PeriodStart', N'Period Start' UNION ALL
+		SELECT N'Data_PeriodYear', N'every year {0}' UNION ALL
+		SELECT N'Data_PeriodMonth', N'every month {0}' UNION ALL
 		SELECT N'Data_PreferentialPrice', N'Preferential Price' UNION ALL
 		SELECT N'Data_PIN', N'PIN' UNION ALL
 		SELECT N'Data_PlannedFinish', N'Planned Finish' UNION ALL
@@ -227,7 +229,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_Yesterday', N'Yesterday' UNION ALL
 		SELECT N'Deal_Button_LOST', N'Lost' UNION ALL
 		SELECT N'Deal_Button_WIN', N'Win' UNION ALL
-		SELECT N'Description_CurrentSubscription', N'Your account is up and running. Your credit card will be charged {0} every year until you cancel your subscription. You can switch your current plan to any other plan at any time by making a few simple steps.' UNION ALL
+		SELECT N'Description_CurrentSubscription', N'Your account is up and running. Your credit card will be charged {0} until you cancel your subscription. You can switch your current plan to any other plan at any time by making a few simple steps.' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Cash Sales Order' UNION ALL
 		SELECT N'DocumentType_Contract', N'Contract' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Expense Order' UNION ALL

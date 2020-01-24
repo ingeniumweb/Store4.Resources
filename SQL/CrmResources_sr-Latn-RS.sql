@@ -136,6 +136,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PeriodEnd', N'Razdoblje trajanja do', N'Peroid End' UNION ALL
 		SELECT N'Data_PeriodStart', N'Razdoblje trajanja od', N'Period Start' UNION ALL
 		SELECT N'Data_PreferentialPrice', N'Povlaštena cena', N'Preferential Price' UNION ALL
+		SELECT N'Data_PeriodYear', N'{0} svake godine', N'every year' UNION ALL
+		SELECT N'Data_PeriodMonth', N'{0} svaki mjesec', N'every month' UNION ALL
 		SELECT N'Data_PIN', N'PIB', N'PIN' UNION ALL
 		SELECT N'Data_PlannedFinish', N'Planirani završetak', N'Planned Finish' UNION ALL
 		SELECT N'Data_PlannedStart', N'Planirani početak', N'Planned Start' UNION ALL
@@ -228,7 +230,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DateFilter_Yesterday', N'Juče', N'Yesterday' UNION ALL
 		SELECT N'Deal_Button_LOST', N'Izgubljena', N'Lost' UNION ALL
 		SELECT N'Deal_Button_WIN', N'Dobivena', N'Win' UNION ALL
-		SELECT N'Description_CurrentSubscription', N'Račun je aktivan. Vaša kreditna kartica će se teretiti za {0} svake godine sve dok ne otkažete pretplatu. Trenutni plan možete jednostavno promeniti bilo kada.', N'Your account is up and running. Your credit card will be charged {0} every year until you cancel your subscription. You can switch your current plan to any other plan at any time by making a few simple steps.' UNION ALL
+		SELECT N'Description_CurrentSubscription', N'Račun je aktivan. Vaša kreditna kartica će se teretiti za {0} sve dok ne otkažete pretplatu. Trenutni plan možete jednostavno promijeniti bilo kada. Za više informacija kontaktirajte našu podršku.', N'Your account is up and running. Your credit card will be charged {0} every year until you cancel your subscription. You can switch your current plan to any other plan at any time by making a few simple steps.' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Prodaja za gotovinu', N'Cash Sales Order' UNION ALL
 		SELECT N'DocumentType_Contract', N'Ugovor', N'Contracts' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Rashod', N'Expense Order' UNION ALL
