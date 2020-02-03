@@ -43,7 +43,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Add', N'Dodati', N'Add' UNION ALL
 		SELECT N'Data_Admin', N'Admin', N'Admin' UNION ALL
 		SELECT N'Data_After', N'Posle', N'After' UNION ALL
-		SELECT N'Data_AnnualPlanSave', N'Uštedite {0}{1} sa godišnjim planom', N'You save {0} with annual plan' UNION ALL
+		SELECT N'Data_AnnualPlanSave', N'Uštedite {1} {0} sa godišnjim planom', N'You save {0} with annual plan' UNION ALL
 		SELECT N'Data_Available', N'Dostupno', N'Available' UNION ALL
 		SELECT N'Data_AssignedTo', N'Dodeljeno', N'Assigned To' UNION ALL
 		SELECT N'Data_Barcode', N'Barkod', N'Barcode' UNION ALL
@@ -345,8 +345,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Linked_Documents_Linking_Error', N'Došlo je do pogreške prilikom povezivanja dokumenata.', N'There was an error while linking documents.' UNION ALL
 		SELECT N'Linked_Documents_No_DocSelected_Message', N'Nije odabran nijedan dokument. Molim Odaberite dokumente.', N'There are no documents selected. Please select documents.' UNION ALL
 		SELECT N'Message_Changed_to_Customer_Succes', N'Lead has been successfully changed to a customer', N'Lead has been successfully changed to a customer' UNION ALL
-		SELECT N'Message_CreditCardCharge', N'Teretit ćemo vašu karticu za {0}{1} svake godine, startajući od {2}', N'Your credit card will be charged {0}{1} every year starting from {2}' UNION ALL
-		SELECT N'Message_SubscribingPlan', N'' , N'Kupujete {0} za {1} korisnika' UNION ALL
+		SELECT N'Message_CreditCardCharge', N'Teretit ćemo vašu karticu za {1} {0} svake godine, startajući od {2}', N'Your credit card will be charged {0}{1} every year starting from {2}' UNION ALL
+		SELECT N'Message_SubscribingPlan', N'Kupujete {0} za {1} korisnika', N'You are subscribing to the {0} for {1} agent' UNION ALL
 		SELECT N'Message_Vendor_UnauthorizedAccess', N'Račun sa ovim e-mailom ili korisničkim imenom već postoji. Molimo vas odaberite drugi e-mail/korisničko ime i pokušajte ponovno.', N'An account with this email or username already exists. Please select another e-mail/username and try again.' UNION ALL
 		SELECT N'MPR_Title', N'Kreiraj proizvodni nalog', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Email-info narudžbenica - plaćeno karticom', N'Send Order Confirmation Email CreditCard' UNION ALL
