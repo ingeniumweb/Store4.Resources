@@ -103,7 +103,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_InvoiceDetails', N'Detalji računa', N'Invoice Details' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Račun #', N'Invoice #' UNION ALL
 		SELECT N'Data_IsHeadquarter', N'Označi kao sedište', N'Is Headquarter' UNION ALL
-		SELECT N'Data_IsProcured', N'Nabavljeno', N'Is Procured' UNION ALL
+		SELECT N'Data_IsProcured', N'Proizvodni materijal', N'Is Procured' UNION ALL
 		SELECT N'Data_IsProductPackage', N'Pakovanje proizvoda', N'Is Product Package' UNION ALL
 		SELECT N'Data_IssueDate', N'Datum izdavanja', N'Issue Date' UNION ALL
 		SELECT N'Data_ItemCost', N'Trošak stavke', N'Item Cost' UNION ALL
@@ -173,10 +173,13 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ShipTo', N'Poslati prema', N'Ship To' UNION ALL		
 		SELECT N'Data_ShowOnStore', N'Prikaži u trgovini', N'Show On Store' UNION ALL
 		SELECT N'Data_ShowShipping', N'Prikaži trošak dostave', N'Show Shippment Costs' UNION ALL
+		SELECT N'Data_ShowTotals', N'Prikaži zalihe', N'Show Totals' UNION ALL
 		SELECT N'Data_SIC', N'SIC', N'SIC' UNION ALL
 		SELECT N'Data_Sku', N'Sku', N'Sku' UNION ALL
 		SELECT N'Data_StartDate', N'Početni datum', N'Start Date' UNION ALL
 		SELECT N'Data_Status', N'Status', N'Status' UNION ALL
+		SELECT N'Data_StatusIssued', N'Izdato', N'Issued' UNION ALL
+		SELECT N'Data_StatusReceived', N'Primljeno', N'Received' UNION ALL
 		SELECT N'Data_StockDue', N'Dostaviti u skladištu do', N'Stock Due' UNION ALL
 		SELECT N'Data_StockItem', N'Proizvod u skladištu', N'Stock Item' UNION ALL
 		SELECT N'Data_StoreName', N'Ime prodavnice', N'Store Name' UNION ALL

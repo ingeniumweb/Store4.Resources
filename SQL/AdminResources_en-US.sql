@@ -55,7 +55,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_Delete', N'Delete' UNION ALL
 		SELECT N'Button_DeleteAll', N'Delete All' UNION ALL
 		SELECT N'Button_DeleteTempFile', N'Delete Temporary files' UNION ALL
-		SELECT N'Button_DownloadPDF', N'Download PDF' UNION ALL
+		SELECT N'Button_DownloadPDF', N'Download as PDF' UNION ALL
 		SELECT N'Button_Edit', N'Edit' UNION ALL
 		SELECT N'Button_EditGallery', N'Edit Gallery' UNION ALL
 		SELECT N'Button_Export', N'Export' UNION ALL

@@ -55,7 +55,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_Delete', N'Obriši', N'Delete' UNION ALL
 		SELECT N'Button_DeleteAll', N'Obriši sve', N'Delete All' UNION ALL
 		SELECT N'Button_DeleteTempFile', N'Obriši privremene datoteke', N'Delete Temporary files' UNION ALL
-		SELECT N'Button_DownloadPDF', N'Preuzmite PDF', N'Download PDF' UNION ALL
+		SELECT N'Button_DownloadPDF', N'Preuzmite kao PDF', N'Download as PDF' UNION ALL
 		SELECT N'Button_Edit', N'Uredi', N'Edit' UNION ALL
 		SELECT N'Button_EditGallery', N'Uredi galeriju', N'Edit Gallery' UNION ALL
 		SELECT N'Button_Export', N'Izvezi', N'Export' UNION ALL

@@ -173,10 +173,13 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ShipTo', N'Ship To' UNION ALL
 		SELECT N'Data_ShowOnStore', N'Show On Store' UNION ALL
 		SELECT N'Data_ShowShipping', N'Show Shippment Costs' UNION ALL
+		SELECT N'Data_ShowTotals', N'Show Summary' UNION ALL
 		SELECT N'Data_SIC', N'SIC' UNION ALL
 		SELECT N'Data_Sku', N'Sku' UNION ALL
 		SELECT N'Data_StartDate', N'Start Date' UNION ALL
 		SELECT N'Data_Status', N'Status' UNION ALL
+		SELECT N'Data_StatusIssued', N'Issued' UNION ALL
+		SELECT N'Data_StatusReceived', N'Received' UNION ALL
 		SELECT N'Data_StockDue', N'Stock Due' UNION ALL
 		SELECT N'Data_StockItem', N'Stock Item' UNION ALL
 		SELECT N'Data_StoreName', N'Store Name' UNION ALL
