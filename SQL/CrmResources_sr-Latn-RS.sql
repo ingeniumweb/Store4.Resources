@@ -172,6 +172,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ShipmentNumber', N'Pošiljka #', N'Shipment #' UNION ALL
 		SELECT N'Data_ShipTo', N'Poslati prema', N'Ship To' UNION ALL		
 		SELECT N'Data_ShowOnStore', N'Prikaži u trgovini', N'Show On Store' UNION ALL
+		SELECT N'Data_ShowPaymentSlip', N'Prikaži uplatnicu', N'Show Payment Slip' UNION ALL
 		SELECT N'Data_ShowShipping', N'Prikaži trošak dostave', N'Show Shippment Costs' UNION ALL
 		SELECT N'Data_ShowTotals', N'Prikaži zalihe', N'Show Totals' UNION ALL
 		SELECT N'Data_SIC', N'SIC', N'SIC' UNION ALL
@@ -403,6 +404,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Store_ShipmentNumberFormat', N'SH-{DocNo}', N'SH-{DocNo}' UNION ALL
 		SELECT N'Store_Slug', N'{0}-store', N'{0}-store' UNION ALL
 		SELECT N'Store_Title', N'{0} prodavnica', N'{0} Store' UNION ALL
+		SELECT N'StoreSettings_Tabs_BankInformation ', N'Postavke banke', N'Bank Information' UNION ALL
 		SELECT N'StoreSettings_Tabs_Company', N'Postavke kompanije', N'Company Settings' UNION ALL
 		SELECT N'StoreSettings_Tabs_CompanyAddress', N'Adresa kompanije', N'Company Address' UNION ALL
 		SELECT N'StoreSettings_Tabs_DocumentSettings', N'Postavke dokumenta', N'Document Settings' UNION ALL

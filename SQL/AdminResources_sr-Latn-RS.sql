@@ -154,6 +154,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_AreaCode', N'Poštanski broj', N'Area Code' UNION ALL
 		SELECT N'Data_AssignedMember', N'Dodeljeni korisnik', N'Assigned Member' UNION ALL
 		SELECT N'Data_BackgroundColor', N'Pozadinska boja', N'Background Color' UNION ALL
+		SELECT N'Data_Bank', N'Banka', N'Bank' UNION ALL
+		SELECT N'Data_BankAddress', N'Adresa banke', N'Bank address' UNION ALL
+		SELECT N'Data_BankIBAN', N'IBAN banke', N'Bank IBAN' UNION ALL
+		SELECT N'Data_BankName', N'Naziv banke', N'Bank name' UNION ALL
 		SELECT N'Data_CampaignEndDate', N'Završetak kampanje', N'Campaign End Date' UNION ALL
 		SELECT N'Data_CampaignEndDate_Required', N'Molimo promenite završetak kampanje.', N'Please change campaign end date.' UNION ALL
 		SELECT N'Data_CampaignStartDate', N'Početak kampanje.', N'Campaign Start Date' UNION ALL
@@ -328,6 +332,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_SubnetMask', N'Subnet maska', N'Subnet Mask' UNION ALL
 		SELECT N'Data_Subscribed', N'Pretplaćen', N'Subscribed' UNION ALL
 		SELECT N'Data_SubscriberList', N'Lista pretplatnika', N'Subscriber List' UNION ALL
+		SELECT N'Data_SwiftCode', N'SWIFT', N'SWIFT' UNION ALL
 		SELECT N'Data_Table', N'Tablica', N'Table' UNION ALL
 		SELECT N'Data_Tags', N'Tagovi', N'Tags' UNION ALL
 		SELECT N'Data_Task', N'Zadatak', N'Task' UNION ALL
@@ -698,6 +703,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Tabs_API', N'API', N'API' UNION ALL
 		SELECT N'Tabs_API_Description', N'Da biste pristupili API-u, potrebne su dvije informacije. Prva je korisnički email koji je jedinstven, te koji koristimo da identifikujemo korisnički nalog. Drugi je API token koji se koristi kao lozinka za spajanje na API. Na ovom ekranu možete dobiti obje. U slučaju kreiranja novog API tokena, trebate kliknuti na "Generiši novi API oznake" kako bi ga generisali. Obje informacije su vam potrebne kod preuzimanja podataka preko API-a.', N'In order to access the API, you need two pieces of information. The first is a member email which is a unique code that we use to identify your account. The other is an API Token which acts as a password when you connect to the API. You can get both of those here. You should click on the "Generate a new API Token" to display it. You''ll need to remember both of those later when you start writing code.' UNION ALL
 		SELECT N'Tabs_Attempts', N'Pokušaji', N'Attempts' UNION ALL
+		SELECT N'Tabs_BankInformation', N'Banka', N'Bank' UNION ALL
 		SELECT N'Tabs_Contacts', N'Kontakti', N'Contacts' UNION ALL
 		SELECT N'Tabs_Details', N'Detalji', N'Details' UNION ALL
 		SELECT N'Tabs_Domains', N'Domeni', N'Domains' UNION ALL

@@ -154,6 +154,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_AreaCode', N'Area Code' UNION ALL
 		SELECT N'Data_AssignedMember', N'Assigned Member' UNION ALL
 		SELECT N'Data_BackgroundColor', N'Background Color' UNION ALL
+		SELECT N'Data_Bank', N'Bank' UNION ALL
+		SELECT N'Data_BankAddress', N'Bank address' UNION ALL
+		SELECT N'Data_BankIBAN', N'Bank IBAN' UNION ALL
+		SELECT N'Data_BankName',N'Bank name' UNION ALL
 		SELECT N'Data_CampaignEndDate', N'Campaign End Date' UNION ALL
 		SELECT N'Data_CampaignEndDate_Required', N'Please change campaign end date.' UNION ALL
 		SELECT N'Data_CampaignStartDate', N'Campaign Start Date' UNION ALL
@@ -327,6 +331,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_SubnetMask', N'Subnet Mask' UNION ALL
 		SELECT N'Data_Subscribed', N'Subscribed' UNION ALL
 		SELECT N'Data_SubscriberList', N'Subscriber List' UNION ALL
+		SELECT N'Data_SwiftCode', N'SWIFT' UNION ALL
 		SELECT N'Data_Table', N'Table' UNION ALL
 		SELECT N'Data_Tags', N'Tags' UNION ALL
 		SELECT N'Data_Task', N'Task' UNION ALL
@@ -698,6 +703,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Tabs_API', N'API' UNION ALL
 		SELECT N'Tabs_API_Description', N'In order to access the API, you need two pieces of information. The first is a member email which is a unique code that we use to identify your account. The other is an API Token which acts as a password when you connect to the API. You can get both of those here. You should click on the "Generate a new API Token" to display it. You''ll need to remember both of those later when you start writing code.' UNION ALL
 		SELECT N'Tabs_Attempts', N'Attempts' UNION ALL
+		SELECT N'Tabs_BankInformation', N'Bank' UNION ALL
 		SELECT N'Tabs_Contacts', N'Contacts' UNION ALL
 		SELECT N'Tabs_Details', N'Details' UNION ALL
 		SELECT N'Tabs_Domains', N'Domains' UNION ALL

@@ -172,6 +172,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ShipmentNumber', N'Shipment #' UNION ALL
 		SELECT N'Data_ShipTo', N'Ship To' UNION ALL
 		SELECT N'Data_ShowOnStore', N'Show On Store' UNION ALL
+		SELECT N'Data_ShowPaymentSlip', N'Show Payment Slip' UNION ALL
 		SELECT N'Data_ShowShipping', N'Show Shippment Costs' UNION ALL
 		SELECT N'Data_ShowTotals', N'Show Summary' UNION ALL
 		SELECT N'Data_SIC', N'SIC' UNION ALL
@@ -401,6 +402,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Store_ShipmentNumberFormat', N'SH-{DocNo}' UNION ALL
 		SELECT N'Store_Slug', N'{0}-store' UNION ALL
 		SELECT N'Store_Title', N'{0} Store' UNION ALL
+		SELECT N'StoreSettings_Tabs_BankInformation ', N'Bank Information' UNION ALL
 		SELECT N'StoreSettings_Tabs_Company', N'Company Settings' UNION ALL
 		SELECT N'StoreSettings_Tabs_CompanyAddress', N'Company Address' UNION ALL
 		SELECT N'StoreSettings_Tabs_DocumentSettings', N'Document Settings' UNION ALL

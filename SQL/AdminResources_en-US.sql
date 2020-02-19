@@ -154,6 +154,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_AreaCode', N'Area Code' UNION ALL
 		SELECT N'Data_AssignedMember', N'Assigned Member' UNION ALL
 		SELECT N'Data_BackgroundColor', N'Background Color' UNION ALL
+		SELECT N'Data_Bank', N'Bank' UNION ALL
+		SELECT N'Data_BankAddress', N'Bank address' UNION ALL
+		SELECT N'Data_BankIBAN', N'Bank IBAN' UNION ALL
+		SELECT N'Data_BankName', N'Bank name' UNION ALL
 		SELECT N'Data_CampaignEndDate', N'Campaign End Date' UNION ALL
 		SELECT N'Data_CampaignEndDate_Required', N'Please change campaign end date.' UNION ALL
 		SELECT N'Data_CampaignStartDate', N'Campaign Start Date' UNION ALL
@@ -326,6 +330,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_SubnetMask', N'Subnet Mask' UNION ALL
 		SELECT N'Data_Subscribed', N'Subscribed' UNION ALL
 		SELECT N'Data_SubscriberList', N'Subscriber List' UNION ALL
+		SELECT N'Data_SwiftCode', N'SWIFT' UNION ALL
 		SELECT N'Data_Table', N'Table' UNION ALL
 		SELECT N'Data_Tags', N'Tags' UNION ALL
 		SELECT N'Data_Task', N'Task' UNION ALL
