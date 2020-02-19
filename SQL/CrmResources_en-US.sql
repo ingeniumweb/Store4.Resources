@@ -57,6 +57,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BuyPrice', N'Buy Price' UNION ALL
 		SELECT N'Data_ChangeSubscriptionPlanTitle', N'Change your subscription plan' UNION ALL
 		SELECT N'Data_CloneDocument', N'Clone Document' UNION ALL
+		SELECT N'Data_CloneProduct', N'Clone Product' UNION ALL
 		SELECT N'Data_Code', N'Code' UNION ALL
 		SELECT N'Data_Code_URL', N'Code / Url' UNION ALL
 		SELECT N'Data_Committed', N'Committed' UNION ALL
