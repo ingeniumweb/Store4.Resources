@@ -356,6 +356,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Order_EmailCreditCard', N'Email-info narudžbenica - plaćeno karticom', N'Send Order Confirmation Email CreditCard' UNION ALL
 		SELECT N'Order_EmailWireTransfer', N'Email-info narudžbenica - plaćeno virmanski', N'Send Order Confirmation Email WireTransfer' UNION ALL
 		SELECT N'PaymentCancelled_Title', N'Plaćanje otkazano', N'Payment Cancelled' UNION ALL
+		SELECT N'PaymentSlip_DescriptionField', N'Plaćanje vezano uz {0} broj: {1}', N'Payment for {0} number: {1}' UNION ALL
 		SELECT N'PaymentCancelled_Description', N'Prekinuli ste plaćanje.', N'You have cancelled your payment.' UNION ALL
 		SELECT N'PaymentSuccess_Title', N'Plaćanje uspešno', N'Payment Successful' UNION ALL
 		SELECT N'Product_IsSubscriptions', N'Pretplata', N'Is Subscription' UNION ALL

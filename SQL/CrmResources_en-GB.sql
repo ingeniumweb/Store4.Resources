@@ -355,6 +355,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Order_EmailWireTransfer', N'Send Order Confirmation Email WireTransfer' UNION ALL
 		SELECT N'PaymentCancelled_Description', N'You have cancelled your payment.' UNION ALL
 		SELECT N'PaymentCancelled_Title', N'Payment Cancelled' UNION ALL
+		SELECT N'PaymentSlip_DescriptionField', N'Payment for {0} number: {1}' UNION ALL
 		SELECT N'PaymentSuccess_Title', N'Payment Successful' UNION ALL
 		SELECT N'Product_IsSubscriptions', N'Is Subscription' UNION ALL
 		SELECT N'Product_Subscriptions', N'Product Subscriptions' UNION ALL
