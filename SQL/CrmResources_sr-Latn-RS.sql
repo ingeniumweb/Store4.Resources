@@ -197,6 +197,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Task', N'Zadatak', N'Task' UNION ALL
 		SELECT N'Data_Tax', N'Porez', N'Tax' UNION ALL
 		SELECT N'Data_Tax', N'Porez', N'Tax' UNION ALL
+		SELECT N'Data_TaxAmount', N'Iznos PDV' , N'Tax amount' UNION ALL
 		SELECT N'Data_TaxBase', N'Osnovica za porez', N'Data_TaxBase' UNION ALL
 		SELECT N'Data_TaxIncluded', N'Uključen porez', N'Tax Included' UNION ALL
 		SELECT N'Data_TaxNumber', N'Poreski/VAT Broj', N'Tax Number' UNION ALL
@@ -209,6 +210,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TotalDiscount', N'Iznos Rabata', N'Total Discount' UNION ALL
 		SELECT N'Data_TotalPrice', N'Ukupna cena', N'Total Price' UNION ALL
 		SELECT N'Data_TotalsAre', N'Oporezivost stavki', N'TotalsAre' UNION ALL
+		SELECT N'Data_TotalTaxAmount', N'Ukupno s PDV', N'Totals Tax Amount' UNION ALL
 		SELECT N'Data_TotalTime', N'Ukupno vreme', N'Total Time' UNION ALL
 		SELECT N'Data_TotalUnits', N'Ukupno stavki', N'Total Units' UNION ALL
 		SELECT N'Data_TransferOrderDetails', N'Detalji prenosne dostavnice', N'Transfer Order Details' UNION ALL

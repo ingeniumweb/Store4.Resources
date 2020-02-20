@@ -195,6 +195,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TargetLot', N'Target Lot' UNION ALL
 		SELECT N'Data_Task', N'Task' UNION ALL
 		SELECT N'Data_Tax', N'Tax' UNION ALL
+		SELECT N'Data_TaxAmount', N'Tax amount' UNION ALL
 		SELECT N'Data_TaxBase', N'Data_TaxBase' UNION ALL
 		SELECT N'Data_TaxIncluded', N'Tax Included' UNION ALL
 		SELECT N'Data_TaxNumber', N'Tax Number' UNION ALL
@@ -207,6 +208,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TotalDiscount', N'Total Discount' UNION ALL
 		SELECT N'Data_TotalPrice', N'Total Price' UNION ALL
 		SELECT N'Data_TotalsAre', N'Totals Are' UNION ALL
+		SELECT N'Data_TotalTaxAmount', N'Totals Tax Amount' UNION ALL
 		SELECT N'Data_TotalTime', N'Total Time' UNION ALL
 		SELECT N'Data_TotalUnits', N'Total Units' UNION ALL
 		SELECT N'Data_TransferOrderDetails', N'Transfer Order Details' UNION ALL
