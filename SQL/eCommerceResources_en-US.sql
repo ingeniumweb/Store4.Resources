@@ -191,6 +191,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Manufacturer_Title', N'Manufacturer' UNION ALL
 		SELECT N'Member_already_subscribed', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Sign In' UNION ALL
+		SELECT N'Message_CouponCodeSuccess', N'This coupon code has been successfully applied' UNION ALL
+		SELECT N'Message_ExpiredOrInvalidCouponCode', N'This coupon code is invalid or has expired' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Your settings have been changed!' UNION ALL
 		SELECT N'Message_Store_UnauthorizedAccess', N'An account with this email already exists. Please <a href="/signin">Sign In</a> to proceed to checkout.' UNION ALL
 		SELECT N'New_Customer_message', N'I am a new customer' UNION ALL

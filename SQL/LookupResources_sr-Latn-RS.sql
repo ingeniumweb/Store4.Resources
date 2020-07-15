@@ -203,6 +203,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'CompanyOperatingStatus_OperatingSubsidiary', N'Operativni ogranak', N'Operating Subsidiary' UNION ALL
 		SELECT N'CompanyOperatingStatus_OutofBusiness', N'Izvan poslovanja', N'Out of Business' UNION ALL
 		SELECT N'CompanyOperatingStatus_Reorganizing', N'Restruktura', N'Reorganizing' UNION ALL
+		SELECT N'CouponType_PercentageDiscount', N'Postotak popusta na ukupnu cenu', N'Percentage Discount' UNION ALL
+		SELECT N'CouponType_FixedCartDiscount', N'Fiksni popust na ukupnu cenu', N'Fixed Cart Discount' UNION ALL
+		SELECT N'CouponType_FixedProductDiscount', N'Fiksni popust na cenu proizvoda', N'Fixed Product Discount' UNION ALL
 		SELECT N'EmailAccountType_IMAP', N'IMAP', N'IMAP' UNION ALL
 		SELECT N'EmailAccountType_POP3', N'POP3', N'POP3' UNION ALL
 		SELECT N'EmailEncryptionType_None', N'Nijedan', N'None' UNION ALL

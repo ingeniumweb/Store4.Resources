@@ -111,6 +111,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Content', N'Content' UNION ALL
 		SELECT N'ContentType_Country', N'Country' UNION ALL
 		SELECT N'ContentType_CountyStateProvince', N'County/State/Province' UNION ALL
+		SELECT N'ContentType_Coupon', N'Kuponi' UNION ALL
+		SELECT N'ContentType_CouponType', N'Coupon type' UNION ALL
 		SELECT N'ContentType_Domain', N'Domain' UNION ALL
 		SELECT N'ContentType_EmailCampaign', N'Email Campaign' UNION ALL
 		SELECT N'ContentType_Event', N'Event' UNION ALL
@@ -148,6 +150,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_AdminUse', N'Admin Use' UNION ALL
 		SELECT N'Data_AdminUseOnly', N'Admin Use Only' UNION ALL
 		SELECT N'Data_Allow', N'Allow' UNION ALL
+		SELECT N'Data_AllowFreeShipping',N'Allow Free Shipping' UNION ALL
+		SELECT N'Data_AllowUsageForNonRegisteredUsers', N'Allow Usage For Non Registered Users' UNION ALL
 		SELECT N'Data_AlternativeText', N'Alternative Text' UNION ALL
 		SELECT N'Data_Application', N'Application' UNION ALL
 		SELECT N'Data_Area', N'Area' UNION ALL
@@ -167,6 +171,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Category', N'Category' UNION ALL
 		SELECT N'Data_City', N'City' UNION ALL
 		SELECT N'Data_Client', N'Client' UNION ALL
+		SELECT N'Data_Code', N'Code' UNION ALL
 		SELECT N'Data_Comment', N'Comment' UNION ALL
 		SELECT N'Data_Company', N'Company' UNION ALL
 		SELECT N'Data_CompanyAdmins', N'Company Admins' UNION ALL
@@ -177,6 +182,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Countries', N'Countries' UNION ALL
 		SELECT N'Data_Country', N'Country' UNION ALL
 		SELECT N'Data_CountyStateProvince', N'County/State/Province' UNION ALL
+		SELECT N'Data_CouponAmount', N'Coupon Amount' UNION ALL
+		SELECT N'Data_CouponMinAmount', N'Minimun order amount' UNION ALL
+		SELECT N'Data_CouponMaxAmount', N'Maximum order amount' UNION ALL
 		SELECT N'Data_Created', N'Created' UNION ALL
 		SELECT N'Data_CssClass', N'CSS Class' UNION ALL
 		SELECT N'Data_DailyEmailLimit', N'Daily Email Limit' UNION ALL
@@ -204,6 +212,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Form', N'Form' UNION ALL
 		SELECT N'Data_Forms', N'Forms' UNION ALL
 		SELECT N'Data_FormTypes', N'Form Types' UNION ALL
+		SELECT N'Data_GenerateButtonDescription', N'Or Click Generate Button' UNION ALL
 		SELECT N'Data_Group', N'Group' UNION ALL
 		SELECT N'Data_GroupName', N'Group Name' UNION ALL
 		SELECT N'Data_GroupOrder', N'Group Order' UNION ALL
@@ -213,6 +222,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Important', N'Important' UNION ALL
 		SELECT N'Data_IsImportDataEnabled', N'Is Import Data Enabled' UNION ALL
 		SELECT N'Data_IncomingMailServer', N'Incoming Mail Server' UNION ALL
+		SELECT N'Data_IndividualUseOnly', N'Individual Use Only' UNION ALL
 		SELECT N'Data_Industry', N'Industry' UNION ALL
 		SELECT N'Data_Interval', N'Interval' UNION ALL
 		SELECT N'Data_InvalidInput', N'Please enter a valid {0}.' UNION ALL
@@ -346,6 +356,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Trash', N'Trash' UNION ALL
 		SELECT N'Data_TwoLetterISO', N'Two Letter ISO' UNION ALL
 		SELECT N'Data_Type', N'Type' UNION ALL
+		SELECT N'Data_UsageLimit', N'Usage Limit' UNION ALL
+		SELECT N'Data_UsageLimitPerUser',N'Usage Limit Per User' UNION ALL
 		SELECT N'Data_Username', N'Username' UNION ALL
 		SELECT N'Data_Value', N'Value' UNION ALL
 		SELECT N'Data_Version', N'Version' UNION ALL
@@ -648,6 +660,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Content', N'Content' UNION ALL
 		SELECT N'SiteMenu_Countries', N'Countries' UNION ALL
 		SELECT N'SiteMenu_CountyStateProvinces', N'County/State/Provinces' UNION ALL
+		SELECT N'SiteMenu_Coupons', N'Coupons' UNION ALL
 		SELECT N'SiteMenu_CRM', N'CRM' UNION ALL
 		SELECT N'SiteMenu_Dashboard', N'Dashboard' UNION ALL
 		SELECT N'SiteMenu_Description_Default', N'{0} Editor' UNION ALL

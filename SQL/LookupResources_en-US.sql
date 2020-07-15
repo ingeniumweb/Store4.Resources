@@ -212,6 +212,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'CommentAction_Spam', N'Spam' UNION ALL
 		SELECT N'CommentAction_Trash', N'Trash' UNION ALL
 		SELECT N'CommentAction_Unnaproved', N'Unnaproved' UNION ALL
+		SELECT N'CouponType_PercentageDiscount', N'Percentage Discount' UNION ALL
+		SELECT N'CouponType_FixedCartDiscount', N'Fixed Cart Discount' UNION ALL
+		SELECT N'CouponType_FixedProductDiscount', N'Fixed Product Discount' UNION ALL
 		SELECT N'Tasks_Daily', N'Daily' UNION ALL
 		SELECT N'Tasks_Interval', N'Interval' UNION ALL
 		SELECT N'Tasks_Monthly', N'Monthly' UNION ALL

@@ -188,6 +188,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Manufacturer_Title', N'Proizvođači', N'Manufacturer' UNION ALL
 		SELECT N'Member_already_subscribed', N'Već ste preplaćeni na {0}. Ako želite obnoviti preplatu ili imate više pitanja molimo kontaktirajte našu podršku.', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Prijava', N'Sign In' UNION ALL
+		SELECT N'Message_CouponCodeSuccess', N'Kod uspješno primjenjen', N'This coupon code has been successfully applied' UNION ALL
+		SELECT N'Message_ExpiredOrInvalidCouponCode', N'Kod nije valjan ili je istekao', N'This coupon code is invalid or has expired' UNION ALL
 		SELECT N'Message_AddedToBasket', N'Dodano u košaricu.', N'Added to basket.' UNION ALL
 		SELECT N'Message_AddedToFavorites', N'Dodano u favorite.', N'Added to favorites.' UNION ALL
 		SELECT N'Message_AlredyPosted', N'Već ste objavili.', N'You have already posted.' UNION ALL
