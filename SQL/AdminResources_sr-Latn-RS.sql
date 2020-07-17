@@ -111,7 +111,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Content', N'Sadržaj', N'Content' UNION ALL
 		SELECT N'ContentType_Country', N'Država', N'Country' UNION ALL
 		SELECT N'ContentType_CountyStateProvince', N'Opština', N'County/State/Province' UNION ALL
-		SELECT N'ContentType_Coupon', N'Kuponi', N'Kuponi' UNION ALL
+		SELECT N'ContentType_Coupon', N'Kupon', N'Kupon' UNION ALL
 		SELECT N'ContentType_CouponType', N'Vrsta kupona', N'Coupon type' UNION ALL
 		SELECT N'ContentType_Domain', N'Domen', N'Domain' UNION ALL
 		SELECT N'ContentType_EmailCampaign', N'Email kampanje', N'Email Campaign' UNION ALL
@@ -150,7 +150,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_AdminUse', N'Admin koristi', N'Admin Use' UNION ALL
 		SELECT N'Data_AdminUseOnly', N'Samo admin može koristiti', N'Admin Use Only' UNION ALL
 		SELECT N'Data_Allow', N'Dozvoli', N'Allow' UNION ALL
-		SELECT N'Data_AllowFreeShipping', N'Dozvoli besplatnu dostavu', N'Allow Free Shipping' UNION ALL
+		SELECT N'Data_AllowFreeShipping', N'Besplatna dostava', N'Allow Free Shipping' UNION ALL
 		SELECT N'Data_AllowUsageForNonRegisteredUsers', N'Dozvoli za neregistrirane korisnike', N'Allow Usage For Non Registered Users' UNION ALL
 		SELECT N'Data_AlternativeText', N'Alternativni tekst', N'Alternative Text' UNION ALL
 		SELECT N'Data_Application', N'Aplikacija', N'Application' UNION ALL
@@ -222,6 +222,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Important', N'Važna Pošta', N'Important' UNION ALL
 		SELECT N'Data_IsImportDataEnabled', N'Omogućen uvoz podataka', N'Is Import Data Enabled' UNION ALL
 		SELECT N'Data_IsFileManagerEnabled', N'Omogućen upload datoteka', N'Is File Manager Enabled' UNION ALL
+		SELECT N'Data_InActive', N'Neaktivan', N'Inactive' UNION ALL
 		SELECT N'Data_IncomingMailServer', N'Dolazni Mail Server', N'Incoming Mail Server' UNION ALL
 		SELECT N'Data_IndividualUseOnly', N'Samo za pojedinačnu upotrebu', N'Individual Use Only' UNION ALL
 		SELECT N'Data_Industry', N'Industrija', N'Industry' UNION ALL
@@ -358,8 +359,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Trash', N'Smeće', N'Trash' UNION ALL
 		SELECT N'Data_TwoLetterISO', N'Dva slova ISO', N'Two Letter ISO' UNION ALL
 		SELECT N'Data_Type', N'Tip', N'Type' UNION ALL
-		SELECT N'Data_UsageLimit', N'Ograničenja', N'Usage Limit' UNION ALL
-		SELECT N'Data_UsageLimitPerUser', N'Ograničenja po korisniku', N'Usage Limit Per User' UNION ALL
+		SELECT N'Data_UsageLimit', N'Maksimalan broj kupona', N'Usage Limit' UNION ALL
+		SELECT N'Data_UsageLimitPerUser', N'Maksimalan broj kupona po korisniku', N'Usage Limit Per User' UNION ALL
 		SELECT N'Data_Username', N'Korisničko ime', N'Username' UNION ALL
 		SELECT N'Data_Value', N'Vrednost', N'Value' UNION ALL
 		SELECT N'Data_Version', N'Verzija', N'Version' UNION ALL

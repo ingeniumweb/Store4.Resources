@@ -75,7 +75,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_CustomerInfo', N'Podaci o klijentu', N'Customer info' UNION ALL
 		SELECT N'Data_CustomerOrderPN', N'Customer Order PN', N'Customer Order PN' UNION ALL
 		SELECT N'Data_Customers', N'Kupci', N'Customers' UNION ALL
-		SELECT N'Data_DateofExpiry', N'Datum valjanosti', N'Date of Expiry' UNION ALL
+		SELECT N'Data_DateofExpiry', N'Datum isteka', N'Date of Expiry' UNION ALL
 		SELECT N'Data_DatePlaceProduction', N'Podaci o mestu i datumu proizvodnje', N'Date, Place Production info' UNION ALL
 		SELECT N'Data_DateRange', N'Raspon datuma', N'Date Range' UNION ALL
 		SELECT N'Data_Deal_Number', N'Broj potencijalne ponude', N'Deal Number' UNION ALL

@@ -111,7 +111,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Content', N'Content' UNION ALL
 		SELECT N'ContentType_Country', N'Country' UNION ALL
 		SELECT N'ContentType_CountyStateProvince', N'County/State/Province' UNION ALL
-		SELECT N'ContentType_Coupon', N'Kuponi' UNION ALL
+		SELECT N'ContentType_Coupon', N'Kupon' UNION ALL
 		SELECT N'ContentType_CouponType', N'Coupon type' UNION ALL
 		SELECT N'ContentType_Domain', N'Domain' UNION ALL
 		SELECT N'ContentType_EmailCampaign', N'Email Campaign' UNION ALL
@@ -220,6 +220,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ID', N'ID' UNION ALL
 		SELECT N'Data_ImageOwner', N'Image Owner' UNION ALL
 		SELECT N'Data_Important', N'Important' UNION ALL
+		SELECT N'Data_InActive', N'Inactive' UNION ALL
 		SELECT N'Data_IncomingMailServer', N'Incoming Mail Server' UNION ALL
 		SELECT N'Data_IndividualUseOnly', N'Individual Use Only' UNION ALL
 		SELECT N'Data_Industry', N'Industry' UNION ALL
