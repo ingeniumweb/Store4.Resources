@@ -14,6 +14,7 @@ SET @LanguageID = ISNULL(@LanguageID, 0)
 
 IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 	INSERT INTO @ResourcesTable (Name, Value)
+		SELECT N'ActivationEmail_ResetPassword', N'Please log in to your {0} account to change your password. Your temporary password is: {1}' UNION ALL
 		SELECT N'Aprove_as_Customer', N'Lead to Customer' UNION ALL
 		SELECT N'AvatarPanel_Button_Reset', N'Reset' UNION ALL
 		SELECT N'AvatarPanel_Button_UploadLogo', N'Upload Logo' UNION ALL
