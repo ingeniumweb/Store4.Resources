@@ -50,6 +50,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_Clear', N'Clear' UNION ALL
 		SELECT N'Button_Close', N'Close' UNION ALL
 		SELECT N'Button_Compose', N'Compose' UNION ALL
+		SELECT N'Button_Copy', N'Copy' UNION ALL
 		SELECT N'Button_Create', N'Create' UNION ALL
 		SELECT N'Button_CreateRecord', N'Create Record' UNION ALL
 		SELECT N'Button_Delete', N'Delete' UNION ALL

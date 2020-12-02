@@ -50,6 +50,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Button_Clear', N'Očisti', N'Clear' UNION ALL
 		SELECT N'Button_Close', N'Zatvori', N'Close' UNION ALL
 		SELECT N'Button_Compose', N'Sastavi', N'Compose' UNION ALL
+		SELECT N'Button_Copy', N'Kopiraj', N'Copy' UNION ALL
 		SELECT N'Button_Create', N'Kreiraj', N'Create' UNION ALL
 		SELECT N'Button_CreateRecord', N'Kreiraj zapis', N'Create Record' UNION ALL
 		SELECT N'Button_Delete', N'Obriši', N'Delete' UNION ALL
