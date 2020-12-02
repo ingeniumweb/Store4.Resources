@@ -295,6 +295,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DropDown_Default_CustomerAddress', N'Default Customer Address' UNION ALL
 		SELECT N'DropDown_TaxExclusive', N'Tax Exclusive' UNION ALL
 		SELECT N'DropDown_TaxInclusive', N'Tax Inclusive' UNION ALL
+		SELECT N'EnablePayPalCheckout', N'Enable PayPal Checkout' UNION ALL
 		SELECT N'Error_ErrorDescription', N'A problem has occurred during the payment process. Please try again.<br />If this error continues, please contact support.' UNION ALL
 		SELECT N'Error_ImportProcess', N'An error has occurred during the data import process' UNION ALL		
 		SELECT N'Error_ExistingStore', N'Store with Name: \"{0}\" already exists.' UNION ALL

@@ -297,6 +297,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DropDown_Default_CustomerAddress', N'Standardna adresa klijenta', N'Default Customer Address' UNION ALL
 		SELECT N'DropDown_TaxExclusive', N'Porez isključen', N'Tax Exclusive' UNION ALL
 		SELECT N'DropDown_TaxInclusive', N'Porez uključen', N'Tax Inclusive' UNION ALL
+		SELECT N'EnablePayPalCheckout', N'Omogući Paypal', N'Enable PayPal Checkout' UNION ALL
 		SELECT N'Error_ErrorDescription', N'Došlo je do greške prilikom procesa plaćanja. Molimo pokušajte ponovo.<br>Ukoliko se greška ponovi kontaktujte podršku.', N'A problem has occurred during the payment process. Please try again.<br />If this error continues, please contact support.' UNION ALL
 		SELECT N'Error_ImportProcess', N'Došlo je do greške tokom procesa uvoza podataka', N'An error has occurred during the data import process' UNION ALL
 		SELECT N'Error_ExistingStore', N'Prodavnica s imenom: \"{0}\" već postoji.', N'Store with Name: \"{0}\" already exists.' UNION ALL
