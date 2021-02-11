@@ -225,6 +225,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_InstalmentPayment', N'Plaćanje na rate', N'Instalment Payment' UNION ALL
 		SELECT N'Payment_OneTima_Pay', N'Jednokratno plaćanje', N'One-Time Pay' UNION ALL
 		SELECT N'Payment_Order_Number', N'Vaš broj narudžbe je', N'Your order number is' UNION ALL
+		SELECT N'Payment_PayWithCreditCard', N'Platite kreditnom karticom', N'Pay With Credit Card' UNION ALL
 		SELECT N'Payment_Process_Problem', N'Došlo je do problema tijekom postupka plaćanja. Molimo pokušajte ponovno. Ako se ta pogreška nastavi, kontaktirajte podršku.', N'A problem has occurred during the payment process. Please try again. If this error continues, please contact support.' UNION ALL
 		SELECT N'Payment_Reques_Cancel', N'Otkaži zahtjev za plaćanjem', N'Cancel Payment Reques' UNION ALL
 		SELECT N'Payment_Rules_Message', N'Odabir kartica i broja rata je informativnog karaktera, plaćanje će se izvršiti na idućem koraku gdje odabirete karticu kojom ćete platiti kao i željeni broj rata.', N'Selecting a card and installment number is informative, payment will be made at the next step where you select a card to pay as well as the desired number of installments.' UNION ALL
@@ -322,6 +323,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_Bank_Transfer_Warning', N'Nakon što dovršite narudžbu na e-mail će vam biti poslani podaci za uplatu narudžbe. Kada vaša uplata bude evidentirana pokrenut će se proces isporuke narudžbe.', N'Once you have completed your order, you will receive the order details to e-mail. When your payment is recorded, the order delivery process will be launched' UNION ALL
 		SELECT N'Payment_Credit_Card_Warning', N'Plati bankovnom karticom. TEST MOD JE OMOGUĆEN. U test modu možete koristiti broj kartice 0000 0000 0000 0000 sa bilo kojim CVC brojem kao i podacima o isteku kartice.', N'Pay with your credit card. TEST MODE ENABLED. In test mode, you can use the card number 0000 0000 0000 0000 with any CVC and a valid expiration date.' UNION ALL
 		SELECT N'Payment_Info_Warning', N'Plati općom uplatnicom. Molimo vas koristite ID narudžbe kao referencu za plaćanje. Vaša narudžba neće se isporučiti sve dok su sredstva na vašem računu.', N'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.' UNION ALL
+		SELECT N'PaymentSettings_CancellationPage', N'Stranica raskid ugovora', N'Cancellation Policy Page' UNION ALL
 		SELECT N'PaymentSettings_PaymentCancelURL', N'Povratna adresa nakon odustajana', N'Cancel URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentEnviroment', N'Razvojno okruženje', N'Enviroment' UNION ALL
 		SELECT N'PaymentSettings_PaymentGateway', N'Portal za Plaćanja', N'Payment Gateway' UNION ALL
@@ -331,6 +333,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'PaymentSettings_PaymentReturnErrorURL', N'Povratna adresa neuspješne autorizacije', N'Error URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentReturnURL', N'Povratna adresa uspješne autorizacije', N'Return URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentMerchantID', N'Trgovac ID za Plaćanja', N'Payment Merchant ID' UNION ALL
+		SELECT N'PaymentSettings_PaymentsPageSettings', N'Linkovi za uvete plaćanja', N'Payments Page Settings' UNION ALL
+		SELECT N'PaymentSettings_PrivacyPage', N'Stranica pravila privatnosti', N'Privacy Policy Page' UNION ALL
+		SELECT N'PaymentSettings_RefundPage', N'Stranica uveeti povrata i reklamacije', N'Refund/Return Policy Page' UNION ALL
+		SELECT N'PaymentSettings_TermsConditionPage', N'Stranica uveti poslovanja', N'Terms and Conditions Page' UNION ALL
 		SELECT N'Procesing_Payment', N'U OBRADI...', N'PROCESSING...' UNION ALL
 		SELECT N'Product_Availability', N'Stanje na skladištu', N'Availability' UNION ALL
 		SELECT N'Product_Description', N'Opis proizvoda', N'Product Description' UNION ALL

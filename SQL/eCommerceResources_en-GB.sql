@@ -223,6 +223,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_PageTitle', N'Order' UNION ALL
 		SELECT N'Payment_Complete_Message', N'Your payment has been completed' UNION ALL
 		SELECT N'Payment_Order_Number', N'Your order number is' UNION ALL
+		SELECT N'Payment_PayWithCreditCard', N'Pay With Credit Card' UNION ALL
 		SELECT N'Payment_Process_Problem', N'A problem has occurred during the payment process. Please try again. If this error continues, please contact support.' UNION ALL
 		SELECT N'Payment_Reques_Cancel', N'Cancel Payment Reques' UNION ALL
 		SELECT N'Payment_Rules_Message', N'Selecting a card and installment number is informative, payment will be made at the next step where you select a card to pay as well as the desired number of installments.' UNION ALL
@@ -315,7 +316,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Validation_Post_Unauthorized', N'You are not authorized to post this message!' UNION ALL
 		SELECT N'Message_AddedToBasket', N'Added to basket.' UNION ALL
 		SELECT N'Message_RemovedFromBasket', N'Removed from basket.' UNION ALL
-		SELECT N'Validation_ProductSelect', N'Please select Product.' UNION ALL
+		SELECT N'Validation_ProductSelect', N'Please select Product.' UNION ALL 
 		SELECT N'Button_PlaceOrder', N'Place Order' UNION ALL
 		SELECT N'Error_CreatingCustomer', N'There was an error while creating customer.' UNION ALL
 		SELECT N'Error_CreatingCreditCard', N'There was an error while creating credit card.' UNION ALL
@@ -325,6 +326,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Payment_Bank_Transfer_Warning', N'Once you have completed your order, you will receive the order details to e-mail. When your payment is recorded, the order delivery process will be launched' UNION ALL
 		SELECT N'Payment_Credit_Card_Warning', N'Pay with your credit card. TEST MODE ENABLED. In test mode, you can use the card number 0000 0000 0000 0000 with any CVC and a valid expiration date.' UNION ALL
 		SELECT N'Payment_Info_Warning', N'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.' UNION ALL
+		SELECT N'PaymentSettings_CancellationPage', N'Cancellation Policy Page' UNION ALL
 		SELECT N'PaymentSettings_PaymentCancelURL', N'Cancel URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentEnviroment', N'Enviroment' UNION ALL
 		SELECT N'PaymentSettings_PaymentGateway', N'Payment Gateway' UNION ALL
@@ -334,6 +336,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'PaymentSettings_PaymentReturnErrorURL', N'Error URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentReturnURL', N'Return URL' UNION ALL
 		SELECT N'PaymentSettings_PaymentMerchantID', N'Payment Merchant ID' UNION ALL
+		SELECT N'PaymentSettings_PaymentsPageSettings', N'Payments Page Settings' UNION ALL
+		SELECT N'PaymentSettings_PrivacyPage', N'Privacy Policy Page' UNION ALL
+		SELECT N'PaymentSettings_RefundPage', N'Refund/Return Policy Page' UNION ALL
+		SELECT N'PaymentSettings_TermsConditionPage', N'Terms and Conditions Page' UNION ALL
 		SELECT N'Procesing_Payment', N'PROCESSING...' UNION ALL
 		SELECT N'Product_Availability', N'Availability' UNION ALL
 		SELECT N'Product_Description', N'Product Description' UNION ALL
