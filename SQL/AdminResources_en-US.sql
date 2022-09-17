@@ -115,6 +115,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Coupon', N'Kupon' UNION ALL
 		SELECT N'ContentType_CouponType', N'Coupon type' UNION ALL
 		SELECT N'ContentType_Domain', N'Domain' UNION ALL
+		SELECT N'ContentType_Education', N'Education' UNION ALL
 		SELECT N'ContentType_EmailCampaign', N'Email Campaign' UNION ALL
 		SELECT N'ContentType_Event', N'Event' UNION ALL
 		SELECT N'ContentType_Field', N'Field' UNION ALL
@@ -135,6 +136,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Organization', N'Organization' UNION ALL
 		SELECT N'ContentType_Portfolio', N'Portfolio' UNION ALL
 		SELECT N'ContentType_Portfolios', N'Portfolios' UNION ALL
+		SELECT N'ContentType_ProjectSkill', N'Project Skill' UNION ALL
 		SELECT N'ContentType_Role', N'Role' UNION ALL
 		SELECT N'ContentType_Task', N'Task' UNION ALL
 		SELECT N'ContentType_Template', N'Template' UNION ALL
@@ -686,6 +688,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Home', N'Home' UNION ALL
 		SELECT N'SiteMenu_HtmlTemplates', N'Html Templates' UNION ALL
 		SELECT N'SiteMenu_Inbox', N'Inbox' UNION ALL
+		SELECT N'SiteMenu_Industries', N'Industries' UNION ALL
 		SELECT N'SiteMenu_IPBlockList', N'IP Block List' UNION ALL
 		SELECT N'SiteMenu_Lists', N'Lists' UNION ALL
 		SELECT N'SiteMenu_Locations', N'Locations' UNION ALL
@@ -699,6 +702,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Portfolios', N'Portfolios' UNION ALL
 		SELECT N'SiteMenu_Posts', N'Posts' UNION ALL
 		SELECT N'SiteMenu_Profile', N'Profile' UNION ALL
+		SELECT N'SiteMenu_ProjectDeliverables', N'Project Deliverables' UNION ALL
+		SELECT N'SiteMenu_ProjectDuration', N'Project Duration' UNION ALL
+		SELECT N'SiteMenu_ProjectRates', N'Project Rates' UNION ALL
+		SELECT N'SiteMenu_ProjectSkills', N'Project Skills' UNION ALL
+		SELECT N'SiteMenu_ProjectStatuses', N'Project Statuses' UNION ALL
+		SELECT N'SiteMenu_ProjectTaskStatuses', N'Project Task Statuses' UNION ALL
+		SELECT N'SiteMenu_ProjectTimeRequirements' , N'Project Time Requirements' UNION ALL
+		SELECT N'SiteMenu_Qualification' , N'Qualification' UNION ALL
 		SELECT N'SiteMenu_Roles', N'Roles' UNION ALL
 		SELECT N'SiteMenu_ScheduledTasks', N'Scheduled Tasks' UNION ALL
 		SELECT N'SiteMenu_Security', N'Security' UNION ALL
@@ -718,6 +729,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Tabs_API', N'API' UNION ALL
 		SELECT N'Tabs_API_Description', N'In order to access the API, you need two pieces of information. The first is a member email which is a unique code that we use to identify your account. The other is an API Token which acts as a password when you connect to the API. You can get both of those here. You should click on the "Generate a new API Token" to display it. You''ll need to remember both of those later when you start writing code.' UNION ALL
 		SELECT N'Tabs_Attempts', N'Attempts' UNION ALL
+		SELECT N'Tabs_BankInformation', N'Bank' UNION ALL
 		SELECT N'Tabs_Contacts', N'Contacts' UNION ALL
 		SELECT N'Tabs_Details', N'Details' UNION ALL
 		SELECT N'Tabs_Domains', N'Domains' UNION ALL

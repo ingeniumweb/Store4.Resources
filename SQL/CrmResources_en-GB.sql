@@ -62,25 +62,37 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Code', N'Code' UNION ALL
 		SELECT N'Data_Code_URL', N'Code / Url' UNION ALL
 		SELECT N'Data_Committed', N'Committed' UNION ALL
+		SELECT N'Data_Company', N'Company' UNION ALL
 		SELECT N'Data_CompanyCode', N'Company Code' UNION ALL
 		SELECT N'Data_CompanyLogo', N'Company Logo' UNION ALL
 		SELECT N'Data_CompanyName', N'Company Name' UNION ALL
 		SELECT N'Data_Component', N'Component' UNION ALL
 		SELECT N'Data_Consumed', N'Consumed' UNION ALL
 		SELECT N'Data_CostOfMaterials', N'Cost of Materials' UNION ALL
+		SELECT N'Data_Contracts', N'Contracts' UNION ALL
 		SELECT N'Data_Contract_Number', N'Contract Number' UNION ALL
+		SELECT N'Data_ContractPreference', N'Contract Preference' UNION ALL
 		SELECT N'Data_Currency', N'Currency' UNION ALL
 		SELECT N'Data_Customer', N'Customer' UNION ALL
 		SELECT N'Data_CustomerDetails', N'Details' UNION ALL
 		SELECT N'Data_CustomerInfo', N'Customer info' UNION ALL
 		SELECT N'Data_CustomerOrderPN', N'Customer Order PN' UNION ALL
 		SELECT N'Data_Customers', N'Customers' UNION ALL
+		SELECT N'Data_DailyRate', N'Daily Rate' UNION ALL
+		SELECT N'Data_DateFrom', N'Date From' UNION ALL
+		SELECT N'Data_DatePlaceProduction', N'Date, Place Production info' UNION ALL
 		SELECT N'Data_DateofExpiry', N'Date of Expiry' UNION ALL
+		SELECT N'Data_DatePeriod', N'Date Period' UNION ALL
 		SELECT N'Data_DatePlaceProduction', N'Date, Place Production info' UNION ALL
 		SELECT N'Data_DateRange', N'Date Range' UNION ALL
+		SELECT N'Data_DateUntil', N'Date Until' UNION ALL
+		SELECT N'Data_Deadline', N'Deadline' UNION ALL
 		SELECT N'Data_Deal_Number', N'Deal Number' UNION ALL
 		SELECT N'Data_Default', N'Default {0}' UNION ALL
+		SELECT N'Data_Degree', N'Degree' UNION ALL
 		SELECT N'Data_Delete', N'Delete' UNION ALL
+		SELECT N'Data_Deliverables', N'Deliverables' UNION ALL
+		SELECT N'Data_DesiredStartDate', N'Desired Start Date' UNION ALL
 		SELECT N'Data_Device', N'Device' UNION ALL
 		SELECT N'Data_Discount', N'Discount' UNION ALL
 		SELECT N'Data_Distributor', N'Distributor' UNION ALL
@@ -94,17 +106,23 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Email', N'Email' UNION ALL
 		SELECT N'Data_EmailTemplate', N'Email Template' UNION ALL
 		SELECT N'Data_EndDate', N'End Date' UNION ALL
+		SELECT N'Data_Experiences', N'Experiences' UNION ALL
 		SELECT N'Data_ExternalDocumentUrl', N'External Document Url' UNION ALL
+		SELECT N'Data_FieldOfStudy', N'Field Of Study' UNION ALL
 		SELECT N'Data_File_Manager_Enabled', N'Is File Manager Enabled' UNION ALL
 		SELECT N'Data_FixedCost', N'Fixed Cost' UNION ALL
 		SELECT N'Data_FixedTime', N'Fixed Time' UNION ALL
 		SELECT N'Data_Generate', N'Generate' UNION ALL
+		SELECT N'Data_Grade', N'Grade' UNION ALL
 		SELECT N'Data_HoldsStock', N'Holds Stock' UNION ALL
+		SELECT N'Data_IncludeRemoteOnlyWorkers', N'Include Remote Only Workers' UNION ALL
 		SELECT N'Data_Incoming', N'Incoming' UNION ALL
+		SELECT N'Data_Industry', N'Industry' UNION ALL
 		SELECT N'Data_IdentityID', N'IdentityID' UNION ALL
 		SELECT N'Data_Initial', N'Initial' UNION ALL
 		SELECT N'Data_InitialCostPrice', N'Initial Cost Price' UNION ALL
 		SELECT N'Data_InitialStockLevel', N'Initial Stock Level' UNION ALL
+		SELECT N'Data_InviteOnly', N'Invite Only' UNION ALL
 		SELECT N'Data_InvoiceDetails', N'Invoice Details' UNION ALL
 		SELECT N'Data_InvoiceLink', N'Invoice Link' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Invoice #' UNION ALL
@@ -114,6 +132,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_IssueDate', N'Issue Date' UNION ALL
 		SELECT N'Data_ItemCost', N'Item Cost' UNION ALL
 		SELECT N'Data_ItemName', N'Item Name' UNION ALL
+		SELECT N'Data_JobDuration', N'Job Duration' UNION ALL
+		SELECT N'Data_JobTitle', N'Job Title' UNION ALL
 		SELECT N'Data_LabourCost', N'Labour Cost' UNION ALL
 		SELECT N'Data_Lead', N'Lead' UNION ALL
 		SELECT N'Data_ManufacturingCost', N'Manufacturing Cost' UNION ALL
@@ -124,9 +144,13 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_MonthMember', N'month per team member' UNION ALL
 		SELECT N'Data_NextInvoiceDate', N'Next Invoice Date' UNION ALL
 		SELECT N'Data_Notice', N'Notice' UNION ALL
+		SELECT N'Data_NumberOfContractors', N'Number Of Contractors' UNION ALL
 		SELECT N'Data_NumberOfUsers', N'Number of users' UNION ALL
 		SELECT N'Data_NotProcured', N'Not Procured' UNION ALL
+		SELECT N'Data_OffPayrollOnly', N'Off Payroll Only' UNION ALL
+		SELECT N'Data_OnOffPayroll', N'On Off Payroll' UNION ALL
 		SELECT N'Data_OnHand', N'On Hand' UNION ALL
+		SELECT N'Data_OnPayrollOnly', N'On Payroll Only' UNION ALL
 		SELECT N'Data_Operation', N'Operation' UNION ALL
 		SELECT N'Data_Operations', N'Operations' UNION ALL
 		SELECT N'Data_Operator', N'Operator' UNION ALL
@@ -157,15 +181,29 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ProductionOrderNumber', N'Production Order #' UNION ALL
 		SELECT N'Data_Products_Placeholder', N'Start typing SKU or name' UNION ALL
 		SELECT N'Data_ProductType', N'Product Type' UNION ALL
+		SELECT N'Data_Project', N'Project' UNION ALL
+		SELECT N'Data_ProjectActivity', N'Project Activity' UNION ALL
+		SELECT N'Data_ProjectBudget', N'Project Budget' UNION ALL
+		SELECT N'Data_ProjectDetails', N'Project Details' UNION ALL
+		SELECT N'Data_ProjectDeliverable', N'Project Deliverable' UNION ALL
+		SELECT N'Data_ProjectDuration', N'Project Duration' UNION ALL
+		SELECT N'Data_ProjectProposals', N'Project Proposals' UNION ALL
+		SELECT N'Data_ProjectRate', N'Project Rate' UNION ALL
+		SELECT N'Data_ProjectRequirements', N'Project Requirements' UNION ALL
+		SELECT N'Data_Projectspend', N'Project Spend' UNION ALL
 		SELECT N'Data_PurchaseOrderNumber', N'Purchase Order #' UNION ALL
 		SELECT N'Data_Released', N'Released' UNION ALL
 		SELECT N'Data_RepeaThisTransactionEvery', N'Repeat this transaction every' UNION ALL
 		SELECT N'Data_Unavailable', N'Data Unavailable' UNION ALL
+		SELECT N'Data_Qualification', N'Qualification' UNION ALL
+		SELECT N'Data_Qualifications', N'Qualifications' UNION ALL
 		SELECT N'Data_Quantity', N'Quantity' UNION ALL
 		SELECT N'Data_QuoteDetails', N'Quote Details' UNION ALL
 		SELECT N'Data_QuoteNumber', N'Quote #' UNION ALL
+		SELECT N'Data_Read', N'Read' UNION ALL
 		SELECT N'Data_RegistrationNumber', N'RegistrationNumber' UNION ALL
 		SELECT N'Data_Reference', N'Reference' UNION ALL
+		SELECT N'Data_RemoteOnly', N'Remote Only' UNION ALL
 		SELECT N'Data_RenewalPeriod', N'Renewal Period' UNION ALL
 		SELECT N'Data_RetailPrice', N'Retail Price' UNION ALL
 		SELECT N'Data_Report', N'Report' UNION ALL
@@ -175,17 +213,22 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_RoutingNumbers', N'Routing #' UNION ALL
 		SELECT N'Data_RowNumber', N'#ID' UNION ALL
 		SELECT N'Data_SalesOrderDetails', N'Sales Order Details' UNION ALL
+		SELECT N'Data_School', N'School' UNION ALL
 		SELECT N'Data_ShipFrom', N'Ship From' UNION ALL
 		SELECT N'Data_ShipmentDate', N'Shipment Date' UNION ALL
 		SELECT N'Data_ShipmentNumber', N'Shipment #' UNION ALL
 		SELECT N'Data_ShipTo', N'Ship To' UNION ALL
+		SELECT N'Data_Shortlisted', N'Shortlisted' UNION ALL
 		SELECT N'Data_ShowExternalDocumentUrl', N'Show External Document Url' UNION ALL
 		SELECT N'Data_ShowOnStore', N'Show On Store' UNION ALL
 		SELECT N'Data_ShowPaymentSlip', N'Show Payment Slip' UNION ALL
 		SELECT N'Data_ShowShipping', N'Show Shippment Costs' UNION ALL
 		SELECT N'Data_ShowTotals', N'Show Summary' UNION ALL
 		SELECT N'Data_SIC', N'SIC' UNION ALL
+		SELECT N'Data_Skill', N'Skill' UNION ALL
+		SELECT N'Data_SkillType', N'Skill Type' UNION ALL
 		SELECT N'Data_Sku', N'Sku' UNION ALL
+		SELECT N'Data_StarRating', N'Star Rating' UNION ALL
 		SELECT N'Data_StartDate', N'Start Date' UNION ALL
 		SELECT N'Data_Status', N'Status' UNION ALL
 		SELECT N'Data_StatusIssued', N'Issued' UNION ALL
@@ -211,6 +254,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TaxRate', N'Tax Rate' UNION ALL
 		SELECT N'Data_TaxType', N'Tax Type' UNION ALL
 		SELECT N'Data_Time', N'Time' UNION ALL
+		SELECT N'Data_TimeRequirement', N'Time Requirement' UNION ALL
 		SELECT N'Data_TimeZone', N'Time Zone' UNION ALL
 		SELECT N'Data_Total', N'Total' UNION ALL
 		SELECT N'Data_TotalCost', N'Total Cost' UNION ALL
@@ -222,6 +266,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TotalUnits', N'Total Units' UNION ALL
 		SELECT N'Data_TransferOrderDetails', N'Transfer Order Details' UNION ALL
 		SELECT N'Data_UnitOfMeasurement', N'Unit of Measurement' UNION ALL
+		SELECT N'Data_Unread', N'Unread' UNION ALL
+		SELECT N'Data_Value', N'Value' UNION ALL
 		SELECT N'Data_VariableCost', N'Variable Cost' UNION ALL
 		SELECT N'Data_VariableTime', N'Variable Time' UNION ALL
 		SELECT N'Data_VATRegNo', N'VAT Reg No' UNION ALL
@@ -266,7 +312,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Documents_PurchaseOrders', N'Purchase Orders' UNION ALL
 		SELECT N'Documents_Quotes', N'Quotes' UNION ALL
 		SELECT N'Documents_RepresentationExpenses', N'Representation Expenses' UNION ALL
-		SELECT N'Document_Route', N'Route' UNION ALL
 		SELECT N'Documents_Shipments', N'Shipments' UNION ALL
 		SELECT N'Documents_Subscriptions', N'Subscriptions' UNION ALL
 		SELECT N'Documents_TransferOrders',  N'Transfer Orders' UNION ALL
@@ -288,6 +333,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_RepeatingInvoices', N'Repeating Invoices' UNION ALL
 		SELECT N'DocumentType_Quote', N'Quote' UNION ALL
 		SELECT N'DocumentType_RepresentationExpense',  N'Representation Expense' UNION ALL
+		SELECT N'Document_Route', N'Route' UNION ALL
 		SELECT N'DocumentType_SalesOrder', N'Sales Order' UNION ALL
 		SELECT N'DocumentType_Shipment', N'Shipment' UNION ALL
 		SELECT N'DocumentType_Subscription', N'Subscription' UNION ALL
@@ -362,11 +408,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Linked_Documents', N'Linked Documents' UNION ALL
 		SELECT N'Linked_Documents_Linking_Error', N'There was an error while linking documents.' UNION ALL
 		SELECT N'Linked_Documents_No_DocSelected_Message', N'There are no documents selected. Please select documents.' UNION ALL
-		SELECT N'MPR_Title', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Message_Changed_to_Customer_Succes', N'Lead has been successfully changed to a customer' UNION ALL
 		SELECT N'Message_CreditCardCharge', N'Your credit card will be charged {0}{1} every year starting from {2}' UNION ALL
 		SELECT N'Message_SubscribingPlan', N'You are subscribing to the {0} for {1} agent' UNION ALL
 		SELECT N'Message_Vendor_UnauthorizedAccess', N'An account with this email or username already exists. Please select another e-mail/username and try again.' UNION ALL
+		SELECT N'MPR_Title', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Send Order Confirmation Email CreditCard' UNION ALL
 		SELECT N'Order_EmailWireTransfer', N'Send Order Confirmation Email WireTransfer' UNION ALL
 		SELECT N'PaymentCancelled_Description', N'You have cancelled your payment.' UNION ALL

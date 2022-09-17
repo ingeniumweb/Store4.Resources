@@ -26,6 +26,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_MarkAsInProgress', N'Mark as In Review' UNION ALL
 		SELECT N'Link_MarkAsInReview', N'Mark as Paused' UNION ALL
 		SELECT N'Link_MarkAsInCompleted', N'Mark as Completed' UNION ALL
+		SELECT N'List_Title_Education', N'Education' UNION ALL
+		SELECT N'List_Title_Experience', N'Experience' UNION ALL
 		SELECT N'Data_CloneTicket', N'Clone Ticket' UNION ALL
 		SELECT N'Data_CloneProject', N'Clone Project' UNION ALL
 		SELECT N'Error_ProjectMemberAdd', N'An error occurred while adding member {0} on the the following project: "{1}".' UNION ALL

@@ -26,6 +26,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_MarkAsInProgress', N'Označi kao U toku', N'Mark as In Review' UNION ALL
 		SELECT N'Link_MarkAsInReview', N'Označi kao Na pregledu', N'Mark as Paused' UNION ALL
 		SELECT N'Link_MarkAsInCompleted', N'Označi kao Završeno', N'Mark as Completed' UNION ALL
+		SELECT N'List_Title_Education', N'Obrazovanje', N'Education' UNION ALL
+		SELECT N'List_Title_Experience', N'Iskustvo', N'Experience' UNION ALL
 		SELECT N'Data_CloneTicket', N'Kopiraj tiket', N'Clone Ticket' UNION ALL
 		SELECT N'Data_CloneProject', N'Kopiraj prjekt', N'Clone Project' UNION ALL
 		SELECT N'Error_ProjectMemberAdd', N'Došlo je do greške prilikom dodavanja korisnika {0} sljedećem projektu: "{1}".', N'An error occurred while adding member {0} on the the following project: "{1}".' UNION ALL

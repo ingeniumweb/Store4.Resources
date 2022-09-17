@@ -115,6 +115,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Coupon', N'Kupon' UNION ALL
 		SELECT N'ContentType_CouponType', N'Coupon type' UNION ALL
 		SELECT N'ContentType_Domain', N'Domain' UNION ALL
+		SELECT N'ContentType_Education', N'Education' UNION ALL
 		SELECT N'ContentType_EmailCampaign', N'Email Campaign' UNION ALL
 		SELECT N'ContentType_Event', N'Event' UNION ALL
 		SELECT N'ContentType_Field', N'Field' UNION ALL
@@ -135,6 +136,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Organization', N'Organization' UNION ALL
 		SELECT N'ContentType_Portfolio', N'Portfolio' UNION ALL
 		SELECT N'ContentType_Portfolios', N'Portfolios' UNION ALL
+		SELECT N'ContentType_ProjectSkill', N'Project Skill' UNION ALL
 		SELECT N'ContentType_Role', N'Role' UNION ALL
 		SELECT N'ContentType_Task', N'Task' UNION ALL
 		SELECT N'ContentType_Template', N'Template' UNION ALL
@@ -221,6 +223,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ID', N'ID' UNION ALL
 		SELECT N'Data_ImageOwner', N'Image Owner' UNION ALL
 		SELECT N'Data_Important', N'Important' UNION ALL
+		SELECT N'Data_IsImportDataEnabled', N'Is Import Data Enabled' UNION ALL
 		SELECT N'Data_InActive', N'Inactive' UNION ALL
 		SELECT N'Data_IncomingMailServer', N'Incoming Mail Server' UNION ALL
 		SELECT N'Data_IndividualUseOnly', N'Individual Use Only' UNION ALL
@@ -233,7 +236,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_IsActive', N'Is Active' UNION ALL
 		SELECT N'Data_IsDefaultSmptClient', N'Is Default Email Client' UNION ALL
 		SELECT N'Data_IsFilterColumn', N'Is Filter Column' UNION ALL
-		SELECT N'Data_IsImportDataEnabled', N'Is Import Data Enabled' UNION ALL
 		SELECT N'Data_IsFileManagerEnabled', N'Is File Manager Enabled' UNION ALL
 		SELECT N'Data_IsMandatory', N'Is Mandatory' UNION ALL
 		SELECT N'Data_IsPrivate', N'Is Private Group' UNION ALL
@@ -311,7 +313,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Result', N'Result' UNION ALL
 		SELECT N'Data_Role', N'Role' UNION ALL
 		SELECT N'Data_RowNumber', N'Row Number' UNION ALL
-		SELECT N'Data_Save', N'Save' UNION ALL
 		SELECT N'Data_Schedule', N'Schedule' UNION ALL
 		SELECT N'Data_Scheduler', N'' UNION ALL
 		SELECT N'Data_SecondaryPhone', N'Secondary Phone' UNION ALL
@@ -377,6 +378,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Default_Friends', N'Friends' UNION ALL
 		SELECT N'Default_Import', N'Import' UNION ALL
 		SELECT N'Default_Invitations', N'Invitations' UNION ALL
+		SELECT N'Data_Save', N'Save' UNION ALL
 		SELECT N'Default_Search', N'Search...' UNION ALL
 		SELECT N'Default_SearchTerm', N'Search term' UNION ALL
 		SELECT N'Default_ShowAllRoles', N'Show All Roles' UNION ALL
@@ -493,7 +495,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Members_Message_UserNameIsSameAsEmail', N'The member''s name looks like an e-mail address. Please change it.' UNION ALL
 		SELECT N'Message_AppLimitation', N'You are using limited version of our app' UNION ALL
 		SELECT N'Message_ContactSupport', N'Please contact our support for more details or visit the <a href="http://app.store4.com/Admin/Billings">{0}</a> area to upgrade your plan.' UNION ALL
-		SELECT N'Message_ContactSupport', N'Please contact our support for more details or visit the {0} area to upgrade your plan.' UNION ALL
 		SELECT N'Message_LicenceExpire', N'Please contact our support or account owner for more details.' UNION ALL
 		SELECT N'Message_Members_Desc', N'In progress, please wait ...' UNION ALL
 		SELECT N'Message_Members_Title', N'Importing Roles' UNION ALL
@@ -687,6 +688,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Home', N'Home' UNION ALL
 		SELECT N'SiteMenu_HtmlTemplates', N'Html Templates' UNION ALL
 		SELECT N'SiteMenu_Inbox', N'Inbox' UNION ALL
+		SELECT N'SiteMenu_Industries', N'Industries' UNION ALL
 		SELECT N'SiteMenu_IPBlockList', N'IP Block List' UNION ALL
 		SELECT N'SiteMenu_Lists', N'Lists' UNION ALL
 		SELECT N'SiteMenu_Locations', N'Locations' UNION ALL
@@ -700,6 +702,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Portfolios', N'Portfolios' UNION ALL
 		SELECT N'SiteMenu_Posts', N'Posts' UNION ALL
 		SELECT N'SiteMenu_Profile', N'Profile' UNION ALL
+		SELECT N'SiteMenu_ProjectDeliverables', N'Project Deliverables' UNION ALL
+		SELECT N'SiteMenu_ProjectDuration', N'Project Duration' UNION ALL
+		SELECT N'SiteMenu_ProjectRates', N'Project Rates' UNION ALL
+		SELECT N'SiteMenu_ProjectSkills', N'Project Skills' UNION ALL
+		SELECT N'SiteMenu_ProjectStatuses', N'Project Statuses' UNION ALL
+		SELECT N'SiteMenu_ProjectTaskStatuses', N'Project Task Statuses' UNION ALL
+		SELECT N'SiteMenu_ProjectTimeRequirements' , N'Project Time Requirements' UNION ALL
+		SELECT N'SiteMenu_Qualification' , N'Qualification' UNION ALL
 		SELECT N'SiteMenu_Roles', N'Roles' UNION ALL
 		SELECT N'SiteMenu_ScheduledTasks', N'Scheduled Tasks' UNION ALL
 		SELECT N'SiteMenu_Security', N'Security' UNION ALL

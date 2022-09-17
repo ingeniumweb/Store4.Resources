@@ -115,6 +115,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Coupon', N'Kupon', N'Kupon' UNION ALL
 		SELECT N'ContentType_CouponType', N'Vrsta kupona', N'Coupon type' UNION ALL
 		SELECT N'ContentType_Domain', N'Domen', N'Domain' UNION ALL
+		SELECT N'ContentType_Education', N'Obrazovanje', N'Education' UNION ALL
 		SELECT N'ContentType_EmailCampaign', N'Email kampanje', N'Email Campaign' UNION ALL
 		SELECT N'ContentType_Event', N'Događaj', N'Event' UNION ALL
 		SELECT N'ContentType_Field', N'Polje', N'Field' UNION ALL
@@ -135,6 +136,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Organization', N'Organizacija', N'Organization' UNION ALL
 		SELECT N'ContentType_Portfolio', N'Referenca', N'Portfolio' UNION ALL
 		SELECT N'ContentType_Portfolios', N'Reference', N'Portfolios' UNION ALL
+		SELECT N'ContentType_ProjectSkill', N'Iskustvo', N'Project Skill' UNION ALL
 		SELECT N'ContentType_Role', N'Uloga', N'Role' UNION ALL
 		SELECT N'ContentType_Task', N'Zadatak', N'Task' UNION ALL
 		SELECT N'ContentType_Template', N'Šablon', N'Template' UNION ALL
@@ -687,6 +689,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Home', N'Naslovna', N'Home' UNION ALL
 		SELECT N'SiteMenu_HtmlTemplates', N'HTML šabloni', N'Html Templates' UNION ALL
 		SELECT N'SiteMenu_Inbox', N'Dolazna pošta', N'Inbox' UNION ALL
+		SELECT N'SiteMenu_Industries', N'Industrija' , N'Industries' UNION ALL
 		SELECT N'SiteMenu_IPBlockList', N'Lista blokiranih IP adresa', N'IP Block List' UNION ALL
 		SELECT N'SiteMenu_Lists', N'Liste', N'Lists' UNION ALL
 		SELECT N'SiteMenu_Locations', N'Lokacije', N'Locations' UNION ALL
@@ -700,6 +703,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Portfolios', N'Portfolio', N'Portfolios' UNION ALL
 		SELECT N'SiteMenu_Posts', N'Postovi', N'Posts' UNION ALL
 		SELECT N'SiteMenu_Profile', N'Profil', N'Profile' UNION ALL
+		SELECT N'SiteMenu_ProjectDeliverables', N'Rezultati projekta', N'Project Deliverables' UNION ALL
+		SELECT N'SiteMenu_ProjectDuration', N'Trajanje projekta', N'Project Duration' UNION ALL
+		SELECT N'SiteMenu_ProjectRates', N'Troškovi projekta', N'Project Rates' UNION ALL
+		SELECT N'SiteMenu_ProjectSkills', N'Vještine', N'Project Skills' UNION ALL
+		SELECT N'SiteMenu_ProjectStatuses', N'Statusi projekta', N'Project Statuses' UNION ALL
+		SELECT N'SiteMenu_ProjectTaskStatuses', N'Statusi', N'Project Task Statuses' UNION ALL
+		SELECT N'SiteMenu_ProjectTimeRequirements', N'Trajanje projekta', N'Project Time Requirements' UNION ALL
+		SELECT N'SiteMenu_Qualification', N'Kvalifikacije' , N'Qualification' UNION ALL
 		SELECT N'SiteMenu_Roles', N'Korisničke Uloge', N'Roles' UNION ALL
 		SELECT N'SiteMenu_ScheduledTasks', N'Zakazani zadaci', N'Scheduled Tasks' UNION ALL
 		SELECT N'SiteMenu_Security', N'Sigurnost', N'Security' UNION ALL
