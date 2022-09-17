@@ -533,6 +533,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Settings_Data_AdminEmail', N'Admin E-mail' UNION ALL
 		SELECT N'Settings_Data_AndRedirectTo', N'And Redirect To' UNION ALL
 		SELECT N'Settings_Data_APIEnabled', N'API Enabled' UNION ALL
+		sELECT N'Settings_Data_APIKey', N'API Key' UNION ALL
 		SELECT N'Settings_Data_APISecretURL', N'API Secret URL' UNION ALL
 		SELECT N'Settings_Data_ApplicationName', N'Application Name' UNION ALL
 		SELECT N'Settings_Data_ApplicationPath', N'Application Path' UNION ALL
