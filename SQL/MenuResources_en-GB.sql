@@ -109,6 +109,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_PurchaseOrders', N'Purchase Orders' UNION ALL
 		SELECT N'SiteMenu_Qualifications', N'Qualifications' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Quotes' UNION ALL
+		SELECT N'SiteMenu_Rates', N'Rates' UNION ALL
 		SELECT N'SiteMenu_Roles', N'Roles' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'RepresentationExpenses' UNION ALL
 		SELECT N'SiteMenu_Routings', N'Routings' UNION ALL
@@ -133,6 +134,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Suppliers', N'Suppliers' UNION ALL
 		SELECT N'SiteMenu_Support', N'Support' UNION ALL
 		SELECT N'SiteMenu_Tasks', N'Tasks' UNION ALL
+		SELECT N'SiteMenu_TaskStatuses', N'Contract Statuses' UNION ALL
 		SELECT N'SiteMenu_Testimonials', N'Testimonials' UNION ALL
 		SELECT N'SiteMenu_TimeEntries', N'Time Entries' UNION ALL
 		SELECT N'SiteMenu_TimeRequirements', N'Time Requirements' UNION ALL
