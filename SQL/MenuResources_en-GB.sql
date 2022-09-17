@@ -37,12 +37,15 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Contacts', N'Contacts' UNION ALL
 		SELECT N'SiteMenu_Content', N'Content' UNION ALL
 		SELECT N'SiteMenu_Contents', N'Contents' UNION ALL
+		SELECT N'SiteMenu_Contracts', N'Contracts' UNION ALL
+		SELECT N'SiteMenu_Contractors', N'Contractors' UNION ALL
 		SELECT N'SiteMenu_Countries', N'Countries' UNION ALL
 		SELECT N'SiteMenu_Contracts_Title', N'Contracts' UNION ALL
 		SELECT N'SiteMenu_CountyStateProvinces', N'County/State/Provinces' UNION ALL
 		SELECT N'SiteMenu_CRM', N'CRM' UNION ALL
 		SELECT N'SiteMenu_Customers', N'Customers' UNION ALL
 		SELECT N'SiteMenu_Dashboard', N'Dashboard' UNION ALL
+		SELECT N'SiteMenu_Deliverables', N'Deliverables' UNION ALL
 		SELECT N'SiteMenu_Description_Lists', N'Lists Editor (FAQs)' UNION ALL
 		SELECT N'SiteMenu_Description_Settings', N'Global Settings' UNION ALL
 		SELECT N'SiteMenu_Description_Support', N'Help & Support' UNION ALL
@@ -50,6 +53,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Distributors', N'Distributors' UNION ALL
 		SELECT N'SiteMenu_Deals_Title', N'Deals' UNION ALL
 		SELECT N'SiteMenu_Domains', N'Domains' UNION ALL
+		SELECT N'SiteMenu_Durations', N'Durations' UNION ALL
 		SELECT N'SiteMenu_EmailCampaigns', N'Email Campaigns' UNION ALL
 		SELECT N'SiteMenu_Employees', N'Employees' UNION ALL
 		SELECT N'SiteMenu_Events', N'Events' UNION ALL
@@ -65,10 +69,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Home', N'Home' UNION ALL
 		SELECT N'SiteMenu_HtmlTemplates', N'Html Templates' UNION ALL
 		SELECT N'SiteMenu_Inbox', N'Inbox' UNION ALL
+		SELECT N'SiteMenu_Industries', N'Industries' UNION ALL
 		SELECT N'SiteMenu_Inventory', N'Inventory' UNION ALL
 		SELECT N'SiteMenu_Invoices', N'Invoices' UNION ALL
 		SELECT N'SiteMenu_IPBlockList', N'IP Block List' UNION ALL
 		SELECT N'SiteMenu_IPRestrictions', N'IPRestrictions' UNION ALL
+		SELECT N'SiteMenu_Jobs', N'Jobs' UNION ALL
 		SELECT N'SiteMenu_Labels', N'Labels' UNION ALL
 		SELECT N'SiteMenu_Leads_Title', N'Leads' UNION ALL
 		SELECT N'SiteMenu_Lists', N'Lists' UNION ALL
@@ -78,8 +84,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_ManufacturingOrders', N'Manufacturing Orders' UNION ALL
 		SELECT N'SiteMenu_Marketing', N'Marketing' UNION ALL
 		SELECT N'SiteMenu_Members', N'Members' UNION ALL
-		SELECT N'SiteMenu_Membership', N'Membership' UNION ALL
 		SELECT N'SiteMenu_MemberApps', N'Member Apps' UNION ALL
+		SELECT N'SiteMenu_Membership', N'Membership' UNION ALL
 		SELECT N'SiteMenu_Menus', N'Menus' UNION ALL
 		SELECT N'SiteMenu_News', N'News' UNION ALL
 		SELECT N'SiteMenu_Newsletter', N'Newsletter' UNION ALL
@@ -95,12 +101,13 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Portfolio', N'Portfolio' UNION ALL
 		SELECT N'SiteMenu_Portfolios', N'Portfolios' UNION ALL
 		SELECT N'SiteMenu_Posts', N'Posts' UNION ALL
-		SELECT N'SiteMenu_Production', N'Production' UNION ALL
 		SELECT N'SiteMenu_PreslapOrders', N'For delivery' UNION ALL
+		SELECT N'SiteMenu_Production', N'Production' UNION ALL
 		SELECT N'SiteMenu_ProductionEntryOrders', N'Production Entry Orders' UNION ALL
 		SELECT N'SiteMenu_Products', N'Products' UNION ALL
 		SELECT N'SiteMenu_Profile', N'Profile' UNION ALL
 		SELECT N'SiteMenu_PurchaseOrders', N'Purchase Orders' UNION ALL
+		SELECT N'SiteMenu_Qualifications', N'Qualifications' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Quotes' UNION ALL
 		SELECT N'SiteMenu_Roles', N'Roles' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'RepresentationExpenses' UNION ALL
@@ -115,6 +122,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_SiteContent', N'Site Content' UNION ALL
 		SELECT N'SiteMenu_SiteLocalization', N'Site Localization' UNION ALL
 		SELECT N'SiteMenu_SiteNavigation', N'Site Navigation' UNION ALL
+		SELECT N'SiteMenu_Skills', N'Skills' UNION ALL
+		SELECT N'SiteMenu_Statuses', N'Statuses' UNION ALL
 		SELECT N'SiteMenu_Stock', N'Stock' UNION ALL
 		SELECT N'SiteMenu_StoreSettings', N'Store Settings' UNION ALL
 		SELECT N'SiteMenu_SubscriberLists', N'Subscriber Lists' UNION ALL
@@ -126,6 +135,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Tasks', N'Tasks' UNION ALL
 		SELECT N'SiteMenu_Testimonials', N'Testimonials' UNION ALL
 		SELECT N'SiteMenu_TimeEntries', N'Time Entries' UNION ALL
+		SELECT N'SiteMenu_TimeRequirements', N'Time Requirements' UNION ALL
+		SELECT N'SiteMenu_TimeSheets', N'Time Sheets' UNION ALL
 		SELECT N'SiteMenu_TransferOrders', N'Transfer Orders' UNION ALL
 		SELECT N'SiteMenu_WorkCenterTypes', N'Work Center Types' 
 END
