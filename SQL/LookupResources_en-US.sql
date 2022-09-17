@@ -215,6 +215,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'CouponType_PercentageDiscount', N'Percentage Discount' UNION ALL
 		SELECT N'CouponType_FixedCartDiscount', N'Fixed Cart Discount' UNION ALL
 		SELECT N'CouponType_FixedProductDiscount', N'Fixed Product Discount' UNION ALL
+		SELECT N'DueDayType_DaysAfterTheInvoice', N'day(s) after the invoice' UNION ALL
+		SELECT N'DueDayType_OfTheFollowingMonth', N'of the following month' UNION ALL
+		SELECT N'DueDayType_DaysAfterTheEndOfTheInvoiceMonth', N'day(s) after the end of the invoice month' UNION ALL
+		SELECT N'DueDayType_OfTheCurrentMonth', N'of the current month' UNION ALL
 		SELECT N'Tasks_Daily', N'Daily' UNION ALL
 		SELECT N'Tasks_Interval', N'Interval' UNION ALL
 		SELECT N'Tasks_Monthly', N'Monthly' UNION ALL
@@ -251,6 +255,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ProductSubscriptionType_Basic', N'Basic' UNION ALL
 		SELECT N'ProductSubscriptionType_Enterprise', N'Enterprise' UNION ALL
 		SELECT N'ProductSubscriptionType_Premium', N'Premium' UNION ALL
+		SELECT N'RenewalPeriod_Days', N'Day(s)' UNION ALL
+		SELECT N'RenewalPeriod_Weeks', N'Week(s)' UNION ALL
+		SELECT N'RenewalPeriod_Months', N'Month(s)' UNION ALL
+		SELECT N'RenewalPeriod_Years', N'Year(s)' UNION ALL
 		SELECT N'SubscriptionTypePeriod_Monthly', N'Monthly' UNION ALL
 		SELECT N'SubscriptionTypePeriod_Yearly', N'Yearly' UNION ALL
 		SELECT N'ContentType_Product', N'Product' UNION ALL

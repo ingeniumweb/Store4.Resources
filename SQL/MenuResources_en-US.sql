@@ -120,6 +120,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_SubscriberLists', N'Subscriber Lists' UNION ALL
 		SELECT N'SiteMenu_Subscribers', N'Subscribers' UNION ALL
 		SELECT N'SiteMenu_Subscriptions', N'Subscriptions' UNION ALL
+		SELECT N'SiteMenu_Subscriptions_Title', N'Subscriptions' UNION ALL
 		SELECT N'SiteMenu_Suppliers', N'Suppliers' UNION ALL
 		SELECT N'SiteMenu_Support', N'Support' UNION ALL
 		SELECT N'SiteMenu_Tasks', N'Tasks' UNION ALL

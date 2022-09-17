@@ -215,6 +215,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'CommentAction_Spam', N'Spam', N'Spam' UNION ALL
 		SELECT N'CommentAction_Trash', N'Smeće', N'Trash' UNION ALL
 		SELECT N'CommentAction_Unnaproved', N'Neodobreno', N'Unnaproved' UNION ALL
+		SELECT N'DueDayType_DaysAfterTheInvoice', N'dan(a) nakon računa', N'day(s) after the invoice' UNION ALL
+		SELECT N'DueDayType_OfTheFollowingMonth', N'sledećeg meseca',  N'of the following month' UNION ALL
+		SELECT N'DueDayType_DaysAfterTheEndOfTheInvoiceMonth', N'dan(a) početkom sledećeg meseca', N'day(s) after the end of the invoice month' UNION ALL
+		SELECT N'DueDayType_OfTheCurrentMonth', N'tekućeg meseca', N'of the current month' UNION ALL
 		SELECT N'Tasks_Daily', N'Dnevno', N'Daily' UNION ALL
 		SELECT N'Tasks_Interval', N'Interval', N'Interval' UNION ALL
 		SELECT N'Tasks_Monthly', N'Mesečno', N'Monthly' UNION ALL
@@ -251,6 +255,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ProductSubscriptionType_Basic', N'Osnovno', N'Basic' UNION ALL
 		SELECT N'ProductSubscriptionType_Enterprise', N'Enterprise', N'Enterprise' UNION ALL
 		SELECT N'ProductSubscriptionType_Premium', N'Premium', N'Premium' UNION ALL
+		SELECT N'RenewalPeriod_Days', N'Dan(a)', N'Day(s)'  UNION ALL
+		SELECT N'RenewalPeriod_Weeks', N'Nedjelja', N'Week(s)'  UNION ALL
+		SELECT N'RenewalPeriod_Months', N'Mesec(i)', N'Month(s)' UNION ALL
+		SELECT N'RenewalPeriod_Years', N'Godina(a)', N'Year(s)' UNION ALL
 		SELECT N'SubscriptionTypePeriod_Monthly', N'Mesečno', N'Monthly' UNION ALL
 		SELECT N'SubscriptionTypePeriod_Yearly', N'Godišnje', N'Yearly' UNION ALL
 		SELECT N'ContentType_Product', N'Proizvod', N'Product' UNION ALL

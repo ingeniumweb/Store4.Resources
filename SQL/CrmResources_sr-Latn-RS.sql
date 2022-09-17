@@ -86,14 +86,16 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Discount', N'Rabat', N'Discount' UNION ALL
 		SELECT N'Data_Distributor', N'Distributor', N'Distributor' UNION ALL
 		SELECT N'Data_Document', N'Dokument', N'Document' UNION ALL
-		SELECT N'Data_Document_Log_Enabled', N'Omogućen povijest dokumenata', N'Is Is Document Log Enabled' UNION ALL
 		SELECT N'Data_DocumentHeader', N'Zaglavlje dokumenta', N'Document Header' UNION ALL
 		SELECT N'Data_Documents', N'Dokumenti', N'Documents' UNION ALL
+		SELECT N'Data_Document_Log_Enabled', N'Omogućen istorija dokumenata', N'Is Is Document Log Enabled' UNION ALL
 		SELECT N'Data_DueDate', N'Rok plaćanja', N'Due Date' UNION ALL  
 		SELECT N'Data_Edit', N'Izmeni', N'Edit' UNION ALL
 		SELECT N'Data_EditAll', N'Izmeni sve', N'Edit All' UNION ALL
 		SELECT N'Data_Email', N'Email', N'Email' UNION ALL
+		SELECT N'Data_EmailTemplate', N'Email šablona', N'Email Template' UNION ALL
 		SELECT N'Data_EndDate', N'Datum završetka', N'End Date' UNION ALL
+		SELECT N'Data_ExternalDocumentUrl', N'Url vanjskog dokumenta', N'External Document Url' UNION ALL
 		SELECT N'Data_File_Manager_Enabled', N'Omogućen upravitelj datoteka ', N'Is File Manager Enabled' UNION ALL
 		SELECT N'Data_FixedCost', N'Fiksni trošak', N'Fixed Cost' UNION ALL
 		SELECT N'Data_FixedTime', N'Fiksno vreme', N'Fixed Time' UNION ALL
@@ -105,6 +107,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_InitialCostPrice', N'Početna cena proizvoda', N'Initial Cost Price' UNION ALL
 		SELECT N'Data_InitialStockLevel', N'Početno stanje na skladištu', N'Initial Stock Level' UNION ALL
 		SELECT N'Data_InvoiceDetails', N'Detalji računa', N'Invoice Details' UNION ALL
+		SELECT N'Data_InvoiceLink', N'Link dokumenta', N'Invoice Link' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Račun #', N'Invoice #' UNION ALL
 		SELECT N'Data_IsHeadquarter', N'Označi kao sedište', N'Is Headquarter' UNION ALL
 		SELECT N'Data_IsProcured', N'Proizvodni materijal', N'Is Procured' UNION ALL
@@ -120,6 +123,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Materials', N'Materijali', N'Materials' UNION ALL
 		SELECT N'Data_Member', N'Korisnik', N'Member' UNION ALL
 		SELECT N'Data_MonthMember', N'mesečno po korisniku', N'month per team member' UNION ALL
+		SELECT N'Data_NextInvoiceDate',  N'Sledeći datum računa', N'Next Invoice Date' UNION ALL
 		SELECT N'Data_Notice', N'Napomena', N'Notice' UNION ALL
 		SELECT N'Data_NumberOfUsers', N'Broj korisnika', N'Number of users' UNION ALL
 		SELECT N'Data_NotProcured', N'Nije nabavljeno', N'Not Procured' UNION ALL
@@ -139,9 +143,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Period', N'Razdoblje trajanja', N'Period' UNION ALL
 		SELECT N'Data_PeriodEnd', N'Razdoblje trajanja do', N'Peroid End' UNION ALL
 		SELECT N'Data_PeriodStart', N'Razdoblje trajanja od', N'Period Start' UNION ALL
-		SELECT N'Data_PreferentialPrice', N'Povlaštena cena', N'Preferential Price' UNION ALL
 		SELECT N'Data_PeriodYear', N'{0} svake godine', N'every year' UNION ALL
 		SELECT N'Data_PeriodMonth', N'{0} svaki mjesec', N'every month' UNION ALL
+		SELECT N'Data_PreferentialPrice', N'Povlaštena cena', N'Preferential Price' UNION ALL
 		SELECT N'Data_PIN', N'PIB', N'PIN' UNION ALL
 		SELECT N'Data_PlannedFinish', N'Planirani završetak', N'Planned Finish' UNION ALL
 		SELECT N'Data_PlannedStart', N'Planirani početak', N'Planned Start' UNION ALL
@@ -156,6 +160,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ProductType', N'Vrsta proizvoda', N'Product Type' UNION ALL
 		SELECT N'Data_PurchaseOrderNumber', N'Broj kupovine #', N'Purchase Order #' UNION ALL
 		SELECT N'Data_Released', N'Razduženo', N'Released' UNION ALL
+		SELECT N'Data_RepeaThisTransactionEvery', N'Ponavljaj transakciju svakih', N'Repeat this transaction every' UNION ALL
 		SELECT N'Data_Unavailable', N'Nedostupno', N'Data Unavailable' UNION ALL
 		SELECT N'Data_Quantity', N'Količina', N'Quantity' UNION ALL
 		SELECT N'Data_QuoteDetails', N'Detalji ponude', N'Quote Details' UNION ALL
@@ -175,6 +180,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ShipmentDate', N'Datum pošiljke', N'Shipment Date' UNION ALL
 		SELECT N'Data_ShipmentNumber', N'Pošiljka #', N'Shipment #' UNION ALL
 		SELECT N'Data_ShipTo', N'Poslati prema', N'Ship To' UNION ALL		
+		SELECT N'Data_ShowExternalDocumentUrl', N'Prikaži vanjski link dokumenta', N'Show External Document Url' UNION ALL
 		SELECT N'Data_ShowOnStore', N'Prikaži u trgovini', N'Show On Store' UNION ALL
 		SELECT N'Data_ShowPaymentSlip', N'Prikaži uplatnicu', N'Show Payment Slip' UNION ALL
 		SELECT N'Data_ShowShipping', N'Prikaži trošak dostave', N'Show Shippment Costs' UNION ALL
@@ -198,7 +204,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_SupplierInfo', N'Podaci o dobavljaču', N'Supplier info' UNION ALL
 		SELECT N'Data_TargetLot', N'Ciljana količina', N'Target Lot' UNION ALL
 		SELECT N'Data_Task', N'Zadatak', N'Task' UNION ALL
-		SELECT N'Data_Tax', N'Porez', N'Tax' UNION ALL
 		SELECT N'Data_Tax', N'Porez', N'Tax' UNION ALL
 		SELECT N'Data_TaxAmount', N'Iznos PDV' , N'Tax amount' UNION ALL
 		SELECT N'Data_TaxBase', N'Osnovica za porez', N'Data_TaxBase' UNION ALL
@@ -242,7 +247,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Deal_Button_WIN', N'Dobivena', N'Win' UNION ALL
 		SELECT N'Description_CurrentSubscription', N'Račun je aktivan. Vaša kreditna kartica će se teretiti za {0} sve dok ne otkažete pretplatu. Trenutni plan možete jednostavno promijeniti bilo kada. Za više informacija kontaktirajte našu podršku.', N'Your account is up and running. Your credit card will be charged {0} every year until you cancel your subscription. You can switch your current plan to any other plan at any time by making a few simple steps.' UNION ALL
 		SELECT N'Document_CashSalesOrder', N'Prodaja za gotovinu', N'Cash Sales Order' UNION ALL
-		SELECT N'DocumentType_Contract', N'Ugovor', N'Contracts' UNION ALL
 		SELECT N'Document_ExpenseOrder', N'Rashod', N'Expense Order' UNION ALL
 		SELECT N'Document_Message_NotEnoughStock', N'Nema dovoljno zaliha u magacinu!', N'There is not enough stock on the warehouse!' UNION ALL
 		SELECT N'Document_Message_SelectWarehouse', N'Molim vas da odaberete svoj magacin!', N'Please select your warehouse!' UNION ALL
@@ -252,7 +256,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Document_Message_ProductPlanLimit', N'Ne možete kreirati novi proizvod, zbog vašeg trenutnog plana!', N'Your product plan limit has been reached!' UNION ALL
 		SELECT N'Document_ProductionEntryOrder', N'Ulaz iz Proizvodnje', N'Production Entry Order' UNION ALL
 		SELECT N'Document_RepresentationExpense', N'Reprezentacija', N'Representation Expense' UNION ALL
-		SELECT N'Document_Route', N'Ruta', N'Route' UNION ALL
 		SELECT N'Documents_CashSalesOrders', N'Prodaja za gotovinu', N'Cash Sales Orders' UNION ALL
 		SELECT N'Documents_ExpenseOrders', N'Rashodi', N'Expense Orders' UNION ALL
 		SELECT N'DocumentType_ForDelivery', N'Za Isporuku', N'ForDelivery' UNION ALL
@@ -264,11 +267,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Documents_PurchaseOrders', N'Kupovine', N'Purchase Orders' UNION ALL
 		SELECT N'Documents_Quotes', N'Ponude', N'Quotes' UNION ALL
 		SELECT N'Documents_RepresentationExpenses', N'Reprezentacije', N'Representation Expenses' UNION ALL
+		SELECT N'Document_Route', N'Ruta', N'Route' UNION ALL
 		SELECT N'Documents_Shipments', N'Pošiljke', N'Shipments' UNION ALL
 		SELECT N'Documents_Subscriptions', N'Pretplate', N'Subscriptions' UNION ALL
 		SELECT N'Documents_TransferOrders', N'Prenosna dostavnica', N'Transfer Orders' UNION ALL
 		SELECT N'DocumentType_BOM', N'Potrošni materijal', N'Bill of Material' UNION ALL
 		SELECT N'DocumentType_CashSalesOrder', N'Prodaja za gotovinu', N'Cash Sales Order' UNION ALL
+		SELECT N'DocumentType_Contract', N'Ugovor', N'Contracts' UNION ALL
+		SELECT N'DocumentType_Contracts',  N'Ugovori', N'Contracts' UNION ALL
 		SELECT N'DocumentType_Deal', N'Potencijalna Ponuda', N'Deal' UNION ALL
 		SELECT N'DocumentType_Deals', N'Potencijalne Ponude', N'Deals' UNION ALL
 		SELECT N'DocumentType_ExpenseOrder', N'Rashodi', N'Expense Order' UNION ALL
@@ -279,6 +285,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_ProductionEntryOrder', N'Ulazi iz Proizvodnje', N'Production Entry Order' UNION ALL
 		SELECT N'DocumentType_ProductionOrder', N'Proizvodna narudžba', N'Production Order' UNION ALL
 		SELECT N'DocumentType_PurchaseOrder', N'Kupovina', N'Purchase Order' UNION ALL
+		SELECT N'DocumentType_RepeatingInvoice', N'Ponavljajući račun', N'Repeating Invoice' UNION ALL
+		SELECT N'DocumentType_RepeatingInvoices', N'Ponavljajući računi', N'Repeating Invoices' UNION ALL
 		SELECT N'DocumentType_Quote', N'Ponuda', N'Quote' UNION ALL
 		SELECT N'DocumentType_RepresentationExpense', N'Reprezentacije', N'Representation Expense' UNION ALL
 		SELECT N'DocumentType_SalesOrder', N'Narudžba', N'Sales Order' UNION ALL
@@ -362,9 +370,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'MPR_Title', N'Kreiraj proizvodni nalog', N'Generate Manufacturing Order' UNION ALL
 		SELECT N'Order_EmailCreditCard', N'Email-info narudžbenica - plaćeno karticom', N'Send Order Confirmation Email CreditCard' UNION ALL
 		SELECT N'Order_EmailWireTransfer', N'Email-info narudžbenica - plaćeno virmanski', N'Send Order Confirmation Email WireTransfer' UNION ALL
+		SELECT N'PaymentCancelled_Description', N'Prekinuli ste plaćanje.', N'You have cancelled your payment.' UNION ALL
 		SELECT N'PaymentCancelled_Title', N'Plaćanje otkazano', N'Payment Cancelled' UNION ALL
 		SELECT N'PaymentSlip_DescriptionField', N'Plaćanje vezano uz {0} broj: {1}', N'Payment for {0} number: {1}' UNION ALL
-		SELECT N'PaymentCancelled_Description', N'Prekinuli ste plaćanje.', N'You have cancelled your payment.' UNION ALL
 		SELECT N'PaymentSuccess_Title', N'Plaćanje uspešno', N'Payment Successful' UNION ALL
 		SELECT N'Product_IsSubscriptions', N'Pretplata', N'Is Subscription' UNION ALL
 		SELECT N'Product_Subscriptions', N'Pretplate za proizvod', N'Product Subscriptions' UNION ALL
@@ -391,6 +399,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_PurchaseOrders', N'Kupovine', N'Purchase Orders' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'Reprezentacije', N'Representation Expenses' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Ponude', N'Quotes' UNION ALL
+		SELECT N'SiteMenu_RepeatingInvoices',  N'Ponavljajući računi', N'Repeating Invoices' UNION ALL
 		SELECT N'SiteMenu_Routings', N'Rute', N'Routings' UNION ALL
 		SELECT N'SiteMenu_SalesOrders', N'Prodajni nalozi', N'Sales Orders' UNION ALL
 		SELECT N'SiteMenu_Shipments', N'Pošiljke', N'Shipments' UNION ALL
@@ -412,7 +421,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Store_ShipmentNumberFormat', N'SH-{DocNo}', N'SH-{DocNo}' UNION ALL
 		SELECT N'Store_Slug', N'{0}-store', N'{0}-store' UNION ALL
 		SELECT N'Store_Title', N'{0} prodavnica', N'{0} Store' UNION ALL
-		SELECT N'StoreSettings_Tabs_BankInformation ', N'Postavke banke', N'Bank Information' UNION ALL
+		SELECT N'StoreSettings_Tabs_BankInformation', N'Postavke banke', N'Bank Information' UNION ALL
 		SELECT N'StoreSettings_Tabs_Company', N'Postavke kompanije', N'Company Settings' UNION ALL
 		SELECT N'StoreSettings_Tabs_CompanyAddress', N'Adresa kompanije', N'Company Address' UNION ALL
 		SELECT N'StoreSettings_Tabs_DocumentSettings', N'Postavke dokumenta', N'Document Settings' UNION ALL
