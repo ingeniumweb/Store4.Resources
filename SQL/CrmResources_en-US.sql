@@ -38,6 +38,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Supplier', N'Supplier' UNION ALL
 		SELECT N'ContentType_TimeEntry', N'Time Entry' UNION ALL
 		SELECT N'Data_Active', N'Active' UNION ALL
+		SELECT N'Data_ActivitiesAndSocieties', N'Activities And Societies' UNION ALL
 		SELECT N'Data_ActualFinish', N'Actual Finish' UNION ALL
 		SELECT N'Data_ActualStart', N'Actual Start' UNION ALL
 		SELECT N'Data_Add', N'Add' UNION ALL
@@ -57,6 +58,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Booked', N'Booked' UNION ALL
 		SELECT N'Data_BuyPrice', N'Buy Price' UNION ALL
 		SELECT N'Data_ChangeSubscriptionPlanTitle', N'Change your subscription plan' UNION ALL
+		SELECT N'Data_ClaimLimit', N'Claim Limit' UNION ALL
 		SELECT N'Data_CloneDocument', N'Clone Document' UNION ALL
 		SELECT N'Data_CloneProduct', N'Clone Product' UNION ALL
 		SELECT N'Data_Code', N'Code' UNION ALL
@@ -106,6 +108,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Email', N'Email' UNION ALL
 		SELECT N'Data_EmailTemplate', N'Email Template' UNION ALL
 		SELECT N'Data_EndDate', N'End Date' UNION ALL
+		SELECT N'Data_Excess', N'Excess' UNION ALL
 		SELECT N'Data_Experiences', N'Experiences' UNION ALL
 		SELECT N'Data_ExternalDocumentUrl', N'External Document Url' UNION ALL
 		SELECT N'Data_FieldOfStudy', N'Field Of Study' UNION ALL
@@ -126,6 +129,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_InvoiceDetails', N'Invoice Details' UNION ALL
 		SELECT N'Data_InvoiceLink', N'Invoice Link' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Invoice #' UNION ALL
+		SELECT N'Data_IR35Payroll', N'IR35 & Payroll' UNION ALL
 		SELECT N'Data_IsHeadquarter', N'Is Headquarter' UNION ALL
 		SELECT N'Data_IsProcured', N'Is Procured' UNION ALL
 		SELECT N'Data_IsProductPackage', N'Is Product Package' UNION ALL
@@ -148,7 +152,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_NumberOfUsers', N'Number of users' UNION ALL
 		SELECT N'Data_NotProcured', N'Not Procured' UNION ALL
 		SELECT N'Data_OffPayrollOnly', N'Off Payroll Only' UNION ALL
-		SELECT N'Data_OnOffPayroll', N'On Off Payroll' UNION ALL
+		SELECT N'Data_OnOffPayroll', N'On or Off Payroll' UNION ALL
 		SELECT N'Data_OnHand', N'On Hand' UNION ALL
 		SELECT N'Data_OnPayrollOnly', N'On Payroll Only' UNION ALL
 		SELECT N'Data_Operation', N'Operation' UNION ALL
@@ -214,6 +218,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_RowNumber', N'#ID' UNION ALL
 		SELECT N'Data_SalesOrderDetails', N'Sales Order Details' UNION ALL
 		SELECT N'Data_School', N'School' UNION ALL
+		SELECT N'Data_SearchFilter', N'Search Filter' UNION ALL
 		SELECT N'Data_ShipFrom', N'Ship From' UNION ALL
 		SELECT N'Data_ShipmentDate', N'Shipment Date' UNION ALL
 		SELECT N'Data_ShipmentNumber', N'Shipment #' UNION ALL
@@ -379,8 +384,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_CancelOrder', N'Cancel Order' UNION ALL
 		SELECT N'Link_Create', N'Create {0}' UNION ALL
 		SELECT N'Link_CreateNewBOM', N'Create a new BOM' UNION ALL
+		SELECT N'Link_CreateNewCompany', N'Create a new company' UNION ALL
 		SELECT N'Link_CreateNewCustomer', N'Create a new customer' UNION ALL
 		SELECT N'Link_CreateNewLead', N'Create a new lead' UNION ALL
+		SELECT N'Link_CreateNewProject', N'Create a new Project' UNION ALL
 		SELECT N'Link_CreateNewSupplier', N'Create a new supplier' UNION ALL
 		SELECT N'Link_CreateShipment', N'Create Shipment' UNION ALL
 		SELECT N'Link_Deactivate', N'Deactivate' UNION ALL

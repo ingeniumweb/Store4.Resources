@@ -118,6 +118,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Education', N'Education' UNION ALL
 		SELECT N'ContentType_EmailCampaign', N'Email Campaign' UNION ALL
 		SELECT N'ContentType_Event', N'Event' UNION ALL
+		SELECT N'ContentType_Experience', N'Experience' UNION ALL
 		SELECT N'ContentType_Field', N'Field' UNION ALL
 		SELECT N'ContentType_Form', N'Form' UNION ALL
 		SELECT N'ContentType_FormEntry', N'Form Entry' UNION ALL
@@ -136,7 +137,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Organization', N'Organization' UNION ALL
 		SELECT N'ContentType_Portfolio', N'Portfolio' UNION ALL
 		SELECT N'ContentType_Portfolios', N'Portfolios' UNION ALL
+		SELECT N'ContentType_ProjectRate', N'Project Rate' UNION ALL
 		SELECT N'ContentType_ProjectSkill', N'Project Skill' UNION ALL
+		SELECT N'ContentType_ProjectStatus', N'Project Status' UNION ALL
+		SELECT N'ContentType_ProjectTaskStatus', N'Project Task Status' UNION ALL
 		SELECT N'ContentType_Role', N'Role' UNION ALL
 		SELECT N'ContentType_Task', N'Task' UNION ALL
 		SELECT N'ContentType_Template', N'Template' UNION ALL

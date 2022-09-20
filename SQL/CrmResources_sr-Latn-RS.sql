@@ -39,6 +39,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Supplier', N'Dobavljač', N'Supplier' UNION ALL
 		SELECT N'ContentType_TimeEntry', N'Unos vremena', N'Time Entry' UNION ALL
 		SELECT N'Data_Active', N'Aktivan', N'Active' UNION ALL
+		SELECT N'Data_ActivitiesAndSocieties', N'Aktivnosti i društvo', N'Activities And Societies' UNION ALL
 		SELECT N'Data_ActualFinish', N'Stvarni završetak', N'Actual Finish' UNION ALL
 		SELECT N'Data_ActualStart', N'Stvarni početak', N'Actual Start' UNION ALL
 		SELECT N'Data_Add', N'Dodati', N'Add' UNION ALL
@@ -58,6 +59,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Booked', N'Rezervisano', N'Booked' UNION ALL
 		SELECT N'Data_BuyPrice', N'Nabavna vrednost proizvoda', N'Buy Price' UNION ALL
 		SELECT N'Data_ChangeSubscriptionPlanTitle', N'Promjenite plan', N'Change your subscription plan' UNION ALL
+		SELECT N'Data_ClaimLimit', N'Ograničenje', N'Claim Limit' UNION ALL
 		SELECT N'Data_CloneDocument', N'Napravi kopiju', N'Clone Document' UNION ALL
 		SELECT N'Data_CloneProduct', N'Napravi kopiju', N'Clone Product' UNION ALL
 		SELECT N'Data_Code', N'Kod', N'Code' UNION ALL
@@ -106,6 +108,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Email', N'Email', N'Email' UNION ALL
 		SELECT N'Data_EmailTemplate', N'Email šablona', N'Email Template' UNION ALL
 		SELECT N'Data_EndDate', N'Datum završetka', N'End Date' UNION ALL
+		SELECT N'Data_Excess', N'Višak', N'Excess' UNION ALL
 		SELECT N'Data_Experiences', N'Radno iskustvo', N'Experiences' UNION ALL
 		SELECT N'Data_ExternalDocumentUrl', N'Url vanjskog dokumenta', N'External Document Url' UNION ALL
 		SELECT N'Data_FieldOfStudy', N'Područje', N'Field Of Study' UNION ALL
@@ -126,6 +129,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_InvoiceDetails', N'Detalji računa', N'Invoice Details' UNION ALL
 		SELECT N'Data_InvoiceLink', N'Link dokumenta', N'Invoice Link' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Račun #', N'Invoice #' UNION ALL
+		SELECT N'Data_IR35Payroll', N'IR35 i obračun', N'IR35 & Payroll' UNION ALL
 		SELECT N'Data_IsHeadquarter', N'Označi kao sedište', N'Is Headquarter' UNION ALL
 		SELECT N'Data_IsProcured', N'Proizvodni materijal', N'Is Procured' UNION ALL
 		SELECT N'Data_IsProductPackage', N'Pakovanje proizvoda', N'Is Product Package' UNION ALL
@@ -148,7 +152,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_NumberOfUsers', N'Broj korisnika', N'Number of users' UNION ALL
 		SELECT N'Data_NotProcured', N'Nije nabavljeno', N'Not Procured' UNION ALL
 		SELECT N'Data_OffPayrollOnly', N'Izvan platne liste', N'Off Payroll Only' UNION ALL
-		SELECT N'Data_OnOffPayroll', N'Sa ili izvan platne liste', N'On Off Payroll' UNION ALL
+		SELECT N'Data_OnOffPayroll', N'Sa ili izvan platne liste', N'On or Off Payroll' UNION ALL
 		SELECT N'Data_OnHand', N'Na skladištu', N'On Hand' UNION ALL
 		SELECT N'Data_OnPayrollOnly', N'Sa platne liste', N'On Payroll Only' UNION ALL
 		SELECT N'Data_Operation', N'Operacija', N'Operation' UNION ALL
@@ -214,6 +218,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_RowNumber', N'#ID', N'#ID' UNION ALL
 		SELECT N'Data_SalesOrderDetails', N'Detalji narudžbe', N'Sales Order Details' UNION ALL
 		SELECT N'Data_School', N'Naziv škole', N'School' UNION ALL
+		SELECT N'Data_SearchFilter', N'Filter za pretragu', N'Search Filter' UNION ALL
 		SELECT N'Data_ShipFrom', N'Dostavljeno od', N'Ship From' UNION ALL
 		SELECT N'Data_ShipmentDate', N'Datum pošiljke', N'Shipment Date' UNION ALL
 		SELECT N'Data_ShipmentNumber', N'Pošiljka #', N'Shipment #' UNION ALL
@@ -382,8 +387,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_CancelOrder', N'Otkaži narudžbu', N'Cancel Order' UNION ALL
 		SELECT N'Link_Create', N'Kreiraj {0}', N'Create {0}' UNION ALL
 		SELECT N'Link_CreateNewBOM', N'Stvori novi BOM', N'Create a new BOM' UNION ALL
+		SELECT N'Link_CreateNewCompany', N'Kreiraj novu tvrtku', N'Create a new company' UNION ALL
 		SELECT N'Link_CreateNewCustomer', N'Kreiraj novog kupca', N'Create a new customer' UNION ALL
 		SELECT N'Link_CreateNewLead', N'Kreiraj novog Potencijalnog klijenta', N'Create a new lead' UNION ALL
+		SELECT N'Link_CreateNewProject', N'Kreiraj novi projekt', N'Create a new Project' UNION ALL
 		SELECT N'Link_CreateNewSupplier', N'Kreiraj novog dobavljača', N'Create a new supplier' UNION ALL
 		SELECT N'Link_CreateShipment', N'Kreiraj pošiljku', N'Create Shipment' UNION ALL
 		SELECT N'Link_Deactivate', N'Deaktiviraj', N'Deactivate' UNION ALL

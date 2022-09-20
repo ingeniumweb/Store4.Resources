@@ -118,6 +118,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Education', N'Obrazovanje', N'Education' UNION ALL
 		SELECT N'ContentType_EmailCampaign', N'Email kampanje', N'Email Campaign' UNION ALL
 		SELECT N'ContentType_Event', N'Događaj', N'Event' UNION ALL
+		SELECT N'ContentType_Experience', N'Iskustvo', N'Experience' UNION ALL
 		SELECT N'ContentType_Field', N'Polje', N'Field' UNION ALL
 		SELECT N'ContentType_Form', N'Forma', N'Form' UNION ALL
 		SELECT N'ContentType_FormEntry', N'Zapis forme', N'Form Entry' UNION ALL
@@ -136,7 +137,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Organization', N'Organizacija', N'Organization' UNION ALL
 		SELECT N'ContentType_Portfolio', N'Referenca', N'Portfolio' UNION ALL
 		SELECT N'ContentType_Portfolios', N'Reference', N'Portfolios' UNION ALL
+		SELECT N'ContentType_ProjectRate', N'Satnica', N'Project Rate' UNION ALL
 		SELECT N'ContentType_ProjectSkill', N'Iskustvo', N'Project Skill' UNION ALL
+		SELECT N'ContentType_ProjectStatus', N'Status projekta', N'Project Status' UNION ALL
+		SELECT N'ContentType_ProjectTaskStatus', N'Status projektnog zadatka', N'Project Task Status' UNION ALL
 		SELECT N'ContentType_Role', N'Uloga', N'Role' UNION ALL
 		SELECT N'ContentType_Task', N'Zadatak', N'Task' UNION ALL
 		SELECT N'ContentType_Template', N'Šablon', N'Template' UNION ALL
