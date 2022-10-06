@@ -60,6 +60,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BuyPrice', N'Nabavna vrednost proizvoda', N'Buy Price' UNION ALL
 		SELECT N'Data_ChangeSubscriptionPlanTitle', N'Promjenite plan', N'Change your subscription plan' UNION ALL
 		SELECT N'Data_ClaimLimit', N'Ograničenje', N'Claim Limit' UNION ALL
+		SELECT N'Data_Client', N'Klijent', N'Client' UNION ALL
 		SELECT N'Data_CloneDocument', N'Napravi kopiju', N'Clone Document' UNION ALL
 		SELECT N'Data_CloneProduct', N'Napravi kopiju', N'Clone Product' UNION ALL
 		SELECT N'Data_Code', N'Kod', N'Code' UNION ALL
@@ -72,6 +73,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Component', N'Komponenta', N'Component' UNION ALL
 		SELECT N'Data_Consumed', N'Konzumirano', N'Consumed' UNION ALL
 		SELECT N'Data_CostOfMaterials', N'Troškovi materijala', N'Cost of Materials' UNION ALL
+		SELECT N'Data_Contractor', N'Izvođač', N'Contractor' UNION ALL
 		SELECT N'Data_Contracts', N'Ugovori', N'Contracts' UNION ALL
 		SELECT N'Data_Contract_Number', N'Broj ugovora', N'Contract Number' UNION ALL
 		SELECT N'Data_ContractPreference', N'Vrsta ugovora', N'Contract Preference' UNION ALL
@@ -281,6 +283,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ViewAll', N'Pogledaj sve', N'View All' UNION ALL
 		SELECT N'Data_Warehouse', N'Skladište', N'Warehouse' UNION ALL
 		SELECT N'Data_WarehouseEntrance', N'Ulaz u skladište', N'Warehouse Entrance' UNION ALL
+		SELECT N'Data_WeeklyTimeRequirement', N'Tjedni vremenski zahtev', N'Weekly Time Requirement' UNION ALL
 		SELECT N'Data_WholesalePrice', N'Veleprodajna cena', N'Wholesale Price' UNION ALL
 		SELECT N'Data_WorkCenterType', N'Tip radnog centra', N'Work Center Type' UNION ALL
 		SELECT N'Date_StoreUrl', N'URL prodavnice', N'Store Url' UNION ALL
@@ -387,6 +390,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_CancelOrder', N'Otkaži narudžbu', N'Cancel Order' UNION ALL
 		SELECT N'Link_Create', N'Kreiraj {0}', N'Create {0}' UNION ALL
 		SELECT N'Link_CreateNewBOM', N'Stvori novi BOM', N'Create a new BOM' UNION ALL
+		SELECT N'Link_CreateNewClient', N'Kreiraj novog klijenta', N'Create a new Client' UNION ALL
+		SELECT N'Link_CreateNewContractor', N'Kreiraj novog izvođača', N'Create a new Contractor' UNION ALL
 		SELECT N'Link_CreateNewCompany', N'Kreiraj novu tvrtku', N'Create a new company' UNION ALL
 		SELECT N'Link_CreateNewCustomer', N'Kreiraj novog kupca', N'Create a new customer' UNION ALL
 		SELECT N'Link_CreateNewLead', N'Kreiraj novog Potencijalnog klijenta', N'Create a new lead' UNION ALL
@@ -437,6 +442,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Resetting_document_numbers', N'Resetiraj brojeve dokumenata za novu fiskalnu godinu', N'Resetting Document Numbers at a new Fiscal Year' UNION ALL
 		SELECT N'SiteMenu_BillOfMaterials', N'Popis potrebnih materijala', N'Bill of Materials' UNION ALL
 		SELECT N'SiteMenu_CashSalesOrders', N'Prodaja za gotovinu', N'Cash Sales Orders' UNION ALL
+		SELECT N'SiteMenu_Clients', N'Klijenti', N'Clients' UNION ALL
+		SELECT N'SiteMenu_ClientMenu', N'Korisnik', N'Client Menu' UNION ALL
 		SELECT N'SiteMenu_CompanyLocations', N'Sedišta/lokacije kompanije', N'Company Locations' UNION ALL
 		SELECT N'SiteMenu_CompanyProductsDiscount', N'Rabat za proizvode', N'Company/Products Discount' UNION ALL
 		SELECT N'SiteMenu_Contacts', N'Kontakti', N'Contacts' UNION ALL
@@ -445,12 +452,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_ExpenseOrders', N'Rashodi', N'Expense Orders' UNION ALL
 		SELECT N'SiteMenu_Inventory', N'Inventar', N'Inventory' UNION ALL
 		SELECT N'SiteMenu_Invoices', N'Računi', N'Invoices' UNION ALL
+		SELECT N'SiteMenu_InvoiceLineTypes', N'Vrste računa', N'Invoice Line Types' UNION ALL
 		SELECT N'SiteMenu_Labels', N'Oznake', N'Labels' UNION ALL
 		SELECT N'SiteMenu_ManufacturingOrders', N'Proizvodni nalozi', N'Manufacturing Orders' UNION ALL
 		SELECT N'SiteMenu_Payments', N'Plaćanja', N'Payments' UNION ALL
 		SELECT N'SiteMenu_Production', N'Proizvodnja', N'Production' UNION ALL
 		SELECT N'SiteMenu_Products', N'Proizvodi', N'Products' UNION ALL
 		SELECT N'SiteMenu_ProductionEntryOrders', N'Ulazi iz Proizvodnje', N'Production Entry Orders' UNION ALL
+		SELECT N'SiteMenu_Projects', N'Projekti', N'Projects' UNION ALL
 		SELECT N'SiteMenu_PurchaseOrders', N'Kupovine', N'Purchase Orders' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'Reprezentacije', N'Representation Expenses' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Ponude', N'Quotes' UNION ALL

@@ -59,6 +59,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BuyPrice', N'Buy Price' UNION ALL
 		SELECT N'Data_ChangeSubscriptionPlanTitle', N'Change your subscription plan' UNION ALL
 		SELECT N'Data_ClaimLimit', N'Claim Limit' UNION ALL
+		SELECT N'Data_Client', N'Client' UNION ALL
 		SELECT N'Data_CloneDocument', N'Clone Document' UNION ALL
 		SELECT N'Data_CloneProduct', N'Clone Product' UNION ALL
 		SELECT N'Data_Code', N'Code' UNION ALL
@@ -68,9 +69,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_CompanyCode', N'Company Code' UNION ALL
 		SELECT N'Data_CompanyLogo', N'Company Logo' UNION ALL
 		SELECT N'Data_CompanyName', N'Company Name' UNION ALL
+		SELECT N'Data_CompanyNumber', N'Company Number' UNION ALL
 		SELECT N'Data_Component', N'Component' UNION ALL
 		SELECT N'Data_Consumed', N'Consumed' UNION ALL
 		SELECT N'Data_CostOfMaterials', N'Cost of Materials' UNION ALL
+		SELECT N'Data_Contractor', N'Contractor' UNION ALL
 		SELECT N'Data_Contracts', N'Contracts' UNION ALL
 		SELECT N'Data_Contract_Number', N'Contract Number' UNION ALL
 		SELECT N'Data_ContractPreference', N'Contract Preference' UNION ALL
@@ -280,6 +283,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ViewAll', N'View All' UNION ALL
 		SELECT N'Data_Warehouse', N'Warehouse' UNION ALL
 		SELECT N'Data_WarehouseEntrance', N'Warehouse Entrance' UNION ALL
+		SELECT N'Data_WeeklyTimeRequirement', N'Weekly Time Requirement' UNION ALL
 		SELECT N'Data_WholesalePrice', N'Wholesale Price' UNION ALL
 		SELECT N'Data_WorkCenterType', N'Work Center Type' UNION ALL
 		SELECT N'Date_StoreUrl', N'Store Url' UNION ALL
@@ -384,6 +388,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_CancelOrder', N'Cancel Order' UNION ALL
 		SELECT N'Link_Create', N'Create {0}' UNION ALL
 		SELECT N'Link_CreateNewBOM', N'Create a new BOM' UNION ALL
+		SELECT N'Link_CreateNewClient', N'Create a new Client' UNION ALL
+		SELECT N'Link_CreateNewContractor', N'Create a new Contractor' UNION ALL
 		SELECT N'Link_CreateNewCompany', N'Create a new company' UNION ALL
 		SELECT N'Link_CreateNewCustomer', N'Create a new customer' UNION ALL
 		SELECT N'Link_CreateNewLead', N'Create a new lead' UNION ALL
@@ -434,6 +440,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Resetting_document_numbers', N'Resetting Document Numbers at a new Fiscal Year' UNION ALL
 		SELECT N'SiteMenu_BillOfMaterials', N'Bill of Materials' UNION ALL
 		SELECT N'SiteMenu_CashSalesOrders',  N'Cash Sales Orders' UNION ALL
+		SELECT N'SiteMenu_Clients', N'Clients' UNION ALL
+		SELECT N'SiteMenu_ClientMenu', N'Client Menu' UNION ALL
 		SELECT N'SiteMenu_CompanyLocations', N'Company Locations' UNION ALL
 		SELECT N'SiteMenu_CompanyProductsDiscount', N'Company/Products Discount' UNION ALL
 		SELECT N'SiteMenu_Contacts', N'Contacts' UNION ALL
@@ -442,12 +450,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_ExpenseOrders', N'Expense Orders' UNION ALL
 		SELECT N'SiteMenu_Inventory', N'Inventory' UNION ALL
 		SELECT N'SiteMenu_Invoices', N'Invoices' UNION ALL
+		SELECT N'SiteMenu_InvoiceLineTypes', N'Invoice Line Types' UNION ALL
 		SELECT N'SiteMenu_Labels', N'Labels' UNION ALL
 		SELECT N'SiteMenu_ManufacturingOrders', N'Manufacturing Orders' UNION ALL
 		SELECT N'SiteMenu_Payments', N'Payments' UNION ALL
 		SELECT N'SiteMenu_Production', N'Production' UNION ALL
 		SELECT N'SiteMenu_Products', N'Products' UNION ALL
 		SELECT N'SiteMenu_ProductionEntryOrders', N'Production Entry Orders' UNION ALL
+		SELECT N'SiteMenu_Projects', N'Projects' UNION ALL
 		SELECT N'SiteMenu_PurchaseOrders', N'Purchase Orders' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'Representation Expenses' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Quotes' UNION ALL

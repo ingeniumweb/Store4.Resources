@@ -29,6 +29,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_CashSalesOrders', N'Cash Sales Orders' UNION ALL
 		SELECT N'SiteMenu_Categories', N'Categories' UNION ALL
 		SELECT N'SiteMenu_Cities', N'Cities' UNION ALL
+		SELECT N'SiteMenu_ClientMenu', N'Client Menu' UNION ALL
 		SELECT N'SiteMenu_Comments', N'Comments' UNION ALL
 		SELECT N'SiteMenu_Companies', N'Companies' UNION ALL
 		SELECT N'SiteMenu_CompanyLocations', N'Company Locations' UNION ALL
@@ -43,6 +44,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Contracts_Title', N'Contracts' UNION ALL
 		SELECT N'SiteMenu_CountyStateProvinces', N'County/State/Provinces' UNION ALL
 		SELECT N'SiteMenu_CRM', N'CRM' UNION ALL
+		SELECT N'SiteMenu_Clients', N'Clients' UNION ALL
 		SELECT N'SiteMenu_Customers', N'Customers' UNION ALL
 		SELECT N'SiteMenu_Dashboard', N'Dashboard' UNION ALL
 		SELECT N'SiteMenu_Deliverables', N'Deliverables' UNION ALL
@@ -72,6 +74,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Industries', N'Industries' UNION ALL
 		SELECT N'SiteMenu_Inventory', N'Inventory' UNION ALL
 		SELECT N'SiteMenu_Invoices', N'Invoices' UNION ALL
+		SELECT N'SiteMenu_InvoiceLineTypes', N'Invoice Line Types' UNION ALL
 		SELECT N'SiteMenu_IPBlockList', N'IP Block List' UNION ALL
 		SELECT N'SiteMenu_IPRestrictions', N'IPRestrictions' UNION ALL
 		SELECT N'SiteMenu_Jobs', N'Jobs' UNION ALL
@@ -106,6 +109,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_ProductionEntryOrders', N'Production Entry Orders' UNION ALL
 		SELECT N'SiteMenu_Products', N'Products' UNION ALL
 		SELECT N'SiteMenu_Profile', N'Profile' UNION ALL
+		SELECT N'SiteMenu_Projects', N'Projects' UNION ALL
 		SELECT N'SiteMenu_PurchaseOrders', N'Purchase Orders' UNION ALL
 		SELECT N'SiteMenu_Qualifications', N'Qualifications' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Quotes' UNION ALL
