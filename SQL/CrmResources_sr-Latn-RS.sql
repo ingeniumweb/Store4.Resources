@@ -32,6 +32,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Customer', N'Kupac', N'Customer' UNION ALL
 		SELECT N'ContentType_Document', N'Dokument', N'Document' UNION ALL
 		SELECT N'ContentType_Employee', N'Zaposleni', N'Employee' UNION ALL
+		SELECT N'ContentType_Industry', N'Industrija', N'Industry' UNION ALL
 		SELECT N'ContentType_Location', N'Lokacija', N'Location' UNION ALL 
 		SELECT N'ContentType_Product', N'Proizvod', N'Product' UNION ALL
 		SELECT N'ContentType_Store', N'Prodavnica', N'Store' UNION ALL
@@ -70,6 +71,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_CompanyCode', N'Šifra', N'Company Code' UNION ALL
 		SELECT N'Data_CompanyLogo', N'Logo kompanije', N'Company Logo' UNION ALL
 		SELECT N'Data_CompanyName', N'Naziv kompanije', N'Company Name' UNION ALL
+		SELECT N'Data_CompanyNumber', N'Broj kompanije', N'Company Number' UNION ALL
 		SELECT N'Data_Component', N'Komponenta', N'Component' UNION ALL
 		SELECT N'Data_Consumed', N'Konzumirano', N'Consumed' UNION ALL
 		SELECT N'Data_CostOfMaterials', N'Troškovi materijala', N'Cost of Materials' UNION ALL
@@ -315,6 +317,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Documents_CashSalesOrders', N'Prodaja za gotovinu', N'Cash Sales Orders' UNION ALL
 		SELECT N'Documents_ExpenseOrders', N'Rashodi', N'Expense Orders' UNION ALL
 		SELECT N'DocumentType_ForDelivery', N'Za Isporuku', N'ForDelivery' UNION ALL
+		SELECT N'DocumentType_TimeSheets', N'Vremenske tablice', N'TimeSheets' UNION ALL
 		SELECT N'Documents_Invoices', N'Računi', N'Invoices' UNION ALL
 		SELECT N'Documents_Orders', N'Narudžbe', N'Sales Orders' UNION ALL
 		SELECT N'Documents_Procurement', N'Nabavke', N'Procurements' UNION ALL
@@ -447,6 +450,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_CompanyLocations', N'Sedišta/lokacije kompanije', N'Company Locations' UNION ALL
 		SELECT N'SiteMenu_CompanyProductsDiscount', N'Rabat za proizvode', N'Company/Products Discount' UNION ALL
 		SELECT N'SiteMenu_Contacts', N'Kontakti', N'Contacts' UNION ALL
+		SELECT N'SiteMenu_Contractors', N'Izvođači', N'Contractors' UNION ALL
 		SELECT N'SiteMenu_Customers', N'Klijenti', N'Customers' UNION ALL
 		SELECT N'SiteMenu_Employees', N'Zaposleni', N'Employees' UNION ALL
 		SELECT N'SiteMenu_ExpenseOrders', N'Rashodi', N'Expense Orders' UNION ALL
@@ -459,7 +463,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Production', N'Proizvodnja', N'Production' UNION ALL
 		SELECT N'SiteMenu_Products', N'Proizvodi', N'Products' UNION ALL
 		SELECT N'SiteMenu_ProductionEntryOrders', N'Ulazi iz Proizvodnje', N'Production Entry Orders' UNION ALL
-		SELECT N'SiteMenu_Projects', N'Projekti', N'Projects' UNION ALL
+		SELECT N'SiteMenu_Projects', N'Projektni ugovori', N'Projects' UNION ALL
+		SELECT N'SiteMenu_ProjectContracts', N'Projekti', N'Project Contracts' UNION ALL
 		SELECT N'SiteMenu_PurchaseOrders', N'Kupovine', N'Purchase Orders' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'Reprezentacije', N'Representation Expenses' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Ponude', N'Quotes' UNION ALL

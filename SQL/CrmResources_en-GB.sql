@@ -31,6 +31,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ContentType_Customer', N'Customer' UNION ALL
 		SELECT N'ContentType_Document', N'Document' UNION ALL
 		SELECT N'ContentType_Employee', N'Employee' UNION ALL
+		SELECT N'ContentType_Industry', N'Industry' UNION ALL
 		SELECT N'ContentType_Location', N'Location' UNION ALL
 		SELECT N'ContentType_Product', N'Product' UNION ALL
 		SELECT N'ContentType_Store', N'Store' UNION ALL
@@ -323,6 +324,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Documents_RepresentationExpenses', N'Representation Expenses' UNION ALL
 		SELECT N'Documents_Shipments', N'Shipments' UNION ALL
 		SELECT N'Documents_Subscriptions', N'Subscriptions' UNION ALL
+		SELECT N'DocumentType_TimeSheets',N'TimeSheets' UNION ALL
 		SELECT N'Documents_TransferOrders',  N'Transfer Orders' UNION ALL
 		SELECT N'DocumentType_BOM', N'Bill of Material' UNION ALL
 		SELECT N'DocumentType_CashSalesOrder', N'Cash Sales Order' UNION ALL
@@ -445,6 +447,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_CompanyLocations', N'Company Locations' UNION ALL
 		SELECT N'SiteMenu_CompanyProductsDiscount', N'Company/Products Discount' UNION ALL
 		SELECT N'SiteMenu_Contacts', N'Contacts' UNION ALL
+		SELECT N'SiteMenu_Contractors', N'Contractors' UNION ALL
 		SELECT N'SiteMenu_Customers', N'Customers' UNION ALL
 		SELECT N'SiteMenu_Employees', N'Employees' UNION ALL
 		SELECT N'SiteMenu_ExpenseOrders', N'Expense Orders' UNION ALL
@@ -457,6 +460,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Production', N'Production' UNION ALL
 		SELECT N'SiteMenu_Products', N'Products' UNION ALL
 		SELECT N'SiteMenu_ProductionEntryOrders', N'Production Entry Orders' UNION ALL
+		SELECT N'SiteMenu_Projects', N'Projects' UNION ALL
 		SELECT N'SiteMenu_Projects', N'Projects' UNION ALL
 		SELECT N'SiteMenu_PurchaseOrders', N'Purchase Orders' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'Representation Expenses' UNION ALL

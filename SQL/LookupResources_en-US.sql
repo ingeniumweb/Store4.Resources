@@ -255,6 +255,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ProductSubscriptionType_Basic', N'Basic' UNION ALL
 		SELECT N'ProductSubscriptionType_Enterprise', N'Enterprise' UNION ALL
 		SELECT N'ProductSubscriptionType_Premium', N'Premium' UNION ALL
+		SELECT N'ProjectStatus_Active', N'Active' UNION ALL
+		SELECT N'ProjectStatus_Completed', N'Completed' UNION ALL
+		SELECT N'ProjectStatus_InProgress', N'In Progress' UNION ALL
+		SELECT N'ProjectStatus_InReview', N'In Review' UNION ALL
+		SELECT N'ProjectStatus_Paused', N'Paused' UNION ALL
+		SELECT N'ProjectStatus_Planned', N'Planned' UNION ALL
 		SELECT N'RenewalPeriod_Days', N'Day(s)' UNION ALL
 		SELECT N'RenewalPeriod_Weeks', N'Week(s)' UNION ALL
 		SELECT N'RenewalPeriod_Months', N'Month(s)' UNION ALL
