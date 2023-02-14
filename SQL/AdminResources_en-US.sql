@@ -413,6 +413,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Email_Compse_Title', N'Compose Message' UNION ALL
 		SELECT N'EmailStatus_Read', N'Read' UNION ALL
 		SELECT N'EmailStatus_Unread', N'Unread' UNION ALL
+		SELECT N'Email_Compse_Placeholder_Seperate', N'Separate multiple email addresses with a comma (,)' UNION ALL
 		SELECT N'Enable_ShippingCheckout', N'Enable shipping on checkout' UNION ALL
 		SELECT N'Errors_403_Description', N'You are not authorized to access this page.' UNION ALL
 		SELECT N'Errors_403_Headline', N'Access denied' UNION ALL

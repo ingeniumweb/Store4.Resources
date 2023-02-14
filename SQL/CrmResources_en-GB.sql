@@ -20,9 +20,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'AvatarPanel_Button_UploadLogo', N'Upload Logo' UNION ALL
 		SELECT N'Button_AddToInventory', N'Add to Inventory' UNION ALL
 		SELECT N'Button_BuySubscription', N'Buy Subscription' UNION ALL
+		SELECT N'Button_IncludePDFAttachment', N'Include PDF attachment' UNION ALL
+		SELECT N'Button_MarkAsSent', N'Mark as sent' UNION ALL
 		SELECT N'Button_SaveOrder', N'Save Order' UNION ALL
 		SELECT N'Button_SaveQuote', N'Save Quote' UNION ALL
 		SELECT N'Button_SelectOption', N'Select Option' UNION ALL
+		SELECT N'Button_SendMeACopy', N'Send me a copy' UNION ALL
 		SELECT N'Cancel_Title', N'Canceled' UNION ALL
 		SELECT N'Category_Message_LevelForbidden', N'Can not add child category at this level!' UNION ALL
 		SELECT N'Company_Message_AlredySelectedDiscunt', N'There is already a discount for the selected product!' UNION ALL
@@ -348,6 +351,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_SalesOrder', N'Sales Order' UNION ALL
 		SELECT N'DocumentType_Shipment', N'Shipment' UNION ALL
 		SELECT N'DocumentType_Subscription', N'Subscription' UNION ALL
+		SELECT N'DocumentType_TimeSheets', N'TimeSheets' UNION ALL
 		SELECT N'DocumentType_TransferOrder', N'Transfer Order' UNION ALL
 		SELECT N'DocumentReport_LatestDocuments', N'Latest Documents' UNION ALL
 		SELECT N'DocumentReport_LatestCustomers', N'Latest Customers' UNION ALL
@@ -361,6 +365,19 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DropDown_Default_CustomerAddress', N'Default Customer Address' UNION ALL
 		SELECT N'DropDown_TaxExclusive', N'Tax Exclusive' UNION ALL
 		SELECT N'DropDown_TaxInclusive', N'Tax Inclusive' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Title', N'Repeating Invoice: Basic' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Subject', N'Invoice [Invoice Number] from [Trading Name]' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Body', N'Dear [Contact First Name],
+
+Please find attached our invoice ref. [Invoice Number] for [Currency Code] [Invoice Total Without Currency].
+
+The amount outstanding of [Currency Code] [Amount Due Without Currency] is due on [Due Date].
+
+If you have any questions, please let us know.
+
+Thanks,
+Accounts Dept.
+[Trading Name].' UNION ALL
 		SELECT N'EnablePayPalCheckout', N'Enable PayPal Checkout' UNION ALL
 		SELECT N'Error_ErrorDescription', N'A problem has occurred during the payment process. Please try again.<br />If this error continues, please contact support.' UNION ALL
 		SELECT N'Error_ImportProcess', N'An error has occurred during the data import process' UNION ALL		
@@ -461,7 +478,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Products', N'Products' UNION ALL
 		SELECT N'SiteMenu_ProductionEntryOrders', N'Production Entry Orders' UNION ALL
 		SELECT N'SiteMenu_Projects', N'Projects' UNION ALL
-		SELECT N'SiteMenu_Projects', N'Projects' UNION ALL
+		SELECT N'SiteMenu_ProjectContracts', N'Project Contracts' UNION ALL
 		SELECT N'SiteMenu_PurchaseOrders', N'Purchase Orders' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'Representation Expenses' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Quotes' UNION ALL

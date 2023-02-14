@@ -20,9 +20,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'AvatarPanel_Button_UploadLogo', N'Upload Logo' UNION ALL
 		SELECT N'Button_AddToInventory', N'Add to Inventory' UNION ALL
 		SELECT N'Button_BuySubscription', N'Buy Subscription' UNION ALL
+		SELECT N'Button_IncludePDFAttachment', N'Include PDF attachment' UNION ALL
+		SELECT N'Button_MarkAsSent', N'Mark as sent' UNION ALL
 		SELECT N'Button_SaveOrder', N'Save Order' UNION ALL
 		SELECT N'Button_SaveQuote', N'Save Quote' UNION ALL
 		SELECT N'Button_SelectOption', N'Select Option' UNION ALL
+		SELECT N'Button_SendMeACopy', N'Send me a copy' UNION ALL
 		SELECT N'Cancel_Title', N'Canceled' UNION ALL
 		SELECT N'Category_Message_LevelForbidden', N'Can not add child category at this level!' UNION ALL
 		SELECT N'Company_Message_AlredySelectedDiscunt', N'There is already a discount for the selected product!' UNION ALL
@@ -324,6 +327,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Documents_RepresentationExpenses', N'Representation Expenses' UNION ALL
 		SELECT N'Documents_Shipments', N'Shipments' UNION ALL
 		SELECT N'Documents_Subscriptions', N'Subscriptions' UNION ALL
+		SELECT N'DocumentType_TimeSheets',N'TimeSheets' UNION ALL
 		SELECT N'Documents_TransferOrders',  N'Transfer Orders' UNION ALL
 		SELECT N'DocumentType_BOM', N'Bill of Material' UNION ALL
 		SELECT N'DocumentType_CashSalesOrder', N'Cash Sales Order' UNION ALL
@@ -340,7 +344,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_ProductionOrder', N'Production Order' UNION ALL
 		SELECT N'DocumentType_PurchaseOrder', N'Purchase Order' UNION ALL
 		SELECT N'DocumentType_RepeatingInvoice', N'Repeating Invoice' UNION ALL
-		SELECT N'DocumentType_RepeatingInvoices', N'Repeating Invoices' UNION ALL
+		SELECT N'DocumentType_RecurringInvoices', N'Repeating Invoices' UNION ALL
 		SELECT N'DocumentType_Quote', N'Quote' UNION ALL
 		SELECT N'DocumentType_RepresentationExpense',  N'Representation Expense' UNION ALL
 		SELECT N'Document_Route', N'Route' UNION ALL
@@ -361,6 +365,24 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DropDown_Default_CustomerAddress', N'Default Customer Address' UNION ALL
 		SELECT N'DropDown_TaxExclusive', N'Tax Exclusive' UNION ALL
 		SELECT N'DropDown_TaxInclusive', N'Tax Inclusive' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_Title', N'Message Settings' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfo', N'You can include certain core info in your emails with easy placeholders. The placeholders available for this email are: [Amount Due], [Current Month], [Due Date], [Invoice Number], [Invoice Total], [Online Invoice Link], [Reference], [Week], [Interval], [Invoice Total Without Currency], [Amount Due Without Currency], [Auto Pay Information], [Month], [Year], [Month Year], [Week Year], [Contact Name], [Contact First Name], [Contact Last Name], [Currency Symbol], [Currency Code], [Trading Name].
+<a href={0}>Learn more on placeholders and email templates<a>' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfoLink_Show', N'Show placeholder info' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfoLink_Hide', N'Hide placeholder info' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Title', N'Repeating Invoice: Basic' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Subject', N'Invoice [Invoice Number] from [Trading Name]' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Body', N'Dear [Contact First Name],
+
+Please find attached our invoice ref. [Invoice Number] for [Currency Code] [Invoice Total Without Currency].
+
+The amount outstanding of [Currency Code] [Amount Due Without Currency] is due on [Due Date].
+
+If you have any questions, please let us know.
+
+Thanks,
+Accounts Dept.
+[Trading Name].' UNION ALL
 		SELECT N'EnablePayPalCheckout', N'Enable PayPal Checkout' UNION ALL
 		SELECT N'Error_ErrorDescription', N'A problem has occurred during the payment process. Please try again.<br />If this error continues, please contact support.' UNION ALL
 		SELECT N'Error_ImportProcess', N'An error has occurred during the data import process' UNION ALL		
