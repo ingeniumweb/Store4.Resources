@@ -136,6 +136,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_InvoiceDetails', N'Invoice Details' UNION ALL
 		SELECT N'Data_InvoiceLink', N'Invoice Link' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Invoice #' UNION ALL
+		SELECT N'Data_InvoiceUntil', N'Invoice Until' UNION ALL
 		SELECT N'Data_IR35Payroll', N'IR35 & Payroll' UNION ALL
 		SELECT N'Data_IsHeadquarter', N'Is Headquarter' UNION ALL
 		SELECT N'Data_IsProcured', N'Is Procured' UNION ALL
@@ -151,8 +152,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ManufacturingNumber', N'Manufacturing Order#' UNION ALL
 		SELECT N'Data_MaterialCost', N'Material Cost' UNION ALL
 		SELECT N'Data_Materials', N'Materials' UNION ALL
+		SELECT N'Data_MediaInfo', N'Media Info' UNION ALL
 		SELECT N'Data_Member', N'Member' UNION ALL
 		SELECT N'Data_MonthMember', N'month per team member' UNION ALL
+		SELECT N'Data_NextInvoice', N'Next Invoice' UNION ALL
 		SELECT N'Data_NextInvoiceDate', N'Next Invoice Date' UNION ALL
 		SELECT N'Data_Notice', N'Notice' UNION ALL
 		SELECT N'Data_NumberOfContractors', N'Number Of Contractors' UNION ALL
@@ -204,6 +207,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Projectspend', N'Project Spend' UNION ALL
 		SELECT N'Data_PurchaseOrderNumber', N'Purchase Order #' UNION ALL
 		SELECT N'Data_Released', N'Released' UNION ALL
+		SELECT N'Data_RepeatEvery', N'Repeat every' UNION ALL
 		SELECT N'Data_RepeaThisTransactionEvery', N'Repeat this transaction every' UNION ALL
 		SELECT N'Data_Unavailable', N'Data Unavailable' UNION ALL
 		SELECT N'Data_Qualification', N'Qualification' UNION ALL

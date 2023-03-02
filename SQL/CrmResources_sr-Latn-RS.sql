@@ -133,6 +133,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_InvoiceDetails', N'Detalji računa', N'Invoice Details' UNION ALL
 		SELECT N'Data_InvoiceLink', N'Link dokumenta', N'Invoice Link' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Račun #', N'Invoice #' UNION ALL
+		SELECT N'Data_InvoiceUntil', N'Račun do', N'Invoice Until' UNION ALL
 		SELECT N'Data_IR35Payroll', N'IR35 i obračun', N'IR35 & Payroll' UNION ALL
 		SELECT N'Data_IsHeadquarter', N'Označi kao sedište', N'Is Headquarter' UNION ALL
 		SELECT N'Data_IsProcured', N'Proizvodni materijal', N'Is Procured' UNION ALL
@@ -148,8 +149,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ManufacturingNumber', N'Broj Narudžbe #', N'Manufacturing Order#' UNION ALL
 		SELECT N'Data_MaterialCost', N'Cena materijala', N'Material Cost' UNION ALL
 		SELECT N'Data_Materials', N'Materijali', N'Materials' UNION ALL
+		SELECT N'Data_MediaInfo', N'Podaci', N'Media Info' UNION ALL
 		SELECT N'Data_Member', N'Korisnik', N'Member' UNION ALL
 		SELECT N'Data_MonthMember', N'mesečno po korisniku', N'month per team member' UNION ALL
+		SELECT N'Data_NextInvoice',  N'Sledeći račun', N'Next Invoice' UNION ALL
 		SELECT N'Data_NextInvoiceDate',  N'Sledeći datum računa', N'Next Invoice Date' UNION ALL
 		SELECT N'Data_Notice', N'Napomena', N'Notice' UNION ALL
 		SELECT N'Data_NumberOfContractors', N'Broj izvođača', N'Number Of Contractors' UNION ALL
@@ -201,6 +204,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Projectspend', N'Ukupno potrošeno', N'Project Spend' UNION ALL
 		SELECT N'Data_PurchaseOrderNumber', N'Broj kupovine #', N'Purchase Order #' UNION ALL
 		SELECT N'Data_Released', N'Razduženo', N'Released' UNION ALL
+		SELECT N'Data_RepeatEvery', N'Ponavljaj svakih', N'Repeat every' UNION ALL
 		SELECT N'Data_RepeaThisTransactionEvery', N'Ponavljaj transakciju svakih', N'Repeat this transaction every' UNION ALL
 		SELECT N'Data_Unavailable', N'Nedostupno', N'Data Unavailable' UNION ALL
 		SELECT N'Data_Qualification', N'Naziv kvalifikacije', N'Qualification' UNION ALL

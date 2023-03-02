@@ -164,6 +164,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Area', N'Područje', N'Area' UNION ALL
 		SELECT N'Data_AreaCode', N'Poštanski broj', N'Area Code' UNION ALL
 		SELECT N'Data_AssignedMember', N'Dodeljeni korisnik', N'Assigned Member' UNION ALL
+		SELECT N'Data_AuhtorityScore', N'Ocena autoriteta', N'Auhtority Score' UNION ALL
 		SELECT N'Data_BackgroundColor', N'Pozadinska boja', N'Background Color' UNION ALL
 		SELECT N'Data_Bank', N'Banka', N'Bank' UNION ALL
 		SELECT N'Data_BankAddress', N'Adresa banke', N'Bank address' UNION ALL
@@ -174,8 +175,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_CampaignStartDate', N'Početak kampanje.', N'Campaign Start Date' UNION ALL
 		SELECT N'Data_CampaignStartDate_Required', N'Molimo odaberite početni datum kampanje.', N'Please select campaign start date.' UNION ALL
 		SELECT N'Data_Capital', N'Kapital', N'Capital' UNION ALL
+		SELECT N'Data_CasinoContent', N'Casino', N'Casino Content' UNION ALL
 		SELECT N'Data_Categories', N'Kategorije', N'Categories' UNION ALL
 		SELECT N'Data_Category', N'Kategorija', N'Category' UNION ALL
+		SELECT N'Data_CBDContent', N'CBD', N'CBD Content' UNION ALL
 		SELECT N'Data_City', N'Grad', N'City' UNION ALL
 		SELECT N'Data_Client', N'Klijent', N'Client' UNION ALL
 		SELECT N'Data_Code', N'Kod', N'Code' UNION ALL
@@ -195,10 +198,16 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Created', N'Kreirano', N'Created' UNION ALL
 		SELECT N'Data_CssClass', N'CSS klasa', N'CSS Class' UNION ALL
 		SELECT N'Data_DailyEmailLimit', N'Dnevno ograničenje email-ova', N'Daily Email Limit' UNION ALL
+		SELECT N'Data_DatingContent', N'Upoznavanje', N'Dating Content' UNION ALL
 		SELECT N'Data_Description', N'Opis', N'Description' UNION ALL
 		SELECT N'Data_Discount', N'Rabat na dokument', N'Discount' UNION ALL
 		SELECT N'Data_DisplayName', N'Ime', N'Display Name' UNION ALL
 		SELECT N'Data_Domain', N'Domen', N'Domain' UNION ALL
+		SELECT N'Data_DomainAuthority', N'Autoritet domene', N'Domain Authority' UNION ALL
+		SELECT N'Data_DomainCountry', N'Država domene', N'Domain Country' UNION ALL
+		SELECT N'Data_DomainIP', N'IP domene', N'Domain IP' UNION ALL
+		SELECT N'Data_DomainLanguage', N'Jezik domene', N'Domain Language' UNION ALL
+		SELECT N'Data_DomainRating', N'Ocena domene', N'Domain Rating' UNION ALL
 		SELECT N'Data_Drafts', N'Nacrti', N'Drafts' UNION ALL
 		SELECT N'Data_Email', N'Email', N'Email' UNION ALL
 		SELECT N'Data_Email_Invalid', N'Format email-a je nevažeć.', N'Email format is invalid.' UNION ALL
@@ -206,6 +215,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Entry', N'Zapis', N'Entry' UNION ALL
 		SELECT N'Data_Encrypted', N'Enkriptovano', N'Encrypted' UNION ALL
 		SELECT N'Data_EndTime', N'Krajnji datum', N'End Time' UNION ALL
+		SELECT N'Data_EroticContent', N'Erotika', N'Erotic Content' UNION ALL
 		SELECT N'Data_EventDate', N'Datum događaja', N'Event Date' UNION ALL
 		SELECT N'Data_EventEndDate', N'Krajnji datum', N'End Date' UNION ALL
 		SELECT N'Data_EventLocation', N'Lokacija', N'Location' UNION ALL
@@ -258,6 +268,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Latitude', N'Širina', N'Latitude' UNION ALL
 		SELECT N'Data_LicenceExpire', N'Vaša licenca će uskoro isteći', N'Your Licence is about to expire' UNION ALL
 		SELECT N'Data_LinkUrl', N'URL link', N'Link Url' UNION ALL
+		SELECT N'Data_LoanContent', N'Pozajmice', N'Loan Content' UNION ALL
 		SELECT N'Data_Longitude', N'Dužina', N'Longitude' UNION ALL
 		SELECT N'Data_Lookup', N'Šifrarnik', N'Lookup' UNION ALL
 		SELECT N'Data_LookupGroup_Empty', N'Lista grupa šifrarnika je trenutno prazna. Molim kliknite na {0} dugme kako bi kreirali novu grupu šifrarnika.', N'The list of lookups is empty for now. Please click on {0} button to create a new lookup group.' UNION ALL
@@ -285,6 +296,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_NumberOfFiles', N'Broj datoteka', N'Number Of Files' UNION ALL
 		SELECT N'Data_NumCode', N'Num. Kod', N'Num Code' UNION ALL
 		SELECT N'Data_OperatingStatus', N'Radni status', N'Operating Status' UNION ALL
+		SELECT N'Data_OrganicTraffic', N'Organski promet', N'Organic Traffic' UNION ALL
 		SELECT N'Data_OrdersNumber', N'Unesite broj narudžbi', N'Enter Number of Orders' UNION ALL
 		SELECT N'Data_OutgoingMailServer', N'Odlazni Mail server', N'Outgoing Mail Server' UNION ALL
 		SELECT N'Data_Parent', N'Roditelj', N'Parent' UNION ALL
@@ -311,7 +323,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ProjectUrl', N'URL projekta', N'Project Url' UNION ALL
 		SELECT N'Data_Publish', N'Objavi', N'Publish' UNION ALL
 		SELECT N'Data_Published', N'Objavljeno', N'Published' UNION ALL
+		SELECT N'Data_PurchaseDate', N'Kupljeno', N'Purchase Date' UNION ALL
 		SELECT N'Data_Records', N'Zapisi', N'Records'UNION ALL
+		SELECT N'Data_ReferringDomains', N'Preporučujuće domene', N'Referring Domains' UNION ALL
 		SELECT N'Data_RepeatPassword', N'Ponovite lozinku', N'Repeat Password' UNION ALL
 		SELECT N'Data_RepeatPassword_Mismatch', N'Lozinka ne zadovoljava uslove.', N'Password doesn''t match confirmation.' UNION ALL
 		SELECT N'Data_Resource', N'Resurs', N'Resource' UNION ALL
@@ -341,6 +355,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_SortPossibleValues', N'Sortiraj moguće vrednosti', N'Sort Possible Values' UNION ALL
 		SELECT N'Data_Source', N'Izvor', N'Source' UNION ALL
 		SELECT N'Data_Spam', N'Spam', N'Spam' UNION ALL
+		SELECT N'Data_SpamScore', N'Spam oena', N'Spam Score' UNION ALL
 		SELECT N'Data_StartTime', N'Početni datum', N'Start Time' UNION ALL
 		SELECT N'Data_Street1', N'Ulica 1', N'Street 1' UNION ALL
 		SELECT N'Data_Street2', N'Ulica 2', N'Street 2' UNION ALL

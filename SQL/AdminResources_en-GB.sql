@@ -164,6 +164,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Area', N'Area' UNION ALL
 		SELECT N'Data_AreaCode', N'Area Code' UNION ALL
 		SELECT N'Data_AssignedMember', N'Assigned Member' UNION ALL
+		SELECT N'Data_AuhtorityScore', N'Auhtority Score' UNION ALL
 		SELECT N'Data_BackgroundColor', N'Background Color' UNION ALL
 		SELECT N'Data_Bank', N'Bank' UNION ALL
 		SELECT N'Data_BankAddress', N'Bank address' UNION ALL
@@ -174,8 +175,10 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_CampaignStartDate', N'Campaign Start Date' UNION ALL
 		SELECT N'Data_CampaignStartDate_Required', N'Please select campaign start date.' UNION ALL
 		SELECT N'Data_Capital', N'Capital' UNION ALL
+		SELECT N'Data_CasinoContent', N'Casino Content' UNION ALL
 		SELECT N'Data_Categories', N'Categories' UNION ALL
 		SELECT N'Data_Category', N'Category' UNION ALL
+		SELECT N'Data_CBDContent', N'CBD Content' UNION ALL
 		SELECT N'Data_City', N'City' UNION ALL
 		SELECT N'Data_Client', N'Client' UNION ALL
 		SELECT N'Data_Code', N'Code' UNION ALL
@@ -195,10 +198,16 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Created', N'Created' UNION ALL
 		SELECT N'Data_CssClass', N'CSS Class' UNION ALL
 		SELECT N'Data_DailyEmailLimit', N'Daily Email Limit' UNION ALL
+		SELECT N'Data_DatingContent', N'Dating Content' UNION ALL
 		SELECT N'Data_Description', N'Description' UNION ALL
 		SELECT N'Data_Discount', N'Discount' UNION ALL
 		SELECT N'Data_DisplayName', N'Display Name' UNION ALL
 		SELECT N'Data_Domain', N'Domain' UNION ALL
+		SELECT N'Data_DomainAuthority', N'Domain Authority' UNION ALL
+		SELECT N'Data_DomainCountry', N'Domain Country' UNION ALL
+		SELECT N'Data_DomainIP', N'Domain IP' UNION ALL
+		SELECT N'Data_DomainLanguage', N'Domain Language' UNION ALL
+		SELECT N'Data_DomainRating', N'Domain Rating' UNION ALL
 		SELECT N'Data_Drafts', N'Drafts' UNION ALL
 		SELECT N'Data_Email', N'Email' UNION ALL
 		SELECT N'Data_Email_Invalid', N'Email format is invalid.' UNION ALL
@@ -206,6 +215,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Entry', N'Entry' UNION ALL
 		SELECT N'Data_Encrypted', N'Encrypted' UNION ALL
 		SELECT N'Data_EndTime', N'End Time' UNION ALL
+		SELECT N'Data_EroticContent', N'Erotic Content' UNION ALL
 		SELECT N'Data_EventDate', N'Event Date' UNION ALL
 		SELECT N'Data_EventEndDate', N'End Date' UNION ALL
 		SELECT N'Data_EventLocation', N'Location' UNION ALL
@@ -257,6 +267,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Latitude', N'Latitude' UNION ALL
 		SELECT N'Data_LicenceExpire', N'Your Licence is about to expire' UNION ALL
 		SELECT N'Data_LinkUrl', N'Link Url' UNION ALL
+		SELECT N'Data_LoanContent', N'Loan Content' UNION ALL
 		SELECT N'Data_Longitude', N'Longitude' UNION ALL
 		SELECT N'Data_Lookup', N'Lookup' UNION ALL
 		SELECT N'Data_LookupGroup_Empty', N'The list of lookups is empty for now. Please click on {0} button to create a new lookup group.' UNION ALL
@@ -285,6 +296,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_NumCode', N'Num Code' UNION ALL
 		SELECT N'Data_OperatingStatus', N'Operating Status' UNION ALL
 		SELECT N'Data_OrdersNumber', N'Enter Number of Orders' UNION ALL
+		SELECT N'Data_OrganicTraffic', N'Organic Traffic' UNION ALL
 		SELECT N'Data_OutgoingMailServer', N'Outgoing Mail Server' UNION ALL
 		SELECT N'Data_Parent', N'Parent' UNION ALL
 		SELECT N'Data_Password', N'Password' UNION ALL
@@ -310,7 +322,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ProjectUrl', N'Project Url' UNION ALL
 		SELECT N'Data_Publish', N'Publish' UNION ALL
 		SELECT N'Data_Published', N'Published' UNION ALL
+		SELECT N'Data_PurchaseDate', N'Purchase Date' UNION ALL
 		SELECT N'Data_Records', N'Records' UNION ALL
+		SELECT N'Data_ReferringDomains', N'Referring Domains' UNION ALL
 		SELECT N'Data_RepeatPassword', N'Repeat Password' UNION ALL
 		SELECT N'Data_RepeatPassword_Mismatch', N'Password doesn''t match confirmation.' UNION ALL
 		SELECT N'Data_Resource', N'Resource' UNION ALL
@@ -339,6 +353,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_SortPossibleValues', N'Sort Possible Values' UNION ALL
 		SELECT N'Data_Source', N'Source' UNION ALL
 		SELECT N'Data_Spam', N'Spam' UNION ALL
+		SELECT N'Data_SpamScore', N'Spam Score' UNION ALL
 		SELECT N'Data_StartTime', N'Start Time' UNION ALL
 		SELECT N'Data_Street1', N'Street 1' UNION ALL
 		SELECT N'Data_Street2', N'Street 2' UNION ALL
