@@ -280,6 +280,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TotalTaxAmount', N'Totals Tax Amount' UNION ALL
 		SELECT N'Data_TotalTime', N'Total Time' UNION ALL
 		SELECT N'Data_TotalUnits', N'Total Units' UNION ALL
+		SELECT N'Data_TotalWithoutTax', N'Totals Without Tax' UNION ALL
 		SELECT N'Data_TransferOrderDetails', N'Transfer Order Details' UNION ALL
 		SELECT N'Data_UnitOfMeasurement', N'Unit of Measurement' UNION ALL
 		SELECT N'Data_Unread', N'Unread' UNION ALL

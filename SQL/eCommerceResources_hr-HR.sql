@@ -92,19 +92,23 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Friday', N'Petak', N'Friday' UNION ALL
 		SELECT N'Data_ID', N'ID', N'ID' UNION ALL
 		SELECT N'Data_Image', N'Slika', N'Image' UNION ALL
+		SELECT N'Data_Language', N'Jezik', N'Language' UNION ALL
 		SELECT N'Data_LastName', N'Prezime', N'Last Name' UNION ALL
 		SELECT N'Data_Login', N'Prijavite se', N'Login' UNION ALL
 		SELECT N'Data_MyAccount', N'Moj račun ', N'My Account' UNION ALL
 		SELECT N'Data_Monday', N'Ponedjeljak', N'Monday' UNION ALL
 		SELECT N'Data_Month', N'Mjesec', N'Month' UNION ALL
+		SELECT N'Data_Niches', N'Niše', N'Niches' UNION ALL
 		SELECT N'Data_NotBooked', N'Nije rezerviran', N'Not booked' UNION ALL
 		SELECT N'Data_Orders', N'Narudžbe', N'Orders' UNION ALL
+		SELECT N'Data_OrganicTraffic', N'Organski promet', N'Organic Traffic' UNION ALL
 		SELECT N'Order_Details_Message', N'Detalje vaše narudžbe možete pogledati u nastavku', N'See your order details below' UNION ALL
 		SELECT N'Data_Payment', N'Plaćanje', N'Payment' UNION ALL
 		SELECT N'Data_PeriodEndDate', N'Kraj razdoblja', N'Period end date' UNION ALL
 		SELECT N'Data_PeriodStartDate', N'Početak razdoblja', N'Period start date' UNION ALL
 		SELECT N'Data_Price', N'Cijena', N'Price' UNION ALL
 		SELECT N'Data_PriceAfterDiscount', N'Cijena nakon rabata', N'Price after discount' UNION ALL
+		SELECT N'Data_ReferralDomains', N'Preporučene domene', N'Referral Domains' UNION ALL
 		SELECT N'Data_Repeat', N'Ponovi', N'Repeat' UNION ALL
 		SELECT N'Data_RepeatCustom', N'Custom', N'Custom' UNION ALL
 		SELECT N'Data_RepeatDaily', N'Dnevni', N'Daily' UNION ALL
@@ -122,6 +126,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TotalAfterDiscount', N'Ukupno nakon rabata', N'Total after discount' UNION ALL
 		SELECT N'Data_Tuesday', N'Utorak', N'Tuesday' UNION ALL
 		SELECT N'Data_Wednesday', N'Srijeda', N'Wednesday' UNION ALL
+		SELECT N'Data_WordCount', N'Broj riječi', N'Word Count' UNION ALL
 		SELECT N'Data_Year', N'Godina', N'Year' UNION ALL
 		SELECT N'Data_Your_Order', N'Vaša narudžba', N'Your Order' UNION ALL
 		SELECT N'Data_ZipPostal', N'Poštanski broj', N'Zip/Postal' UNION ALL
@@ -186,6 +191,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Copy_Text', N'Kopiraj link', N'Copy link' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Standardan', N'Default' UNION ALL
 		SELECT N'Manufacturer_Title', N'Proizvođači', N'Manufacturer' UNION ALL
+		SELECT N'Media_Title', N'Medij', N'Media' UNION ALL
 		SELECT N'Member_already_subscribed', N'Već ste preplaćeni na {0}. Ako želite obnoviti preplatu ili imate više pitanja molimo kontaktirajte našu podršku.', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Prijava', N'Sign In' UNION ALL
 		SELECT N'Message_CouponCodeSuccess', N'Kod uspješno primjenjen', N'This coupon code has been successfully applied' UNION ALL
@@ -259,6 +265,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Referral_Members_Rule_Message', N'Bonus od kupovine korisnika koje ste pozvali u Superklub (Superbonus). Može se koristiti nakon što aktivirate virtualni novčanik, svojom kupovinom unutar 365 dana. Niste još obavili kupovinu.', N'You still miss {0} members in the team to be able to use Superbonus. <br /> Minimum number of members = 1' UNION ALL
 		SELECT N'Referral_Purchases_Rule_Message', N'Bonus ostvarujete od kupovine. Do sada niste obavili kupovinu.', N'You get a bonus from buying. So far, you did not make a purchase.' UNION ALL
 		SELECT N'Referrals_Realized_Sales', N'Ostvarenih prodaja', N'Realized sales' UNION ALL
+		SELECT N'Data_RestrictedNiche', N'Ograničena niša', N'Restricted Niche' UNION ALL
 		SELECT N'Reward_points', N'Virtualni novčanik', N'Virtual Wallet' UNION ALL
 		SELECT N'SearchResults_Headline', N'Pronađi sve za vjenčanje u vašem gradu.', N'Find everything for a wedding in your city.' UNION ALL
 		SELECT N'Success_EventDeleted', N'Stavke događaja uspješno obrisane!', N'Event Entries successfully deleted!' UNION ALL

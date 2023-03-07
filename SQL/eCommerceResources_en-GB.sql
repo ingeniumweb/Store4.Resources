@@ -92,18 +92,22 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Friday', N'Friday' UNION ALL
 		SELECT N'Data_ID', N'ID' UNION ALL
 		SELECT N'Data_Image', N'Image' UNION ALL
+		SELECT N'Data_Language', N'Language' UNION ALL
 		SELECT N'Data_LastName', N'Last Name' UNION ALL
 		SELECT N'Data_Login', N'Login' UNION ALL
 		SELECT N'Data_MyAccount', N'My Account' UNION ALL
 		SELECT N'Data_Monday', N'Monday' UNION ALL
 		SELECT N'Data_Month', N'Month' UNION ALL
+		SELECT N'Data_Niches', N'Niches' UNION ALL
 		SELECT N'Data_NotBooked', N'Not booked' UNION ALL
 		SELECT N'Data_Orders', N'Orders' UNION ALL
+		SELECT N'Data_OrganicTraffic', N'Organic Traffic' UNION ALL
 		SELECT N'Data_Payment', N'Payment' UNION ALL
 		SELECT N'Data_PeriodEndDate', N'Period end date' UNION ALL
 		SELECT N'Data_PeriodStartDate', N'Period start date' UNION ALL
 		SELECT N'Data_Price', N'Price' UNION ALL
 		SELECT N'Data_PriceAfterDiscount', N'Price after discount' UNION ALL
+		SELECT N'Data_ReferralDomains', N'Referral Domains' UNION ALL
 		SELECT N'Data_Repeat', N'Repeat' UNION ALL
 		SELECT N'Data_RepeatCustom', N'Custom' UNION ALL
 		SELECT N'Data_RepeatDaily', N'Daily' UNION ALL
@@ -121,6 +125,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TotalAfterDiscount', N'Total after discount' UNION ALL
 		SELECT N'Data_Tuesday', N'Tuesday' UNION ALL
 		SELECT N'Data_Wednesday', N'Wednesday' UNION ALL
+		SELECT N'Data_WordCount', N'Word Count' UNION ALL
 		SELECT N'Data_Year', N'Year' UNION ALL
 		SELECT N'Data_Your_Order', N'Your Order' UNION ALL
 		SELECT N'Data_ZipPostal', N'Zip/Postal' UNION ALL
@@ -189,6 +194,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Link_Copy_Text', N'Copy link' UNION ALL
 		SELECT N'ManagedAccount_Default', N'Default' UNION ALL
 		SELECT N'Manufacturer_Title', N'Manufacturer' UNION ALL
+		SELECT N'Media_Title', N'Media' UNION ALL
 		SELECT N'Member_already_subscribed', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Sign In' UNION ALL
 		SELECT N'Message_CouponCodeSuccess', N'This coupon code has been successfully applied' UNION ALL
@@ -255,6 +261,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Referral_Purchases_Rule_Message', N'You get a bonus from buying. So far, you did not make a purchase.' UNION ALL
 		SELECT N'Registered_Users', N'Registered users' UNION ALL
 		SELECT N'Referrals_Realized_Sales', N'Realized sales' UNION ALL
+		SELECT N'Data_RestrictedNiche', N'Restricted Niche' UNION ALL
 		SELECT N'Reward_points', N'Virtual Wallet' UNION ALL
 		SELECT N'Success_EventDeleted', N'Event Entries successfully deleted!' UNION ALL
 		SELECT N'Success_EventEntrySaved', N'Event entries successfully saved.' UNION ALL

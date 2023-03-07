@@ -278,6 +278,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TotalTaxAmount', N'Ukupno s PDV', N'Totals Tax Amount' UNION ALL
 		SELECT N'Data_TotalTime', N'Ukupno vreme', N'Total Time' UNION ALL
 		SELECT N'Data_TotalUnits', N'Ukupno stavki', N'Total Units' UNION ALL
+		SELECT N'Data_TotalWithoutTax', N'Ukupno bez poreza', N'Totals Without Tax' UNION ALL
 		SELECT N'Data_TransferOrderDetails', N'Detalji prenosne dostavnice', N'Transfer Order Details' UNION ALL
 		SELECT N'Data_Value', N'Vrednost', N'Value' UNION ALL
 		SELECT N'Data_UnitOfMeasurement', N'Jedinica mere', N'Unit of Measurement' UNION ALL
