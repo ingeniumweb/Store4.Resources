@@ -87,6 +87,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Customers', N'Kupci', N'Customers' UNION ALL
 		SELECT N'Data_DailyRate', N'Dnevni kurs', N'Daily Rate' UNION ALL
 		SELECT N'Data_DateFrom', N'Datum početka', N'Date From' UNION ALL
+		SELECT N'Data_DatePlaceProduction', N'Datum, mesto proizvodnje', N'Date, Place Production info' UNION ALL
 		SELECT N'Data_DateofExpiry', N'Datum isteka', N'Date of Expiry' UNION ALL
 		SELECT N'Data_DatePeriod', N'Razdoblje', N'Date Period' UNION ALL
 		SELECT N'Data_DatePlaceProduction', N'Podaci o mestu i datumu proizvodnje', N'Date, Place Production info' UNION ALL
@@ -130,6 +131,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_InitialCostPrice', N'Početna cena proizvoda', N'Initial Cost Price' UNION ALL
 		SELECT N'Data_InitialStockLevel', N'Početno stanje na skladištu', N'Initial Stock Level' UNION ALL
 		SELECT N'Data_InviteOnly', N'S pozivnicom', N'Invite Only' UNION ALL
+		SELECT N'Data_InvoiceDate', N'Datum računa', N'Invoice Date' UNION ALL
 		SELECT N'Data_InvoiceDetails', N'Detalji računa', N'Invoice Details' UNION ALL
 		SELECT N'Data_InvoiceLink', N'Link dokumenta', N'Invoice Link' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Račun #', N'Invoice #' UNION ALL
@@ -260,7 +262,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TargetLot', N'Ciljana količina', N'Target Lot' UNION ALL
 		SELECT N'Data_Task', N'Zadatak', N'Task' UNION ALL
 		SELECT N'Data_Tax', N'Porez', N'Tax' UNION ALL
-		SELECT N'Data_Tax', N'Porez', N'Tax' UNION ALL
 		SELECT N'Data_TaxAmount', N'Iznos PDV' , N'Tax amount' UNION ALL
 		SELECT N'Data_TaxBase', N'Osnovica za porez', N'Data_TaxBase' UNION ALL
 		SELECT N'Data_TaxIncluded', N'Uključen porez', N'Tax Included' UNION ALL
@@ -369,6 +370,34 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DropDown_Default_CustomerAddress', N'Standardna adresa klijenta', N'Default Customer Address' UNION ALL
 		SELECT N'DropDown_TaxExclusive', N'Porez isključen', N'Tax Exclusive' UNION ALL
 		SELECT N'DropDown_TaxInclusive', N'Porez uključen', N'Tax Inclusive' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_Title', N'Postavke poruke', N'Message Settings' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfo', N'Možete da  postavite određene infromacije u vaše mailove putem placeholdera. Dostupni placeholderi su: [Amount Due], [Current Month], [Due Date], [Invoice Number], [Invoice Total], [Online Invoice Link], [Reference], [Week], [Interval], [Invoice Total Without Currency], [Amount Due Without Currency], [Auto Pay Information], [Month], [Year], [Month Year], [Week Year], [Contact Name], [Contact First Name], [Contact Last Name], [Currency Symbol], [Currency Code], [Trading Name]. <a href={0}>Doznaj više o placeholderima<a>', N'You can include certain core info in your emails with easy placeholders. The placeholders available for this email are: [Amount Due], [Current Month], [Due Date], [Invoice Number], [Invoice Total], [Online Invoice Link], [Reference], [Week], [Interval], [Invoice Total Without Currency], [Amount Due Without Currency], [Auto Pay Information], [Month], [Year], [Month Year], [Week Year], [Contact Name], [Contact First Name], [Contact Last Name], [Currency Symbol], [Currency Code], [Trading Name].
+<a href={0}>Learn more on placeholders and email templates<a>' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfoLink_Show', N'Prikaži podatke o placeholderu', N'Show placeholder info' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfoLink_Hide', N'Sakrij podatke o placeholderu', N'Hide placeholder info' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Title', N'Ponavljajuči račun: Osnovni', N'Repeating Invoice: Basic' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Subject', Račun [Invoice Number] od [Trading Name]', N'Invoice [Invoice Number] from [Trading Name]' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Body', N 'Poštovani/a [Contact First Name],
+
+U privitku možete da pronađete račun broj [Invoice Number] za [Currency Code] [Invoice Total Without Currency].
+
+Nepodmireni iznos od [Currency Code] [Amount Due Without Currency] ima valutu [Due Date].
+
+Ukoliko imate bilo kakvih pitanja javite nam se.
+
+Hvala,
+Odel za knjigovodstvo.
+[Trading Name].', N'Dear [Contact First Name],
+
+Please find attached our invoice ref. [Invoice Number] for [Currency Code] [Invoice Total Without Currency].
+
+The amount outstanding of [Currency Code] [Amount Due Without Currency] is due on [Due Date].
+
+If you have any questions, please let us know.
+
+Thanks,
+Accounts Dept.
+[Trading Name].' UNION ALL
 		SELECT N'EnablePayPalCheckout', N'Omogući Paypal', N'Enable PayPal Checkout' UNION ALL
 		SELECT N'Error_ErrorDescription', N'Došlo je do greške prilikom procesa plaćanja. Molimo pokušajte ponovo.<br>Ukoliko se greška ponovi kontaktujte podršku.', N'A problem has occurred during the payment process. Please try again.<br />If this error continues, please contact support.' UNION ALL
 		SELECT N'Error_ImportProcess', N'Došlo je do greške tokom procesa uvoza podataka', N'An error has occurred during the data import process' UNION ALL

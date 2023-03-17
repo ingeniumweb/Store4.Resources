@@ -211,6 +211,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'EmailEncryptionType_None', N'Nijedan', N'None' UNION ALL
 		SELECT N'EmailEncryptionType_SSL', N'SSL', N'SSL' UNION ALL
 		SELECT N'EmailEncryptionType_TLS', N'TLS', N'TLS' UNION ALL
+		SELECT N'MediaNiche_Casino', N'Casino', N'Casino Niche' UNION ALL
+		SELECT N'MediaNiche_Cbd', N'CBD', N'CBD Niche' UNION ALL
+		SELECT N'MediaNiche_Crypto', N'Crypto', N'Crypto Niche' UNION ALL
+		SELECT N'MediaNiche_Dating', N'Upoznavanje', N'Dating Niche' UNION ALL
+		SELECT N'MediaNiche_Erotic', N'Erotika', N'Erotic Niche' UNION ALL
+		SELECT N'MediaNiche_Loan', N'Pozajmice', N'Loan Niche' UNION ALL
 		SELECT N'CommentAction_Approved', N'Odobreno', N'Approved' UNION ALL
 		SELECT N'CommentAction_Spam', N'Spam', N'Spam' UNION ALL
 		SELECT N'CommentAction_Trash', N'Smeće', N'Trash' UNION ALL

@@ -208,6 +208,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'EmailEncryptionType_None', N'None' UNION ALL
 		SELECT N'EmailEncryptionType_SSL', N'SSL' UNION ALL
 		SELECT N'EmailEncryptionType_TLS', N'TLS' UNION ALL
+		SELECT N'MediaNiche_Casino', N'Casino Niche' UNION ALL
+		SELECT N'MediaNiche_Cbd', N'CBD Niche' UNION ALL
+		SELECT N'MediaNiche_Crypto', N'Crypto Niche' UNION ALL
+		SELECT N'MediaNiche_Dating', N'Dating Niche' UNION ALL
+		SELECT N'MediaNiche_Erotic', N'Erotic Niche' UNION ALL
+		SELECT N'MediaNiche_Loan', N'Loan Niche' UNION ALL
 		SELECT N'CommentAction_Approved', N'Approved' UNION ALL
 		SELECT N'CommentAction_Spam', N'Spam' UNION ALL
 		SELECT N'CommentAction_Trash', N'Trash' UNION ALL

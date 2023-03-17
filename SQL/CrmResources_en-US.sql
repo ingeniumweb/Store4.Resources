@@ -133,6 +133,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_InitialCostPrice', N'Initial Cost Price' UNION ALL
 		SELECT N'Data_InitialStockLevel', N'Initial Stock Level' UNION ALL
 		SELECT N'Data_InviteOnly', N'Invite Only' UNION ALL
+		SELECT N'Data_InvoiceDate', N'Invoice Date' UNION ALL
 		SELECT N'Data_InvoiceDetails', N'Invoice Details' UNION ALL
 		SELECT N'Data_InvoiceLink', N'Invoice Link' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Invoice #' UNION ALL

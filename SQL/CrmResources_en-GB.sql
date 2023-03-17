@@ -133,6 +133,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_InitialCostPrice', N'Initial Cost Price' UNION ALL
 		SELECT N'Data_InitialStockLevel', N'Initial Stock Level' UNION ALL
 		SELECT N'Data_InviteOnly', N'Invite Only' UNION ALL
+		SELECT N'Data_InvoiceDate', N'Invoice Date' UNION ALL
 		SELECT N'Data_InvoiceDetails', N'Invoice Details' UNION ALL
 		SELECT N'Data_InvoiceLink', N'Invoice Link' UNION ALL
 		SELECT N'Data_InvoiceNumber', N'Invoice #' UNION ALL
@@ -349,7 +350,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_ProductionOrder', N'Production Order' UNION ALL
 		SELECT N'DocumentType_PurchaseOrder', N'Purchase Order' UNION ALL
 		SELECT N'DocumentType_RepeatingInvoice', N'Repeating Invoice' UNION ALL
-		SELECT N'DocumentType_RepeatingInvoices', N'Repeating Invoices' UNION ALL
+		SELECT N'DocumentType_RecurringInvoices', N'Repeating Invoices' UNION ALL
 		SELECT N'DocumentType_Quote', N'Quote' UNION ALL
 		SELECT N'DocumentType_RepresentationExpense',  N'Representation Expense' UNION ALL
 		SELECT N'Document_Route', N'Route' UNION ALL
@@ -370,6 +371,11 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DropDown_Default_CustomerAddress', N'Default Customer Address' UNION ALL
 		SELECT N'DropDown_TaxExclusive', N'Tax Exclusive' UNION ALL
 		SELECT N'DropDown_TaxInclusive', N'Tax Inclusive' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_Title', N'Message Settings' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfo', N'You can include certain core info in your emails with easy placeholders. The placeholders available for this email are: [Amount Due], [Current Month], [Due Date], [Invoice Number], [Invoice Total], [Online Invoice Link], [Reference], [Week], [Interval], [Invoice Total Without Currency], [Amount Due Without Currency], [Auto Pay Information], [Month], [Year], [Month Year], [Week Year], [Contact Name], [Contact First Name], [Contact Last Name], [Currency Symbol], [Currency Code], [Trading Name].
+<a href={0}>Learn more on placeholders and email templates<a>' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfoLink_Show', N'Show placeholder info' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfoLink_Hide', N'Hide placeholder info' UNION ALL
 		SELECT N'EmailTemplateRecurringInvoices_Title', N'Repeating Invoice: Basic' UNION ALL
 		SELECT N'EmailTemplateRecurringInvoices_Subject', N'Invoice [Invoice Number] from [Trading Name]' UNION ALL
 		SELECT N'EmailTemplateRecurringInvoices_Body', N'Dear [Contact First Name],

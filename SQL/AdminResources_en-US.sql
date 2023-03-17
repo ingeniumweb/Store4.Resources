@@ -555,7 +555,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Settings_Data_AdminEmail', N'Admin E-mail' UNION ALL
 		SELECT N'Settings_Data_AndRedirectTo', N'And Redirect To' UNION ALL
 		SELECT N'Settings_Data_APIEnabled', N'API Enabled' UNION ALL
-		sELECT N'Settings_Data_APIKey', N'API Key' UNION ALL
+		SELECT N'Settings_Data_APIKey', N'API Key' UNION ALL
 		SELECT N'Settings_Data_APISecretURL', N'API Secret URL' UNION ALL
 		SELECT N'Settings_Data_ApplicationName', N'Application Name' UNION ALL
 		SELECT N'Settings_Data_ApplicationPath', N'Application Path' UNION ALL
@@ -713,6 +713,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Lists', N'Lists' UNION ALL
 		SELECT N'SiteMenu_Locations', N'Locations' UNION ALL
 		SELECT N'SiteMenu_Lookups', N'Lookups' UNION ALL
+		SELECT N'SiteMenu_Marketing', N'Marketing' UNION ALL
 		SELECT N'SiteMenu_Members', N'Members' UNION ALL
 		SELECT N'SiteMenu_Messages', N'Messages' UNION ALL
 		SELECT N'SiteMenu_News', N'News' UNION ALL

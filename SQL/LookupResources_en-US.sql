@@ -208,6 +208,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'EmailEncryptionType_None', N'None' UNION ALL
 		SELECT N'EmailEncryptionType_SSL', N'SSL' UNION ALL
 		SELECT N'EmailEncryptionType_TLS', N'TLS' UNION ALL
+		SELECT N'MediaNiche_Casino', N'Casino Niche' UNION ALL
+		SELECT N'MediaNiche_Cbd', N'CBD Niche' UNION ALL
+		SELECT N'MediaNiche_Crypto', N'Crypto Niche' UNION ALL
+		SELECT N'MediaNiche_Dating', N'Dating Niche' UNION ALL
+		SELECT N'MediaNiche_Erotic', N'Erotic Niche' UNION ALL
+		SELECT N'MediaNiche_Loan', N'Loan Niche' UNION ALL
 		SELECT N'CommentAction_Approved', N'Approved' UNION ALL
 		SELECT N'CommentAction_Spam', N'Spam' UNION ALL
 		SELECT N'CommentAction_Trash', N'Trash' UNION ALL
@@ -239,6 +245,12 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ProjectPriority_None', N'None' UNION ALL
 		SELECT N'ProjectPriority_VeryHigh', N'Very High' UNION ALL
 		SELECT N'ProjectPriority_VeryLow', N'Very Low' UNION ALL
+		SELECT N'ProjectStatus_Active', N'Active' UNION ALL
+		SELECT N'ProjectStatus_Completed', N'Completed' UNION ALL
+		SELECT N'ProjectStatus_InProgress', N'In Progress' UNION ALL
+		SELECT N'ProjectStatus_InReview', N'In Review' UNION ALL
+		SELECT N'ProjectStatus_Paused', N'Paused' UNION ALL
+		SELECT N'ProjectStatus_Planned', N'Planned' UNION ALL
 		SELECT N'Database_MSSQL', N'MSSQL' UNION ALL
 		SELECT N'Database_MySQL', N'MySQL' UNION ALL
 		SELECT N'Database_PostgreSQL', N'PostgreSQL' UNION ALL
@@ -255,12 +267,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ProductSubscriptionType_Basic', N'Basic' UNION ALL
 		SELECT N'ProductSubscriptionType_Enterprise', N'Enterprise' UNION ALL
 		SELECT N'ProductSubscriptionType_Premium', N'Premium' UNION ALL
-		SELECT N'ProjectStatus_Active', N'Active' UNION ALL
-		SELECT N'ProjectStatus_Completed', N'Completed' UNION ALL
-		SELECT N'ProjectStatus_InProgress', N'In Progress' UNION ALL
-		SELECT N'ProjectStatus_InReview', N'In Review' UNION ALL
-		SELECT N'ProjectStatus_Paused', N'Paused' UNION ALL
-		SELECT N'ProjectStatus_Planned', N'Planned' UNION ALL
 		SELECT N'RenewalPeriod_Days', N'Day(s)' UNION ALL
 		SELECT N'RenewalPeriod_Weeks', N'Week(s)' UNION ALL
 		SELECT N'RenewalPeriod_Months', N'Month(s)' UNION ALL

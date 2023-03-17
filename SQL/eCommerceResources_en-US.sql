@@ -109,7 +109,6 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PriceAfterDiscount', N'Price after discount' UNION ALL
 		SELECT N'Data_ReferralDomains', N'Referral Domains' UNION ALL
 		SELECT N'Data_Repeat', N'Repeat' UNION ALL
-		SELECT N'Data_Repeat', N'Repeat' UNION ALL
 		SELECT N'Data_RepeatCustom', N'Custom' UNION ALL
 		SELECT N'Data_RepeatDaily', N'Daily' UNION ALL
 		SELECT N'Data_RepeatEvery', N'Every' UNION ALL
