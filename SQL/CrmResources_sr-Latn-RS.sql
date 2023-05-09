@@ -376,8 +376,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfoLink_Show', N'Prikaži podatke o placeholderu', N'Show placeholder info' UNION ALL
 		SELECT N'EmailTemplateRecurringInvoicesPopup_PlacehorderInfoLink_Hide', N'Sakrij podatke o placeholderu', N'Hide placeholder info' UNION ALL
 		SELECT N'EmailTemplateRecurringInvoices_Title', N'Ponavljajuči račun: Osnovni', N'Repeating Invoice: Basic' UNION ALL
-		SELECT N'EmailTemplateRecurringInvoices_Subject', Račun [Invoice Number] od [Trading Name]', N'Invoice [Invoice Number] from [Trading Name]' UNION ALL
-		SELECT N'EmailTemplateRecurringInvoices_Body', N 'Poštovani/a [Contact First Name],
+		SELECT N'EmailTemplateRecurringInvoices_Subject', N'Račun [Invoice Number] od [Trading Name]', N'Invoice [Invoice Number] from [Trading Name]' UNION ALL
+		SELECT N'EmailTemplateRecurringInvoices_Body', N'Poštovani/a [Contact First Name],
 
 U privitku možete da pronađete račun broj [Invoice Number] za [Currency Code] [Invoice Total Without Currency].
 
