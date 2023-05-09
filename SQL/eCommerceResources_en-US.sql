@@ -75,6 +75,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BreakTimeByMinutes', N'Break By Minutes' UNION ALL
 		SELECT N'Data_City', N'City' UNION ALL
 		SELECT N'Data_CompletedOrders', N'Completed Orders' UNION ALL
+		SELECT N'Data_ConsentsCheckbox', N'I accept that you send me information via e-mail' UNION ALL
+		SELECT N'Data_ConsentsTitle', N'Consents and declarations of will' UNION ALL
 		SELECT N'Data_ContractDate', N'Date by contract' UNION ALL
 		SELECT N'Data_Country', N'Country' UNION ALL
 		SELECT N'Data_CurrentBalance', N'Current Balance' UNION ALL

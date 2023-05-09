@@ -75,6 +75,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_BreakTimeByMinutes', N'Pauza po minutama', N'Break By Minutes' UNION ALL
 		SELECT N'Data_City', N'Grad', N'City' UNION ALL
 		SELECT N'Data_CompletedOrders', N'Ukupno naručeno iznos', N'Completed Orders' UNION ALL
+		SELECT N'Data_ConsentsCheckbox', N'Prihvaćam da mi šaljete informacije putem e-maila', N'I accept that you send me information via e-mail' UNION ALL
+		SELECT N'Data_ConsentsTitle',N'Suglasnost i privole', N'Consents and declarations of will' UNION ALL
 		SELECT N'Data_ContractDate', N'Datum po ugovoru', N'Date by contract' UNION ALL
 		SELECT N'Data_Country', N'Zemlja', N'Country' UNION ALL
 		SELECT N'Data_CurrentBalance', N'Trenutno stanje', N'Current Balance' UNION ALL
