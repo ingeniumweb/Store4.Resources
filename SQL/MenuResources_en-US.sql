@@ -114,6 +114,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Qualifications', N'Qualifications' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Quotes' UNION ALL
 		SELECT N'SiteMenu_Rates', N'Rates' UNION ALL
+		SELECT N'SiteMenu_RecurringInvoices', N'Recurring Invoices' UNION ALL
+		SELECT N'SiteMenu_RepeatingInvoices', N'Repeating Invoices' UNION ALL
 		SELECT N'SiteMenu_Roles', N'Roles' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'RepresentationExpenses' UNION ALL
 		SELECT N'SiteMenu_Routings', N'Routings' UNION ALL
