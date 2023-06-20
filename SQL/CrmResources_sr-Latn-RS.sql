@@ -197,6 +197,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Project', N'Projekt', N'Project' UNION ALL
 		SELECT N'Data_ProjectActivity', N'Aktivnosti', N'Project Activity' UNION ALL
 		SELECT N'Data_ProjectBudget', N'Budžet', N'Project Budget' UNION ALL
+		SELECT N'Data_ProjectCoworkers', N'Suradnici', N'Project Coworkers' UNION ALL
 		SELECT N'Data_ProjectDetails', N'Detalji', N'Project Details' UNION ALL
 		SELECT N'Data_ProjectDeliverable', N'Isporučeni projekti', N'Project Deliverable' UNION ALL
 		SELECT N'Data_ProjectDuration', N'Trajanje projekta', N'Project Duration' UNION ALL
@@ -238,6 +239,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ShowOnStore', N'Prikaži u trgovini', N'Show On Store' UNION ALL
 		SELECT N'Data_ShowPaymentSlip', N'Prikaži uplatnicu', N'Show Payment Slip' UNION ALL
 		SELECT N'Data_ShowShipping', N'Prikaži trošak dostave', N'Show Shippment Costs' UNION ALL
+		SELECT N'Data_ShowSummary', N'Prikaži sažetak', N'Show Summary' UNION ALL
 		SELECT N'Data_ShowTotals', N'Prikaži zalihe', N'Show Totals' UNION ALL
 		SELECT N'Data_SIC', N'SIC', N'SIC' UNION ALL
 		SELECT N'Data_Skill', N'Vještina', N'Skill' UNION ALL

@@ -199,6 +199,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_Project', N'Project' UNION ALL
 		SELECT N'Data_ProjectActivity', N'Project Activity' UNION ALL
 		SELECT N'Data_ProjectBudget', N'Project Budget' UNION ALL
+		SELECT N'Data_ProjectCoworkers', N'Project Coworkers' UNION ALL
 		SELECT N'Data_ProjectDetails', N'Project Details' UNION ALL
 		SELECT N'Data_ProjectDeliverable', N'Project Deliverable' UNION ALL
 		SELECT N'Data_ProjectDuration', N'Project Duration' UNION ALL
@@ -240,6 +241,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ShowOnStore', N'Show On Store' UNION ALL
 		SELECT N'Data_ShowPaymentSlip', N'Show Payment Slip' UNION ALL
 		SELECT N'Data_ShowShipping', N'Show Shippment Costs' UNION ALL
+		SELECT N'Data_ShowSummary', N'Show Summary' UNION ALL
 		SELECT N'Data_ShowTotals', N'Show Summary' UNION ALL
 		SELECT N'Data_SIC', N'SIC' UNION ALL
 		SELECT N'Data_Skill', N'Skill' UNION ALL
