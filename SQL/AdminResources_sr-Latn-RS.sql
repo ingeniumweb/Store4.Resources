@@ -285,6 +285,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_MonthlyLimitDocuments', N'Mjesečno ograničenje dokumenata', N'Monthly Limit Documents' UNION ALL
 		SELECT N'Data_MonthlyLimitFiles', N'Mjesečno ograničenje datoteka', N'Monthly Limit Files' UNION ALL
 		SELECT N'Data_Name', N'Naziv', N'Name' UNION ALL
+		SELECT N'Data_New', N'Novi {0}', N'New {0}' UNION ALL
 		SELECT N'Data_NewsletterSubscriber', N'Pretplatnik newsletter-a', N'Newsletter Subscriber' UNION ALL
 		SELECT N'Data_No', N'Ne', N'No' UNION ALL
 		SELECT N'Data_None', N'Nijedan', N'None' UNION ALL

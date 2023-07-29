@@ -246,6 +246,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'ProjectPriority_VeryHigh', N'Very High' UNION ALL
 		SELECT N'ProjectPriority_VeryLow', N'Very Low' UNION ALL
 		SELECT N'ProjectStatus_Active', N'Active' UNION ALL
+		SELECT N'ProjectStatus_Cancelled', N'Cancelled' UNION ALL
 		SELECT N'ProjectStatus_Completed', N'Completed' UNION ALL
 		SELECT N'ProjectStatus_InProgress', N'In Progress' UNION ALL
 		SELECT N'ProjectStatus_InReview', N'In Review' UNION ALL
