@@ -79,6 +79,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_CostOfMaterials', N'Cost of Materials' UNION ALL
 		SELECT N'Data_Contractor', N'Contractor' UNION ALL
 		SELECT N'Data_Contracts', N'Contracts' UNION ALL
+		SELECT N'Data_ContractAmount', N'Contract Amount' UNION ALL
 		SELECT N'Data_Contract_Number', N'Contract Number' UNION ALL
 		SELECT N'Data_ContractPreference', N'Contract Preference' UNION ALL
 		SELECT N'Data_Currency', N'Currency' UNION ALL
@@ -122,6 +123,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_File_Manager_Enabled', N'Is File Manager Enabled' UNION ALL
 		SELECT N'Data_FixedCost', N'Fixed Cost' UNION ALL
 		SELECT N'Data_FixedTime', N'Fixed Time' UNION ALL
+		SELECT N'Data_FollowingPeriod', N'To be carried out in the following period' UNION ALL
 		SELECT N'Data_Generate', N'Generate' UNION ALL
 		SELECT N'Data_Grade', N'Grade' UNION ALL
 		SELECT N'Data_HoldsStock', N'Holds Stock' UNION ALL
