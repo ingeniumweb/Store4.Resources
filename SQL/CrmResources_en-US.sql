@@ -289,6 +289,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_TransferOrderDetails', N'Transfer Order Details' UNION ALL
 		SELECT N'Data_UnitOfMeasurement', N'Unit of Measurement' UNION ALL
 		SELECT N'Data_Unread', N'Unread' UNION ALL
+		SELECT N'Data_UsedBonus', N'Used Bonus' UNION ALL
 		SELECT N'Data_Value', N'Value' UNION ALL
 		SELECT N'Data_VariableCost', N'Variable Cost' UNION ALL
 		SELECT N'Data_VariableTime', N'Variable Time' UNION ALL

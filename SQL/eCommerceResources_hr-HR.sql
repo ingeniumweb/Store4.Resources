@@ -79,6 +79,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ConsentsTitle',N'Suglasnost i privole', N'Consents and declarations of will' UNION ALL
 		SELECT N'Data_ContractDate', N'Datum po ugovoru', N'Date by contract' UNION ALL
 		SELECT N'Data_Country', N'Zemlja', N'Country' UNION ALL
+		SELECT N'Data_CouponValid', N'Kupon vrijedi do', N'Coupon Valid' UNION ALL
 		SELECT N'Data_CurrentBalance', N'Trenutno stanje', N'Current Balance' UNION ALL
 		SELECT N'Data_DaysOfWeek', N'Dani u tjednu', N'Days of Week' UNION ALL
 		SELECT N'Data_Deposits', N'Ukupno plaćeno', N'Deposits' UNION ALL
@@ -124,6 +125,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_StateProvince', N'Država/Provincija', N'State/Province' UNION ALL
 		SELECT N'Data_Street', N'Ulica', N'Street' UNION ALL
 		SELECT N'Data_Sunday', N'Nedjelja', N'Sunday' UNION ALL
+		SELECT N'Data_Tasks', N'Zadatci', N'Tasks' UNION ALL
+		SELECT N'Data_TaskStatus', N'Status zadatka', N'Task Status' UNION ALL
 		SELECT N'Data_Thursday', N'četvrtak', N'Thursday' UNION ALL
 		SELECT N'Data_TotalAfterDiscount', N'Ukupno nakon rabata', N'Total after discount' UNION ALL
 		SELECT N'Data_Tuesday', N'Utorak', N'Tuesday' UNION ALL
@@ -197,12 +200,14 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Member_already_subscribed', N'Već ste preplaćeni na {0}. Ako želite obnoviti preplatu ili imate više pitanja molimo kontaktirajte našu podršku.', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Prijava', N'Sign In' UNION ALL
 		SELECT N'Message_CouponCodeSuccess', N'Kod uspješno primjenjen', N'This coupon code has been successfully applied' UNION ALL
+		SELECT N'Message_EnterCouponCode', N'Unesite kod kupona', N'Enter coupon code' UNION ALL
 		SELECT N'Message_ExpiredOrInvalidCouponCode', N'Kod nije valjan ili je istekao', N'This coupon code is invalid or has expired' UNION ALL
 		SELECT N'Message_AddedToBasket', N'Dodano u košaricu.', N'Added to basket.' UNION ALL
 		SELECT N'Message_AddedToFavorites', N'Dodano u favorite.', N'Added to favorites.' UNION ALL
 		SELECT N'Message_AlredyPosted', N'Već ste objavili.', N'You have already posted.' UNION ALL
 		SELECT N'Message_AlredyRated', N'Već ste ocjenili.', N'You have already rated.' UNION ALL
 		SELECT N'Message_Favorites_UnauthorizedAccess', N'Molimo <a href="/signin"> Prijavite se </a> ili <a href="/signup">Registrajte se </a> da bi dodali u omiljeno.', N'Please <a href="/signin"> Sign In</a> or <a href="/signup">Sign Up</a> to add to favorites.' UNION ALL
+		SELECT N'Message_PrivacyCheck', N'Pročitao/pročitala sam i prihvaćam ', N'I have read and accept ' UNION ALL
 		SELECT N'Message_Rating', N'Zahvaljujemo na ocjeni.', N'Thank you for rating!' UNION ALL
 		SELECT N'Message_RemovedFromBasket', N'Uklonjeno iz košarice.', N'Removed from basket.' UNION ALL
 		SELECT N'Message_RemovedFromFavorites', N'Uklonjeno iz favorita.', N'Removed from favorites.' UNION ALL

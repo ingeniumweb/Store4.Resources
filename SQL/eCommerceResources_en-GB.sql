@@ -79,6 +79,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_ConsentsTitle', N'Consents and declarations of will' UNION ALL
 		SELECT N'Data_ContractDate', N'Date by contract' UNION ALL
 		SELECT N'Data_Country', N'Country' UNION ALL
+		SELECT N'Data_CouponValid', N'Coupon Valid' UNION ALL
 		SELECT N'Data_CurrentBalance', N'Current Balance' UNION ALL
 		SELECT N'Data_DaysOfWeek', N'Days of Week' UNION ALL
 		SELECT N'Data_Deposits', N'Deposits' UNION ALL
@@ -123,6 +124,8 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_StateProvince', N'State/Province' UNION ALL
 		SELECT N'Data_Street', N'Street' UNION ALL
 		SELECT N'Data_Sunday', N'Sunday' UNION ALL
+		SELECT N'Data_Tasks', N'Tasks' UNION ALL
+		SELECT N'Data_TaskStatus', N'Task Status' UNION ALL
 		SELECT N'Data_Thursday', N'Thursday' UNION ALL
 		SELECT N'Data_TotalAfterDiscount', N'Total after discount' UNION ALL
 		SELECT N'Data_Tuesday', N'Tuesday' UNION ALL
@@ -200,7 +203,9 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Member_already_subscribed', N'You are already subscribed to {0}. If you want to renew your subscription or have more questions, please contact our support.' UNION ALL
 		SELECT N'Membership_SignIn', N'Sign In' UNION ALL
 		SELECT N'Message_CouponCodeSuccess', N'This coupon code has been successfully applied' UNION ALL
+		SELECT N'Message_EnterCouponCode', N'Enter coupon code' UNION ALL
 		SELECT N'Message_ExpiredOrInvalidCouponCode', N'This coupon code is invalid or has expired' UNION ALL
+		SELECT N'Message_PrivacyCheck', N'I have read and accept ' UNION ALL
 		SELECT N'Message_Success_ChangedSettings', N'Your settings have been changed!' UNION ALL
 		SELECT N'Message_Store_UnauthorizedAccess', N'An account with this email already exists. Please <a href="/signin">Sign In</a> to proceed to checkout.' UNION ALL
 		SELECT N'New_Customer_message', N'I am a new customer' UNION ALL
