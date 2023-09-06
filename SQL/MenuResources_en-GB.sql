@@ -48,6 +48,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_Customers', N'Customers' UNION ALL
 		SELECT N'SiteMenu_Dashboard', N'Dashboard' UNION ALL
 		SELECT N'SiteMenu_Deliverables', N'Deliverables' UNION ALL
+		SELECT N'SiteMenu_DepositInvoices', N'Deposit Invoices' UNION ALL
 		SELECT N'SiteMenu_Description_Lists', N'Lists Editor (FAQs)' UNION ALL
 		SELECT N'SiteMenu_Description_Settings', N'Global Settings' UNION ALL
 		SELECT N'SiteMenu_Description_Support', N'Help & Support' UNION ALL
@@ -59,6 +60,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'SiteMenu_EmailCampaigns', N'Email Campaigns' UNION ALL
 		SELECT N'SiteMenu_Employees', N'Employees' UNION ALL
 		SELECT N'SiteMenu_Events', N'Events' UNION ALL
+		SELECT N'SiteMenu_Expenses', N'Expenses' UNION ALL
 		SELECT N'SiteMenu_ExpenseOrders', N'Expense Orders' UNION ALL
 		SELECT N'SiteMenu_Fields', N'Fields' UNION ALL
 		SELECT N'SiteMenu_FilesManager', N'Files Manager' UNION ALL

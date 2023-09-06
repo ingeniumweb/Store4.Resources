@@ -346,6 +346,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_Contracts', N'Contracts' UNION ALL
 		SELECT N'DocumentType_Deal', N'Deal' UNION ALL
 		SELECT N'DocumentType_Deals', N'Deals' UNION ALL
+		SELECT N'DocumentType_DepositInvoice', N'Deposit Invoices' UNION ALL
 		SELECT N'DocumentType_ExpenseOrder', N'Expense Order' UNION ALL
 		SELECT N'DocumentType_Invoice', N'Invoice' UNION ALL
 		SELECT N'DocumentType_ManufacturingOrder', N'Manufacturing Order' UNION ALL

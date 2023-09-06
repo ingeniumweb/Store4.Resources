@@ -344,6 +344,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'DocumentType_Contracts',  N'Ugovori', N'Contracts' UNION ALL
 		SELECT N'DocumentType_Deal', N'Potencijalna Ponuda', N'Deal' UNION ALL
 		SELECT N'DocumentType_Deals', N'Potencijalne Ponude', N'Deals' UNION ALL
+		SELECT N'DocumentType_DepositInvoice', N'Računi za Predujam', N'Deposit Invoices' UNION ALL
 		SELECT N'DocumentType_ExpenseOrder', N'Rashodi', N'Expense Order' UNION ALL
 		SELECT N'DocumentType_Invoice', N'Račun', N'Invoice' UNION ALL
 		SELECT N'DocumentType_ManufacturingOrder', N'Proizvodna narudžba', N'Manufacturing Order' UNION ALL
@@ -499,8 +500,8 @@ Accounts Dept.
 		SELECT N'SiteMenu_Production', N'Proizvodnja', N'Production' UNION ALL
 		SELECT N'SiteMenu_Products', N'Proizvodi', N'Products' UNION ALL
 		SELECT N'SiteMenu_ProductionEntryOrders', N'Ulazi iz Proizvodnje', N'Production Entry Orders' UNION ALL
-		SELECT N'SiteMenu_Projects', N'Projektni ugovori', N'Projects' UNION ALL
-		SELECT N'SiteMenu_ProjectContracts', N'Projekti', N'Project Contracts' UNION ALL
+		SELECT N'SiteMenu_Projects', N'Projekti', N'Projects' UNION ALL
+		SELECT N'SiteMenu_ProjectContracts', N'Projektni ugovori', N'Project Contracts' UNION ALL
 		SELECT N'SiteMenu_PurchaseOrders', N'Kupovine', N'Purchase Orders' UNION ALL
 		SELECT N'SiteMenu_RepresentationExpenses', N'Reprezentacije', N'Representation Expenses' UNION ALL
 		SELECT N'SiteMenu_Quotes', N'Ponude', N'Quotes' UNION ALL
