@@ -180,6 +180,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Data_PaidOn', N'Paid On' UNION ALL
 		SELECT N'Data_PaymentInfo', N'Payment info' UNION ALL
 		SELECT N'Data_PaymentMethod', N'Payment Method' UNION ALL
+		SELECT N'Data_PaymentMethods',N'Payment Method(s)' UNION ALL
 		SELECT N'Data_Period', N'Period' UNION ALL
 		SELECT N'Data_PeriodEnd', N'Peroid End' UNION ALL
 		SELECT N'Data_PeriodStart', N'Period Start' UNION ALL
