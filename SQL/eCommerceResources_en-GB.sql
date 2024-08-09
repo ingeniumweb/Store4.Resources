@@ -338,6 +338,7 @@ IF (@ResourceTypeID > 0 AND @LanguageID > 0) BEGIN
 		SELECT N'Error_CreatingMemberToken', N'There was an error while generating Member Token.' UNION ALL
 		SELECT N'Partner_Companies', N'Partner companies' UNION ALL
 		SELECT N'Payment_Bank_Transfer_Warning', N'Once you have completed your order, you will receive the order details to e-mail. When your payment is recorded, the order delivery process will be launched' UNION ALL
+		SELECT N'Payment_Credit_Card_Warning', N'You can make your payment using either a credit card or PayPal. Please enter your card number, along with a valid CVC and expiration date, to complete the transaction securely.' UNION ALL
 		SELECT N'Payment_Credit_Card_Warning', N'Pay with your credit card. TEST MODE ENABLED. In test mode, you can use the card number 0000 0000 0000 0000 with any CVC and a valid expiration date.' UNION ALL
 		SELECT N'Payment_Info_Warning', N'Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.' UNION ALL
 		SELECT N'PaymentSettings_CancellationPage', N'Cancellation Policy Page' UNION ALL
